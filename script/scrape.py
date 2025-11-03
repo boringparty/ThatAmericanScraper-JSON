@@ -75,7 +75,7 @@ def scrape_episode(url):
             act_number = 0
             number_text = "Prologue"
         else:
-            word = label_elem.get_text(strip=True).replace("Act ", "").strip()
+            word = label_elem.get_text(strip=True).replace("Act ", "").replace("Part ", "").strip()
             act_number = ACT_WORDS.get(word, None)
             if act_number is None:
                 continue
