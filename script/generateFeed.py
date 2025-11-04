@@ -21,7 +21,7 @@ def build_description(ep):
         if act.get("duration"):
             summary_line += f" ({act['duration']} minutes)"
         if act.get("contributors"):
-            summary_line += " _" + ", ".join(act["contributors"]) + "_"
+            summary_line += " by " + ", ".join(act["contributors"])
         lines.append(summary_line)
         lines.append("")
     lines.append(f"Originally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}")
@@ -31,7 +31,14 @@ def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         episodes = json.load(f)
 
-    episodes = sorted(episodes, key=lambda x: int(x["number"]))
+    # Sort by latest published date first
+    def latest_pub_date(ep):
+        dates = ep.get("published_dates", [])
+        if not dates:
+            return datetime.min.replace(tzinfo=timezone.utc)
+        return max(datetime.strptime(d, "%a, %d %b %Y %H:%M:%S %z") for d in dates)
+
+    episodes = sorted(episodes, key=latest_pub_date, reverse=True)
 
     items = []
     for ep in episodes:
