@@ -20,7 +20,7 @@ jobs:
           python-version: "3.11"
 
       - name: Run date normalization
-        run: python scripts/normalize_dates.py
+        run: python script/normalize_dates.py
 
       - name: Commit & push changes
         run: |
