@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 INPUT_FILE = "data.json"
 OUTPUT_FILE = "feed.xml"
 
 def format_rfc822(dt: datetime):
+    # Ensure UTC
     dt_utc = dt.astimezone(timezone.utc)
     return dt_utc.strftime("%a, %d %b %Y %H:%M:%S %z")
 
@@ -15,6 +16,7 @@ def format_duration(total_minutes: int):
 
 def build_description(ep):
     lines = [ep["synopsis"].strip(), ""]
+
     for act in ep.get("acts", []):
         lines.append(act["number_text"] if act["number_text"] != "Prologue" else "Prologue")
         summary_line = act["summary"].strip()
@@ -23,7 +25,8 @@ def build_description(ep):
         if act.get("contributors"):
             summary_line += " by " + ", ".join(act["contributors"])
         lines.append(summary_line)
-        lines.append("")
+        lines.append("")  # extra newline between acts
+
     lines.append(f"Originally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}")
     return "\n".join(lines)
 
@@ -31,76 +34,65 @@ def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         episodes = json.load(f)
 
-    # Sort by latest published date first
-    def latest_pub_date(ep):
-        dates = ep.get("published_dates", [])
-        if not dates:
-            return datetime.min.replace(tzinfo=timezone.utc)
-        return max(datetime.strptime(d, "%a, %d %b %Y %H:%M:%S %z") for d in dates)
-
-    episodes = sorted(episodes, key=latest_pub_date, reverse=True)
-
     items = []
     for ep in episodes:
-        ep_number_padded = ep["number"].zfill(4)
-        for pub_date_str in ep.get("published_dates", []):
-            if not ep.get("download"):
-                continue
+        # skip if no download
+        if not ep.get("download"):
+            continue
 
-            pub_dt = datetime.strptime(pub_date_str, "%a, %d %b %Y %H:%M:%S %z")
-            orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
-            is_repeat = pub_dt.year != orig_dt.year
-            title_suffix = " - Repeat" if is_repeat else ""
-            rss_title = f'{ep["number"]}: {ep["title"]}{title_suffix}'
+        # get latest published date
+        latest_pub_str = max(ep.get("published_dates", []),
+                             key=lambda x: datetime.strptime(x, "%a, %d %b %Y %H:%M:%S %z"))
+        latest_pub_dt = datetime.strptime(latest_pub_str, "%a, %d %b %Y %H:%M:%S %z")
+        orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
 
-            total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
-            description = build_description(ep)
+        is_repeat = latest_pub_dt.year != orig_dt.year
+        title_suffix = " - Repeat" if is_repeat else ""
+        description = build_description(ep)
+        total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
+        padded_number = ep["number"].zfill(4)
 
-            guid_base = f'{ep_number_padded}-{pub_dt.strftime("%Y%m%d")}'
+        # Main episode
+        explicit_val = "yes" if ep.get("download_clean") else "clean"
+        guid = f"{padded_number}-{latest_pub_dt.strftime('%Y%m%d')}"
+        item = f"""    <item>
+      <title>{ep["number"]}: {ep["title"]}{title_suffix}</title>
+      <link>{ep["episode_url"]}</link>
+      <guid>{guid}</guid>
+      <itunes:episode>{ep["number"]}</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>{explicit_val}</itunes:explicit>
+      <description>{description}</description>
+      <pubDate>{format_rfc822(latest_pub_dt)}</pubDate>
+      <enclosure url="{ep["download"]}" type="audio/mpeg"/>
+      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>"""
+        if ep.get("image") and ep["image"].get("url"):
+            item += f'\n      <itunes:image href="{ep["image"]["url"]}"/>'
+        item += "\n    </item>"
+        items.append(item)
 
-            # Determine explicit value for main episode
-            explicit_value = "yes" if ep.get("download_clean") else ("true" if ep["explicit"] else "clean")
-
-            # Main episode
-            item_lines = [
-                "    <item>",
-                f"      <title>{rss_title}</title>",
-                f"      <link>{ep['episode_url']}</link>",
-                f"      <guid>{guid_base}</guid>",
-                f"      <itunes:episode>{ep['number']}</itunes:episode>",
-                "      <itunes:episodeType>full</itunes:episodeType>",
-                f"      <itunes:explicit>{explicit_value}</itunes:explicit>",
-                f"      <description>{description}</description>",
-                f"      <pubDate>{format_rfc822(pub_dt)}</pubDate>",
-                f"      <enclosure url=\"{ep['download']}\" type=\"audio/mpeg\"/>",
-                f"      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>",
-            ]
+        # Clean version if exists
+        if ep.get("download_clean"):
+            guid_clean = f"{padded_number}-{latest_pub_dt.strftime('%Y%m%d')}-C"
+            item_clean = f"""    <item>
+      <title>{ep["number"]}: {ep["title"]}{title_suffix} (Clean)</title>
+      <link>{ep["episode_url"]}</link>
+      <guid>{guid_clean}</guid>
+      <itunes:episode>{ep["number"]}</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>clean</itunes:explicit>
+      <description>{description}</description>
+      <pubDate>{format_rfc822(latest_pub_dt)}</pubDate>
+      <enclosure url="{ep["download_clean"]}" type="audio/mpeg"/>
+      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>"""
             if ep.get("image") and ep["image"].get("url"):
-                item_lines.append(f"      <itunes:image href=\"{ep['image']['url']}\"/>")
-            item_lines.append("    </item>")
-            items.append("\n".join(item_lines))
+                item_clean += f'\n      <itunes:image href="{ep["image"]["url"]}"/>'
+            item_clean += "\n    </item>"
+            items.append(item_clean)
 
-            # Only add clean version if it exists
-            if ep.get("download_clean"):
-                rss_title_clean = f'{ep["number"]}: {ep["title"]}{title_suffix} (Clean)'
-                guid_clean = f"{guid_base}-C"
-                item_lines_clean = [
-                    "    <item>",
-                    f"      <title>{rss_title_clean}</title>",
-                    f"      <link>{ep['episode_url']}</link>",
-                    f"      <guid>{guid_clean}</guid>",
-                    f"      <itunes:episode>{ep['number']}</itunes:episode>",
-                    "      <itunes:episodeType>full</itunes:episodeType>",
-                    "      <itunes:explicit>clean</itunes:explicit>",
-                    f"      <description>{description}</description>",
-                    f"      <pubDate>{format_rfc822(pub_dt)}</pubDate>",
-                    f"      <enclosure url=\"{ep['download_clean']}\" type=\"audio/mpeg\"/>",
-                    f"      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>",
-                ]
-                if ep.get("image") and ep["image"].get("url"):
-                    item_lines_clean.append(f"      <itunes:image href=\"{ep['image']['url']}\"/>")
-                item_lines_clean.append("    </item>")
-                items.append("\n".join(item_lines_clean))
+    # Sort items descending by published date
+    items.sort(key=lambda x: datetime.strptime(
+        x.split("<pubDate>")[1].split("</pubDate>")[0], "%a, %d %b %Y %H:%M:%S %z"), reverse=True)
 
     rss_header = """<?xml version="1.0" ?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
