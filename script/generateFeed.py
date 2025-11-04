@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 import json
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 
 INPUT_FILE = "data.json"
 OUTPUT_FILE = "feed.xml"
 
 def format_rfc822(dt: datetime):
-    # Ensure UTC
     dt_utc = dt.astimezone(timezone.utc)
     return dt_utc.strftime("%a, %d %b %Y %H:%M:%S %z")
 
@@ -14,9 +13,8 @@ def format_duration(total_minutes: int):
     hours, minutes = divmod(total_minutes, 60)
     return f"{hours:02}:{minutes:02}:00"
 
-def build_description(ep, pub_date_str):
+def build_description(ep):
     lines = [ep["synopsis"].strip(), ""]
-
     for act in ep.get("acts", []):
         lines.append(act["number_text"] if act["number_text"] != "Prologue" else "Prologue")
         summary_line = act["summary"].strip()
@@ -25,8 +23,7 @@ def build_description(ep, pub_date_str):
         if act.get("contributors"):
             summary_line += " _" + ", ".join(act["contributors"]) + "_"
         lines.append(summary_line)
-        lines.append("")  # extra newline between acts
-
+        lines.append("")
     lines.append(f"Originally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}")
     return "\n".join(lines)
 
@@ -34,60 +31,66 @@ def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         episodes = json.load(f)
 
-    # Sort by episode number (numerically)
     episodes = sorted(episodes, key=lambda x: int(x["number"]))
 
     items = []
     for ep in episodes:
         for pub_date_str in ep.get("published_dates", []):
-            # skip if no download
             if not ep.get("download"):
                 continue
 
             pub_dt = datetime.strptime(pub_date_str, "%a, %d %b %Y %H:%M:%S %z")
             orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
-
             is_repeat = pub_dt.year != orig_dt.year
-
             title_suffix = " - Repeat" if is_repeat else ""
             rss_title = f'{ep["number"]}: {ep["title"]}{title_suffix}'
 
-            # Main episode
             total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
-            description = build_description(ep, pub_date_str)
+            description = build_description(ep)
 
-            item = f"""    <item>
-      <title>{rss_title}</title>
-      <link>{ep["episode_url"]}</link>
-      <itunes:episode>{ep["number"]}</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>{str(ep["explicit"]).lower()}</itunes:explicit>
-      <description>{description}</description>
-      <pubDate>{format_rfc822(pub_dt)}</pubDate>
-      <enclosure url="{ep["download"]}" type="audio/mpeg"/>
-      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>
-      <itunes:image href="{ep["image"]["url"] if ep.get("image") else ''}"/>
-    </item>"""
-            items.append(item)
+            guid_base = f'{ep["number"]}-{pub_dt.strftime("%Y%m%d")}'
+
+            # Main episode
+            item_lines = [
+                "    <item>",
+                f"      <title>{rss_title}</title>",
+                f"      <link>{ep['episode_url']}</link>",
+                f"      <guid>{guid_base}</guid>",
+                f"      <itunes:episode>{ep['number']}</itunes:episode>",
+                "      <itunes:episodeType>full</itunes:episodeType>",
+                f"      <itunes:explicit>{'true' if ep['explicit'] else 'clean'}</itunes:explicit>",
+                f"      <description>{description}</description>",
+                f"      <pubDate>{format_rfc822(pub_dt)}</pubDate>",
+                f"      <enclosure url=\"{ep['download']}\" type=\"audio/mpeg\"/>",
+                f"      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>",
+            ]
+            if ep.get("image") and ep["image"].get("url"):
+                item_lines.append(f"      <itunes:image href=\"{ep['image']['url']}\"/>")
+            item_lines.append("    </item>")
+            items.append("\n".join(item_lines))
 
             # Clean version
             if ep.get("download_clean"):
                 rss_title_clean = f'{ep["number"]}: {ep["title"]}{title_suffix} (Clean)'
-                item_clean = f"""    <item>
-      <title>{rss_title_clean}</title>
-      <link>{ep["episode_url"]}</link>
-      <itunes:episode>{ep["number"]}</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-      <description>{description}</description>
-      <pubDate>{format_rfc822(pub_dt)}</pubDate>
-      <enclosure url="{ep["download_clean"]}" type="audio/mpeg"/>
-      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>
-      <itunes:image href="{ep["image"]["url"] if ep.get("image") else ''}"/>
-    </item>"""
-                items.append(item_clean)
+                guid_clean = f"{guid_base}-C"
+                item_lines_clean = [
+                    "    <item>",
+                    f"      <title>{rss_title_clean}</title>",
+                    f"      <link>{ep['episode_url']}</link>",
+                    f"      <guid>{guid_clean}</guid>",
+                    f"      <itunes:episode>{ep['number']}</itunes:episode>",
+                    "      <itunes:episodeType>full</itunes:episodeType>",
+                    "      <itunes:explicit>clean</itunes:explicit>",
+                    f"      <description>{description}</description>",
+                    f"      <pubDate>{format_rfc822(pub_dt)}</pubDate>",
+                    f"      <enclosure url=\"{ep['download_clean']}\" type=\"audio/mpeg\"/>",
+                    f"      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>",
+                ]
+                if ep.get("image") and ep["image"].get("url"):
+                    item_lines_clean.append(f"      <itunes:image href=\"{ep['image']['url']}\"/>")
+                item_lines_clean.append("    </item>")
+                items.append("\n".join(item_lines_clean))
 
-    # Build RSS
     rss_header = """<?xml version="1.0" ?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
