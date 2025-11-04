@@ -1,35 +1,25 @@
 import json
-from datetime import datetime, timezone
+from datetime import datetime
 
-def parse_date(d):
-    for fmt in ("%Y-%m-%d", "%B %d, %Y", "%b %d, %Y"):
-        try:
-            return datetime.strptime(d, fmt)
-        except ValueError:
-            continue
-    return None
-
-def to_rfc822(dt):
-    if not dt:
-        return None
-    dt_utc = dt.astimezone(timezone.utc)
-    return dt_utc.strftime("%a, %d %b %Y %H:%M:%S +0000")
-
-with open("data.json", "r", encoding="utf-8") as f:
+with open("data_fixed.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-for ep in data:
-    if "original_air_date" in ep and ep["original_air_date"]:
-        dt = parse_date(ep["original_air_date"])
-        ep["original_air_date"] = to_rfc822(dt) if dt else ep["original_air_date"]
+def latest_date(ep):
+    # Use the most recent published_date for sorting
+    dates = ep.get("published_dates", [])
+    if not dates:
+        return datetime.min
+    # parse RFC-822 format
+    parsed_dates = []
+    for d in dates:
+        try:
+            parsed_dates.append(datetime.strptime(d, "%a, %d %b %Y %H:%M:%S +0000"))
+        except ValueError:
+            continue
+    return max(parsed_dates) if parsed_dates else datetime.min
 
-    if "published_dates" in ep:
-        normalized = set()
-        for d in ep["published_dates"]:
-            dt = parse_date(d)
-            if dt:
-                normalized.add(to_rfc822(dt))
-        ep["published_dates"] = sorted(normalized)
+# sort descending (newest first)
+data_sorted = sorted(data, key=latest_date, reverse=True)
 
-with open("data_fixed.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=2, ensure_ascii=False)
+with open("data_fixed_sorted.json", "w", encoding="utf-8") as f:
+    json.dump(data_sorted, f, indent=2, ensure_ascii=False)
