@@ -1,30 +1,40 @@
 import json
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
 
-INPUT_FILE = "data_fixed.json"
-OUTPUT_FILE = "data_fixed_sorted.json"
+# Paths relative to the script
+INPUT_FILE = Path(__file__).parent.parent / "data.json"
+OUTPUT_FILE = Path(__file__).parent.parent / "data_fixed.json"
+
+def parse_date(d):
+    for fmt in ("%Y-%m-%d", "%B %d, %Y", "%b %d, %Y"):
+        try:
+            return datetime.strptime(d, fmt)
+        except ValueError:
+            continue
+    return None
+
+def to_rfc822(dt):
+    if not dt:
+        return None
+    dt_utc = dt.astimezone(timezone.utc)
+    return dt_utc.strftime("%a, %d %b %Y %H:%M:%S +0000")
 
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-def parse_rfc822(d):
-    try:
-        return datetime.strptime(d, "%a, %d %b %Y %H:%M:%S +0000")
-    except ValueError:
-        return None
+for ep in data:
+    if "original_air_date" in ep and ep["original_air_date"]:
+        dt = parse_date(ep["original_air_date"])
+        ep["original_air_date"] = to_rfc822(dt) if dt else ep["original_air_date"]
 
-def latest_date(ep):
-    dates = ep.get("published_dates", [])
-    parsed_dates = [parse_rfc822(d) for d in dates if parse_rfc822(d)]
-    return max(parsed_dates) if parsed_dates else datetime.min
-
-# sort descending (newest first)
-data_sorted = sorted(data, key=latest_date, reverse=True)
-
-# debug output
-print("Sorting episodes by latest published date:")
-for ep in data_sorted[:10]:  # show top 10 for sanity check
-    print(ep.get("title"), latest_date(ep))
+    if "published_dates" in ep:
+        normalized = set()
+        for d in ep["published_dates"]:
+            dt = parse_date(d)
+            if dt:
+                normalized.add(to_rfc822(dt))
+        ep["published_dates"] = sorted(normalized)
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(data_sorted, f, indent=2, ensure_ascii=False)
+    json.dump(data, f, indent=2, ensure_ascii=False)
