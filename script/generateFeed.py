@@ -1,100 +1,94 @@
 #!/usr/bin/env python3
 import json
-from pathlib import Path
-from datetime import datetime, timezone
-import xml.sax.saxutils as saxutils
+from datetime import datetime, timezone, timedelta
 
-INPUT_FILE = Path("data.json")
-OUTPUT_FILE = Path("tal_archive.xml")
+INPUT_FILE = "data.json"
+OUTPUT_FILE = "feed.xml"
 
-# Load episodes
-with open(INPUT_FILE, "r", encoding="utf-8") as f:
-    episodes = json.load(f)
+def format_rfc822(dt: datetime):
+    # Ensure UTC
+    dt_utc = dt.astimezone(timezone.utc)
+    return dt_utc.strftime("%a, %d %b %Y %H:%M:%S %z")
 
-def format_contributors(contribs):
-    if contribs:
-        return " _" + ", ".join(contribs) + "_"
-    return ""
+def format_duration(total_minutes: int):
+    hours, minutes = divmod(total_minutes, 60)
+    return f"{hours:02}:{minutes:02}:00"
 
-def format_description(ep):
-    lines = []
+def build_description(ep, pub_date_str):
+    lines = [ep["synopsis"].strip(), ""]
+
     for act in ep.get("acts", []):
-        act_label = "Prologue" if act["number"] == 0 else act["number_text"]
-        title_line = f"{act_label}" if act["number"] == 0 else f"{act_label}: {act['title'].split(': ', 1)[-1]}"
-        summary_line = act["summary"]
+        lines.append(act["number_text"] if act["number_text"] != "Prologue" else "Prologue")
+        summary_line = act["summary"].strip()
         if act.get("duration"):
             summary_line += f" ({act['duration']} minutes)"
-        summary_line += format_contributors(act.get("contributors", []))
-        lines.append(title_line)
+        if act.get("contributors"):
+            summary_line += " _" + ", ".join(act["contributors"]) + "_"
         lines.append(summary_line)
-        lines.append("")  # blank line between acts
-    # Episode synopsis at the top
-    full_desc = ep.get("synopsis", "").strip()
-    if full_desc:
-        full_desc += "\n\n"
-    full_desc += "\n".join(lines)
-    full_desc += f"\nOriginally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}"
-    return saxutils.escape(full_desc)
+        lines.append("")  # extra newline between acts
 
-def iso_to_rfc822(dt_str):
-    dt = datetime.strptime(dt_str, "%a, %d %b %Y %H:%M:%S %z")
-    return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
+    lines.append(f"Originally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}")
+    return "\n".join(lines)
 
-rss_items = []
+def main():
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+        episodes = json.load(f)
 
-for ep in episodes:
-    versions = []
-    if ep.get("download"):
-        versions.append(("", ep["download"]))
-    if ep.get("download_clean"):
-        versions.append((" (Clean)", ep["download_clean"]))
+    # Sort by episode number (numerically)
+    episodes = sorted(episodes, key=lambda x: int(x["number"]))
 
-    for clean_suffix, url in versions:
-        title = f"{ep['number']}: {ep['title']}"
-        # Check if this is a repeat
-        latest_pub = ep["published_dates"][-1]
-        is_repeat = latest_pub != ep["original_air_date"]
-        if is_repeat:
-            title += " - Repeat"
-        title += clean_suffix
+    items = []
+    for ep in episodes:
+        for pub_date_str in ep.get("published_dates", []):
+            # skip if no download
+            if not ep.get("download"):
+                continue
 
-        # pubDate is the latest published date
-        pub_date = iso_to_rfc822(latest_pub)
+            pub_dt = datetime.strptime(pub_date_str, "%a, %d %b %Y %H:%M:%S %z")
+            orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
 
-        # Enclosure URL
-        enclosure_url = url
+            is_repeat = pub_dt.year != orig_dt.year
 
-        # Duration in HH:MM:SS
-        total_minutes = sum([act["duration"] if act["duration"] is not None else 0 for act in ep.get("acts", [])])
-        hours, rem = divmod(total_minutes, 60)
-        minutes = rem
-        seconds = 0
-        duration_str = f"{hours:02}:{minutes:02}:{seconds:02}"
+            title_suffix = " - Repeat" if is_repeat else ""
+            rss_title = f'{ep["number"]}: {ep["title"]}{title_suffix}'
 
-        # Image
-        image_url = ep.get("image", {}).get("url", "")
+            # Main episode
+            total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
+            description = build_description(ep, pub_date_str)
 
-        # Explicit
-        explicit = "true" if ep.get("explicit", False) else "false"
-
-        description = format_description(ep)
-
-        rss_item = f"""    <item>
-      <title>{saxutils.escape(title)}</title>
-      <link>{ep['episode_url']}</link>
-      <itunes:episode>{ep['number']}</itunes:episode>
+            item = f"""    <item>
+      <title>{rss_title}</title>
+      <link>{ep["episode_url"]}</link>
+      <itunes:episode>{ep["number"]}</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>{explicit}</itunes:explicit>
+      <itunes:explicit>{str(ep["explicit"]).lower()}</itunes:explicit>
       <description>{description}</description>
-      <pubDate>{pub_date}</pubDate>
-      <enclosure url="{enclosure_url}" type="audio/mpeg"/>
-      <itunes:duration>{duration_str}</itunes:duration>
-      <itunes:image href="{image_url}"/>
+      <pubDate>{format_rfc822(pub_dt)}</pubDate>
+      <enclosure url="{ep["download"]}" type="audio/mpeg"/>
+      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>
+      <itunes:image href="{ep["image"]["url"] if ep.get("image") else ''}"/>
     </item>"""
-        rss_items.append(rss_item)
+            items.append(item)
 
-# Build final RSS
-rss_feed = f"""<?xml version="1.0" ?>
+            # Clean version
+            if ep.get("download_clean"):
+                rss_title_clean = f'{ep["number"]}: {ep["title"]}{title_suffix} (Clean)'
+                item_clean = f"""    <item>
+      <title>{rss_title_clean}</title>
+      <link>{ep["episode_url"]}</link>
+      <itunes:episode>{ep["number"]}</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <description>{description}</description>
+      <pubDate>{format_rfc822(pub_dt)}</pubDate>
+      <enclosure url="{ep["download_clean"]}" type="audio/mpeg"/>
+      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>
+      <itunes:image href="{ep["image"]["url"] if ep.get("image") else ''}"/>
+    </item>"""
+                items.append(item_clean)
+
+    # Build RSS
+    rss_header = """<?xml version="1.0" ?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>This American Archive</title>
@@ -102,14 +96,14 @@ rss_feed = f"""<?xml version="1.0" ?>
     <description>Autogenerated feed of the This American Life archive with explicit and clean episodes.</description>
     <language>en</language>
     <copyright>Copyright © Ira Glass / This American Life</copyright>
-    <itunes:image href="https://i.imgur.com/pTMCfn9.png"/>
-{chr(10).join(rss_items)}
-  </channel>
-</rss>
-"""
+    <itunes:image href="https://i.imgur.com/pTMCfn9.png"/>"""
 
-# Write to file
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    f.write(rss_feed)
+    rss_footer = "  </channel>\n</rss>"
 
-print(f"RSS feed generated: {OUTPUT_FILE}")
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write(rss_header + "\n")
+        f.write("\n".join(items) + "\n")
+        f.write(rss_footer + "\n")
+
+if __name__ == "__main__":
+    main()
