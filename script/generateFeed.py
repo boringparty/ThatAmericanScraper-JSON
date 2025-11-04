@@ -42,6 +42,7 @@ def main():
 
     items = []
     for ep in episodes:
+        ep_number_padded = ep["number"].zfill(4)
         for pub_date_str in ep.get("published_dates", []):
             if not ep.get("download"):
                 continue
@@ -55,7 +56,10 @@ def main():
             total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
             description = build_description(ep)
 
-            guid_base = f'{ep["number"]}-{pub_dt.strftime("%Y%m%d")}'
+            guid_base = f'{ep_number_padded}-{pub_dt.strftime("%Y%m%d")}'
+
+            # Determine explicit value for main episode
+            explicit_value = "yes" if ep.get("download_clean") else ("true" if ep["explicit"] else "clean")
 
             # Main episode
             item_lines = [
@@ -65,7 +69,7 @@ def main():
                 f"      <guid>{guid_base}</guid>",
                 f"      <itunes:episode>{ep['number']}</itunes:episode>",
                 "      <itunes:episodeType>full</itunes:episodeType>",
-                f"      <itunes:explicit>{'true' if ep['explicit'] else 'clean'}</itunes:explicit>",
+                f"      <itunes:explicit>{explicit_value}</itunes:explicit>",
                 f"      <description>{description}</description>",
                 f"      <pubDate>{format_rfc822(pub_dt)}</pubDate>",
                 f"      <enclosure url=\"{ep['download']}\" type=\"audio/mpeg\"/>",
@@ -76,7 +80,7 @@ def main():
             item_lines.append("    </item>")
             items.append("\n".join(item_lines))
 
-            # Clean version
+            # Only add clean version if it exists
             if ep.get("download_clean"):
                 rss_title_clean = f'{ep["number"]}: {ep["title"]}{title_suffix} (Clean)'
                 guid_clean = f"{guid_base}-C"
