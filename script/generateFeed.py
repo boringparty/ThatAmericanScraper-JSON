@@ -65,7 +65,7 @@ for ep in episodes:
         enclosure_url = url
 
         # Duration in HH:MM:SS
-        total_minutes = sum(act.get("duration", 0) for act in ep.get("acts", []))
+        total_minutes = sum([act["duration"] if act["duration"] is not None else 0 for act in ep.get("acts", [])])
         hours, rem = divmod(total_minutes, 60)
         minutes = rem
         seconds = 0
