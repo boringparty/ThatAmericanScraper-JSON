@@ -1,14 +1,15 @@
+#!/usr/bin/env python3
 import json
 from datetime import datetime
 from pathlib import Path
 
-# Paths
+# Paths relative to this script
 repo_root = Path(__file__).parent.parent
 data_file = repo_root / "data.json"
 md_file = repo_root / "episodes.md"
 
 # Load JSON
-with open(data_file) as f:
+with open(data_file, encoding="utf-8") as f:
     episodes = json.load(f)
 
 # Sort ascending by original_air_date
@@ -19,7 +20,7 @@ episodes.sort(
 )
 
 # Write Markdown
-with open(md_file, "w") as out:
+with open(md_file, "w", encoding="utf-8") as out:
     out.write("Title|Release Date|Download|Clean|Segments|\n")
     out.write("---|:-:|:-:|:-:|-\n")
 
@@ -40,3 +41,5 @@ with open(md_file, "w") as out:
         out.write(
             f"[{number}: {title}]({url})|{air_date}|[dl]({download})|{clean_link}|{act_titles}\n"
         )
+
+print(f"Markdown generated at {md_file}")
