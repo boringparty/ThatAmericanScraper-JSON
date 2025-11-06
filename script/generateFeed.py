@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 import json
 from datetime import datetime, timezone, timedelta
-from pathlib import Path
 
-INPUT_FILE = Path(__file__).parent.parent / "data.json"
-OUTPUT_FILE = Path(__file__).parent.parent / "feed.xml"
+INPUT_FILE = "data.json"
+OUTPUT_FILE = "feed.xml"
 
 def format_rfc822(dt: datetime):
     dt_utc = dt.astimezone(timezone.utc)
@@ -13,6 +12,12 @@ def format_rfc822(dt: datetime):
 def format_duration(total_minutes: int):
     hours, minutes = divmod(total_minutes, 60)
     return f"{hours:02}:{minutes:02}:00"
+
+def parse_date(date_str):
+    try:
+        return datetime.strptime(date_str, "%Y-%m-%d")
+    except ValueError:
+        return datetime.strptime(date_str[:25], "%a, %d %b %Y %H:%M:%S")
 
 def build_description(ep):
     lines = [ep["episode_url"], "", ep["synopsis"].strip(), ""]
@@ -30,27 +35,29 @@ def build_description(ep):
     lines.append(f"Originally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}")
     return "\n".join(lines)
 
-def build_item(ep, latest_pub_dt, title_suffix="", clean=False):
+def generate_item(ep, is_clean=False):
+    latest_pub_dt = max((parse_date(d) for d in ep.get("published_dates", [])))
+    orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
+    is_repeat = latest_pub_dt.year != orig_dt.year
+    title_suffix = " - Repeat" if is_repeat else ""
+    if is_clean:
+        title_suffix += " (Clean)"
     description = build_description(ep)
     total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
     padded_number = ep["number"].zfill(4)
-    guid_suffix = "-C" if clean else ""
-    download_url = ep["download_clean"] if clean else ep["download"]
-    explicit_val = "clean" if clean else ("yes" if ep.get("download_clean") else "yes")
-    guid = f"{padded_number}-{latest_pub_dt.strftime('%Y%m%d')}{guid_suffix}"
-    orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
+    guid = f"{padded_number}-{latest_pub_dt.strftime('%Y%m%d')}{'-C' if is_clean else ''}"
+    explicit_val = "clean" if is_clean else ("yes" if ep.get("download_clean") else "no")
+    download_url = ep["download_clean"] if is_clean else ep["download"]
 
     item = f"""    <item>
-      <title>{ep["number"]}: {ep["title"]}{title_suffix}{' (Clean)' if clean else ''}</title>
+      <title>{ep["number"]}: {ep["title"]}{title_suffix}</title>
       <link>{ep["episode_url"]}</link>
       <guid>{guid}</guid>
       <itunes:season>{orig_dt.year}</itunes:season>
       <itunes:episode>{ep["number"]}</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>{explicit_val}</itunes:explicit>
-      <description><![CDATA[
-{description}
-      ]]></description>
+      <description><![CDATA[{description}]]></description>
       <pubDate>{format_rfc822(latest_pub_dt)}</pubDate>
       <enclosure url="{download_url}" type="audio/mpeg"/>
       <itunes:duration>{format_duration(total_minutes)}</itunes:duration>"""
@@ -67,25 +74,12 @@ def main():
     for ep in episodes:
         if not ep.get("download"):
             continue
-
-        latest_pub_str = max(ep.get("published_dates", []),
-                             key=lambda x: datetime.strptime(x, "%Y-%m-%d"))
-        latest_pub_dt = datetime.strptime(latest_pub_str, "%Y-%m-%d")
-        orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
-
-        is_repeat = latest_pub_dt.year != orig_dt.year
-        title_suffix = " - Repeat" if is_repeat else ""
-
-        # Main episode
-        items.append(build_item(ep, latest_pub_dt, title_suffix=title_suffix, clean=False))
-
-        # Clean version if exists
+        items.append(generate_item(ep, is_clean=False))
         if ep.get("download_clean"):
-            items.append(build_item(ep, latest_pub_dt, title_suffix=title_suffix, clean=True))
+            items.append(generate_item(ep, is_clean=True))
 
-    # Sort items descending by published date
-    items.sort(key=lambda x: datetime.strptime(
-        x.split("<pubDate>")[1].split("</pubDate>")[0], "%a, %d %b %Y %H:%M:%S %z"), reverse=True)
+    # Sort descending by pubDate
+    items.sort(key=lambda x: parse_date(x.split("<pubDate>")[1].split("</pubDate>")[0]), reverse=True)
 
     rss_header = """<?xml version="1.0" ?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
