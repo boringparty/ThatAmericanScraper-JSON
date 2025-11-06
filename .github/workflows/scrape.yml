@@ -56,11 +56,11 @@ jobs:
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
 
       - name: Generate RSS feed
-        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'feed' }}
+        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'generate feed' }}
         run: python script/generateFeed.py
 
       - name: Commit & push RSS feed
-        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'feed' }}
+        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'generate feed' }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
