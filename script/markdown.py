@@ -3,12 +3,15 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-# Paths relative to this script
-repo_root = Path(__file__).parent.parent
+# Working directory = repo root
+repo_root = Path.cwd()
 data_file = repo_root / "data.json"
 md_file = repo_root / "episodes.md"
 
-# Load JSON
+if not data_file.exists():
+    print(f"Error: {data_file} not found")
+    exit(1)
+
 with open(data_file, encoding="utf-8") as f:
     episodes = json.load(f)
 
@@ -19,7 +22,6 @@ episodes.sort(
     )
 )
 
-# Write Markdown
 with open(md_file, "w", encoding="utf-8") as out:
     out.write("Title|Release Date|Download|Clean|Segments|\n")
     out.write("---|:-:|:-:|:-:|-\n")
@@ -32,14 +34,13 @@ with open(md_file, "w", encoding="utf-8") as out:
         download_clean = ep.get("download_clean")
         air_date = datetime.strptime(
             ep["original_air_date"].split(" +")[0], "%a, %d %b %Y %H:%M:%S"
-        ).date()
+        ).strftime("%Y-%m-%d")  # yyyy-mm-dd
         acts = ep.get("acts", [])
         act_titles = "; ".join(act.get("title") for act in acts)
-
         clean_link = f"[dl]({download_clean})" if download_clean else "-"
 
         out.write(
             f"[{number}: {title}]({url})|{air_date}|[dl]({download})|{clean_link}|{act_titles}\n"
         )
 
-print(f"Markdown generated at {md_file}")
+print(f"Markdown generated at {md_file.resolve()}")
