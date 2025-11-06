@@ -14,7 +14,7 @@ def format_duration(total_minutes: int):
     return f"{hours:02}:{minutes:02}:00"
 
 def build_description(ep):
-    lines = [ep["episode_url"], "", ep["synopsis"].strip(), ""]
+    lines = [f'<a href="{ep["episode_url"]}">{ep["episode_url"]}</a>', "", ep["synopsis"].strip(), ""]
     for act in ep.get("acts", []):
         lines.append(act["number_text"] if act["number_text"] != "Prologue" else "Prologue")
         summary_line = act["summary"].strip()
