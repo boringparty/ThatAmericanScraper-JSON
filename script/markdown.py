@@ -5,7 +5,7 @@ from pathlib import Path
 
 # Working directory = repo root
 repo_root = Path.cwd()
-data_file = Path(__file__).parent.parent / "data.md"
+data_file = Path(__file__).parent.parent / "data.json"
 md_file = Path(__file__).parent.parent / "episodes.md"
 
 if not data_file.exists():
