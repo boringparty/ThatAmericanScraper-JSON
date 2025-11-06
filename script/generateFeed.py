@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 import json
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
 
-INPUT_FILE = "data.json"
-OUTPUT_FILE = "feed.xml"
+INPUT_FILE = Path(__file__).parent.parent / "data.json"
+OUTPUT_FILE = Path(__file__).parent.parent / "feed.xml"
 
 def format_rfc822(dt: datetime):
-    # Ensure UTC
     dt_utc = dt.astimezone(timezone.utc)
     return dt_utc.strftime("%a, %d %b %Y %H:%M:%S %z")
 
@@ -16,7 +16,7 @@ def format_duration(total_minutes: int):
 
 def build_description(ep):
     lines = [ep["episode_url"], "", ep["synopsis"].strip(), ""]
-    
+
     for act in ep.get("acts", []):
         lines.append(act["number_text"] if act["number_text"] != "Prologue" else "Prologue")
         summary_line = act["summary"].strip()
@@ -27,27 +27,37 @@ def build_description(ep):
         lines.append(summary_line)
         lines.append("")  # extra newline between acts
 
-    lines.append(
-        "Originally Aired: " +
-        datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z").strftime("%Y-%m-%d")
-    )
+    lines.append(f"Originally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}")
     return "\n".join(lines)
 
-# def build_description(ep):
-#     lines = [ep["synopsis"].strip(), ""]
+def build_item(ep, latest_pub_dt, title_suffix="", clean=False):
+    description = build_description(ep)
+    total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
+    padded_number = ep["number"].zfill(4)
+    guid_suffix = "-C" if clean else ""
+    download_url = ep["download_clean"] if clean else ep["download"]
+    explicit_val = "clean" if clean else ("yes" if ep.get("download_clean") else "yes")
+    guid = f"{padded_number}-{latest_pub_dt.strftime('%Y%m%d')}{guid_suffix}"
+    orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
 
-#     for act in ep.get("acts", []):
-#         lines.append(act["number_text"] if act["number_text"] != "Prologue" else "Prologue")
-#         summary_line = act["summary"].strip()
-#         if act.get("duration"):
-#             summary_line += f" ({act['duration']} minutes)"
-#         if act.get("contributors"):
-#             summary_line += " by " + ", ".join(act["contributors"])
-#         lines.append(summary_line)
-#         lines.append("")  # extra newline between acts
-    
-#     lines.append(f"Originally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}")
-#     return "\n".join(lines)
+    item = f"""    <item>
+      <title>{ep["number"]}: {ep["title"]}{title_suffix}{' (Clean)' if clean else ''}</title>
+      <link>{ep["episode_url"]}</link>
+      <guid>{guid}</guid>
+      <itunes:season>{orig_dt.year}</itunes:season>
+      <itunes:episode>{ep["number"]}</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>{explicit_val}</itunes:explicit>
+      <description><![CDATA[
+{description}
+      ]]></description>
+      <pubDate>{format_rfc822(latest_pub_dt)}</pubDate>
+      <enclosure url="{download_url}" type="audio/mpeg"/>
+      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>"""
+    if ep.get("image") and ep["image"].get("url"):
+        item += f'\n      <itunes:image href="{ep["image"]["url"]}"/>'
+    item += "\n    </item>"
+    return item
 
 def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
@@ -55,61 +65,23 @@ def main():
 
     items = []
     for ep in episodes:
-        # skip if no download
         if not ep.get("download"):
             continue
 
-        # get latest published date
         latest_pub_str = max(ep.get("published_dates", []),
-                             key=lambda x: datetime.strptime(x, "%a, %d %b %Y %H:%M:%S %z"))
-        latest_pub_dt = datetime.strptime(latest_pub_str, "%a, %d %b %Y %H:%M:%S %z")
+                             key=lambda x: datetime.strptime(x, "%Y-%m-%d"))
+        latest_pub_dt = datetime.strptime(latest_pub_str, "%Y-%m-%d")
         orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
 
         is_repeat = latest_pub_dt.year != orig_dt.year
         title_suffix = " - Repeat" if is_repeat else ""
-        description = build_description(ep)
-        total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
-        padded_number = ep["number"].zfill(4)
 
         # Main episode
-        explicit_val = "yes" if ep.get("download_clean") else "clean"
-        guid = f"{padded_number}-{latest_pub_dt.strftime('%Y%m%d')}"
-        item = f"""    <item>
-      <title>{ep["number"]}: {ep["title"]}{title_suffix}</title>
-      <link>{ep["episode_url"]}</link>
-      <guid>{guid}</guid>
-      <itunes:season>{orig_dt.year}</itunes:season>
-      <itunes:episode>{ep["number"]}</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>{explicit_val}</itunes:explicit>
-      <description>{description}</description>
-      <pubDate>{format_rfc822(latest_pub_dt)}</pubDate>
-      <enclosure url="{ep["download"]}" type="audio/mpeg"/>
-      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>"""
-        if ep.get("image") and ep["image"].get("url"):
-            item += f'\n      <itunes:image href="{ep["image"]["url"]}"/>'
-        item += "\n    </item>"
-        items.append(item)
+        items.append(build_item(ep, latest_pub_dt, title_suffix=title_suffix, clean=False))
 
         # Clean version if exists
         if ep.get("download_clean"):
-            guid_clean = f"{padded_number}-{latest_pub_dt.strftime('%Y%m%d')}-C"
-            item_clean = f"""    <item>
-      <title>{ep["number"]}: {ep["title"]}{title_suffix} (Clean)</title>
-      <link>{ep["episode_url"]}</link>
-      <guid>{guid_clean}</guid>
-      <itunes:season>{orig_dt.year}</itunes:season>
-      <itunes:episode>{ep["number"]}</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>clean</itunes:explicit>
-      <description>{description}</description>
-      <pubDate>{format_rfc822(latest_pub_dt)}</pubDate>
-      <enclosure url="{ep["download_clean"]}" type="audio/mpeg"/>
-      <itunes:duration>{format_duration(total_minutes)}</itunes:duration>"""
-            if ep.get("image") and ep["image"].get("url"):
-                item_clean += f'\n      <itunes:image href="{ep["image"]["url"]}"/>'
-            item_clean += "\n    </item>"
-            items.append(item_clean)
+            items.append(build_item(ep, latest_pub_dt, title_suffix=title_suffix, clean=True))
 
     # Sort items descending by published date
     items.sort(key=lambda x: datetime.strptime(
