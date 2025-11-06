@@ -12,7 +12,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 BACKFILL_RSS = "https://awk.space/tal.xml"
 OFFICIAL_RSS = "https://thisamericanlife.org/podcast/rss.xml"
 DELAY = 1
-DEFAULT_NUM_EPISODES = 7
+DEFAULT_NUM_EPISODES = 1
 
 ACT_WORDS = {
     "Prologue": 0, "One": 1, "Two": 2, "Three": 3, "Four": 4,
