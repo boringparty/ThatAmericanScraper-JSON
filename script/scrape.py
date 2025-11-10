@@ -19,22 +19,31 @@ ACT_WORDS = {
     "Five": 5, "Six": 6, "Seven": 7, "Eight": 8, "Nine": 9, "Ten": 10
 }
 
-def parse_any_date(s: str) -> datetime:
-    """Return UTC datetime at midnight for multiple string formats."""
-    dt = None
-    for fmt in ("%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z", "%B %d, %Y"):
+def parse_any_date_str(s: str):
+    for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%Y-%m-%d"):
         try:
             dt = datetime.strptime(s, fmt)
-            break
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            else:
+                dt = dt.astimezone(timezone.utc)
+            return dt
         except ValueError:
             continue
-    if dt is None:
-        raise ValueError(f"Unknown date format: {s}")
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    else:
-        dt = dt.astimezone(timezone.utc)
-    return dt.replace(hour=0, minute=0, second=0, microsecond=0)
+    raise ValueError(f"Unknown date format: {s}")
+
+# in main(), replace:
+ep["published_dates"] = sorted(
+    ep["published_dates"],
+    key=lambda x: datetime.strptime(x, "%a, %d %b %Y %H:%M:%S %z")
+)
+
+# with:
+ep["published_dates"] = sorted(
+    ep["published_dates"],
+    key=lambda x: parse_any_date_str(x)
+)
+
 
 def fetch_episode_page(url):
     try:
