@@ -6,9 +6,9 @@ import feedparser
 import json
 import re
 import time
-from datetime import datetime, timezone
+from datetime import timezone
+from email.utils import format_datetime, parsedate_to_datetime
 from dateutil import parser
-from email.utils import format_datetime
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 OFFICIAL_RSS = "https://thisamericanlife.org/podcast/rss.xml"
@@ -21,13 +21,20 @@ ACT_WORDS = {
     "Five": 5, "Six": 6, "Seven": 7, "Eight": 8, "Nine": 9, "Ten": 10
 }
 
-def parse_any_date_str(s: str) -> datetime:
-    dt = parser.parse(s)
+
+def parse_any_date_str(s: str):
+    """Parse a date string and return a datetime in UTC."""
+    try:
+        # try RSS-style date first
+        dt = parsedate_to_datetime(s)
+    except Exception:
+        dt = parser.parse(s)
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=timezone.utc)
     else:
         dt = dt.astimezone(timezone.utc)
     return dt
+
 
 def fetch_episode_page(url):
     try:
@@ -38,6 +45,7 @@ def fetch_episode_page(url):
     except requests.RequestException:
         return None
 
+
 def scrape_episode(url):
     soup = fetch_episode_page(url)
     if not soup:
@@ -46,13 +54,13 @@ def scrape_episode(url):
     title = soup.select_one("h1").get_text(strip=True) if soup.select_one("h1") else ""
     number_elem = soup.select_one(".field-name-field-episode-number .field-item")
     number = number_elem.get_text(strip=True) if number_elem else ""
-
-    # Parse original air date and format RFC822
     original_air_elem = soup.select_one(".field-name-field-radio-air-date .date-display-single")
     original_air_date_raw = original_air_elem.get_text(strip=True) if original_air_elem else ""
+
+    # convert to RFC822
     try:
         dt = parse_any_date_str(original_air_date_raw)
-        original_air_date = format_datetime(dt)  # RFC822
+        original_air_date = format_datetime(dt)
     except Exception:
         original_air_date = original_air_date_raw  # fallback
 
@@ -128,6 +136,7 @@ def scrape_episode(url):
         "published_dates": []
     }
 
+
 def update_published_dates(episodes):
     feed = feedparser.parse(OFFICIAL_RSS)
     for item in feed.entries:
@@ -137,12 +146,13 @@ def update_published_dates(episodes):
             continue
         try:
             dt = parse_any_date_str(pub_date)
-            pub_str = format_datetime(dt)  # RFC822
-        except Exception:
+        except ValueError:
             continue
+        pub_str = format_datetime(dt)  # RFC822
         existing = next((ep for ep in episodes if ep["episode_url"] == url), None)
         if existing and pub_str not in existing["published_dates"]:
             existing["published_dates"].append(pub_str)
+
 
 def main():
     scrape_mode = os.environ.get("SCRAPE_MODE", "latest").lower()
@@ -173,11 +183,16 @@ def main():
 
     update_published_dates(episodes)
 
+    # sort episodes by original_air_date (RFC822)
+    episodes.sort(key=lambda ep: parse_any_date_str(ep["original_air_date"]))
+
+    # also sort published_dates for each episode
     for ep in episodes:
         ep["published_dates"] = sorted(ep["published_dates"], key=parse_any_date_str)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)
+
 
 if __name__ == "__main__":
     main()
