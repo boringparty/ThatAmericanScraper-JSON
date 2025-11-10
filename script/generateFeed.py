@@ -28,9 +28,9 @@ def build_description(ep):
     return "\n".join(lines)
 
 def parse_any_date(s):
-    """Return datetime at UTC midnight for YYYY-MM-DD or RFC 822 strings."""
+    """Return datetime at UTC midnight for multiple string formats."""
     dt = None
-    for fmt in ("%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z"):
+    for fmt in ("%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z", "%B %d, %Y"):
         try:
             dt = datetime.strptime(s, fmt)
             break
