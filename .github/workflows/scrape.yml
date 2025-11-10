@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install requests beautifulsoup4 lxml feedparser
+          pip install requests python-dateutil beautifulsoup4 lxml feedparser 
 
       - name: Run Scraper
         if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'scrape' }}
