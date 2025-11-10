@@ -30,16 +30,19 @@ def build_description(ep):
 def parse_any_date(s):
     """Return datetime at UTC midnight for multiple string formats."""
     dt = None
-    for fmt in ("%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z", "%B %d, %Y", "%b %d, %Y"):
+
+    # Try formats in order: YYYY-MM-DD, RFC822, Episode-page
+    for fmt in ("%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z", "%B %d, %Y"):
         try:
             dt = datetime.strptime(s, fmt)
             break
         except ValueError:
             continue
+
     if dt is None:
         raise ValueError(f"Unknown date format: {s}")
 
-    # Convert naive dates to UTC midnight
+    # Convert naive dates (no tz) to UTC
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=timezone.utc)
     else:
