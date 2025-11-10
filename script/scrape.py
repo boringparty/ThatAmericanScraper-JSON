@@ -7,6 +7,7 @@ import json
 import re
 import time
 from datetime import datetime
+from email.utils import parsedate_to_datetime
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 BACKFILL_RSS = "https://awk.space/tal.xml"
@@ -128,9 +129,17 @@ def update_published_dates(episodes):
         url = item.link
         pub_date = item.get("published") or item.get("pubDate")
         if not pub_date:
-            continue
-        date_obj = datetime.strptime(pub_date[:25], "%a, %d %b %Y %H:%M:%S")
+                    continue
+        try:
+            date_obj = parsedate_to_datetime(pub_date)
+        except Exception:
+            try:
+                date_obj = datetime.strptime(pub_date, "%Y-%m-%d")
+            except Exception:
+                continue
+        
         pub_str = date_obj.strftime("%Y-%m-%d")
+        
         existing = next((ep for ep in episodes if ep["episode_url"] == url), None)
         if existing and pub_str not in existing["published_dates"]:
             existing["published_dates"].append(pub_str)
