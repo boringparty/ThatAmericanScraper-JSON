@@ -15,18 +15,12 @@ if not data_file.exists():
 with open(data_file, encoding="utf-8") as f:
     episodes = json.load(f)
 
-# Helper to parse multiple date formats
-def parse_air_date(date_str):
-    date_str = date_str.split(" +")[0]  # remove any timezone offset
-    for fmt in ("%a, %d %b %Y %H:%M:%S", "%B %d, %Y"):
-        try:
-            return datetime.strptime(date_str, fmt)
-        except ValueError:
-            continue
-    raise ValueError(f"Unknown date format: {date_str}")
-
 # Sort ascending by original_air_date
-episodes.sort(key=lambda ep: parse_air_date(ep["original_air_date"]))
+episodes.sort(
+    key=lambda ep: datetime.strptime(
+        ep["original_air_date"].split(" +")[0], "%a, %d %b %Y %H:%M:%S"
+    )
+)
 
 with open(md_file, "w", encoding="utf-8") as out:
     out.write("Title|Release Date|Download|Clean|Segments|\n")
@@ -38,7 +32,9 @@ with open(md_file, "w", encoding="utf-8") as out:
         url = ep.get("episode_url")
         download = ep.get("download")
         download_clean = ep.get("download_clean")
-        air_date = parse_air_date(ep["original_air_date"]).strftime("%Y-%m-%d")  # yyyy-mm-dd
+        air_date = datetime.strptime(
+            ep["original_air_date"].split(" +")[0], "%a, %d %b %Y %H:%M:%S"
+        ).strftime("%Y-%m-%d")  # yyyy-mm-dd
         acts = ep.get("acts", [])
         act_titles = "; ".join(act.get("title") for act in acts)
         clean_link = f"[dl]({download_clean})" if download_clean else "-"
