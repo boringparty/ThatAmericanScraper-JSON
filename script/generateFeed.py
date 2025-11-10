@@ -32,7 +32,7 @@ def parse_any_date(s):
     dt = None
 
     # Try formats in order: YYYY-MM-DD, RFC822, Episode-page
-    for fmt in ("%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z", "%B %d, %Y"):
+    for fmt in ("%B %d, %Y", "%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z"):
         try:
             dt = datetime.strptime(s, fmt)
             break
