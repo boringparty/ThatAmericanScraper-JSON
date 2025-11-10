@@ -7,6 +7,7 @@ import json
 import re
 import time
 from datetime import datetime, timezone
+from dateutil import parser
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 OFFICIAL_RSS = "https://thisamericanlife.org/podcast/rss.xml"
@@ -19,18 +20,13 @@ ACT_WORDS = {
     "Five": 5, "Six": 6, "Seven": 7, "Eight": 8, "Nine": 9, "Ten": 10
 }
 
-def parse_any_date_str(s: str):
-    for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%Y-%m-%d"):
-        try:
-            dt = datetime.strptime(s, fmt)
-            if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=timezone.utc)
-            else:
-                dt = dt.astimezone(timezone.utc)
-            return dt
-        except ValueError:
-            continue
-    raise ValueError(f"Unknown date format: {s}")
+def parse_any_date_str(s: str) -> datetime:
+    dt = parser.parse(s)
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    else:
+        dt = dt.astimezone(timezone.utc)
+    return dt
 
 def fetch_episode_page(url):
     try:
@@ -82,7 +78,13 @@ def scrape_episode(url):
             number_text = "Prologue"
         else:
             word = label_elem.get_text(strip=True).replace("Act ", "").replace("Part ", "").strip()
-            act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
+            if word in ACT_WORDS:
+                act_number = ACT_WORDS[word]
+            else:
+                try:
+                    act_number = int(word)
+                except ValueError:
+                    act_number = 0
             number_text = f"Act {word}"
 
         act_summary_elem = act.select_one(".field-name-body .field-item")
@@ -128,7 +130,7 @@ def update_published_dates(episodes):
             dt = parse_any_date_str(pub_date)
         except ValueError:
             continue
-        pub_str = dt.strftime("%Y-%m-%d")
+        pub_str = dt.strftime("%Y-%m-%d")  # store as ISO
         existing = next((ep for ep in episodes if ep["episode_url"] == url), None)
         if existing and pub_str not in existing["published_dates"]:
             existing["published_dates"].append(pub_str)
