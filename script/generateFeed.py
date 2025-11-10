@@ -1,28 +1,37 @@
 #!/usr/bin/env python3
 import json
 from datetime import datetime, timezone, timedelta
+import re
 
 INPUT_FILE = "data.json"
 OUTPUT_FILE = "feed.xml"
 
+# Helper to parse any date string into a datetime with UTC tzinfo
 def parse_any_date(s: str) -> datetime:
-    """Parse a date string in ISO or RFC-822 format into a UTC datetime."""
-    for fmt in ("%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z"):
-        try:
-            dt = datetime.strptime(s, fmt)
-            if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=timezone.utc)
-            else:
-                dt = dt.astimezone(timezone.utc)
-            return dt
-        except ValueError:
-            continue
+    s = s.strip()
+    # Try RFC 822 first
+    try:
+        return datetime.strptime(s, "%a, %d %b %Y %H:%M:%S %z").astimezone(timezone.utc)
+    except ValueError:
+        pass
+    # Try ISO format YYYY-MM-DD
+    try:
+        dt = datetime.strptime(s, "%Y-%m-%d")
+        return dt.replace(tzinfo=timezone.utc)
+    except ValueError:
+        pass
+    # Try full month name format "August 22, 2008"
+    m = re.match(r"([A-Za-z]+) (\d{1,2}), (\d{4})", s)
+    if m:
+        month_str, day, year = m.groups()
+        dt = datetime.strptime(f"{month_str} {day} {year}", "%B %d %Y")
+        return dt.replace(tzinfo=timezone.utc)
     raise ValueError(f"Unknown date format: {s}")
 
-def format_rfc822(dt: datetime):
+def format_rfc822(dt: datetime) -> str:
     return dt.astimezone(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
 
-def format_duration(total_minutes: int):
+def format_duration(total_minutes: int) -> str:
     hours, minutes = divmod(total_minutes, 60)
     return f"{hours:02}:{minutes:02}:00"
 
@@ -50,8 +59,12 @@ def main():
         if not ep.get("download"):
             continue
 
-        # normalize published dates
-        latest_pub_dt = max((parse_any_date(d) for d in ep.get("published_dates", [])), default=parse_any_date(ep["original_air_date"]))
+        # Safely get the latest published date
+        latest_pub_dt = max(
+            (parse_any_date(d) for d in ep.get("published_dates", [])),
+            default=parse_any_date(ep["original_air_date"])
+        )
+
         orig_dt = parse_any_date(ep["original_air_date"])
         is_repeat = latest_pub_dt.year != orig_dt.year
         title_suffix = " - Repeat" if is_repeat else ""
@@ -100,8 +113,8 @@ def main():
             item_clean += "\n    </item>"
             items.append(item_clean)
 
-    # sort by latest pubDate
-    items.sort(key=lambda x: parse_any_date(x.split("<pubDate>")[1].split("</pubDate>")[0]), reverse=True)
+    # Sort by pubDate descending
+    items.sort(key=lambda x: parse_any_date(re.search(r"<pubDate>(.*?)</pubDate>", x).group(1)), reverse=True)
 
     rss_header = """<?xml version="1.0" ?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
