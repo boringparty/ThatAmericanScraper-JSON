@@ -18,9 +18,9 @@ on:
             - generate markdown
 
   schedule:
-    - cron: '1 1 * * 1'  # 5pm PST Sunday
-    - cron: '2 1 * * 1'  # 6pm PST Sunday
-    - cron: '3 1 * * 1'  # 7pm PST Sunday
+    - cron: '0 1 * * 1'  # 5pm PST Sunday
+    - cron: '0 2 * * 1'  # 6pm PST Sunday
+    - cron: '0 3 * * 1'  # 7pm PST Sunday
 
 jobs:
   run_workflow:
