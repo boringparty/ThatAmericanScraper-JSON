@@ -5,9 +5,22 @@ from datetime import datetime, timezone, timedelta
 INPUT_FILE = "data.json"
 OUTPUT_FILE = "feed.xml"
 
+def parse_any_date(s: str) -> datetime:
+    """Parse a date string in ISO or RFC-822 format into a UTC datetime."""
+    for fmt in ("%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z"):
+        try:
+            dt = datetime.strptime(s, fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            else:
+                dt = dt.astimezone(timezone.utc)
+            return dt
+        except ValueError:
+            continue
+    raise ValueError(f"Unknown date format: {s}")
+
 def format_rfc822(dt: datetime):
-    dt_utc = dt.astimezone(timezone.utc)
-    return dt_utc.strftime("%a, %d %b %Y %H:%M:%S %z")
+    return dt.astimezone(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
 
 def format_duration(total_minutes: int):
     hours, minutes = divmod(total_minutes, 60)
@@ -24,7 +37,8 @@ def build_description(ep):
             summary_line += " by " + ", ".join(act["contributors"])
         lines.append(summary_line)
         lines.append("")
-    lines.append(f"Originally Aired: {datetime.strptime(ep['original_air_date'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')}")
+    orig_dt = parse_any_date(ep["original_air_date"])
+    lines.append(f"Originally Aired: {orig_dt.strftime('%Y-%m-%d')}")
     return "\n".join(lines)
 
 def main():
@@ -36,18 +50,15 @@ def main():
         if not ep.get("download"):
             continue
 
-        latest_pub_str = max(ep.get("published_dates", []),
-                             key=lambda x: datetime.strptime(x, "%a, %d %b %Y %H:%M:%S %z"))
-        latest_pub_dt = datetime.strptime(latest_pub_str, "%a, %d %b %Y %H:%M:%S %z")
-        orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
+        # normalize published dates
+        latest_pub_dt = max((parse_any_date(d) for d in ep.get("published_dates", [])), default=parse_any_date(ep["original_air_date"]))
+        orig_dt = parse_any_date(ep["original_air_date"])
         is_repeat = latest_pub_dt.year != orig_dt.year
         title_suffix = " - Repeat" if is_repeat else ""
 
         description = build_description(ep)
         total_minutes = sum((act.get("duration") or 0) for act in ep.get("acts", []))
         padded_number = ep["number"].zfill(4)
-
-        # Determine explicit tag
         explicit_val = "true" if ep.get("explicit") else "false"
 
         # Normal episode
@@ -89,8 +100,8 @@ def main():
             item_clean += "\n    </item>"
             items.append(item_clean)
 
-    items.sort(key=lambda x: datetime.strptime(
-        x.split("<pubDate>")[1].split("</pubDate>")[0], "%a, %d %b %Y %H:%M:%S %z"), reverse=True)
+    # sort by latest pubDate
+    items.sort(key=lambda x: parse_any_date(x.split("<pubDate>")[1].split("</pubDate>")[0]), reverse=True)
 
     rss_header = """<?xml version="1.0" ?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
