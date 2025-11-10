@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import json
 from datetime import datetime, timezone, timedelta
-from dateutil.parser import parse as parse_date  # pip install python-dateutil
 
 INPUT_FILE = "data.json"
 OUTPUT_FILE = "feed.xml"
@@ -38,12 +37,10 @@ def main():
             continue
         
         latest_pub_str = max(ep.get("published_dates", []),
-                             key=lambda x: parse_date(x))
-        latest_pub_dt = parse_date(latest_pub_str)
-        orig_dt = parse_date(ep["original_air_date"])
+                     key=lambda x: datetime.strptime(x, "%Y-%m-%d"))
+        latest_pub_dt = datetime.strptime(latest_pub_str, "%Y-%m-%d")
+        orig_dt = datetime.strptime(ep["original_air_date"], "%Y-%m-%d")
 
-        latest_pub_dt = datetime.strptime(latest_pub_str, "%a, %d %b %Y %H:%M:%S %z")
-        orig_dt = datetime.strptime(ep["original_air_date"], "%a, %d %b %Y %H:%M:%S %z")
         is_repeat = latest_pub_dt.year != orig_dt.year
         title_suffix = " - Repeat" if is_repeat else ""
 
