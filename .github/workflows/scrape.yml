@@ -6,23 +6,29 @@ permissions:
 on:
   workflow_dispatch:
     inputs:
-        mode:
-          description: 'Workflow mode'
-          required: true
-          default: all
-          type: choice
-          options:
-            - all
-            - scrape
-            - generate feed
-            - generate markdown
+      mode:
+        description: 'Workflow mode'
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - scrape
+          - generate feed
+          - generate markdown
 
   schedule:
-    - cron: '*/30 1-3 * * 1'
+    # Every 30 minutes between 01:00–03:59 UTC every Monday
+    - cron: '*/30 1-4 * * 1'
 
 jobs:
   run_workflow:
     runs-on: ubuntu-latest
+
+    env:
+      # For manual runs → use user input
+      # For cron runs → force "all"
+      MODE: ${{ github.event.inputs.mode || 'all' }}
 
     steps:
       - name: Checkout repo
@@ -36,16 +42,19 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install requests python-dateutil beautifulsoup4 lxml feedparser 
+          pip install requests python-dateutil beautifulsoup4 lxml feedparser
 
+      # ----------------
+      # SCRAPER
+      # ----------------
       - name: Run Scraper
-        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'scrape' }}
+        if: env.MODE == 'all' || env.MODE == 'scrape'
         env:
-          SCRAPE_MODE: ${{ github.event.inputs.mode }}
+          SCRAPE_MODE: ${{ env.MODE }}
         run: python script/scrape.py
 
-      - name: Commit & push scraped data
-        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'scrape' }}
+      - name: Commit scraped data
+        if: env.MODE == 'all' || env.MODE == 'scrape'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -53,12 +62,15 @@ jobs:
           git diff --quiet && git diff --staged --quiet || git commit -m "Update TAL episodes data"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
 
+      # ----------------
+      # RSS FEED
+      # ----------------
       - name: Generate RSS feed
-        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'generate feed' }}
+        if: env.MODE == 'all' || env.MODE == 'generate feed'
         run: python script/generateFeed.py
 
-      - name: Commit & push RSS feed
-        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'generate feed' }}
+      - name: Commit RSS feed
+        if: env.MODE == 'all' || env.MODE == 'generate feed'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -66,17 +78,18 @@ jobs:
           git diff --quiet && git diff --staged --quiet || git commit -m "Update TAL RSS feed"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
 
+      # ----------------
+      # MARKDOWN TABLE
+      # ----------------
       - name: Generate Markdown
-        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'generate markdown' }}
+        if: env.MODE == 'all' || env.MODE == 'generate markdown'
         run: python script/markdown.py
 
-      - name: Commit & push markdown table
-        if: ${{ github.event.inputs.mode == 'all' || github.event.inputs.mode == 'generate markdown' }}
+      - name: Commit Markdown
+        if: env.MODE == 'all' || env.MODE == 'generate markdown'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add episodes.md
           git diff --quiet && git diff --staged --quiet || git commit -m "Update TAL markdown table"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
-
-
