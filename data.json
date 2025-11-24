@@ -52289,5 +52289,78 @@
     "published_dates": [
       "Sun, 16 Nov 2025 00:00:00 +0000"
     ]
+  },
+  {
+    "title": "I Hate Mysteries",
+    "number": "875",
+    "original_air_date": "Fri, 21 Nov 2025 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/875/i-hate-mysteries",
+    "explicit": false,
+    "synopsis": "What’s in the box? What’s in the $%&ing box?!?",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chrt.fm/track/138C95/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6726342547.mp3",
+    "download_clean": null,
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-875-foryoutofindout-peterryan.jpg?itok=nMofXZ1t",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "A class of second graders is handed a sealed box with a mystery object inside. They are supposed to guess what it is, but the lesson goes off the rails.",
+        "duration": 8,
+        "contributors": [
+          "Ike Sriskandarajah"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: The Masta Blasta Digging Up Mt. Shasta, That Hole is Deep Cuz It Hasta (Be)",
+        "summary": "A man is hired along with a crew to dig a mysterious hole on the slopes of Mt. Shasta. The hole goes sixty feet down. But what are they looking for?",
+        "duration": 24,
+        "contributors": [
+          "Elijah Sullivan",
+          "David Kestenbaum"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: All That Glitters",
+        "summary": "A sparkly mystery. One woman hopes the military-industrial complex is involved. Glitter X won’t tell which industry buys the most glitter. The podcast Endless Thread got to the bottom of it back in 2019.",
+        "duration": 4,
+        "contributors": [
+          "Ike Sriskandarajah",
+          "Diane Wu"
+        ]
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Who Are the People in Your Neighborhood?",
+        "summary": "What happens when the full force of the federal government arrives on your block?",
+        "duration": 14,
+        "contributors": [
+          "Michelle Navarro",
+          "Diane Wu",
+          "Chana Joffe-Walt"
+        ]
+      },
+      {
+        "number": 4,
+        "number_text": "Act Four",
+        "title": "Act Four: Come Mr. Cab Driver, Won’t You Turn That Music Up?",
+        "summary": "A comedian finds himself trapped in an uncomfortable mystery in the backseat of a cab.",
+        "duration": 4,
+        "contributors": [
+          "Mohanad Elshieky"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 23 Nov 2025 00:00:00 +0000"
+    ]
   }
 ]
