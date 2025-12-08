@@ -52363,5 +52363,44 @@
     "published_dates": [
       "Sun, 23 Nov 2025 00:00:00 +0000"
     ]
+  },
+  {
+    "title": "Bigger Than Me",
+    "number": "876",
+    "original_air_date": "Fri, 05 Dec 2025 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/876/bigger-than-me",
+    "explicit": true,
+    "synopsis": "When history comes knocking, you have to figure out what to do.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chrt.fm/track/138C95/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR3654508416.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/876.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/funmilayo-ransome-kuti.jpg?itok=9xr4clyS",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Brittany’s job is to answer anonymous calls and texts from people in the military. This year, she’s gotten more than usual–most of them are wondering about what to do with orders they’ve been given. Or orders they’re afraid they’ll get someday in the future.",
+        "duration": 9,
+        "contributors": [
+          "Ira Glass"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Mother Knows Best",
+        "summary": "Jad Abumrad tells the story of the \"ideological genealogy” of Fela Kuti’s anti-colonial politics–his mother. In late 1940s Nigeria, Funmilayo Ransome-Kuti found herself at the center of a big, historical moment: an uprising led by thousands of women selling goods in Nigeria’s markets. Jad goes searching for who she really was, and how she became the person who galvanized a movement when history demanded it of her. Jad’s podcast series Fela Kuti: Fear No Man is a production of Audible and Higher Ground, in conjunction with Talkhouse and Western Sound.",
+        "duration": 45,
+        "contributors": [
+          "Jad Abumrad"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 07 Dec 2025 00:00:00 +0000"
+    ]
   }
 ]
