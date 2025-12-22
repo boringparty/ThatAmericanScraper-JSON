@@ -52403,5 +52403,51 @@
     "published_dates": [
       "Sun, 07 Dec 2025 00:00:00 +0000"
     ]
+  },
+  {
+    "title": "The Making Of",
+    "number": "877",
+    "original_air_date": "Fri, 19 Dec 2025 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/877/the-making-of",
+    "explicit": true,
+    "synopsis": "How one block in Portland, Oregon became a movie-set war zone that lots of people think is a real war zone.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR9476446844.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/877.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-877-portland-ajdungo.jpg?itok=BlbJSyaX",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "What the movie Hearts of Darkness and right-wing influencers have in common.",
+        "duration": 8,
+        "contributors": []
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Living the American Stream",
+        "summary": "Producers Zoe Chace and Susanne Gaber follow a bunch of right-wing influencers as they search for Antifa in Portland.",
+        "duration": 31,
+        "contributors": [
+          "Zoe Chace",
+          "Suzanne Gaber"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Inside the Safe House",
+        "summary": "We meet the so-called leader of Antifa in Portland.",
+        "duration": 16,
+        "contributors": []
+      }
+    ],
+    "published_dates": [
+      "Sun, 21 Dec 2025 00:00:00 +0000"
+    ]
   }
 ]
