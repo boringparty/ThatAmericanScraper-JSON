@@ -15804,7 +15804,7 @@
     "episode_url": "https://www.thisamericanlife.org/255/our-holiday-gift-giving-guide",
     "explicit": false,
     "synopsis": "The vexing difficulty of finding the perfect gift.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/255/-Fj6DistkW17E-YwkjERs_rltLrkZsflWJ5VtIdomuk/255.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR2389843838.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/255.jpg?itok=s7mtZWoV",
@@ -15825,7 +15825,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Make A Joyous Noise Unto Your Mom",
-        "summary": "Ian Brown tries, after decades of failure, to give his mother the perfect Christmas gift. He and his brother attempt something they haven't done since they were kids: Rehearse and sing her a program of Christmas carols. Ian Brown is the host of Talking Books , a radio program on the CBC, and the anchor of Human Edge and The View From Here , Canada's pre-eminent television documentary series.",
+        "summary": "Ian Brown tries, after decades of failure, to give his mother the perfect Christmas gift. He and his brother attempt something they haven't done since they were kids: Rehearse and sing her a program of Christmas carols.",
         "duration": 19,
         "contributors": [
           "Ian Brown"
@@ -15835,7 +15835,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: A Christmas Memory",
-        "summary": "We play a 1959 original recording of Truman Capote reading his holiday story A Christmas Memory —and sounding eerily similar to David Sedaris.",
+        "summary": "We play a 1959 original recording of Truman Capote reading his holiday story A Christmas Memory .",
         "duration": 18,
         "contributors": []
       },
@@ -15851,6 +15851,58 @@
     "published_dates": [
       "Fri, 19 Dec 2003 00:00:00 +0000",
       "Sun, 14 Dec 2025 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 05 Jan 2026 03:39:33 +0000",
+        "data": {
+          "title": "Our Holiday Gift-Giving Guide",
+          "synopsis": "The vexing difficulty of finding the perfect gift.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Host Ira Glass goes to a busy Target store one week before Christmas. Most shoppers he talks to don't think any of their gifts will be returned.",
+              "duration": 3,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Make A Joyous Noise Unto Your Mom",
+              "summary": "Ian Brown tries, after decades of failure, to give his mother the perfect Christmas gift. He and his brother attempt something they haven't done since they were kids: Rehearse and sing her a program of Christmas carols. Ian Brown is the host of Talking Books , a radio program on the CBC, and the anchor of Human Edge and The View From Here , Canada's pre-eminent television documentary series.",
+              "duration": 19,
+              "contributors": [
+                "Ian Brown"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: A Christmas Memory",
+              "summary": "We play a 1959 original recording of Truman Capote reading his holiday story A Christmas Memory —and sounding eerily similar to David Sedaris.",
+              "duration": 18,
+              "contributors": []
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Secret Santa. Very Secret Santa.",
+              "summary": "Caitlin Shetterly reports on a true-life holiday fable from rural Maine, complete with a misunderstood recluse with a heart of gold, a deserving family in need, and a very special Christmas tree farm with secrets of its own.",
+              "duration": 16,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/255.jpg?itok=s7mtZWoV",
+            "credit": "Craig D"
+          }
+        }
+      }
     ]
   },
   {
@@ -48125,7 +48177,7 @@
     "episode_url": "https://www.thisamericanlife.org/801/must-be-rats-on-the-brain",
     "explicit": false,
     "synopsis": "The one animal we can’t seem to live without, even when we really, really want to.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/801/CE6igqsXaA7O_I3oBbBJot_UPCkSbARGWdwkLp5BWUA/801.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR7388469053.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-801-rats-charliehamiltonjames_05257.jpg?itok=zCWX6cvW",
@@ -50923,8 +50975,8 @@
     "episode_url": "https://www.thisamericanlife.org/850/my-sweater",
     "explicit": true,
     "synopsis": "The tiny thing that unravels your world.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/850/o5W8JS2v505sU7YDsh_fxzu9JW9mCXfOGsS2fA1-3aw/850.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/850.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR5866161429.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/850_0.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-805-mysweater-16x9_0.jpg?itok=sX5eLTWD",
       "credit": null
@@ -51852,7 +51904,7 @@
     "episode_url": "https://www.thisamericanlife.org/866/watch-out-for-that-tree",
     "explicit": false,
     "synopsis": "Small human plans that run into much larger obstacles.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR5310093493.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/866/Q3U8tV1MUlYC9-IIyLbITiMImqcdqMPLJUKYINuYyV0/866.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-866-watchoutforthattree-peteryan_0.jpg?itok=KEr8JvGU",
@@ -52100,7 +52152,7 @@
     "episode_url": "https://www.thisamericanlife.org/871/the-thing-about-things",
     "explicit": false,
     "synopsis": "Three stories about the strange power inanimate objects can hold over us.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR7025895016.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR7025895016.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-871-things-822880932.jpg?itok=FuHBeL_8",
@@ -52114,7 +52166,8 @@
         "summary": "Nunzio gets caught in a kind of servile relationship—with a scooter.",
         "duration": 8,
         "contributors": [
-          "Ira Glass"
+          "Ira Glass",
+          "Suzanne Gaber"
         ]
       },
       {
@@ -52140,6 +52193,52 @@
     ],
     "published_dates": [
       "Sun, 26 Oct 2025 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 05 Jan 2026 03:39:43 +0000",
+        "data": {
+          "title": "The Thing About Things",
+          "synopsis": "Three stories about the strange power inanimate objects can hold over us.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Nunzio gets caught in a kind of servile relationship—with a scooter.",
+              "duration": 8,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: A Rock and a Hard Place",
+              "summary": "Ted was six when he first picked up a rock from the Petrified Forest National Park. Nearly 50 years later, he really wishes he hadn’t. Aviva DeKornfeld talked to him. We first heard about this story from Ryan Thompson’s book Bad Luck, Hot Rocks .",
+              "duration": 15,
+              "contributors": [
+                "Aviva DeKornfeld"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: A Few Hundred of My Favorite Things",
+              "summary": "Heavyweight host Jonathan Goldstein leaps in to help a family, who are not entirely sure they want or need his help, get rid of their stuff. This story originally aired on the Heavyweight podcast.",
+              "duration": 31,
+              "contributors": [
+                "Jonathan Goldstein"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-871-things-822880932.jpg?itok=FuHBeL_8",
+            "credit": null
+          }
+        }
+      }
     ]
   },
   {
@@ -52149,7 +52248,7 @@
     "episode_url": "https://www.thisamericanlife.org/872/winners",
     "explicit": false,
     "synopsis": "America loves winners—now more than ever. But how do you get to a win in 2025 America? We watch someone trying to score a win in a game whose rules are being made up as she plays.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR6970061584.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6970061584.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-872-winnersistock577312380.jpg?itok=-2xKUTEj",
@@ -52162,41 +52261,79 @@
         "title": "Prologue",
         "summary": "Ira talks to producer Diane Wu about an informal survey she’s done with the staff of This American Life about a phrase Ira says a lot that includes the word “winners.”",
         "duration": 8,
-        "contributors": []
+        "contributors": [
+          "Diane Wu",
+          "Ira Glass"
+        ]
       },
       {
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Winners Welcome",
         "summary": "Two people see one of President Trump’s first executive orders and get excited, and then get to work.",
-        "duration": 30,
+        "duration": 46,
         "contributors": [
           "Chana Joffe-Walt",
           "Nancy Updike"
         ]
-      },
-      {
-        "number": 2,
-        "number_text": "Act Two",
-        "title": "Act Two: Winners Welcome, cont’d",
-        "summary": "We follow the progress of one woman as she builds up, from scratch, a whole movement based on one of Trump’s executive orders.",
-        "duration": 19,
-        "contributors": []
       }
     ],
     "published_dates": [
       "Sun, 02 Nov 2025 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 05 Jan 2026 03:39:41 +0000",
+        "data": {
+          "title": "Winners",
+          "synopsis": "America loves winners—now more than ever. But how do you get to a win in 2025 America? We watch someone trying to score a win in a game whose rules are being made up as she plays.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Ira talks to producer Diane Wu about an informal survey she’s done with the staff of This American Life about a phrase Ira says a lot that includes the word “winners.”",
+              "duration": 8,
+              "contributors": []
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Winners Welcome",
+              "summary": "Two people see one of President Trump’s first executive orders and get excited, and then get to work.",
+              "duration": 30,
+              "contributors": [
+                "Chana Joffe-Walt",
+                "Nancy Updike"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Winners Welcome, cont’d",
+              "summary": "We follow the progress of one woman as she builds up, from scratch, a whole movement based on one of Trump’s executive orders.",
+              "duration": 19,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-872-winnersistock577312380.jpg?itok=-2xKUTEj",
+            "credit": null
+          }
+        }
+      }
     ]
   },
   {
     "title": "Got You Pegged",
     "number": "873",
-    "original_air_date": "November 7, 2025",
+    "original_air_date": "Fri, 07 Nov 2025 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/873/got-you-pegged",
-    "explicit": false,
+    "explicit": true,
     "synopsis": "Shalom Auslander goes on vacation with his family, suspects the beloved, chatty old man in the room next door is an imposter, and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.",
-    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chrt.fm/track/138C95/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6792693909.mp3",
-    "download_clean": null,
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6792693909.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/873.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/362.jpg?itok=sJIDirf7",
       "credit": "Betsssssy"
@@ -52255,6 +52392,72 @@
     ],
     "published_dates": [
       "Sun, 09 Nov 2025 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 05 Jan 2026 03:39:40 +0000",
+        "data": {
+          "title": "Got You Pegged",
+          "synopsis": "Shalom Auslander goes on vacation with his family, suspects the beloved, chatty old man in the room next door is an imposter, and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Amy Roberts thought it was obvious that she was an adult, not a kid, and she assumed the friendly man working at the children's museum knew it too. Unfortunately, the man had Amy pegged all wrong. And by the time she figured it out, it was too late for either of them to save face. Host Ira Glass talks to Amy about the embarrassing ordeal that taught her never to assume she knows what someone else is thinking.",
+              "duration": 8,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: The Fat Blue Line",
+              "summary": "While riding in a patrol car to research a novel, crime writer Richard Price witnessed a misunderstanding that, for many people, is pretty much accepted as an upsetting fact of life. Richard Price told this story, which he describes as a tale taken from real life and dramatized, onstage at The Moth in New York.",
+              "duration": 12,
+              "contributors": [
+                "Richard Price"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Yes, No or Baby",
+              "summary": "There are situations where making judgments about people based on limited information is not only accepted but required. One of those situations is open adoption, where birth mothers actually choose the adoptive parents for their child. Producer Nancy Updike talks to a pregnant woman named Kim, going through the first stage of open adoption: reading dozens of letters from prospective parents, all of whom seem utterly capable and appealing.",
+              "duration": 6,
+              "contributors": [
+                "Nancy Updike"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Isn’t It Romantic?",
+              "summary": "David Rakoff picks a fight with a hit Broadway show.",
+              "duration": 6,
+              "contributors": [
+                "David Rakoff"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: Paradise Lost",
+              "summary": "Shalom Auslander tells the story of the time he went on vacation, pegged the guest in the room next door as an imposter, and devoted his holiday to trying to prove it. Shalom is the author of Feh: a Memoir .",
+              "duration": 22,
+              "contributors": [
+                "Shalom Auslander"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/362.jpg?itok=sJIDirf7",
+            "credit": "Betsssssy"
+          }
+        }
+      }
     ]
   },
   {
@@ -52264,7 +52467,7 @@
     "episode_url": "https://www.thisamericanlife.org/874/under-one-roof",
     "explicit": false,
     "synopsis": "What’s great about living in a family is that everyone sees everything differently. Also, that’s what’s awful about living in a family. We go behind closed doors with two families.",
-    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chrt.fm/track/138C95/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR1170536702.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR1170536702.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/under-one-roof_16-9.jpg?itok=yfLQYpEy",
@@ -52300,10 +52503,10 @@
     "number": "875",
     "original_air_date": "Fri, 21 Nov 2025 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/875/i-hate-mysteries",
-    "explicit": false,
+    "explicit": true,
     "synopsis": "What’s in the box? What’s in the $%&ing box?!?",
-    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chrt.fm/track/138C95/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6726342547.mp3",
-    "download_clean": null,
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6726342547.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/875.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-875-foryoutofindout-peterryan.jpg?itok=nMofXZ1t",
       "credit": null
@@ -52333,18 +52536,7 @@
       {
         "number": 2,
         "number_text": "Act Two",
-        "title": "Act Two: All That Glitters",
-        "summary": "A sparkly mystery. One woman hopes the military-industrial complex is involved. Glitter X won’t tell which industry buys the most glitter. The podcast Endless Thread got to the bottom of it back in 2019.",
-        "duration": 4,
-        "contributors": [
-          "Ike Sriskandarajah",
-          "Diane Wu"
-        ]
-      },
-      {
-        "number": 3,
-        "number_text": "Act Three",
-        "title": "Act Three: Who Are the People in Your Neighborhood?",
+        "title": "Act Two: Who Are the People in Your Neighborhood?",
         "summary": "What happens when the full force of the federal government arrives on your block?",
         "duration": 14,
         "contributors": [
@@ -52354,9 +52546,9 @@
         ]
       },
       {
-        "number": 4,
-        "number_text": "Act Four",
-        "title": "Act Four: Come Mr. Cab Driver, Won’t You Turn That Music Up?",
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Come Mr. Cab Driver, Won’t You Turn That Music Up?",
         "summary": "A comedian finds himself trapped in an uncomfortable mystery in the backseat of a cab.",
         "duration": 4,
         "contributors": [
@@ -52366,6 +52558,76 @@
     ],
     "published_dates": [
       "Sun, 23 Nov 2025 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 05 Jan 2026 03:39:37 +0000",
+        "data": {
+          "title": "I Hate Mysteries",
+          "synopsis": "What’s in the box? What’s in the $%&ing box?!?",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "A class of second graders is handed a sealed box with a mystery object inside. They are supposed to guess what it is, but the lesson goes off the rails.",
+              "duration": 8,
+              "contributors": [
+                "Ike Sriskandarajah"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: The Masta Blasta Digging Up Mt. Shasta, That Hole is Deep Cuz It Hasta (Be)",
+              "summary": "A man is hired along with a crew to dig a mysterious hole on the slopes of Mt. Shasta. The hole goes sixty feet down. But what are they looking for?",
+              "duration": 24,
+              "contributors": [
+                "Elijah Sullivan",
+                "David Kestenbaum"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: All That Glitters",
+              "summary": "A sparkly mystery. One woman hopes the military-industrial complex is involved. Glitter X won’t tell which industry buys the most glitter. The podcast Endless Thread got to the bottom of it back in 2019.",
+              "duration": 4,
+              "contributors": [
+                "Ike Sriskandarajah",
+                "Diane Wu"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Who Are the People in Your Neighborhood?",
+              "summary": "What happens when the full force of the federal government arrives on your block?",
+              "duration": 14,
+              "contributors": [
+                "Michelle Navarro",
+                "Diane Wu",
+                "Chana Joffe-Walt"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: Come Mr. Cab Driver, Won’t You Turn That Music Up?",
+              "summary": "A comedian finds himself trapped in an uncomfortable mystery in the backseat of a cab.",
+              "duration": 4,
+              "contributors": [
+                "Mohanad Elshieky"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-875-foryoutofindout-peterryan.jpg?itok=nMofXZ1t",
+            "credit": null
+          }
+        }
+      }
     ]
   },
   {
@@ -52375,7 +52637,7 @@
     "episode_url": "https://www.thisamericanlife.org/876/bigger-than-me",
     "explicit": true,
     "synopsis": "When history comes knocking, you have to figure out what to do.",
-    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chrt.fm/track/138C95/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR3654508416.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR3654508416.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/876.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/funmilayo-ransome-kuti.jpg?itok=9xr4clyS",
@@ -52433,7 +52695,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Living the American Stream",
-        "summary": "Producers Zoe Chace and Susanne Gaber follow a bunch of right-wing influencers as they search for Antifa in Portland.",
+        "summary": "Producers Zoe Chace and Suzanne Gaber follow a bunch of right-wing influencers as they search for Antifa in Portland.",
         "duration": 31,
         "contributors": [
           "Zoe Chace",
@@ -52451,6 +52713,49 @@
     ],
     "published_dates": [
       "Sun, 21 Dec 2025 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 05 Jan 2026 03:39:32 +0000",
+        "data": {
+          "title": "The Making Of",
+          "synopsis": "How one block in Portland, Oregon became a movie-set war zone that lots of people think is a real war zone.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "What the movie Hearts of Darkness and right-wing influencers have in common.",
+              "duration": 8,
+              "contributors": []
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Living the American Stream",
+              "summary": "Producers Zoe Chace and Susanne Gaber follow a bunch of right-wing influencers as they search for Antifa in Portland.",
+              "duration": 31,
+              "contributors": [
+                "Zoe Chace",
+                "Suzanne Gaber"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Inside the Safe House",
+              "summary": "We meet the so-called leader of Antifa in Portland.",
+              "duration": 16,
+              "contributors": []
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-877-portland-ajdungo.jpg?itok=BlbJSyaX",
+            "credit": null
+          }
+        }
+      }
     ]
   }
 ]
