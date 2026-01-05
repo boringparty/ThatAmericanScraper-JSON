@@ -6,7 +6,7 @@ import feedparser
 import json
 import re
 import time
-from datetime import timezone, timedelta
+from datetime import timezone, timedelta, datetime
 from email.utils import format_datetime, parsedate_to_datetime
 from dateutil import parser
 
@@ -21,9 +21,10 @@ ACT_WORDS = {
     "Five": 5, "Six": 6, "Seven": 7, "Eight": 8, "Nine": 9, "Ten": 10
 }
 
+ARCHIVE_KEYS = ("title", "synopsis", "acts", "explicit", "image")
+
 
 def parse_any_date_str(s: str):
-    """Parse a date string and return a datetime in UTC."""
     try:
         dt = parsedate_to_datetime(s)
     except Exception:
@@ -36,7 +37,6 @@ def parse_any_date_str(s: str):
 
 
 def to_week_sunday(dt):
-    """Return a datetime rounded forward to the Sunday of the same week at 00:00:00 UTC."""
     days_ahead = 6 - dt.weekday()
     sunday = dt + timedelta(days=days_ahead)
     return sunday.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=timezone.utc)
@@ -52,6 +52,10 @@ def fetch_episode_page(url):
         return None
 
 
+def snapshot(ep):
+    return {k: ep.get(k) for k in ARCHIVE_KEYS}
+
+
 def scrape_episode(url):
     soup = fetch_episode_page(url)
     if not soup:
@@ -60,12 +64,11 @@ def scrape_episode(url):
     title = soup.select_one("h1").get_text(strip=True) if soup.select_one("h1") else ""
     number_elem = soup.select_one(".field-name-field-episode-number .field-item")
     number = number_elem.get_text(strip=True) if number_elem else ""
+
     original_air_elem = soup.select_one(".field-name-field-radio-air-date .date-display-single")
     original_air_date_raw = original_air_elem.get_text(strip=True) if original_air_elem else ""
-    
     try:
-        dt = parse_any_date_str(original_air_date_raw)
-        original_air_date = format_datetime(dt)
+        original_air_date = format_datetime(parse_any_date_str(original_air_date_raw))
     except Exception:
         original_air_date = original_air_date_raw
 
@@ -92,6 +95,7 @@ def scrape_episode(url):
         act_title_elem = act.select_one("h2.act-header a")
         act_title = act_title_elem.get_text(strip=True) if act_title_elem else ""
         is_prologue = "prologue" in act_title.lower()
+
         if not label_elem and not is_prologue:
             continue
 
@@ -100,29 +104,28 @@ def scrape_episode(url):
             number_text = "Prologue"
         else:
             word = label_elem.get_text(strip=True).replace("Act ", "").replace("Part ", "").strip()
-            if word in ACT_WORDS:
-                act_number = ACT_WORDS[word]
-            else:
-                try:
-                    act_number = int(word)
-                except ValueError:
-                    act_number = 0
+            act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
             number_text = f"Act {word}"
 
         act_summary_elem = act.select_one(".field-name-body .field-item")
-        act_summary_raw = act_summary_elem.get_text(" ", strip=True) if act_summary_elem else ""
-        duration_match = re.search(r"\((\d+)\s*minutes?\)", act_summary_raw)
+        raw = act_summary_elem.get_text(" ", strip=True) if act_summary_elem else ""
+        duration_match = re.search(r"\((\d+)\s*minutes?\)", raw)
         duration = int(duration_match.group(1)) if duration_match else None
-        act_summary = re.sub(r"\s*\(\d+\s*minutes?\)", "", act_summary_raw).strip()
+        summary = re.sub(r"\s*\(\d+\s*minutes?\)", "", raw).strip()
 
-        contributors = [a.get_text(strip=True) for div in act.select("div.field-name-field-contributor") for a in div.select("a")]
+        contributors = [
+            a.get_text(strip=True)
+            for div in act.select("div.field-name-field-contributor")
+            for a in div.select("a")
+        ]
+
         full_title = act_title if is_prologue else f"{number_text}: {act_title}"
 
         acts.append({
             "number": act_number,
             "number_text": number_text,
             "title": full_title,
-            "summary": act_summary,
+            "summary": summary,
             "duration": duration,
             "contributors": contributors
         })
@@ -138,7 +141,8 @@ def scrape_episode(url):
         "download_clean": download_clean,
         "image": {"url": image_url, "credit": image_credit},
         "acts": acts,
-        "published_dates": []
+        "published_dates": [],
+        "revisions": []
     }
 
 
@@ -149,22 +153,21 @@ def update_published_dates(episodes):
         pub_date = item.get("published") or item.get("pubDate")
         if not pub_date:
             continue
+
         try:
             dt = parse_any_date_str(pub_date)
-        except ValueError:
+        except Exception:
             continue
 
-        dt_sunday = to_week_sunday(dt)
-        pub_str = format_datetime(dt_sunday)  # RFC822, Sunday 00:00:00 UTC
-
-        existing = next((ep for ep in episodes if ep["episode_url"] == url), None)
-        if existing:
-            if pub_str not in existing["published_dates"]:
-                existing["published_dates"].append(pub_str)
+        pub_str = format_datetime(to_week_sunday(dt))
+        ep = next((e for e in episodes if e["episode_url"] == url), None)
+        if ep and pub_str not in ep["published_dates"]:
+            ep["published_dates"].append(pub_str)
 
 
 def main():
     scrape_mode = os.environ.get("SCRAPE_MODE", "latest").lower()
+
     try:
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
             episodes = json.load(f)
@@ -172,32 +175,40 @@ def main():
         episodes = []
 
     feed = feedparser.parse(OFFICIAL_RSS)
-    if scrape_mode == "all":
-        entries_to_scrape = feed.entries
-    elif scrape_mode == "latest":
-        entries_to_scrape = feed.entries[:DEFAULT_NUM_EPISODES]
-    else:
-        try:
-            n = int(scrape_mode)
-            entries_to_scrape = feed.entries[:n]
-        except ValueError:
-            entries_to_scrape = feed.entries[:DEFAULT_NUM_EPISODES]
+    entries = (
+        feed.entries if scrape_mode == "all"
+        else feed.entries[:int(scrape_mode)] if scrape_mode.isdigit()
+        else feed.entries[:DEFAULT_NUM_EPISODES]
+    )
 
-    for entry in entries_to_scrape:
+    for entry in entries:
         url = entry.link
-        if not any(ep["episode_url"] == url for ep in episodes):
-            ep_data = scrape_episode(url)
-            if ep_data:
-                episodes.append(ep_data)
+        ep_data = scrape_episode(url)
+        if not ep_data:
+            continue
+
+        existing = next((e for e in episodes if e["episode_url"] == url), None)
+        if existing:
+            old = snapshot(existing)
+            new = snapshot(ep_data)
+
+            if old != new:
+                existing.setdefault("revisions", []).append({
+                    "timestamp": format_datetime(datetime.now(timezone.utc)),
+                    "data": old
+                })
+
+            for k, v in ep_data.items():
+                if k not in ("published_dates", "revisions"):
+                    existing[k] = v
+        else:
+            episodes.append(ep_data)
 
     update_published_dates(episodes)
 
-    # sort episodes by original_air_date (RFC822)
-    episodes.sort(key=lambda ep: parse_any_date_str(ep["original_air_date"]))
-
-    # sort and deduplicate published_dates
+    episodes.sort(key=lambda e: parse_any_date_str(e["original_air_date"]))
     for ep in episodes:
-        ep["published_dates"] = sorted(list({d for d in ep["published_dates"]}), key=parse_any_date_str)
+        ep["published_dates"] = sorted(set(ep["published_dates"]), key=parse_any_date_str)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)
