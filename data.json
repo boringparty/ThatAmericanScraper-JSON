@@ -52757,5 +52757,55 @@
         }
       }
     ]
+  },
+  {
+    "title": "New Lore Drop",
+    "number": "878",
+    "original_air_date": "Fri, 09 Jan 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/878/new-lore-drop",
+    "explicit": true,
+    "synopsis": "People discovering information about their own lives that they did not know, and suddenly everything looks very different.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR9811926071.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/878.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-newloredrop-tomium_0.jpg?itok=qhJzZCSe",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "When Pete turned 18, his dad took him on a drive to reveal a family secret he was finally old enough to know. You can hear more about Peter’s family on The Documentary Podcast .",
+        "duration": 11,
+        "contributors": [
+          "Ira Glass"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Save the Drama for your Grandmama",
+        "summary": "Sometimes, a lore drop comes when you least expect it.  That happened to Jake Cornell and his grandmother. Producer Aviva DeKornfeld talked to Jake about it. Jake told a version of this story onstage. Find more of his work at @jakewcornell on Instagram.",
+        "duration": 14,
+        "contributors": [
+          "Aviva DeKornfeld"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Bully Pulpit",
+        "summary": "Ben Austen had a kind of new lore drop happen to him recently. But it was not the clarifying kind of lore drop, where everything suddenly makes sense — it was kind of the opposite. Ben is the author of Correction: Parole, Prison, and the Possibility of Change .",
+        "duration": 29,
+        "contributors": [
+          "David Kestenbaum"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 11 Jan 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
