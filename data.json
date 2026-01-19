@@ -52807,5 +52807,60 @@
       "Sun, 11 Jan 2026 00:00:00 +0000"
     ],
     "revisions": []
+  },
+  {
+    "title": "A Christian and a Muslim Walk Into a Bar",
+    "number": "879",
+    "original_air_date": "Fri, 16 Jan 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/879/a-christian-and-a-muslim-walk-into-a-bar",
+    "explicit": true,
+    "synopsis": "When a joke could get you killed, should you say it anyway? A group of Syrian comedians test the limits of their newfound freedom, a year after the fall of the brutal Assad regime.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR3212702912.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/879.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-879-aubineymard.jpg?itok=MGJS5vmO",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Under the dictatorship of Bashar al-Assad, comedian Sharief Homsi knew which jokes were too dangerous to say on stage. Now that Syria is under the control of a new government, Sharief and the other comedians of “Styria” set out on a national tour to see how far their comedy can go in this new Syria.",
+        "duration": 6,
+        "contributors": []
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Too Soon?",
+        "summary": "The comedians test out risky material and get big laughs on early tour dates. It’s going smoothly until they find out that their show scheduled in the conservative city of Hama is in danger of being cancelled.",
+        "duration": 13,
+        "contributors": [
+          "Ayman Oghanna",
+          "Dana Chivvis"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: The Drama in Hama",
+        "summary": "The comedians go to battle with local officials.",
+        "duration": 18,
+        "contributors": []
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Is This Thing On?",
+        "summary": "The comedians try everything they can think of to keep their shows from being cancelled.",
+        "duration": 20,
+        "contributors": []
+      }
+    ],
+    "published_dates": [
+      "Sun, 18 Jan 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
