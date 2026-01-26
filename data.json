@@ -51038,7 +51038,7 @@
     "episode_url": "https://www.thisamericanlife.org/851/try-a-little-tenderness",
     "explicit": false,
     "synopsis": "In the new year, stories of people trying a radical approach to solving their problems.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/851/IJgReGTNzRi_o-skNRwZZee4vWzmx9SXXH3Rg5msDNs/851.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR8900595865.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-851-drawing-16x9.jpg?itok=k-U18uSa",
@@ -51059,7 +51059,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: The Big Nap",
-        "summary": "A hardened PI works the toughest case of his very young life. ALL IN: COMEDY ABOUT LOVE is written by Simon Rich and stars John Mulaney, Richard Kind, Fred Armisen, and Chloe Fineman. It runs through February 16 at the Hudson Theater in New York.",
+        "summary": "A hardened PI works the toughest case of his very young life. ALL IN: COMEDY ABOUT LOVE was written by Simon Rich and starred John Mulaney, Richard Kind, Fred Armisen, and Chloe Fineman. Simon Rich has a new show on Broadway – a sequel to ALL IN called ALL OUT: COMEDY ABOUT AMBITION . It runs through March 8 at the Nederlander Theatre.",
         "duration": 18,
         "contributors": [
           "Simon Rich"
@@ -51079,7 +51079,7 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: You’ll Spank Me Later For This",
-        "summary": "Comedian Josh Johnson wonders if some people should’ve been spanked as kids.",
+        "summary": "Comedian Josh Johnson wonders if some people should’ve been spanked as kids. Find tour dates, albums, and videos at joshjohnsoncomedy.com .",
         "duration": 10,
         "contributors": [
           "Josh Johnson"
@@ -51097,7 +51097,74 @@
       }
     ],
     "published_dates": [
-      "Fri, 10 Jan 2025 00:00:00 +0000"
+      "Fri, 10 Jan 2025 00:00:00 +0000",
+      "Sun, 25 Jan 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 26 Jan 2026 01:35:49 +0000",
+        "data": {
+          "title": "Try a Little Tenderness",
+          "synopsis": "In the new year, stories of people trying a radical approach to solving their problems.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Ira meets two sisters who got into a fight, and then learned a lesson in turning the other cheek.",
+              "duration": 8,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: The Big Nap",
+              "summary": "A hardened PI works the toughest case of his very young life. ALL IN: COMEDY ABOUT LOVE is written by Simon Rich and stars John Mulaney, Richard Kind, Fred Armisen, and Chloe Fineman. It runs through February 16 at the Hudson Theater in New York.",
+              "duration": 18,
+              "contributors": [
+                "Simon Rich"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: The Gladiator Starring Ruffled Crow",
+              "summary": "Producer Aviva DeKornfeld talks to a man who finds himself the target of vengeful crows.",
+              "duration": 8,
+              "contributors": [
+                "Aviva DeKornfeld"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: You’ll Spank Me Later For This",
+              "summary": "Comedian Josh Johnson wonders if some people should’ve been spanked as kids.",
+              "duration": 10,
+              "contributors": [
+                "Josh Johnson"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: The Feels on the Bus",
+              "summary": "Writer Etgar Keret reads his story about a bus driver who refuses to open the doors for late passengers. This story is from Etgar's book, The Bus Driver Who Wanted To Be God & Other Stories . Etgar sends stories and poems to subscribers in his newsletter, Alphabet Soup .",
+              "duration": 9,
+              "contributors": [
+                "Etgar Keret"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-851-drawing-16x9.jpg?itok=k-U18uSa",
+            "credit": null
+          }
+        }
+      }
     ]
   },
   {
