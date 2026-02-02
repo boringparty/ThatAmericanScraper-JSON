@@ -52929,5 +52929,65 @@
       "Sun, 18 Jan 2026 00:00:00 +0000"
     ],
     "revisions": []
+  },
+  {
+    "title": "What Is Your Emergency?",
+    "number": "880",
+    "original_air_date": "Fri, 30 Jan 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/880/what-is-your-emergency",
+    "explicit": true,
+    "synopsis": "911 calls unlike any we’ve heard before, and other stories about immigration agents sweeping through America.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR8865469473.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/880.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-880-whatsyouremergency-adammaida.jpg?itok=EXKVsc6M",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "A collection of 911 calls where you can hear immigration enforcement moving through different cities and leaving chaos in their wake.",
+        "duration": 9,
+        "contributors": [
+          "Ira Glass",
+          "Chana Joffe-Walt"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: What’s the Nature of Your Emergency?",
+        "summary": "More 911 calls, including people on the line with dispatchers as ICE is chasing them, trying to puzzle out their next moves. Ryan Oehrli and Julia Coin collected many of these 911 calls for The Charlotte Observer , and Jim Daley for Southside Weekly in Chicago.",
+        "duration": 22,
+        "contributors": []
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: There’s No Place like Home…Depot",
+        "summary": "Home Depots keep getting raided over and over again in Los Angeles. And day laborers are still showing up in store parking lots to find work every day.  So what’s that like? Months and months of that cat and mouse? Anayansi Diaz-Cortes went to find out.",
+        "duration": 11,
+        "contributors": [
+          "Anayansi Diaz-Cortes",
+          "Lilly Sullivan"
+        ]
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Memo to the Future",
+        "summary": "Memo Torres tries to build an archive of every person taken by federal agents in Southern California. L.A. Taco's \" The Daily Memo \"",
+        "duration": 11,
+        "contributors": [
+          "Miki Meek"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 01 Feb 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
