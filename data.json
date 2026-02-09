@@ -4553,6 +4553,76 @@
     ]
   },
   {
+    "title": "Kindness of Strangers",
+    "number": "75",
+    "original_air_date": "Fri, 12 Sep 1997 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/kindness-of-strangers",
+    "explicit": false,
+    "synopsis": "An episode from our show's early days: Stories about what happens when strangers are kind — and when they're not.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6510887866.mp3",
+    "download_clean": null,
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/backup-75.jpg?itok=TKUSvXXu",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Brett Leveridge was standing on the subway platform when a man walked by, stopping in front of each passenger to deliver a quiet verdict: \"You're in. You're out. You can stay. You—gotta go.\" Most people ignored him. But Brett found himself hoping for the thumbs up. Brett's story also appears on his website Brettnews , and you can see a graphic recreation of it in our comic book How to Make Radio .",
+        "duration": 5,
+        "contributors": [
+          "Ira Glass"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Tarzan Finds A Mate",
+        "summary": "New York City locksmith Joel Kostman tells the story of an act of kindness he committed, hoping for a small reward. From Joel's book, Keys to the City: Tales of a New York City Locksmith .",
+        "duration": 13,
+        "contributors": [
+          "Joel Kostman"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Runaway",
+        "summary": "In 1940, Jack Geiger, at the age of fourteen, left his middle-class Jewish home and knocked on the door of a black actor named Canada Lee. He asked Lee if he could move in with him. Lee said yes. In Lee's Harlem apartment, Geiger spent a year among many of the great figures of the Harlem Renaissance: Langston Hughes, Billy Strayhorn, Richard Wright, Adam Clayton Powell. There's a movie in which Canada Lee takes a white teenager under his wing and counsels him, as he did for Jack Geiger in real life. The film is called Lost Boundaries .",
+        "duration": 11,
+        "contributors": [
+          "Jack Geiger"
+        ]
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Unkindness Of Strangers",
+        "summary": "How two next-door neighbors start treating each other badly, and how their feud becomes an all-consuming obsession. Paul Tough reports.",
+        "duration": 14,
+        "contributors": [
+          "Paul Tough"
+        ]
+      },
+      {
+        "number": 4,
+        "number_text": "Act Four",
+        "title": "Act Four: Chairman Of The Block",
+        "summary": "For five weeks, a singer named Nick Drakides stood on a stoop in the East Village, singing Sinatra songs late at night to the delight of his neighbors. The cops didn't bust him; the crowds behaved. It was his gift to New York. Blake Eskin tells the story.",
+        "duration": 12,
+        "contributors": [
+          "Blake Eskin"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 08 Feb 2026 00:00:00 +0000"
+    ],
+    "revisions": []
+  },
+  {
     "title": "Mob",
     "number": "76",
     "original_air_date": "Fri, 19 Sep 1997 00:00:00 +0000",
