@@ -4580,7 +4580,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Tarzan Finds A Mate",
-        "summary": "New York City locksmith Joel Kostman tells the story of an act of kindness he committed, hoping for a small reward. From Joel's book, Keys to the City: Tales of a New York City Locksmith .",
+        "summary": "New York City locksmith Joel Kostman tells the story of an act of kindness he committed, hoping for a small reward. This story is from Joel's book, Keys to the City: Tales of a New York City Locksmith .",
         "duration": 13,
         "contributors": [
           "Joel Kostman"
@@ -4590,7 +4590,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: Runaway",
-        "summary": "In 1940, Jack Geiger, at the age of fourteen, left his middle-class Jewish home and knocked on the door of a black actor named Canada Lee. He asked Lee if he could move in with him. Lee said yes. In Lee's Harlem apartment, Geiger spent a year among many of the great figures of the Harlem Renaissance: Langston Hughes, Billy Strayhorn, Richard Wright, Adam Clayton Powell. There's a movie in which Canada Lee takes a white teenager under his wing and counsels him, as he did for Jack Geiger in real life. The film is called Lost Boundaries .",
+        "summary": "In 1940, Jack Geiger, at the age of fourteen, left his middle-class Jewish home and knocked on the door of a Black actor named Canada Lee. He asked Lee if he could move in with him. Lee said yes. In Lee's Harlem apartment, Geiger spent a year among many of the great figures of the Harlem Renaissance: Langston Hughes, Billy Strayhorn, Richard Wright, Adam Clayton Powell. There's a movie in which Canada Lee takes a white teenager under his wing and counsels him, as he did for Jack Geiger in real life. The film is called Lost Boundaries .",
         "duration": 11,
         "contributors": [
           "Jack Geiger"
@@ -4620,7 +4620,72 @@
     "published_dates": [
       "Sun, 08 Feb 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Mon, 16 Feb 2026 01:37:03 +0000",
+        "data": {
+          "title": "Kindness of Strangers",
+          "synopsis": "An episode from our show's early days: Stories about what happens when strangers are kind — and when they're not.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Brett Leveridge was standing on the subway platform when a man walked by, stopping in front of each passenger to deliver a quiet verdict: \"You're in. You're out. You can stay. You—gotta go.\" Most people ignored him. But Brett found himself hoping for the thumbs up. Brett's story also appears on his website Brettnews , and you can see a graphic recreation of it in our comic book How to Make Radio .",
+              "duration": 5,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Tarzan Finds A Mate",
+              "summary": "New York City locksmith Joel Kostman tells the story of an act of kindness he committed, hoping for a small reward. From Joel's book, Keys to the City: Tales of a New York City Locksmith .",
+              "duration": 13,
+              "contributors": [
+                "Joel Kostman"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Runaway",
+              "summary": "In 1940, Jack Geiger, at the age of fourteen, left his middle-class Jewish home and knocked on the door of a black actor named Canada Lee. He asked Lee if he could move in with him. Lee said yes. In Lee's Harlem apartment, Geiger spent a year among many of the great figures of the Harlem Renaissance: Langston Hughes, Billy Strayhorn, Richard Wright, Adam Clayton Powell. There's a movie in which Canada Lee takes a white teenager under his wing and counsels him, as he did for Jack Geiger in real life. The film is called Lost Boundaries .",
+              "duration": 11,
+              "contributors": [
+                "Jack Geiger"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Unkindness Of Strangers",
+              "summary": "How two next-door neighbors start treating each other badly, and how their feud becomes an all-consuming obsession. Paul Tough reports.",
+              "duration": 14,
+              "contributors": [
+                "Paul Tough"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: Chairman Of The Block",
+              "summary": "For five weeks, a singer named Nick Drakides stood on a stoop in the East Village, singing Sinatra songs late at night to the delight of his neighbors. The cops didn't bust him; the crowds behaved. It was his gift to New York. Blake Eskin tells the story.",
+              "duration": 12,
+              "contributors": [
+                "Blake Eskin"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/backup-75.jpg?itok=TKUSvXXu",
+            "credit": null
+          }
+        }
+      }
+    ]
   },
   {
     "title": "Mob",
@@ -36953,6 +37018,74 @@
     "published_dates": [
       "Fri, 16 Dec 2016 00:00:00 +0000"
     ]
+  },
+  {
+    "title": "Kid Logic",
+    "number": "605",
+    "original_air_date": "Fri, 16 Dec 2016 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/kid-logic",
+    "explicit": false,
+    "synopsis": "Kids using perfectly logical arguments and arriving at perfectly wrong conclusions.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR5017278333.mp3",
+    "download_clean": null,
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/gettyimages-538210356.jpg?itok=97W6ePd_",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Ira talks with Rebecca who, using perfectly valid evidence, arrived at the perfectly incorrect conclusion that her neighbor, Ronnie Loeberfeld, was the tooth fairy. Ira also talks with Dr. Alison Gopnik, co-author of the book, \" The Scientist in the Crib ,\" about what exactly kid logic is.",
+        "duration": 6,
+        "contributors": [
+          "Ira Glass"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Baby Scientists with Faulty Data",
+        "summary": "More stories like the one in the prologue, where kids look at something going on around them, observe it carefully, think about it logically, and come to conclusions that are completely incorrect.",
+        "duration": 11,
+        "contributors": []
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Werewolves in Their Youth",
+        "summary": "Michael Chabon reads an excerpt from his short story \" Werewolves in Their Youth ,\" from his collection of the same name, about an act of kid logic that succeeds where adult logic fails.",
+        "duration": 16,
+        "contributors": [
+          "Michael Chabon"
+        ]
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: The Game Ain't Over til the Fatso Man Sings",
+        "summary": "Howie Chackowicz tried a risky combination when he was little, kid logic with puppy love. He used to think that girls would fall in love with him if they could just see him sleeping or hear him read aloud. He revisits his biggest childhood crush and finds out that not only did his methods not work, but that no one even noticed them. Howie is the creator of Howie Action Comics .",
+        "duration": 10,
+        "contributors": [
+          "Howie Chackowicz"
+        ]
+      },
+      {
+        "number": 4,
+        "number_text": "Act Four",
+        "title": "Act Four: When Small Thoughts Meet Big Brains",
+        "summary": "Alex Blumberg investigates a little-studied phenomenon: Children who get a mistaken idea in their heads about how something works or what something means, and then don't figure out until well into adulthood that they were wrong. Including the tale of a girl who received a tissue box for Christmas, allegedly painted by trained monkeys.",
+        "duration": 13,
+        "contributors": [
+          "Alex Blumberg"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 15 Feb 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   },
   {
     "title": "Just What I Wanted",
