@@ -53192,5 +53192,68 @@
       "Sun, 01 Feb 2026 00:00:00 +0000"
     ],
     "revisions": []
+  },
+  {
+    "title": "I Want What I Want",
+    "number": "881",
+    "original_air_date": "Fri, 20 Feb 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/i-want-what-i-want",
+    "explicit": true,
+    "synopsis": "People deciding to do things that most of us do NOT choose to do.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR3504187408.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/881.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-881-iwantwhatiwant-gracialam.jpg?itok=_07OTZUD",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "A new documentary called The Boys and the Bees captures a moment where a six-year-old has a very unlikely wish. And his dad decides to grant it. Host Ira Glass talks with filmmaker Arielle Knight about what happens next. Arielle Knight is an award-winning director and producer of The Boys and the Bees . The film is currently touring festivals around the world and will air on POV on PBS in the fall of 2026.",
+        "duration": 9,
+        "contributors": [
+          "Ira Glass",
+          "Valerie Kipnis"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Lessons in Shellfishness",
+        "summary": "John Tothill tells the story of Edward Dando, a 19th-century British glutton who would eat hundreds of oysters at a time and then run out on the check. And makes the case that we should all be more like him. John’s show was directed by Alex Cartlidge and Kathryn Craigmyle. He’s on tour across the UK right now, details at @johntothill .",
+        "duration": 15,
+        "contributors": [
+          "John Tothill",
+          "Aviva DeKornfeld"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: The Joy of Ex",
+        "summary": "Producer Tobin Low listens in as Evan Roberts calls up an ex for the first time in years.  And tries to make the case that they should have been friends all along. Evan wrote about his conversations with all his exes on his Substack, Don't Be Precious, Darling .",
+        "duration": 16,
+        "contributors": [
+          "Tobin Low"
+        ]
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: The Lawyer, The Judge and The Wardrobe",
+        "summary": "Producer Zoe Chace brings us a dispatch from a courtroom in Texas this week, where on the very first day of a landmark federal trial about Antifa, the judge makes an unusual decision that no one sees coming.",
+        "duration": 15,
+        "contributors": [
+          "Zoe Chace",
+          "Ira Glass"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 22 Feb 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
