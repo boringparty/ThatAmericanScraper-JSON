@@ -13015,12 +13015,12 @@
     "original_air_date": "Fri, 15 Mar 2002 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/208/office-politics",
     "explicit": false,
-    "synopsis": "Stories of high drama from our nation's workplaces. They turn out to be surprising, emotional places, with all the greed, jealousy, and ambition of real politics.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/208/PNi8drkd57s0fWZFooG-ZaVXGWvZez4hylvUE8gcDwo/208.mp3",
+    "synopsis": "Stories of high drama from America's workplaces — surprising, emotional places full of the greed, jealousy, and ambition of real politics.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR7530396505.mp3",
     "download_clean": null,
     "image": {
-      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/208.jpg?itok=sDQBgLtj",
-      "credit": "Eric"
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/gettyimages-735897581.jpg?itok=GhW9XA7F",
+      "credit": null
     },
     "acts": [
       {
@@ -13037,7 +13037,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Hang In There Kitty Cat, It's Almost Friday",
-        "summary": "This American Life producer Starlee Kine with a story of a company in turmoil. A young employee gets in a jam and discovers that in times of trouble, when all else has failed, companies in her industry turn to one woman in a suburban home in Long Island, who solves their corporate problems while the TV plays in the background.",
+        "summary": "Starlee Kine with the story of a company in turmoil. A young employee gets in a jam and discovers that in times of trouble, when all else has failed, companies in her industry turn to one woman in a suburban home in Long Island, who solves their corporate problems while the TV plays in the background.",
         "duration": 12,
         "contributors": [
           "Starlee Kine"
@@ -13057,7 +13057,7 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: When The Job That Takes You Off The Streets Is On The Streets",
-        "summary": "This American Life senior producer Julie Snyder explains the office politics of street vendors on the corner of Sixth Avenue and Eighth Street in New York City. With her is sociologist Mitch Duneier, who spent years working with the vendors and writing about them for his book Sidewalk .",
+        "summary": "Julie Snyder explains the office politics of street vendors on the corner of Sixth Avenue and Eighth Street in New York City. With her is sociologist Mitch Duneier, who spent years working with the vendors and writing about them for his book Sidewalk .",
         "duration": 14,
         "contributors": [
           "Julie Snyder"
@@ -13065,7 +13065,64 @@
       }
     ],
     "published_dates": [
-      "Fri, 15 Mar 2002 00:00:00 +0000"
+      "Fri, 15 Mar 2002 00:00:00 +0000",
+      "Sun, 01 Mar 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 02 Mar 2026 01:37:01 +0000",
+        "data": {
+          "title": "Office Politics",
+          "synopsis": "Stories of high drama from our nation's workplaces. They turn out to be surprising, emotional places, with all the greed, jealousy, and ambition of real politics.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "We hear three stories of how conflicts are resolved in offices. Two of those stories come from sociologist Calvin Morrill, who studied the executive suites at a number of large companies in his book The Executive Way: Conflict Management in Corporations . The last story comes from host Ira Glass, who talks about how he ended up punching his own boss in the stomach in front of all his co-workers.",
+              "duration": 12,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Hang In There Kitty Cat, It's Almost Friday",
+              "summary": "This American Life producer Starlee Kine with a story of a company in turmoil. A young employee gets in a jam and discovers that in times of trouble, when all else has failed, companies in her industry turn to one woman in a suburban home in Long Island, who solves their corporate problems while the TV plays in the background.",
+              "duration": 12,
+              "contributors": [
+                "Starlee Kine"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Sheetcakes In The Conference Room, Whiskey After Dark",
+              "summary": "David Rakoff discusses the world of birthdays and other holidays, as they're celebrated on the job... and what happens when you call yourself an editorial assistant but the editor you're assisting calls you a secretary. He read this story before a live audience at Town Hall in New York City, during a This American Life live show.",
+              "duration": 15,
+              "contributors": [
+                "David Rakoff"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: When The Job That Takes You Off The Streets Is On The Streets",
+              "summary": "This American Life senior producer Julie Snyder explains the office politics of street vendors on the corner of Sixth Avenue and Eighth Street in New York City. With her is sociologist Mitch Duneier, who spent years working with the vendors and writing about them for his book Sidewalk .",
+              "duration": 14,
+              "contributors": [
+                "Julie Snyder"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/208.jpg?itok=sDQBgLtj",
+            "credit": "Eric"
+          }
+        }
+      }
     ]
   },
   {
@@ -53211,7 +53268,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "A new documentary called The Boys and the Bees captures a moment where a six-year-old has a very unlikely wish. And his dad decides to grant it. Host Ira Glass talks with filmmaker Arielle Knight about what happens next. Arielle Knight is an award-winning director and producer of The Boys and the Bees . The film is currently touring festivals around the world and will air on POV on PBS in the fall of 2026.",
+        "summary": "A new documentary called The Boys and the Bees captures a moment where a six-year-old has a very unlikely wish, and his dad decides to grant it. Host Ira Glass talks with filmmaker Arielle Knight about what happens next. Arielle Knight is an award-winning director and producer of The Boys and the Bees . The film is currently touring festivals worldwide and will air on POV on PBS in the fall of 2026.",
         "duration": 9,
         "contributors": [
           "Ira Glass",
@@ -53222,7 +53279,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Lessons in Shellfishness",
-        "summary": "John Tothill tells the story of Edward Dando, a 19th-century British glutton who would eat hundreds of oysters at a time and then run out on the check. And makes the case that we should all be more like him. John’s show was directed by Alex Cartlidge and Kathryn Craigmyle. He’s on tour across the UK right now, details at @johntothill .",
+        "summary": "John Tothill tells the story of Edward Dando, a 19th-century British glutton who would eat hundreds of oysters at a time and then run out on the check. John makes the case that we should all be more like Edward Dando. John’s show was directed by Alex Cartlidge and Kathryn Craigmyle. He’s on tour across the UK right now, details at @johntothill .",
         "duration": 15,
         "contributors": [
           "John Tothill",
@@ -53233,7 +53290,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: The Joy of Ex",
-        "summary": "Producer Tobin Low listens in as Evan Roberts calls up an ex for the first time in years.  And tries to make the case that they should have been friends all along. Evan wrote about his conversations with all his exes on his Substack, Don't Be Precious, Darling .",
+        "summary": "Producer Tobin Low listens in as Evan Roberts calls up an ex for the first time in years and tries to make the case that they should have been friends all along. Evan wrote about his conversations with all his exes on his Substack, Don't Be Precious, Darling .",
         "duration": 16,
         "contributors": [
           "Tobin Low"
@@ -53254,6 +53311,64 @@
     "published_dates": [
       "Sun, 22 Feb 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Mon, 02 Mar 2026 01:37:02 +0000",
+        "data": {
+          "title": "I Want What I Want",
+          "synopsis": "People deciding to do things that most of us do NOT choose to do.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "A new documentary called The Boys and the Bees captures a moment where a six-year-old has a very unlikely wish. And his dad decides to grant it. Host Ira Glass talks with filmmaker Arielle Knight about what happens next. Arielle Knight is an award-winning director and producer of The Boys and the Bees . The film is currently touring festivals around the world and will air on POV on PBS in the fall of 2026.",
+              "duration": 9,
+              "contributors": [
+                "Ira Glass",
+                "Valerie Kipnis"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Lessons in Shellfishness",
+              "summary": "John Tothill tells the story of Edward Dando, a 19th-century British glutton who would eat hundreds of oysters at a time and then run out on the check. And makes the case that we should all be more like him. John’s show was directed by Alex Cartlidge and Kathryn Craigmyle. He’s on tour across the UK right now, details at @johntothill .",
+              "duration": 15,
+              "contributors": [
+                "John Tothill",
+                "Aviva DeKornfeld"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: The Joy of Ex",
+              "summary": "Producer Tobin Low listens in as Evan Roberts calls up an ex for the first time in years.  And tries to make the case that they should have been friends all along. Evan wrote about his conversations with all his exes on his Substack, Don't Be Precious, Darling .",
+              "duration": 16,
+              "contributors": [
+                "Tobin Low"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: The Lawyer, The Judge and The Wardrobe",
+              "summary": "Producer Zoe Chace brings us a dispatch from a courtroom in Texas this week, where on the very first day of a landmark federal trial about Antifa, the judge makes an unusual decision that no one sees coming.",
+              "duration": 15,
+              "contributors": [
+                "Zoe Chace",
+                "Ira Glass"
+              ]
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-881-iwantwhatiwant-gracialam.jpg?itok=_07OTZUD",
+            "credit": null
+          }
+        }
+      }
+    ]
   }
 ]
