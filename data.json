@@ -13047,7 +13047,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: Sheetcakes In The Conference Room, Whiskey After Dark",
-        "summary": "David Rakoff discusses the world of birthdays and other holidays, as they're celebrated on the job... and what happens when you call yourself an editorial assistant but the editor you're assisting calls you a secretary. He read this story before a live audience at Town Hall in New York City, during a This American Life live show.",
+        "summary": "David Rakoff discusses the world of birthdays and other holidays, as they're celebrated on the job... and what happens when you call yourself an editorial assistant but the editor you're assisting calls you a secretary. David read this story before a live audience at Town Hall in New York City during a This American Life live show.",
         "duration": 15,
         "contributors": [
           "David Rakoff"
@@ -13120,6 +13120,60 @@
           "image": {
             "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/208.jpg?itok=sDQBgLtj",
             "credit": "Eric"
+          }
+        }
+      },
+      {
+        "timestamp": "Mon, 02 Mar 2026 03:02:12 +0000",
+        "data": {
+          "title": "Office Politics",
+          "synopsis": "Stories of high drama from America's workplaces — surprising, emotional places full of the greed, jealousy, and ambition of real politics.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "We hear three stories of how conflicts are resolved in offices. Two of those stories come from sociologist Calvin Morrill, who studied the executive suites at a number of large companies in his book The Executive Way: Conflict Management in Corporations . The last story comes from host Ira Glass, who talks about how he ended up punching his own boss in the stomach in front of all his co-workers.",
+              "duration": 12,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Hang In There Kitty Cat, It's Almost Friday",
+              "summary": "Starlee Kine with the story of a company in turmoil. A young employee gets in a jam and discovers that in times of trouble, when all else has failed, companies in her industry turn to one woman in a suburban home in Long Island, who solves their corporate problems while the TV plays in the background.",
+              "duration": 12,
+              "contributors": [
+                "Starlee Kine"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Sheetcakes In The Conference Room, Whiskey After Dark",
+              "summary": "David Rakoff discusses the world of birthdays and other holidays, as they're celebrated on the job... and what happens when you call yourself an editorial assistant but the editor you're assisting calls you a secretary. He read this story before a live audience at Town Hall in New York City, during a This American Life live show.",
+              "duration": 15,
+              "contributors": [
+                "David Rakoff"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: When The Job That Takes You Off The Streets Is On The Streets",
+              "summary": "Julie Snyder explains the office politics of street vendors on the corner of Sixth Avenue and Eighth Street in New York City. With her is sociologist Mitch Duneier, who spent years working with the vendors and writing about them for his book Sidewalk .",
+              "duration": 14,
+              "contributors": [
+                "Julie Snyder"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/gettyimages-735897581.jpg?itok=GhW9XA7F",
+            "credit": null
           }
         }
       }
