@@ -53557,33 +53557,33 @@
         "contributors": []
       },
       {
-        "number": 0,
-        "number_text": "Act Interview One",
-        "title": "Act Interview One: Interview One",
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Interview One",
         "summary": "Ira’s mom, Shirley, is invited to lead a discussion about how to get along with your adult children. Her adult children question her expertise.",
         "duration": 9,
         "contributors": []
       },
       {
-        "number": 0,
-        "number_text": "Act Interview Two",
-        "title": "Act Interview Two: Interview Two",
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Interview Two",
         "summary": "Ira asks his parents for advice on how he should build the radio show. His parents don’t hold back.",
         "duration": 9,
         "contributors": []
       },
       {
-        "number": 0,
-        "number_text": "Act Interview Three",
-        "title": "Act Interview Three: Interview Three",
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Interview Three",
         "summary": "Ira talks with his dad, Barry, about Barry’s own brief and doomed career in radio.",
         "duration": 21,
         "contributors": []
       },
       {
-        "number": 0,
-        "number_text": "Act Interview Four",
-        "title": "Act Interview Four: Interview Four",
+        "number": 4,
+        "number_text": "Act Four",
+        "title": "Act Four: Interview Four",
         "summary": "An interview with Ira’s mom that, to this day, makes Ira’s skin crawl.",
         "duration": 13,
         "contributors": []
@@ -53591,6 +53591,105 @@
     ],
     "published_dates": [
       "Sun, 22 Mar 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 30 Mar 2026 01:37:35 +0000",
+        "data": {
+          "title": "Call Your Parents",
+          "synopsis": "In the early days of the radio show, Ira did a series of interviews with his parents that completely changed his relationship with them. This week, he returns to those interviews.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Ira talks about why four conversations reveal how his relationship with his parents changed.",
+              "duration": 4,
+              "contributors": []
+            },
+            {
+              "number": 0,
+              "number_text": "Act Interview One",
+              "title": "Act Interview One: Interview One",
+              "summary": "Ira’s mom, Shirley, is invited to lead a discussion about how to get along with your adult children. Her adult children question her expertise.",
+              "duration": 9,
+              "contributors": []
+            },
+            {
+              "number": 0,
+              "number_text": "Act Interview Two",
+              "title": "Act Interview Two: Interview Two",
+              "summary": "Ira asks his parents for advice on how he should build the radio show. His parents don’t hold back.",
+              "duration": 9,
+              "contributors": []
+            },
+            {
+              "number": 0,
+              "number_text": "Act Interview Three",
+              "title": "Act Interview Three: Interview Three",
+              "summary": "Ira talks with his dad, Barry, about Barry’s own brief and doomed career in radio.",
+              "duration": 21,
+              "contributors": []
+            },
+            {
+              "number": 0,
+              "number_text": "Act Interview Four",
+              "title": "Act Interview Four: Interview Four",
+              "summary": "An interview with Ira’s mom that, to this day, makes Ira’s skin crawl.",
+              "duration": 13,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-883-callyourparents-ira.jpg?itok=MjzjmALm",
+            "credit": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "The Idiot",
+    "number": "884",
+    "original_air_date": "Fri, 27 Mar 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/the-idiot",
+    "explicit": true,
+    "synopsis": "M. Gessen returns to our show with a true-crime story that takes place entirely within their own family. This story comes to us from the producers atSerial Productions—who invented the true-crime podcast more than a decade ago—and fromThe New York Times.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/4f1f01be-2003-42f0-8acd-02e96154a24c/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=4f1f01be-2003-42f0-8acd-02e96154a24c&nocache",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/884.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/883-theidiot-serial-johncurrin.png?itok=EWYtkDz5",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Act One",
+        "summary": "M Gessen tells Ira Glass about the surprising events that prompted them to begin reporting on their own family for their new podcast, The Idiot . They play the first episode of the series.",
+        "duration": 14,
+        "contributors": []
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Act Two",
+        "summary": "Ira Glass and M Gessen continue to talk through the story of M’s cousin, Allen Gessen. They play more clips from the podcast, and we finally hear about the big, shocking thing that snapped their family apart.",
+        "duration": 20,
+        "contributors": []
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Act Three",
+        "summary": "M Gessen tells Ira Glass about Allen’s trial, and we hear a recording of his conversation with the undercover agent.",
+        "duration": 21,
+        "contributors": []
+      }
+    ],
+    "published_dates": [
+      "Sun, 29 Mar 2026 00:00:00 +0000"
     ],
     "revisions": []
   }
