@@ -13342,19 +13342,19 @@
     "original_air_date": "Fri, 10 May 2002 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/212/the-other-man",
     "explicit": false,
-    "synopsis": "Stories about what happens when a new guy comes on the scene, and changes the way everyone who was already there relates to each other.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/212/IevrNebYsMGku73a1wjue4G6O3UFtWkb4qK3Hb74c1s/212.mp3",
+    "synopsis": "What happens when a new guy comes on the scene and changes the way everyone relates to each other?",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/73616441-f54b-4b3b-86f4-52cd97e58f7a/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=73616441-f54b-4b3b-86f4-52cd97e58f7a&nocache",
     "download_clean": null,
     "image": {
-      "url": "https://www.thisamericanlife.org/sites/default/files/styles/square/public/episodes/images/212.jpg?itok=R76VmQc-",
-      "credit": "Taylor Dahlin"
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-2204513042.jpg?itok=yGBB6HA-",
+      "credit": null
     },
     "acts": [
       {
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Host Ira Glass talks with Sarah Koenig, about the first and only time a movie star came over to her family's house when she was a kid, and how it didn't go too well, for the celebrity or for her. The movie star, Robert Redford, ended up stealing all her parents' attention, attention they usually lavished on Sarah, the youngest. On top of that, they were acting all nervous, and anxious, different than usual. It made young Sarah mad, and she ended up taking it out on poor Mr. Redford.",
+        "summary": "Ira talks with Sarah Koenig about the first and only time a movie star came to her family's house when she was a kid. It didn't go well, for the celebrity or for her. The star was Robert Redford. He arrived and immediately stole all the attention her parents usually lavished on her, their youngest. Worse, they were nervous and strange around him, not themselves at all. Young Sarah was not pleased. Robert Redford paid the price.",
         "duration": 6,
         "contributors": [
           "Ira Glass",
@@ -13365,7 +13365,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Psychic Buddha, Qu'est-ce Que C'est",
-        "summary": "The story of what happens to an average American family, when a perfectly normal, rational and funny mom starts spending every day in the company of an ancient Buddhist monk named Aaron, who no one else can see. Davy Rothbart is one of her three sons, and also the reporter for this story. He goes back and to talk to his brothers and father and mother about something they've never actually discussed: Do any of them believe in Aaron? Davy is the man behind Found Magazine.",
+        "summary": "Davy Rothbart's mother is funny, rational, and by most measures, pretty normal. Except that she spends every day in the company of an ancient Buddhist monk named Aaron, who no one else can see. Davy talks to his brothers, father, and eventually his mom, and asks the question they've somehow never managed to discuss: do any of them actually believe he's real? Davy is the man behind Found Magazine.",
         "duration": 26,
         "contributors": [
           "Davy Rothbart"
@@ -13375,7 +13375,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: The Jackson Two",
-        "summary": "Congressman Jesse Jackson, Jr. already had one other man in his life who shared his name—his world famous father, the Jesse Jackson. But then right before his most recent primary race, an aide told him that he now had another Jesse Jackson to contend with. This other Jesse Jackson, a retired truck driver with no political experience, had mysteriously appeared on the same voting ballot as congressman Jackson. Ira reports on whether this was all a strange coincidence or a bit of political mischief orchestrated by the Congressman's political rivals.",
+        "summary": "Congressman Jesse Jackson, Jr. had always lived in the shadow of his father's name. But just before his primary, an aide delivered strange news: a second Jesse Jackson had appeared on the same ballot — a retired truck driver with no political experience. Ira reports on whether it was a coincidence or mischief orchestrated by the Congressman's rivals.",
         "duration": 9,
         "contributors": [
           "Ira Glass"
@@ -13385,7 +13385,7 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: Mr. Fun",
-        "summary": "Jonathan Goldstein and Heather O'Neill tell the true story of what happens when a person tries to intrude on a idyllic family of two, one of whom loves him, one of whom does not. For the first few years Jonathan knew Heather, her daughter Arizona was not very fond of him. For a long time he was nineteenth on Arizona's list of favorite people—behind the neighbor's dog and the plumber. Jonathan Goldstein is the author of the book, Lenny Bruce is Dead . Heather O'Neill's is the author of Two Eyes Are You Sleeping , a book of poetry.",
+        "summary": "Jonathan Goldstein and Heather O'Neill tell the true story of a man trying to wedge himself into an idyllic family of two. For the first few years, Heather's daughter Arizona was not very fond of Jonathan. He ranked nineteenth on her list of favorite people, behind the neighbor's dog and the plumber. Jonathan Goldstein is the author of the book, Lenny Bruce is Dead . Heather O'Neill's is the author of Two Eyes Are You Sleeping , a book of poetry.",
         "duration": 15,
         "contributors": [
           "Jonathan Goldstein",
@@ -13394,7 +13394,66 @@
       }
     ],
     "published_dates": [
-      "Fri, 10 May 2002 00:00:00 +0000"
+      "Fri, 10 May 2002 00:00:00 +0000",
+      "Sun, 05 Apr 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 06 Apr 2026 01:37:13 +0000",
+        "data": {
+          "title": "The Other Man",
+          "synopsis": "Stories about what happens when a new guy comes on the scene, and changes the way everyone who was already there relates to each other.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Host Ira Glass talks with Sarah Koenig, about the first and only time a movie star came over to her family's house when she was a kid, and how it didn't go too well, for the celebrity or for her. The movie star, Robert Redford, ended up stealing all her parents' attention, attention they usually lavished on Sarah, the youngest. On top of that, they were acting all nervous, and anxious, different than usual. It made young Sarah mad, and she ended up taking it out on poor Mr. Redford.",
+              "duration": 6,
+              "contributors": [
+                "Ira Glass",
+                "Sarah Koenig"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Psychic Buddha, Qu'est-ce Que C'est",
+              "summary": "The story of what happens to an average American family, when a perfectly normal, rational and funny mom starts spending every day in the company of an ancient Buddhist monk named Aaron, who no one else can see. Davy Rothbart is one of her three sons, and also the reporter for this story. He goes back and to talk to his brothers and father and mother about something they've never actually discussed: Do any of them believe in Aaron? Davy is the man behind Found Magazine.",
+              "duration": 26,
+              "contributors": [
+                "Davy Rothbart"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: The Jackson Two",
+              "summary": "Congressman Jesse Jackson, Jr. already had one other man in his life who shared his name—his world famous father, the Jesse Jackson. But then right before his most recent primary race, an aide told him that he now had another Jesse Jackson to contend with. This other Jesse Jackson, a retired truck driver with no political experience, had mysteriously appeared on the same voting ballot as congressman Jackson. Ira reports on whether this was all a strange coincidence or a bit of political mischief orchestrated by the Congressman's political rivals.",
+              "duration": 9,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Mr. Fun",
+              "summary": "Jonathan Goldstein and Heather O'Neill tell the true story of what happens when a person tries to intrude on a idyllic family of two, one of whom loves him, one of whom does not. For the first few years Jonathan knew Heather, her daughter Arizona was not very fond of him. For a long time he was nineteenth on Arizona's list of favorite people—behind the neighbor's dog and the plumber. Jonathan Goldstein is the author of the book, Lenny Bruce is Dead . Heather O'Neill's is the author of Two Eyes Are You Sleeping , a book of poetry.",
+              "duration": 15,
+              "contributors": [
+                "Jonathan Goldstein",
+                "Heather O'Neill"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/square/public/episodes/images/212.jpg?itok=R76VmQc-",
+            "credit": "Taylor Dahlin"
+          }
+        }
+      }
     ]
   },
   {
@@ -53669,7 +53728,9 @@
         "title": "Act One: Act One",
         "summary": "M Gessen tells Ira Glass about the surprising events that prompted them to begin reporting on their own family for their new podcast, The Idiot . They play the first episode of the series.",
         "duration": 14,
-        "contributors": []
+        "contributors": [
+          "M Gessen"
+        ]
       },
       {
         "number": 2,
@@ -53691,6 +53752,45 @@
     "published_dates": [
       "Sun, 29 Mar 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Mon, 06 Apr 2026 01:37:15 +0000",
+        "data": {
+          "title": "The Idiot",
+          "synopsis": "M. Gessen returns to our show with a true-crime story that takes place entirely within their own family. This story comes to us from the producers atSerial Productions—who invented the true-crime podcast more than a decade ago—and fromThe New York Times.",
+          "acts": [
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Act One",
+              "summary": "M Gessen tells Ira Glass about the surprising events that prompted them to begin reporting on their own family for their new podcast, The Idiot . They play the first episode of the series.",
+              "duration": 14,
+              "contributors": []
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Act Two",
+              "summary": "Ira Glass and M Gessen continue to talk through the story of M’s cousin, Allen Gessen. They play more clips from the podcast, and we finally hear about the big, shocking thing that snapped their family apart.",
+              "duration": 20,
+              "contributors": []
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Act Three",
+              "summary": "M Gessen tells Ira Glass about Allen’s trial, and we hear a recording of his conversation with the undercover agent.",
+              "duration": 21,
+              "contributors": []
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/883-theidiot-serial-johncurrin.png?itok=EWYtkDz5",
+            "credit": null
+          }
+        }
+      }
+    ]
   }
 ]
