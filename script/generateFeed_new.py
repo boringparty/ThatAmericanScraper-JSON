@@ -3,7 +3,10 @@ import json
 import re
 from datetime import datetime, timezone
 
-INPUT_FILE = "data.json"
+INPUT_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(__file__)),
+    "data.json"
+)
 
 OUTPUT_FILE_ALL = "feed/all.xml"
 OUTPUT_FILE_MAIN = "feed/feed.xml"
