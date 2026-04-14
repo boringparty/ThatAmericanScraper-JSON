@@ -77,29 +77,35 @@ def build_description(ep):
 # -------------------------
 # CORE ITEM BUILDER
 # -------------------------
-def build_item(ep, latest_pub_dt, clean=False):
+def build_item(ep, latest_pub_dt, clean=False, mode="all"):
     orig_dt = parse_any_date(ep["original_air_date"])
     total_minutes = sum(a.get("duration") or 0 for a in ep.get("acts", []))
     padded = ep["number"].zfill(4)
 
+    # Title logic
     title_suffix = ""
     if clean:
         title_suffix += " (Clean)"
     if latest_pub_dt.year != orig_dt.year:
         title_suffix += " - Repeat"
 
+    # Clean handling
     is_clean = clean and ep.get("download_clean")
 
     guid_suffix = "-C" if is_clean else ""
     guid = f"{padded}-{latest_pub_dt.strftime('%Y%m%d')}{guid_suffix}"
 
     enclosure = ep["download_clean"] if is_clean else ep["download"]
-
     explicit_val = "clean" if is_clean else ("true" if ep.get("explicit") else "false")
+
+    # LINK LOGIC (ONLY MAIN FEED MODIFIED)
+    link = ep["episode_url"]
+    if mode == "main":
+        link = f"{link}?{orig_dt.year}"
 
     return f"""    <item>
       <title><![CDATA[{ep["number"]}: {ep["title"]}{title_suffix}]]></title>
-      <link>{ep["episode_url"]}</link>
+      <link>{link}</link>
       <guid>{guid}</guid>
       <itunes:season>{orig_dt.year}</itunes:season>
       <itunes:episode>{ep["number"]}</itunes:episode>
@@ -113,7 +119,7 @@ def build_item(ep, latest_pub_dt, clean=False):
 
 
 # -------------------------
-# FEED GENERATOR
+# FEED BUILDER
 # -------------------------
 def build_feed(episodes, mode):
     items = []
@@ -127,23 +133,25 @@ def build_feed(episodes, mode):
             default=parse_any_date(ep["original_air_date"])
         )
 
+        # ALL
         if mode == "all":
-            items.append(build_item(ep, latest_pub_dt, clean=False))
+            items.append(build_item(ep, latest_pub_dt, clean=False, mode=mode))
             if ep.get("download_clean"):
-                items.append(build_item(ep, latest_pub_dt, clean=True))
+                items.append(build_item(ep, latest_pub_dt, clean=True, mode=mode))
 
+        # MAIN (exclude clean titles entirely)
         elif mode == "main":
             if "clean" not in ep.get("title", "").lower():
-                items.append(build_item(ep, latest_pub_dt, clean=False))
+                items.append(build_item(ep, latest_pub_dt, clean=False, mode=mode))
 
+        # CLEAN (fallback to normal if missing)
         elif mode == "clean":
             if ep.get("download_clean"):
-                items.append(build_item(ep, latest_pub_dt, clean=True))
+                items.append(build_item(ep, latest_pub_dt, clean=True, mode=mode))
             else:
-                # fallback: include normal if no clean exists
-                items.append(build_item(ep, latest_pub_dt, clean=False))
+                items.append(build_item(ep, latest_pub_dt, clean=False, mode=mode))
 
-    # newest first (THIS is your stable ordering layer)
+    # newest first
     items.sort(
         key=lambda x: parse_any_date(
             re.search(r"<pubDate>(.*?)</pubDate>", x).group(1)
@@ -155,7 +163,7 @@ def build_feed(episodes, mode):
 
 
 # -------------------------
-# MAIN
+# WRITE FEED
 # -------------------------
 def write_feed(path, body):
     header = """<?xml version="1.0" ?>
@@ -174,6 +182,9 @@ def write_feed(path, body):
         f.write(footer + "\n")
 
 
+# -------------------------
+# MAIN
+# -------------------------
 def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         episodes = json.load(f)
