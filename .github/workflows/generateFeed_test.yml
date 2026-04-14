@@ -1,9 +1,9 @@
-name: TEST - Generate RSS Feeds
+name: Generate New RSS Feeds
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"  # every 6 hours (adjust if you want)
+    - cron: "0 */6 * * *"  # every 6 hours
 
 permissions:
   contents: write
@@ -28,13 +28,17 @@ jobs:
       - name: Run feed generator
         run: python script/generateFeed_new.py
 
-      - name: Commit changes
+      - name: Commit feeds
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add feed/all.xml feed/feed.xml feed/clean.xml
+          git add feed/
 
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update RSS feeds"
+          if git diff --cached --quiet; then
+            echo "No feed changes"
+            exit 0
+          fi
 
+          git commit -m "Update feeds"
           git push
