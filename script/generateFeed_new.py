@@ -100,7 +100,7 @@ def build_item(ep, latest_pub_dt, clean=False, mode="all"):
     guid = f"{padded}-{latest_pub_dt.strftime('%Y%m%d')}{guid_suffix}"
 
     enclosure = ep["download_clean"] if is_clean else ep["download"]
-    explicit_val = "clean" if is_clean else ("true" if ep.get("explicit") else "false")
+    explicit_val = "clean" if is_clean else ("yes" if ep.get("explicit") else "clean")
 
     # LINK LOGIC (ONLY MAIN FEED MODIFIED)
     link = ep["episode_url"]
