@@ -176,6 +176,8 @@ def write_feed(path, body):
     <title>That American Archive</title>
     <link>https://www.thisamericanlife.org</link>
     <description>Auto-generated feed</description>
+    <copyright>Copyright © Ira Glass / This American Life</copyright>
+    <itunes:image href="https://i.imgur.com/pTMCfn9.png"/>
     <language>en</language>"""
 
     footer = "  </channel>\n</rss>"
