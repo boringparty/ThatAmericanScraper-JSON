@@ -5,9 +5,9 @@ from datetime import datetime, timezone
 
 INPUT_FILE = "data.json"
 
-OUTPUT_FILE_ALL = "feed_all.xml"
-OUTPUT_FILE_MAIN = "feed_main.xml"
-OUTPUT_FILE_CLEAN = "feed_clean.xml"
+OUTPUT_FILE_ALL = "feed/all.xml"
+OUTPUT_FILE_MAIN = "feed/feed.xml"
+OUTPUT_FILE_CLEAN = "feed/clean.xml"
 
 
 # -------------------------
