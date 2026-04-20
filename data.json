@@ -24562,8 +24562,8 @@
     "original_air_date": "Fri, 30 Oct 2009 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/393/infidelity",
     "explicit": false,
-    "synopsis": "Stories of cheating, cheaters and the cheated. WriterJames Bralywith a story about temptation (performed and recorded atThe Moth),Dani Shapiroon being the mistress, and more.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/393/DJd4cURisOoHRF6w4T9rSzfOFdEBXGfVueuQ5PjaLXU/393.mp3",
+    "synopsis": "Stories of cheating, cheaters, and the cheated.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/88122e0e-0b8d-421b-ac4f-e3bbb8f6533b/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=88122e0e-0b8d-421b-ac4f-e3bbb8f6533b&nocache",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/393.jpg?itok=swFEp66r",
@@ -24574,7 +24574,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Ira talks with Jessica Pressler, who writes the Daily Intel blog for NewYork Magazine, about a phenomenon she noticed in the wedding notices in The New York Times . Couples were cheerfully telling—as part of their \"meet cute\" stories—how their relationships began with one of them cheating on a spouse or long-time partner.",
+        "summary": "Ira talks with Jessica Pressler about a phenomenon she noticed in the wedding notices in The New York Times . Couples were cheerfully telling—as part of their \"meet cute\" stories—how their relationships began with one of them cheating on a spouse or long-time partner.",
         "duration": 4,
         "contributors": [
           "Ira Glass"
@@ -24584,7 +24584,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Let Me Kiss Your Stiff Upper Lip",
-        "summary": "From England, Ruby Wright has a story of an affair where—even years after it ended—it wasn't much discussed. Ruby Wright's radio show Ruby's Chicky Boil-Ups airs every other Sunday on Radionowhere .",
+        "summary": "From England, Ruby Wright has a story of an affair where—even years after it ended—it wasn't much discussed.",
         "duration": 14,
         "contributors": [
           "Ruby Wright"
@@ -24594,7 +24594,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: The Italian Job",
-        "summary": "Ira reviews some infidelity stats from his mother's book on the subject, Not Just Friends . And author James Braly tells a story of temptation at The Moth .",
+        "summary": "Ira reviews some infidelity stats from his mother's book on the subject, Not Just Friends . And author James Braly tells a story of temptation live onstage at The Moth .",
         "duration": 15,
         "contributors": [
           "James Braly"
@@ -24604,7 +24604,7 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: How Did I Get Here?",
-        "summary": "Act two showed us a moment before infidelity occurs. In this act, Dani Shapiro has a story about the confusing mess things can be during an affair. The story is from her memoir, Slow Motion .",
+        "summary": "Dani Shapiro on the confusing mess things can be during an affair. The story is from her memoir, Slow Motion .",
         "duration": 16,
         "contributors": [
           "Dani Shapiro"
@@ -24614,7 +24614,7 @@
         "number": 4,
         "number_text": "Act Four",
         "title": "Act Four: The Man Who Knew What I Was About To Say",
-        "summary": "Etgar Keret describes the moment in the immediate aftermath of an affair. Actor Matt Malloy reads. Keret's most recent book is The Girl On The Fridge .",
+        "summary": "Etgar Keret describes the moment in the immediate aftermath of an affair. Actor Matt Malloy reads.",
         "duration": 4,
         "contributors": [
           "Etgar Keret",
@@ -24623,7 +24623,75 @@
       }
     ],
     "published_dates": [
-      "Fri, 30 Oct 2009 00:00:00 +0000"
+      "Fri, 30 Oct 2009 00:00:00 +0000",
+      "Sun, 19 Apr 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 20 Apr 2026 01:37:31 +0000",
+        "data": {
+          "title": "Infidelity",
+          "synopsis": "Stories of cheating, cheaters and the cheated. WriterJames Bralywith a story about temptation (performed and recorded atThe Moth),Dani Shapiroon being the mistress, and more.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Ira talks with Jessica Pressler, who writes the Daily Intel blog for NewYork Magazine, about a phenomenon she noticed in the wedding notices in The New York Times . Couples were cheerfully telling—as part of their \"meet cute\" stories—how their relationships began with one of them cheating on a spouse or long-time partner.",
+              "duration": 4,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Let Me Kiss Your Stiff Upper Lip",
+              "summary": "From England, Ruby Wright has a story of an affair where—even years after it ended—it wasn't much discussed. Ruby Wright's radio show Ruby's Chicky Boil-Ups airs every other Sunday on Radionowhere .",
+              "duration": 14,
+              "contributors": [
+                "Ruby Wright"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: The Italian Job",
+              "summary": "Ira reviews some infidelity stats from his mother's book on the subject, Not Just Friends . And author James Braly tells a story of temptation at The Moth .",
+              "duration": 15,
+              "contributors": [
+                "James Braly"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: How Did I Get Here?",
+              "summary": "Act two showed us a moment before infidelity occurs. In this act, Dani Shapiro has a story about the confusing mess things can be during an affair. The story is from her memoir, Slow Motion .",
+              "duration": 16,
+              "contributors": [
+                "Dani Shapiro"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: The Man Who Knew What I Was About To Say",
+              "summary": "Etgar Keret describes the moment in the immediate aftermath of an affair. Actor Matt Malloy reads. Keret's most recent book is The Girl On The Fridge .",
+              "duration": 4,
+              "contributors": [
+                "Etgar Keret",
+                "Matt Malloy"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/393.jpg?itok=swFEp66r",
+            "credit": "Michael Forster Rothbart"
+          }
+        }
+      }
     ]
   },
   {
@@ -53801,7 +53869,7 @@
     "explicit": true,
     "synopsis": "At a time when the U.S. government is trying to make American history tidier, we try to learn from the mess. Including the untold, messy story of Paul and Essie Robeson.",
     "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/f2a4a8d9-a9ad-47b4-8f83-5617fa8f2435/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=f2a4a8d9-a9ad-47b4-8f83-5617fa8f2435&nocache",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/885_1.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/885_0.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-885-getty-514697264_0.jpg?itok=IaKmYs-J",
       "credit": null
