@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-import xml.etree.ElementTree as ET
+import feedparser
 import random
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
@@ -11,88 +10,64 @@ OUTPUT_FILE = "feed/oldies.xml"
 TEN_YEARS = timedelta(days=365 * 10)
 
 
-# -------------------------
-# PARSE DATE
-# -------------------------
-def parse_date(text):
+def is_old(pub_date):
     try:
-        dt = parsedate_to_datetime(text)
+        dt = parsedate_to_datetime(pub_date)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
-        return dt.astimezone(timezone.utc)
+        dt = dt.astimezone(timezone.utc)
+        return datetime.now(timezone.utc) - dt >= TEN_YEARS
     except Exception:
-        return None
-
-
-def is_old(dt):
-    if not dt:
         return False
-    return datetime.now(timezone.utc) - dt >= TEN_YEARS
 
 
-# -------------------------
-# TITLE CLEANUP
-# -------------------------
 def clean_title(title):
     title = title.replace(" - Repeat", "")
-    return f"[Oldies] {title}"
+    return "[Oldies] " + title
 
 
-# -------------------------
-# MAIN
-# -------------------------
 def main():
-    tree = ET.parse(INPUT_FILE)
-    root = tree.getroot()
-
-    items = root.findall(".//item")
+    feed = feedparser.parse(INPUT_FILE)
 
     candidates = []
 
-    for item in items:
-        pub = item.find("pubDate")
-        title = item.find("title")
-
-        if pub is None or title is None:
+    for entry in feed.entries:
+        pub = entry.get("published") or entry.get("pubDate")
+        if not pub:
             continue
 
-        dt = parse_date(pub.text)
-        if not is_old(dt):
+        if not is_old(pub):
             continue
 
-        candidates.append(item)
+        candidates.append(entry)
 
     if not candidates:
-        raise Exception("No 10+ year old episodes found")
+        raise Exception("No eligible episodes found")
 
     chosen = random.choice(candidates)
 
-    # clone item safely
-    item_xml = ET.tostring(chosen, encoding="unicode")
+    title = clean_title(chosen.title)
 
-    # fix title
-    item_xml = item_xml.replace("<title><![CDATA[", "<title><![CDATA[")
-
-    # safer title patching
-    title_elem = chosen.find("title")
-    if title_elem is not None and title_elem.text:
-        title_elem.text = clean_title(title_elem.text)
-
-    output_xml = f"""<?xml version="1.0"?>
+    item = f"""<?xml version="1.0"?>
 <rss version="2.0">
   <channel>
     <title>Oldies TAL Feed</title>
     <link>https://www.thisamericanlife.org</link>
-    <description>Random episode 10+ years old</description>
+    <description>Random 10+ year old episode</description>
 
-{ET.tostring(chosen, encoding="unicode")}
+    <item>
+      <title><![CDATA[{title}]]></title>
+      <link>{chosen.link}</link>
+      <description><![CDATA[{chosen.get("summary", "")}]]></description>
+      <pubDate>{pub}</pubDate>
+    </item>
 
   </channel>
 </rss>
 """
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(output_xml)
+        f.write(item)
 
 
 if __name__ == "__main__":
