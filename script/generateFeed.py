@@ -193,12 +193,17 @@ def write_feed(path, body):
 # -------------------------
 def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        episodes = json.load(f)
+        raw = json.load(f)
+
+    # HARD SANITIZE
+    episodes = []
+    for e in raw:
+        if isinstance(e, dict) and "number" in e and "episode_url" in e:
+            episodes.append(e)
 
     write_feed(OUTPUT_FILE_ALL, build_feed(episodes, "all"))
     write_feed(OUTPUT_FILE_MAIN, build_feed(episodes, "main"))
     write_feed(OUTPUT_FILE_CLEAN, build_feed(episodes, "clean"))
-
 
 if __name__ == "__main__":
     main()
