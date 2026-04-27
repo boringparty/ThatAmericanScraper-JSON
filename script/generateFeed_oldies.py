@@ -1,62 +1,127 @@
+#!/usr/bin/env python3
+import re
 import json
 import random
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
+import xml.etree.ElementTree as ET
 
-JSON_URL = "https://raw.githubusercontent.com/boringparty/ThatAmericanScraper-JSON/refs/heads/main/data.json"
+INPUT_FILE = "feed/feed.xml"
+OUTPUT_FILE = "feed/oldies.xml"
+USED_FILE = "used_oldies.json"
+
+NOW = datetime.now(timezone.utc)
 
 
-def parse_date(s):
-    return datetime.strptime(s, "%a, %d %b %Y %H:%M:%S %z")
+# -------------------------
+# LOAD USED
+# -------------------------
+def load_used():
+    try:
+        with open(USED_FILE, "r", encoding="utf-8") as f:
+            return set(json.load(f))
+    except FileNotFoundError:
+        return set()
 
 
+def save_used(used):
+    with open(USED_FILE, "w", encoding="utf-8") as f:
+        json.dump(sorted(list(used)), f, indent=2)
+
+
+# -------------------------
+# PARSE DATE
+# -------------------------
+def parse_rss_date(text):
+    # Example: "Wed, 17 Nov 2010 00:00:00 +0000"
+    return datetime.strptime(text, "%a, %d %b %Y %H:%M:%S %z")
+
+
+def older_than_10_years(dt):
+    return (NOW - dt).days >= 3650
+
+
+# -------------------------
+# CLEAN TITLE
+# -------------------------
+def clean_title(title):
+    title = re.sub(r"\s-\sRepeat$", "", title)
+    return "[Oldies] " + title
+
+
+# -------------------------
+# MAIN
+# -------------------------
 def main():
-    import requests
+    used = load_used()
 
-    data = requests.get(JSON_URL).json()
+    tree = ET.parse(INPUT_FILE)
+    root = tree.getroot()
 
-    cutoff = datetime.now(timezone.utc) - timedelta(days=365 * 10)
+    items = root.findall(".//item")
 
-    old_eps = [
-        ep for ep in data
-        if parse_date(ep["original_air_date"]) < cutoff
-    ]
+    eligible = []
 
-    if not old_eps:
-        raise Exception("No old episodes found")
+    for item in items:
+        title = item.findtext("title", "")
+        pub = item.findtext("pubDate", "")
+        guid = item.findtext("guid", "")
 
-    ep = random.choice(old_eps)
+        try:
+            dt = parse_rss_date(pub)
+        except Exception:
+            continue
 
-    ep_num = ep["number"]
-    title = ep["title"]
-    date = parse_date(ep["original_air_date"]).strftime("%Y-%m-%d")
+        if not older_than_10_years(dt):
+            continue
 
-    url = ep["episode_url"]
-    mp3 = ep["download"]
-    synopsis = ep.get("synopsis", "")
+        if guid in used:
+            continue
 
-    post_title = f"[Oldies] #{ep_num} {title} ({date})"
+        eligible.append((item, dt, guid))
 
-    post_body = (
-        f"We're digging through the archives! This week's episode is "
-        f"[#{ep_num} {title} ({date})]({url}) "
-        f"([Download]({mp3}))\n\n"
-        f"{synopsis}"
-    )
+    if not eligible:
+        print("No eligible episodes found.")
+        return
 
-    csv_row = [
-        "",
-        post_title,
-        post_body,
-        "/r/thisamericanlife",
-        datetime.now().strftime("%Y-%m-%d"),
-        "06:00",
-        "GMT-0700",
-        "0", "0", "0"
-    ]
+    item, dt, guid = random.choice(eligible)
 
-    # Write output
-    with open("output.csv", "w", encoding="utf-8") as f:
-        f.write(",".join(csv_row))
+    used.add(guid)
+    save_used(used)
+
+    # extract fields
+    title = clean_title(item.findtext("title", ""))
+    link = item.findtext("link", "")
+    pubDate = NOW.strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+    enclosure = item.find("enclosure")
+    audio_url = enclosure.attrib["url"] if enclosure is not None else ""
+
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Oldies Feed</title>
+    <link>{link}</link>
+    <description>Random old This American Life episodes (10+ years old)</description>
+
+    <item>
+      <title><![CDATA[{title}]]></title>
+      <link>{link}</link>
+      <guid>{guid}</guid>
+      <pubDate>{pubDate}</pubDate>
+      <enclosure url="{audio_url}" type="audio/mpeg"/>
+      <description><![CDATA[
+        Archived episode from This American Life.
+      ]]></description>
+    </item>
+
+  </channel>
+</rss>
+"""
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write(rss)
+
+    print(f"Selected: {title}")
 
 
 if __name__ == "__main__":
