@@ -57,7 +57,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data.json
+          git add data/data.json
 
           if git diff --cached --quiet; then
             echo "No data changes to commit"
@@ -120,13 +120,13 @@ jobs:
         run: |
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M")
 
-          if ! git diff --quiet HEAD~1 HEAD -- data.json; then
-            echo "$TIMESTAMP - Episode Posted" >> check.log
+          if ! git diff --quiet HEAD~1 HEAD -- data/data.json; then
+            echo "$TIMESTAMP - Episode Posted" >> data/check.log
           else
-            echo "$TIMESTAMP - Nothing New" >> check.log
+            echo "$TIMESTAMP - Nothing New" >> data/check.log
           fi
 
-          git add check.log
+          git add data/check.log
 
           if git diff --cached --quiet; then
             echo "No log changes"
