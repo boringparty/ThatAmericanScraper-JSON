@@ -4487,75 +4487,6 @@
     "title": "Kindness of Strangers",
     "number": "75",
     "original_air_date": "Fri, 12 Sep 1997 00:00:00 +0000",
-    "episode_url": "https://www.thisamericanlife.org/75/kindness-of-strangers",
-    "explicit": false,
-    "synopsis": "Stories of the kindness of strangers and where it leads. Also, the unkindness of strangers and where that can lead. All of today's stories take place in the city most people think of as the least kind city in America: New York.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/75/5H_dsOmKUj6EZv9iHWrMZ8jPRCaqrej5s_0nG5JazSY/75.mp3",
-    "download_clean": null,
-    "image": {
-      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/75.jpg?itok=MajvaheT",
-      "credit": "Jonathan Camuzo"
-    },
-    "acts": [
-      {
-        "number": 0,
-        "number_text": "Prologue",
-        "title": "Prologue",
-        "summary": "Brett Leveridge was standing on the subway. A guy comes walking down the platform, stopping in front of each passenger and delivering a quiet verdict: \"You're in. You're out. You, you can stay. You — gotta go.\" Most people ignored the guy. But Brett found himself, against his will, hoping the guy would give him the thumbs up, and when the guy does, it's thrilling in a very small way: a tiny kindness from a stranger. Brett's story also appears on his website Brettnews , and you can see a graphic recreation of it in our comic book How to Make Radio .",
-        "duration": 5,
-        "contributors": [
-          "Ira Glass"
-        ]
-      },
-      {
-        "number": 1,
-        "number_text": "Act One",
-        "title": "Act One: Tarzan Finds A Mate",
-        "summary": "New York City locksmith Joel Kostman tells the story of an act of kindness he committed, hoping for a small reward. From his book: Keys to the City: Tales of a New York City Locksmith .",
-        "duration": 13,
-        "contributors": [
-          "Joel Kostman"
-        ]
-      },
-      {
-        "number": 2,
-        "number_text": "Act Two",
-        "title": "Act Two: Runaway",
-        "summary": "In 1940, Jack Geiger, at the age of fourteen, left his middle-class Jewish home and knocked on the door of a black actor named Canada Lee. He asked Lee if he could move in with him. Lee said yes, and in Lee's Harlem apartment, Geiger spent a year with many of the great figures of the Harlem renaissance: Langston Hughes, Billy Strayhorn, Richard Wright, Adam Clayton Powell. This is what Geiger ended up doing because of that experience. A side note: It turns out there's a movie in which Canada Lee takes a white teenager under his wing and counsels him, as he did for Jack Geiger in real life. The film is called Lost Boundaries .",
-        "duration": 11,
-        "contributors": [
-          "Jack Geiger"
-        ]
-      },
-      {
-        "number": 3,
-        "number_text": "Act Three",
-        "title": "Act Three: Unkindness Of Strangers",
-        "summary": "How two next-door neighbors start treating each other badly, and how, once they start, they become obsessed with each other. Paul Tough reports.",
-        "duration": 14,
-        "contributors": [
-          "Paul Tough"
-        ]
-      },
-      {
-        "number": 4,
-        "number_text": "Act Four",
-        "title": "Act Four: Chairman Of The Block",
-        "summary": "An odd occurrence at 124 East Fourth Street in Manhattan's East Village. For the last five weeks, a singer named Nick Drakides has stood on the stoop singing Sinatra songs late at night to the delight of his neighbors. The cops don't bust them; the crowds behave. It's his gift to New York. Blake Eskin tells the story.",
-        "duration": 12,
-        "contributors": [
-          "Blake Eskin"
-        ]
-      }
-    ],
-    "published_dates": [
-      "Fri, 12 Sep 1997 00:00:00 +0000"
-    ]
-  },
-  {
-    "title": "Kindness of Strangers",
-    "number": "75",
-    "original_air_date": "Fri, 12 Sep 1997 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/kindness-of-strangers",
     "explicit": false,
     "synopsis": "An episode from our show's early days: Stories about what happens when strangers are kind — and when they're not.",
@@ -29040,55 +28971,6 @@
     "title": "Blackjack",
     "number": "466",
     "original_air_date": "Fri, 08 Jun 2012 00:00:00 +0000",
-    "episode_url": "https://www.thisamericanlife.org/466/blackjack",
-    "explicit": false,
-    "synopsis": "The casino game everyone thinks they can beat.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/466/bNwbLqTcApfUoWu2fWPzs_AzXtGehSyF2bkes0Bni70/466.mp3",
-    "download_clean": null,
-    "image": {
-      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/466.jpg?itok=i4IbU3ku",
-      "credit": "flickr/theGrandfather"
-    },
-    "acts": [
-      {
-        "number": 0,
-        "number_text": "Prologue",
-        "title": "Prologue",
-        "summary": "Host Ira Glass and producer Robyn Semien get a blackjack lesson from Andy Bloch , who played for the MIT blackjack team. He teaches them the basics of card-counting, the technique that gives players an advantage against the house — enough of an advantage that most casinos will ask you to leave if they catch you doing it.",
-        "duration": 9,
-        "contributors": [
-          "Ira Glass"
-        ]
-      },
-      {
-        "number": 1,
-        "number_text": "Act One",
-        "title": "Act One: Render Unto Caesar's Palace What Is Due To Caesar's Palace",
-        "summary": "Jack Hitt tells the story of the Christian card counting team featured in the documentary Holy Rollers , and why they see no contradiction in being devout Christians who spend their days in casinos. Jack is the author of the book Bunch of Amateurs .",
-        "duration": 18,
-        "contributors": [
-          "Jack Hitt"
-        ]
-      },
-      {
-        "number": 2,
-        "number_text": "Act Two",
-        "title": "Act Two: Harrah's Today, Gone Tomorrow",
-        "summary": "Producer Sarah Koenig tells the story of a woman who sued the casino where she lost her inheritance, saying that it was to blame, not her. The story was inspired by a chapter in The Power of Habit , by Charles Duhigg .",
-        "duration": 25,
-        "contributors": [
-          "Sarah Koenig"
-        ]
-      }
-    ],
-    "published_dates": [
-      "Fri, 08 Jun 2012 00:00:00 +0000"
-    ]
-  },
-  {
-    "title": "Blackjack",
-    "number": "466",
-    "original_air_date": "Fri, 08 Jun 2012 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/blackjack",
     "explicit": false,
     "synopsis": "The casino game everyone thinks they can beat.",
@@ -37244,73 +37126,6 @@
     "title": "Kid Logic",
     "number": "605",
     "original_air_date": "Fri, 16 Dec 2016 00:00:00 +0000",
-    "episode_url": "https://www.thisamericanlife.org/605/kid-logic",
-    "explicit": false,
-    "synopsis": "Kids using perfectly logical arguments, and arriving at perfectly wrong conclusions.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/605/yywgdqSNbNljH9WZenFwkMzCQ--0uvjZRUsHsxs8Voo/605.mp3",
-    "download_clean": null,
-    "image": {
-      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/gettyimages-538210356.jpg?itok=97W6ePd_",
-      "credit": null
-    },
-    "acts": [
-      {
-        "number": 0,
-        "number_text": "Prologue",
-        "title": "Prologue",
-        "summary": "Ira talks with Rebecca who, using perfectly valid evidence, arrived at the perfectly incorrect conclusion that her neighbor, Ronnie Loeberfeld, was the tooth fairy. Ira also talks with Dr. Alison Gopnik, co-author of the book, \" The Scientist in the Crib ,\" about what exactly kid logic is.",
-        "duration": 6,
-        "contributors": [
-          "Ira Glass"
-        ]
-      },
-      {
-        "number": 1,
-        "number_text": "Act One",
-        "title": "Act One: Baby Scientists with Faulty Data",
-        "summary": "More stories like the one in the prologue, where kids look at something going on around them, observe it carefully, think about it logically, and come to conclusions that are completely incorrect.",
-        "duration": 11,
-        "contributors": []
-      },
-      {
-        "number": 2,
-        "number_text": "Act Two",
-        "title": "Act Two: Werewolves in Their Youth",
-        "summary": "Michael Chabon reads an excerpt from his short story \" Werewolves in Their Youth ,\" from his collection of the same name, about an act of kid logic that succeeds where adult logic fails.",
-        "duration": 16,
-        "contributors": [
-          "Michael Chabon"
-        ]
-      },
-      {
-        "number": 3,
-        "number_text": "Act Three",
-        "title": "Act Three: The Game Ain't Over til the Fatso Man Sings",
-        "summary": "Howie Chackowicz tried a risky combination when he was little, kid logic with puppy love. He used to think that girls would fall in love with him if they could just see him sleeping, or if they could hear him read aloud. He revisits his biggest childhood crush and finds out that not only did his methods not work, but that no one even noticed them. Howie is the creator of \"Howie Action Comics.\"",
-        "duration": 10,
-        "contributors": [
-          "Howie Chackowicz"
-        ]
-      },
-      {
-        "number": 4,
-        "number_text": "Act Four",
-        "title": "Act Four: When Small Thoughts Meet Big Brains",
-        "summary": "Alex Blumberg investigates a little-studied phenomenon: Children who get a mistaken idea in their heads about how something works or what something means, and then don't figure out until well into adulthood that they were wrong. Including the tale of a girl who received a tissue box for Christmas, allegedly painted by trained monkeys. Alex is one of the founders of Gimlet Media and host of the podcast “ How to Save a Planet .”",
-        "duration": 13,
-        "contributors": [
-          "Alex Blumberg"
-        ]
-      }
-    ],
-    "published_dates": [
-      "Fri, 16 Dec 2016 00:00:00 +0000"
-    ]
-  },
-  {
-    "title": "Kid Logic",
-    "number": "605",
-    "original_air_date": "Fri, 16 Dec 2016 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/kid-logic",
     "explicit": false,
     "synopsis": "Kids using perfectly logical arguments and arriving at perfectly wrong conclusions.",
@@ -38616,63 +38431,6 @@
     ],
     "published_dates": [
       "Fri, 06 Oct 2017 00:00:00 +0000"
-    ]
-  },
-  {
-    "title": "In the Shadow of the City",
-    "number": "628",
-    "original_air_date": "Fri, 13 Oct 2017 00:00:00 +0000",
-    "episode_url": "https://www.thisamericanlife.org/628/in-the-shadow-of-the-city",
-    "explicit": false,
-    "synopsis": "Stories that take place on the edge of civilization, just out of sight.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/628/Cgzvgp7JgsZYNtCuJZEMbca6IRqg4abTJo5osKfg80c/628.mp3",
-    "download_clean": null,
-    "image": {
-      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/628.jpg?itok=1wuMgE4_",
-      "credit": "Jörg Schubert"
-    },
-    "acts": [
-      {
-        "number": 0,
-        "number_text": "Prologue",
-        "title": "Prologue",
-        "summary": "Every city's got a place like this: that weird no man's land on the outskirts of town, with junk yards and landfills. Charlie Gregerson grew up near that stuff, on Chicago's far south side, and he remembers finding debris from famous Louis Sullivan masterpieces in the garbage dump after those buildings were demolished.",
-        "duration": 4,
-        "contributors": []
-      },
-      {
-        "number": 1,
-        "number_text": "Act One",
-        "title": "Act One: Brooklyn Archipelago",
-        "summary": "Out for a simple pleasure cruise with two friends, Alex Zharov was planning to see Jamaica Bay in New York City. But this end-of-the-day excursion, which should have only lasted 40 minutes, turns into an out-of-control adventure that left him lost, stranded, and bleeding—all within sight of the Empire State Building. Brett Martin reports.",
-        "duration": 23,
-        "contributors": [
-          "Brett Martin"
-        ]
-      },
-      {
-        "number": 2,
-        "number_text": "Act Two",
-        "title": "Act Two: Troubled Bridge Over Water",
-        "summary": "There is a four mile long bridge in Naan-jing China, famous for how many people jump off to die by suicide. In 2003, a man named Chen Sah began spending all of his weekends on the bridge, trying to single handedly stop the jumpers. Reporter Mike Paterniti tells his story of meeting Mr. Chen. A story Paterniti wrote about Mr. Chen appears in GQ Magazine . Suicide prevention doesn't usually look like pulling people off a bridge. Learn more about everyday ways of helping someone at risk at the American Foundation for Suicide Prevention .",
-        "duration": 15,
-        "contributors": [
-          "Mike Paterniti"
-        ]
-      },
-      {
-        "number": 3,
-        "number_text": "Act Three",
-        "title": "Act Three: Yes, In My Backyard",
-        "summary": "The story of the government cracking down on smokestack emissions at a city factory—even though the residents like the emissions. We hear from Jorge Just , who explains the one, magical secret about Chicago that no one outside Chicago ever believes is true. Then we hear from Brian Urbaszewski, Director of Environmental Health Programs for the American Lung Association in Chicago and Julie Armitage, Manager of Compliance and Enforcement for the Bureau of Air at the Illinois State EPA.",
-        "duration": 9,
-        "contributors": [
-          "Jorge Just"
-        ]
-      }
-    ],
-    "published_dates": [
-      "Fri, 13 Oct 2017 00:00:00 +0000"
     ]
   },
   {
