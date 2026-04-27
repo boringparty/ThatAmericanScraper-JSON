@@ -16,12 +16,14 @@ TEN_YEARS = timedelta(days=365 * 10)
 # XML CLEANUP
 # -------------------------
 def fix_xml(content):
-    """Fix common XML issues in RSS feeds"""
-    content = re.sub(r'&(?!(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)', '&amp;', content)
-    return content
+    return re.sub(
+        r'&(?!(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)',
+        '&amp;',
+        content
+    )
 
 # -------------------------
-# PARSE DATE
+# DATE PARSE
 # -------------------------
 def parse_date(text):
     try:
@@ -38,151 +40,151 @@ def is_old(dt):
     return datetime.now(timezone.utc) - dt >= TEN_YEARS
 
 # -------------------------
-# EPISODE NUMBER EXTRACTION
+# EPISODE ID
 # -------------------------
 def extract_episode_number(item):
     title_elem = item.find("title")
     if title_elem is not None and title_elem.text:
         title = title_elem.text.strip()
         if ':' in title:
-            potential_num = title.split(':')[0].strip().replace('#', '')
-            if potential_num.isdigit():
-                return potential_num
+            maybe = title.split(':')[0].strip().replace('#', '')
+            if maybe.isdigit():
+                return maybe
 
     link_elem = item.find("link")
     if link_elem is not None and link_elem.text:
         parts = link_elem.text.strip().split('/')
-        for part in reversed(parts):
-            if part.isdigit():
-                return part
+        for p in reversed(parts):
+            if p.isdigit():
+                return p
 
-    pub_elem = item.find("pubDate")
-    if pub_elem is not None and pub_elem.text:
-        return pub_elem.text.strip()
+    pub = item.find("pubDate")
+    if pub is not None and pub.text:
+        return pub.text.strip()
 
     return None
 
 # -------------------------
-# USED EPISODES TRACKING
+# USED TRACKING
 # -------------------------
-def load_used_episodes():
+def load_used():
     if not os.path.exists(USED_FILE):
         return []
     try:
-        with open(USED_FILE, 'r') as f:
-            data = json.load(f)
-            return data.get('used_episodes', [])
-    except Exception as e:
-        print(f"Warning: Could not load {USED_FILE}: {e}")
+        with open(USED_FILE, "r") as f:
+            return json.load(f).get("used_episodes", [])
+    except:
         return []
 
-def save_used_episodes(used_list):
-    with open(USED_FILE, 'w') as f:
-        json.dump({'used_episodes': used_list}, f, indent=2)
+def save_used(data):
+    with open(USED_FILE, "w") as f:
+        json.dump({"used_episodes": data}, f, indent=2)
 
 # -------------------------
 # TITLE CLEANUP
 # -------------------------
 def clean_title(title):
-    title = title.replace(" - Repeat", "")
-    return f"[Oldies] {title}"
+    return f"[Oldies] {title.replace(' - Repeat', '')}"
 
 # -------------------------
 # MAIN
 # -------------------------
 def main():
-    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
-        content = f.read()
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+        content = fix_xml(f.read())
 
-    content = fix_xml(content)
-
-    tree = ET.ElementTree(ET.fromstring(content))
-    root = tree.getroot()
+    root = ET.fromstring(content)
     items = root.findall(".//item")
 
-    used_episodes = load_used_episodes()
-
+    used = load_used()
     candidates = []
+
+    # -------------------------
+    # FILTER CANDIDATES
+    # -------------------------
     for item in items:
         pub = item.find("pubDate")
-        title = item.find("title")
-        if pub is None or title is None:
+        if not pub or not pub.text:
             continue
 
         dt = parse_date(pub.text)
         if not is_old(dt):
             continue
 
-        episode_num = extract_episode_number(item)
-        if episode_num and episode_num in used_episodes:
+        ep = extract_episode_number(item)
+        if ep and ep in used:
             continue
 
-        candidates.append((item, episode_num))
+        candidates.append((item, ep))
 
+    # fallback reset
     if not candidates:
-        print("No unused 10+ year old episodes found. Resetting used list.")
-        used_episodes = []
+        print("Resetting used list...")
+        used = []
+
         for item in items:
             pub = item.find("pubDate")
-            title = item.find("title")
-            if pub is None or title is None:
+            if not pub or not pub.text:
                 continue
 
             dt = parse_date(pub.text)
             if not is_old(dt):
                 continue
 
-            episode_num = extract_episode_number(item)
-            candidates.append((item, episode_num))
+            ep = extract_episode_number(item)
+            candidates.append((item, ep))
 
     if not candidates:
-        raise Exception("No 10+ year old episodes found at all")
+        raise Exception("No valid episodes found (check pubDate format)")
 
     chosen_item, episode_num = random.choice(candidates)
 
     if episode_num:
-        used_episodes.append(episode_num)
-        save_used_episodes(used_episodes)
+        used.append(episode_num)
+        save_used(used)
         print(f"Selected episode: {episode_num}")
 
-    # --- Extract original XML block ---
-    guid_text = chosen_item.find("guid").text
+    # -------------------------
+    # EXTRACT ORIGINAL ITEM XML
+    # -------------------------
+    guid_text = chosen_item.find("guid").text or ""
     item_start = content.find(guid_text)
-    if item_start == -1:
-        raise Exception("Could not find item in original XML")
 
-    item_start = content.rfind('<item', 0, item_start)
-    item_end = content.find('</item>', item_start) + len('</item>')
+    if item_start == -1:
+        raise Exception("Could not locate item in raw XML")
+
+    item_start = content.rfind("<item", 0, item_start)
+    item_end = content.find("</item>", item_start) + len("</item>")
 
     original_item_xml = content[item_start:item_end]
 
-    # --- Title update ---
+    # -------------------------
+    # TITLE
+    # -------------------------
     title_elem = chosen_item.find("title")
     if title_elem is not None and title_elem.text:
-        original_title = title_elem.text
-        new_title = clean_title(original_title)
+        new_title = clean_title(title_elem.text)
 
         original_item_xml = re.sub(
-            r'<title><!\[CDATA\[.*?\]\]></title>',
-            f'<title><![CDATA[{new_title}]]></title>',
+            r"<title><!\[CDATA\[.*?\]\]></title>",
+            f"<title><![CDATA[{new_title}]]></title>",
             original_item_xml
         )
 
-        print(f"Title: {original_title} -> {new_title}")
-
-    # --- pubDate update ---
-    today = datetime.now(timezone.utc)
-    new_pubdate = today.strftime("%a, %d %b %Y %H:%M:%S %z")
+    # -------------------------
+    # PUBDATE
+    # -------------------------
+    new_pubdate = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
 
     original_item_xml = re.sub(
-        r'<pubDate>.*?</pubDate>',
-        f'<pubDate>{new_pubdate}</pubDate>',
+        r"<pubDate>.*?</pubDate>",
+        f"<pubDate>{new_pubdate}</pubDate>",
         original_item_xml
     )
 
-    print(f"Updated pubDate to: {new_pubdate}")
-
-    # --- GUID update ---
+    # -------------------------
+    # GUID UPDATE
+    # -------------------------
     guid_elem = chosen_item.find("guid")
     if guid_elem is not None and guid_elem.text:
         original_guid = guid_elem.text.strip()
@@ -196,7 +198,36 @@ def main():
 
         print(f"GUID: {original_guid} -> {new_guid}")
 
-    # --- Output ---
+    # -------------------------
+    # ENCLOSURE → REDDIT MARKDOWN LINK
+    # -------------------------
+    enclosure = chosen_item.find("enclosure")
+
+    if enclosure is not None:
+        url = enclosure.attrib.get("url")
+
+        if url:
+            download_link = f"[download]({url})"
+
+            if re.search(r"(<description>)(.*?)(</description>)", original_item_xml, re.DOTALL):
+                original_item_xml = re.sub(
+                    r"(<description>)(.*?)(</description>)",
+                    rf"\1\2\n\n{download_link}\3",
+                    original_item_xml,
+                    flags=re.DOTALL
+                )
+            else:
+                original_item_xml = re.sub(
+                    r"</item>",
+                    f"<description>{download_link}</description>\n</item>",
+                    original_item_xml
+                )
+
+            print(f"Added download link: {url}")
+
+    # -------------------------
+    # OUTPUT
+    # -------------------------
     output_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
