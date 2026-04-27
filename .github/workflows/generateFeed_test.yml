@@ -26,7 +26,7 @@ jobs:
           pip install --upgrade pip
 
       - name: Run feed generator
-        run: python script/generateFeed_new.py
+        run: python script/generateFeed.py
 
       - name: Commit feeds
         run: |
