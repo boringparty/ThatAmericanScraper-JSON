@@ -1,40 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:itunes='http://www.itunes.com/dtds/podcast-1.0.dtd' xml:lang='en-US'>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Oldies TAL Feed</title>
     <link>https://www.thisamericanlife.org</link>
     <description>Random episode 10+ years old, updated weekly</description>
     <item>
-      <title><![CDATA[[Oldies] 227: Why We Fight]]></title>
-      <link>https://www.thisamericanlife.org/227/why-we-fight?2002</link>
-      <guid isPermaLink="false">0227-20021220-oldies</guid>
-      <itunes:season>2002</itunes:season>
-      <itunes:episode>227</itunes:episode>
+      <title><![CDATA[[Oldies] 398: Long Shot]]></title>
+      <link>https://www.thisamericanlife.org/398/long-shot?2010</link>
+      <guid isPermaLink="false">0398-20100108-oldies</guid>
+      <itunes:season>2010</itunes:season>
+      <itunes:episode>398</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>clean</itunes:explicit>
-      <description><![CDATA[<a href="https://www.thisamericanlife.org/227/why-we-fight">https://www.thisamericanlife.org/227/why-we-fight</a><br>
+      <description><![CDATA[<a href="https://www.thisamericanlife.org/398/long-shot">https://www.thisamericanlife.org/398/long-shot</a><br>
 <br>
-Stories about why we should go to war versus stories of why we shouldn't.<br>
+Stories of people betting on something with very bad odds, mostly because they have no other choice.<br>
 <br>
 Prologue<br>
-Host Ira Glass tells the story of a report by the U.S. intelligence community back in October 2002 that declared that the likelihood of Saddam Hussein using weapons of massive destruction was very low for the "foreseeable future"...unless the U.S. were to launch a military attack on Iraq. In other words, the war to stop him from using weapons of mass destruction would probably cause the thing it was designed to prevent. Ira talks with Senator Bob Graham, the ranking Democrat on the Senate Intelligence Committee, who asked the intelligence community to do this risk assessment, and who was surprised it didn't have more effect on the public debate over the war. Before he and Ira get off the phone, the Senator asks Ira to please pose a few questions about the intelligence report to the Administration for him. (7 minutes) by Ira Glass<br>
+Host Ira Glass talks to Leo Paur, coach of a high school football team in Utah that hasn't won a game in two and ahalf seasons, about how he motivates his team to keep going after so many crushing defeats. Namely: You decide that you're about to turn things around. You decide that you are the miracle long shot team that will come from behind and beats the odds. Case in point, the 2009 Kentucky Derby, whose winner was the second-biggest long shot in the history of that race. You can watch video of that win here . (8 minutes) by Ira Glass<br>
 <br>
 Act One<br>
-Ira speaks with Gordon Jondroe of the newly-created Department of Homeland Security, trying to get answers to Senator Graham's questions. It doesn't go so well. (5 minutes) by Ira Glass<br>
+In California, Maryland and Oklahoma, the governors can over-rule parole boards' decisions to free prisoners serving life sentences. In all three states this has evolved to the point where very few prisoners get released. For years Nancy Mullane followed the case of Don Cronk in San Quentin Prison, to see what would happen as Governor Arnold Schwarzenegger reviewed his case. Though Cronk knew the odds were against him, he found it hard to stop himself from believing he'd get out. Nancy Mullane is the author of a book called Life After Murder and putting together a two hour documentary on other lifers in Don's situation. (27 minutes) by Nancy Mullane<br>
 <br>
 Act Two<br>
-For an Iraqi perspective on the war, we hear from Iraqis who've just crossed over the border into Jordan. It's the only open border with Iraq and 150,000 Iraqis live in Amman. Reporter Adam Davidson talks with a soldier who'll probably fight in the war against the United States, a man who claims he was one of Saddam Hussein's bodyguards and knows locations of hidden chemical weapons in Iraq. (18 minutes) by Adam Davidson<br>
+When Wells Tower started to try to fix up and save his dad's house, he knew it'd be incredibly hard. Lots of people told him not to. But he couldn't help himself. A version of his story ran in the Washington Post a few years back. He's the author of the book Everything Ravaged, Everything Burned . (19 minutes) by Wells Tower<br>
 <br>
-Act Three<br>
-It's possible that the most compelling arguments against the war with Iraq, and the most compelling arguments for the war with Iraq, are arguments you've never heard. Ira talks with journalist Nicholas Lemann from The New Yorker magazine about two ways of seeing the war:  The so-called Hawks' view, and the so-called Realists' view. His article about all this is called "The War on What?" Two of the Realists, Stephen Van Evera from M.I.T. and Stephen Walt of Harvard, lay out their surprising case against the war. Arguing a very persuasive case against them is Kenneth Pollack, of the Saban Center for Middle East Policy at the Brookings Institution, who was a Persian Gulf military analyst for seven years at the CIA (including during the Persian Gulf War) and after that for the National Security Council under President Clinton. He wrote a book called The Threatening Storm: the Case for Invading Iraq. (19 minutes) by Ira Glass<br>
-<br>
-Act Four<br>
-While we all may have nagging fears about the war against terror or the war against Iraq, we all have a lot of other things on our minds. We hear 19 eighth-graders' letters to the President, as collected by their teacher, Britt Honeycutt, in rural North Carolina. They come from a website where people post letters to the President for the world to see. Hudson is the author of a book of short stories called Dear Mr. President . (7 minutes) by Gabe Hudson<br>
-<br>
-Originally Aired: 2002-12-20]]></description>
-      <pubDate>Mon, 27 Apr 2026 07:43:48 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/227/7LuGb4ouYhrhHnbwdRdjtFNUFvUPF4UWUyuc14k0vZ0/227.mp3" type="audio/mpeg"/>
-      <itunes:duration>00:56:00</itunes:duration>
+Originally Aired: 2010-01-08]]></description>
+      <pubDate>Mon, 27 Apr 2026 07:50:18 +0000</pubDate>
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/398/nj18fmRUQNos07aipEuphVW4hQSag9-i_1N-BOGbc9E/398.mp3" type="audio/mpeg"/>
+      <itunes:duration>00:54:00</itunes:duration>
     </item>
   </channel>
 </rss>
