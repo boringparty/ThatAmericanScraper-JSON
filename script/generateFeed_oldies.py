@@ -4,7 +4,6 @@ import random
 import json
 import re
 from datetime import datetime, timezone, timedelta
-from email.utils import parsedate_to_datetime
 import os
 
 INPUT_FILE = "feed/feed.xml"
@@ -23,7 +22,7 @@ def fix_xml(content):
     )
 
 # -------------------------
-# DATE PARSER (ROBUST FIX)
+# ROBUST DATE PARSER (THIS IS THE FIX)
 # -------------------------
 def parse_date(text):
     if not text:
@@ -31,23 +30,19 @@ def parse_date(text):
 
     text = text.strip()
 
-    # RFC822 (RSS standard)
-    try:
-        dt = parsedate_to_datetime(text)
-        if dt:
-            if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=timezone.utc)
-            return dt.astimezone(timezone.utc)
-    except:
-        pass
+    # RFC822 / RSS standard
+    for fmt in [
+        "%a, %d %b %Y %H:%M:%S %z",   # Mon, 27 Apr 2026 08:15:53 +0000
+        "%a, %d %b %Y %H:%M:%S GMT",  # Mon, 27 Apr 2026 08:15:53 GMT
+    ]:
+        try:
+            return datetime.strptime(text, fmt).astimezone(timezone.utc)
+        except:
+            pass
 
     # ISO 8601 fallback
     try:
-        text = text.replace("Z", "+00:00")
-        dt = datetime.fromisoformat(text)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt.astimezone(timezone.utc)
+        return datetime.fromisoformat(text.replace("Z", "+00:00")).astimezone(timezone.utc)
     except:
         pass
 
@@ -62,17 +57,17 @@ def is_old(dt):
 # EPISODE ID
 # -------------------------
 def extract_episode_number(item):
-    title_elem = item.find("title")
-    if title_elem is not None and title_elem.text:
-        title = title_elem.text.strip()
-        if ':' in title:
-            maybe = title.split(':')[0].strip().replace('#', '')
+    title = item.find("title")
+    if title is not None and title.text:
+        t = title.text.strip()
+        if ":" in t:
+            maybe = t.split(":")[0].strip().replace("#", "")
             if maybe.isdigit():
                 return maybe
 
-    link_elem = item.find("link")
-    if link_elem is not None and link_elem.text:
-        parts = link_elem.text.strip().split('/')
+    link = item.find("link")
+    if link is not None and link.text:
+        parts = link.text.strip().split("/")
         for p in reversed(parts):
             if p.isdigit():
                 return p
@@ -119,15 +114,15 @@ def main():
     candidates = []
 
     # -------------------------
-    # FILTER CANDIDATES
+    # BUILD CANDIDATES
     # -------------------------
     for item in items:
         pub = item.find("pubDate")
-        if not pub or not pub.text:
+        if pub is None or not pub.text:
             continue
 
         dt = parse_date(pub.text)
-        if not dt:
+        if dt is None:
             continue
 
         if not is_old(dt):
@@ -140,7 +135,7 @@ def main():
         candidates.append((item, ep))
 
     # -------------------------
-    # FALLBACK RESET
+    # RESET FALLBACK
     # -------------------------
     if not candidates:
         print("Resetting used list...")
@@ -148,11 +143,11 @@ def main():
 
         for item in items:
             pub = item.find("pubDate")
-            if not pub or not pub.text:
+            if pub is None or not pub.text:
                 continue
 
             dt = parse_date(pub.text)
-            if not dt:
+            if dt is None:
                 continue
 
             if not is_old(dt):
@@ -162,7 +157,7 @@ def main():
             candidates.append((item, ep))
 
     if not candidates:
-        raise Exception("No valid episodes found (pubDate format issue)")
+        raise Exception("No valid episodes found (date parsing issue)")
 
     chosen_item, episode_num = random.choice(candidates)
 
@@ -182,7 +177,7 @@ def main():
 
     item_start = content.find(guid_text)
     if item_start == -1:
-        raise Exception("Could not locate item in raw XML")
+        raise Exception("Could not locate item in feed")
 
     item_start = content.rfind("<item", 0, item_start)
     item_end = content.find("</item>", item_start) + len("</item>")
@@ -203,7 +198,7 @@ def main():
         )
 
     # -------------------------
-    # PUBDATE
+    # PUBDATE UPDATE
     # -------------------------
     new_pubdate = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
 
@@ -216,16 +211,15 @@ def main():
     # -------------------------
     # GUID UPDATE
     # -------------------------
-    if guid_text:
-        new_guid = f"{guid_text}-oldies"
+    new_guid = f"{guid_text}-oldies"
 
-        original_item_xml = re.sub(
-            r'<guid(?:\s+isPermaLink="[^"]*")?>(.*?)</guid>',
-            f'<guid isPermaLink="false">{new_guid}</guid>',
-            original_item_xml
-        )
+    original_item_xml = re.sub(
+        r'<guid(?:\s+isPermaLink="[^"]*")?>(.*?)</guid>',
+        f'<guid isPermaLink="false">{new_guid}</guid>',
+        original_item_xml
+    )
 
-        print(f"GUID: {guid_text} -> {new_guid}")
+    print(f"GUID: {guid_text} -> {new_guid}")
 
     # -------------------------
     # ENCLOSURE → REDDIT MARKDOWN
