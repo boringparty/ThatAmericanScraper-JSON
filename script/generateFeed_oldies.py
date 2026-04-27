@@ -1,127 +1,78 @@
 #!/usr/bin/env python3
+import os
 import re
-import json
-import random
-from datetime import datetime, timezone
-import xml.etree.ElementTree as ET
 
-INPUT_FILE = "feed/feed.xml"
-OUTPUT_FILE = "feed/oldies.xml"
-USED_FILE = "used_oldies.json"
-
-NOW = datetime.now(timezone.utc)
+INPUT_FILE = os.path.join("feed", "feed.xml")
+OUTPUT_FILE = os.path.join("feed", "feed.xml")  # overwrite same file
 
 
 # -------------------------
-# LOAD USED
+# CONFIG
 # -------------------------
-def load_used():
-    try:
-        with open(USED_FILE, "r", encoding="utf-8") as f:
-            return set(json.load(f))
-    except FileNotFoundError:
-        return set()
-
-
-def save_used(used):
-    with open(USED_FILE, "w", encoding="utf-8") as f:
-        json.dump(sorted(list(used)), f, indent=2)
+OLD_EPISODE_CUTOFF = 10_000  # optional safety default (not used unless you want it)
 
 
 # -------------------------
-# PARSE DATE
+# HELPERS
 # -------------------------
-def parse_rss_date(text):
-    # Example: "Wed, 17 Nov 2010 00:00:00 +0000"
-    return datetime.strptime(text, "%a, %d %b %Y %H:%M:%S %z")
+def get_episode_number(item: str):
+    m = re.search(r"<itunes:episode>(\d+)</itunes:episode>", item)
+    return int(m.group(1)) if m else None
 
 
-def older_than_10_years(dt):
-    return (NOW - dt).days >= 3650
+def update_title(title: str):
+    # remove repeat marker
+    title = title.replace(" - Repeat", "")
 
+    # avoid double prefixing
+    if "[Oldies]" in title:
+        return title
 
-# -------------------------
-# CLEAN TITLE
-# -------------------------
-def clean_title(title):
-    title = re.sub(r"\s-\sRepeat$", "", title)
     return "[Oldies] " + title
+
+
+def process_item(item: str):
+    ep_num = get_episode_number(item)
+
+    if ep_num is None:
+        return item
+
+    # OPTIONAL RULE (customize this)
+    # only mark older episodes
+    # if ep_num > 600: return item
+
+    # update title only
+    item = re.sub(
+        r"(<title><!\[CDATA\[)(.*?)(\]\]></title>)",
+        lambda m: m.group(1) + update_title(m.group(2)) + m.group(3),
+        item,
+        flags=re.DOTALL
+    )
+
+    return item
 
 
 # -------------------------
 # MAIN
 # -------------------------
 def main():
-    used = load_used()
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+        rss = f.read()
 
-    tree = ET.parse(INPUT_FILE)
-    root = tree.getroot()
+    # split items (no XML parsing)
+    parts = re.split(r"(<item>.*?</item>)", rss, flags=re.DOTALL)
 
-    items = root.findall(".//item")
+    new_parts = []
+    for part in parts:
+        if part.startswith("<item>"):
+            new_parts.append(process_item(part))
+        else:
+            new_parts.append(part)
 
-    eligible = []
-
-    for item in items:
-        title = item.findtext("title", "")
-        pub = item.findtext("pubDate", "")
-        guid = item.findtext("guid", "")
-
-        try:
-            dt = parse_rss_date(pub)
-        except Exception:
-            continue
-
-        if not older_than_10_years(dt):
-            continue
-
-        if guid in used:
-            continue
-
-        eligible.append((item, dt, guid))
-
-    if not eligible:
-        print("No eligible episodes found.")
-        return
-
-    item, dt, guid = random.choice(eligible)
-
-    used.add(guid)
-    save_used(used)
-
-    # extract fields
-    title = clean_title(item.findtext("title", ""))
-    link = item.findtext("link", "")
-    pubDate = NOW.strftime("%a, %d %b %Y %H:%M:%S +0000")
-
-    enclosure = item.find("enclosure")
-    audio_url = enclosure.attrib["url"] if enclosure is not None else ""
-
-    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-  <channel>
-    <title>Oldies Feed</title>
-    <link>{link}</link>
-    <description>Random old This American Life episodes (10+ years old)</description>
-
-    <item>
-      <title><![CDATA[{title}]]></title>
-      <link>{link}</link>
-      <guid>{guid}</guid>
-      <pubDate>{pubDate}</pubDate>
-      <enclosure url="{audio_url}" type="audio/mpeg"/>
-      <description><![CDATA[
-        Archived episode from This American Life.
-      ]]></description>
-    </item>
-
-  </channel>
-</rss>
-"""
+    output = "".join(new_parts)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(rss)
-
-    print(f"Selected: {title}")
+        f.write(output)
 
 
 if __name__ == "__main__":
