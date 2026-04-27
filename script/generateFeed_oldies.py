@@ -204,7 +204,7 @@ def main():
     
     # Get the original XML for this item from the raw content
     # We'll extract it as a string to preserve formatting
-    item_start = content.find(f'<guid>{chosen_item.find("guid").text}</guid>')
+    item_start = content.find(f'<guid isPermaLink="false">{chosen_item.find("guid").text}-oldies</guid>')
     if item_start == -1:
         raise Exception("Could not find item in original XML")
     
