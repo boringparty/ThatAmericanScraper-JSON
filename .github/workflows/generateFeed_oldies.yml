@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 14 * * 3'  # Wednesday 6am PST (14:00 UTC)
+    - cron: '0 14 * * 3'  
   workflow_dispatch:
 
 jobs:
@@ -28,17 +28,25 @@ jobs:
       - name: Generate Oldies Feed
         run: python script/generateFeed_oldies.py
 
+      # 🔍 Debug (optional but very helpful)
+      - name: Show diff
+        run: |
+          echo "Checking changes..."
+          git status
+          git diff -- feed/oldies.xml || true
+
       - name: Commit RSS feed
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      
+
           git add feed/oldies.xml
-      
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
+
+          # IMPORTANT: check actual file diff, not staged-only diff
+          if git diff --quiet HEAD -- feed/oldies.xml; then
+            echo "No real changes detected — skipping commit"
             exit 0
           fi
-      
+
           git commit -m "Update Oldies RSS feed"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+          
