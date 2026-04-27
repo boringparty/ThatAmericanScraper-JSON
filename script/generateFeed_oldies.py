@@ -5,7 +5,7 @@ import json
 import os
 from datetime import datetime, timezone, timedelta
 
-INPUT_FEED = "https://thisamericanlife.org/podcast/rss.xml"
+INPUT_FEED = "feed/feed.xml"
 OUTPUT_FILE = "feed/oldies.xml"
 STATE_FILE = "feed/oldies_used.json"
 
