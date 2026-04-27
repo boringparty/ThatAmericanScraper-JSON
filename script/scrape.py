@@ -121,9 +121,21 @@ def scrape_episode(url):
             act_number = 0
             number_text = "Prologue"
         else:
-            word = label.get_text(strip=True).replace("Act ", "").strip()
-            act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
-            number_text = f"Act {word}"
+            if is_prologue:
+                act_number = 0
+                number_text = "Prologue"
+            else:
+                if label:
+                    word = label.get_text(strip=True).replace("Act ", "").strip()
+                else:
+                    word = act_title_text.replace("Act ", "").strip() or "0"
+            
+                try:
+                    act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
+                except Exception:
+                    act_number = 0
+            
+                number_text = f"Act {word}"
 
         summary_elem = act.select_one(".field-name-body .field-item")
         raw = summary_elem.get_text(" ", strip=True) if summary_elem else ""
