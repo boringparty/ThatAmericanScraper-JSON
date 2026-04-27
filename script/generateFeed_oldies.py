@@ -3,8 +3,7 @@ import os
 import re
 
 INPUT_FILE = os.path.join("feed", "feed.xml")
-OUTPUT_FILE = os.path.join("feed", "feed.xml")  # overwrite same file
-
+OUTPUT_FILE = os.path.join("feed", "oldies.xml")
 
 # -------------------------
 # CONFIG
