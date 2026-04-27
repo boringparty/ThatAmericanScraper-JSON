@@ -5,8 +5,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-INPUT_FILE = BASE_DIR / "data.json"
-OUTPUT_FILE = BASE_DIR / "episodes.md"
+INPUT_FILE = BASE_DIR / "data/data.json"
+OUTPUT_FILE = BASE_DIR / "data/episodes.md"
 
 def parse_any_date(s: str) -> datetime:
     s = s.strip()
