@@ -13,7 +13,7 @@ from dateutil import parser
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 OFFICIAL_RSS = "https://thisamericanlife.org/podcast/rss.xml"
 DELAY = 1
-OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")
+OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data/data.json")
 DEFAULT_NUM_EPISODES = 1
 
 ACT_WORDS = {
