@@ -139,7 +139,15 @@ def clean_title(title):
 # MAIN
 # -------------------------
 def main():
-    tree = parse_feed_safely(INPUT_FILE)
+    # Read the raw XML content
+    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Fix XML if needed
+    content = fix_xml(content)
+    
+    # Parse the feed
+    tree = ET.ElementTree(ET.fromstring(content))
     root = tree.getroot()
     items = root.findall(".//item")
     
@@ -194,12 +202,31 @@ def main():
         save_used_episodes(used_episodes)
         print(f"Selected episode: {episode_num}")
     
-    # Clean up the title
+    # Get the original XML for this item from the raw content
+    # We'll extract it as a string to preserve formatting
+    item_start = content.find(f'<guid>{chosen_item.find("guid").text}</guid>')
+    if item_start == -1:
+        raise Exception("Could not find item in original XML")
+    
+    # Find the start of this item tag
+    item_start = content.rfind('<item', 0, item_start)
+    # Find the end of this item tag
+    item_end = content.find('</item>', item_start) + len('</item>')
+    
+    original_item_xml = content[item_start:item_end]
+    
+    # Update the title in the raw XML
     title_elem = chosen_item.find("title")
     if title_elem is not None and title_elem.text:
         original_title = title_elem.text
-        title_elem.text = clean_title(title_elem.text)
-        print(f"Title: {original_title} -> {title_elem.text}")
+        new_title = clean_title(original_title)
+        # Replace title in the raw XML string
+        original_item_xml = re.sub(
+            r'<title><!\[CDATA\[.*?\]\]></title>',
+            f'<title><![CDATA[{new_title}]]></title>',
+            original_item_xml
+        )
+        print(f"Title: {original_title} -> {new_title}")
     
     # Generate output XML
     output_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -208,7 +235,7 @@ def main():
     <title>Oldies TAL Feed</title>
     <link>https://www.thisamericanlife.org</link>
     <description>Random episode 10+ years old, updated weekly</description>
-{ET.tostring(chosen_item, encoding="unicode")}
+    {original_item_xml}
   </channel>
 </rss>
 """
