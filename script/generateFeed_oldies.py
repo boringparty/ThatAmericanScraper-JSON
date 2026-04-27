@@ -221,32 +221,33 @@ def main():
 
     print(f"GUID: {guid_text} -> {new_guid}")
 
-    # -------------------------
-    # ENCLOSURE → REDDIT MARKDOWN
-    # -------------------------
-    enclosure = chosen_item.find("enclosure")
+# -------------------------
+# ENCLOSURE → REDDIT MARKDOWN (FIXED CDATA SAFE)
+# -------------------------
+enclosure = chosen_item.find("enclosure")
 
-    if enclosure is not None:
-        url = enclosure.attrib.get("url")
+if enclosure is not None:
+    url = enclosure.attrib.get("url")
 
-        if url:
-            download_line = f"<br>[download]({url})"
+    if url:
+        download_line = f"\n\n[download]({url})"
 
-            if re.search(r"(<description>)(.*?)(</description>)", original_item_xml, re.DOTALL):
-                original_item_xml = re.sub(
-                    r"(<description>)(.*?)(</description>)",
-                    rf"\1\2\n\n{download_line}\3",
-                    original_item_xml,
-                    flags=re.DOTALL
-                )
-            else:
-                original_item_xml = re.sub(
-                    r"</item>",
-                    f"<description>{download_line}</description>\n</item>",
-                    original_item_xml
-                )
+        match = re.search(r"(<description><!\[CDATA\[)(.*?)(\]\]></description>)", original_item_xml, re.DOTALL)
 
-            print(f"Added download link: {url}")
+        if match:
+            original_item_xml = original_item_xml.replace(
+                match.group(0),
+                f"{match.group(1)}{match.group(2)}{download_line}{match.group(3)}"
+            )
+        else:
+            # fallback (non-CDATA feeds)
+            original_item_xml = re.sub(
+                r"</description>",
+                f"{download_line}</description>",
+                original_item_xml
+            )
+
+        print(f"Added download link: {url}")
 
     # -------------------------
     # OUTPUT
