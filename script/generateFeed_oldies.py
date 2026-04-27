@@ -23,16 +23,35 @@ def fix_xml(content):
     )
 
 # -------------------------
-# DATE PARSE
+# DATE PARSER (ROBUST FIX)
 # -------------------------
 def parse_date(text):
+    if not text:
+        return None
+
+    text = text.strip()
+
+    # RFC822 (RSS standard)
     try:
         dt = parsedate_to_datetime(text)
+        if dt:
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt.astimezone(timezone.utc)
+    except:
+        pass
+
+    # ISO 8601 fallback
+    try:
+        text = text.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(text)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt.astimezone(timezone.utc)
-    except Exception:
-        return None
+    except:
+        pass
+
+    return None
 
 def is_old(dt):
     if not dt:
@@ -65,7 +84,7 @@ def extract_episode_number(item):
     return None
 
 # -------------------------
-# USED TRACKING
+# USED STORAGE
 # -------------------------
 def load_used():
     if not os.path.exists(USED_FILE):
@@ -108,6 +127,9 @@ def main():
             continue
 
         dt = parse_date(pub.text)
+        if not dt:
+            continue
+
         if not is_old(dt):
             continue
 
@@ -117,7 +139,9 @@ def main():
 
         candidates.append((item, ep))
 
-    # fallback reset
+    # -------------------------
+    # FALLBACK RESET
+    # -------------------------
     if not candidates:
         print("Resetting used list...")
         used = []
@@ -128,6 +152,9 @@ def main():
                 continue
 
             dt = parse_date(pub.text)
+            if not dt:
+                continue
+
             if not is_old(dt):
                 continue
 
@@ -135,7 +162,7 @@ def main():
             candidates.append((item, ep))
 
     if not candidates:
-        raise Exception("No valid episodes found (check pubDate format)")
+        raise Exception("No valid episodes found (pubDate format issue)")
 
     chosen_item, episode_num = random.choice(candidates)
 
@@ -145,11 +172,15 @@ def main():
         print(f"Selected episode: {episode_num}")
 
     # -------------------------
-    # EXTRACT ORIGINAL ITEM XML
+    # EXTRACT ITEM XML
     # -------------------------
-    guid_text = chosen_item.find("guid").text or ""
-    item_start = content.find(guid_text)
+    guid_elem = chosen_item.find("guid")
+    guid_text = guid_elem.text.strip() if guid_elem is not None and guid_elem.text else None
 
+    if not guid_text:
+        raise Exception("Missing GUID")
+
+    item_start = content.find(guid_text)
     if item_start == -1:
         raise Exception("Could not locate item in raw XML")
 
@@ -185,10 +216,8 @@ def main():
     # -------------------------
     # GUID UPDATE
     # -------------------------
-    guid_elem = chosen_item.find("guid")
-    if guid_elem is not None and guid_elem.text:
-        original_guid = guid_elem.text.strip()
-        new_guid = f"{original_guid}-oldies"
+    if guid_text:
+        new_guid = f"{guid_text}-oldies"
 
         original_item_xml = re.sub(
             r'<guid(?:\s+isPermaLink="[^"]*")?>(.*?)</guid>',
@@ -196,10 +225,10 @@ def main():
             original_item_xml
         )
 
-        print(f"GUID: {original_guid} -> {new_guid}")
+        print(f"GUID: {guid_text} -> {new_guid}")
 
     # -------------------------
-    # ENCLOSURE → REDDIT MARKDOWN LINK
+    # ENCLOSURE → REDDIT MARKDOWN
     # -------------------------
     enclosure = chosen_item.find("enclosure")
 
@@ -207,19 +236,19 @@ def main():
         url = enclosure.attrib.get("url")
 
         if url:
-            download_link = f"[download]({url})"
+            download_line = f"[download]({url})"
 
             if re.search(r"(<description>)(.*?)(</description>)", original_item_xml, re.DOTALL):
                 original_item_xml = re.sub(
                     r"(<description>)(.*?)(</description>)",
-                    rf"\1\2\n\n{download_link}\3",
+                    rf"\1\2\n\n{download_line}\3",
                     original_item_xml,
                     flags=re.DOTALL
                 )
             else:
                 original_item_xml = re.sub(
                     r"</item>",
-                    f"<description>{download_link}</description>\n</item>",
+                    f"<description>{download_line}</description>\n</item>",
                     original_item_xml
                 )
 
