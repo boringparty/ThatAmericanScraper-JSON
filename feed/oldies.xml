@@ -5,30 +5,32 @@
     <link>https://www.thisamericanlife.org</link>
     <description>Random episode 10+ years old, updated weekly</description>
     <item>
-      <title><![CDATA[[Oldies] 124: Welcome to America]]></title>
-      <link>https://www.thisamericanlife.org/124/welcome-to-america?1999</link>
-      <guid isPermaLink="false">0124-19990319-oldies</guid>
-      <itunes:season>1999</itunes:season>
-      <itunes:episode>124</itunes:episode>
+      <title><![CDATA[[Oldies] 523: Death and Taxes]]></title>
+      <link>https://www.thisamericanlife.org/523/death-and-taxes?2014</link>
+      <guid isPermaLink="false">0523-20140425-oldies</guid>
+      <itunes:season>2014</itunes:season>
+      <itunes:episode>523</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>clean</itunes:explicit>
-      <description><![CDATA[<a href="https://www.thisamericanlife.org/124/welcome-to-america">https://www.thisamericanlife.org/124/welcome-to-america</a><br>
+      <itunes:explicit>yes</itunes:explicit>
+      <description><![CDATA[<a href="https://www.thisamericanlife.org/523/death-and-taxes">https://www.thisamericanlife.org/523/death-and-taxes</a><br>
 <br>
-Stories of people moving to this country: what they see and hear about America that those of us who were born here don't necessarily see.<br>
+It is a peculiar feeling to know with certainty that something big is about to happen to you. This week, we watch people go right up to the edge of inevitable change.<br>
 <br>
 Prologue<br>
-Ira goes to the courtroom of Abraham Lincoln Marovitz, who, at 93, presides over the ceremony to make people citizens. In this setting, it's hard to talk about America as it is. Instead, people talk about the America we wish we lived in. (4 minutes) by Ira Glass<br>
+When you're a preteen, you walk around every day with the knowledge that your body is about to change. You don’t know exactly when or how. All you know is that it will happen and you will come out the other side a different person. We hear from kids who are reluctantly facing puberty any minute now. (4 minutes) by Ira Glass<br>
 <br>
 Act One<br>
-Because of a shortage of math and science teachers, New York City decided to import instructors from Austria. Then the Austrians started to see things about this country that few Americans ever get to see. What they know that you don't know about life in America. David Rakoff reports. (31 minutes) by David Rakoff<br>
+Producer Nancy Updike takes some personal questions about death and dying to a place where they're happening all the time. (36 minutes) by Nancy Updike<br>
 <br>
 Act Two<br>
-This is a story of a father and son—told by the son, Juan Zaldivar, who was born in Cuba. Juan has spent the past four years shooting a movie about his father, to try to reassure him that he did the right thing to leave Cuba with his family in the 1980s and come to America. His father, so far, is not reassured. (20 minutes) by Juan Zaldivar<br>
+Al Drucker used to work for the IRS doing tax enforcement. One thing he found really helpful in the job was when someone from the public would give a tip on who he should look into. So when Al retired from the IRS five years ago, he created a website where you can anonymously rat out your neighbors, exes, and friends to the IRS. (13 minutes) by David Kestenbaum<br>
 <br>
-Originally Aired: 1999-03-19]]></description>
-      <pubDate>Mon, 27 Apr 2026 08:15:53 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/124/avqtZOfGcQ85m1uT0DelsORL1psfEtNlmStYNbEaUiQ/124.mp3" type="audio/mpeg"/>
-      <itunes:duration>00:55:00</itunes:duration>
+Originally Aired: 2014-04-25]]>
+
+[download](https://www.thisamericanlife.org/sites/default/files/audio/523/4NXhhxEZLzh11B0XJZJIAyFCH_MjcNTHdjV1Bl2AW0M/523.mp3)</description>
+      <pubDate>Mon, 27 Apr 2026 09:02:56 +0000</pubDate>
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/523/4NXhhxEZLzh11B0XJZJIAyFCH_MjcNTHdjV1Bl2AW0M/523.mp3" type="audio/mpeg"/>
+      <itunes:duration>00:53:00</itunes:duration>
     </item>
   </channel>
 </rss>
