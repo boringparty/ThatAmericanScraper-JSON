@@ -230,7 +230,7 @@ def main():
         url = enclosure.attrib.get("url")
 
         if url:
-            download_line = f"{url}"
+            download_line = f"""<a href="{url">Download</a>"""
 
             match = re.search(
                 r"(<description><!\[CDATA\[)(.*?)(\]\]></description>)",
@@ -246,7 +246,7 @@ def main():
             else:
                 original_item_xml = re.sub(
                     r"</description>",
-                    f"""<a href="{download_line}"><br><br>Download</a></description>""",
+                    f"""{download_line}""",
                     original_item_xml
                 )
 
