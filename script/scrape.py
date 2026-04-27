@@ -6,14 +6,19 @@ import requests
 from bs4 import BeautifulSoup
 import feedparser
 import time
-from datetime import timezone, timedelta, datetime
+from datetime import timezone, datetime
 from email.utils import format_datetime
 from dateutil import parser
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 OFFICIAL_RSS = "https://thisamericanlife.org/podcast/rss.xml"
 DELAY = 1
-OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")
+
+OUTPUT_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(__file__)),
+    "data.json"
+)
+
 DEFAULT_NUM_EPISODES = 1
 
 ACT_WORDS = {
@@ -35,6 +40,7 @@ def parse_any_date_str(s: str):
 
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=timezone.utc)
+
     return dt.astimezone(timezone.utc)
 
 
@@ -43,17 +49,28 @@ def format_rfc(dt):
 
 
 # -------------------------
-# CLEANUP (THIS FIXES DUPES IN EXISTING JSON)
+# CLEANUP (DEDUP BY EPISODE NUMBER)
 # -------------------------
 def dedupe_episodes(episodes):
     cleaned = {}
+
     for ep in episodes:
-        url = ep.get("episode_url")
-        if not url:
+        num = ep.get("number")
+
+        if not num:
             continue
 
-        # keep latest version (overwrite older duplicates)
-        cleaned[url] = ep
+        key = str(num).strip()
+
+        existing = cleaned.get(key)
+
+        if not existing:
+            cleaned[key] = ep
+            continue
+
+        # keep richer version
+        if len(ep.get("acts", [])) >= len(existing.get("acts", [])):
+            cleaned[key] = ep
 
     return list(cleaned.values())
 
@@ -80,7 +97,7 @@ def scrape_episode(url):
     title = title.get_text(strip=True) if title else ""
 
     number_elem = soup.select_one(".field-name-field-episode-number .field-item")
-    number = number_elem.get_text(strip=True) if number_elem else ""
+    number = number_elem.get_text(strip=True) if number_elem else None
 
     air_elem = soup.select_one(".field-name-field-radio-air-date .date-display-single")
     air_raw = air_elem.get_text(strip=True) if air_elem else ""
@@ -106,7 +123,11 @@ def scrape_episode(url):
     img = soup.select_one("figure.tal-episode-image img")
     image_url = img["src"] if img else None
 
+    # -------------------------
+    # ACTS
+    # -------------------------
     acts = []
+
     for act in soup.select("article.node-act"):
         label = act.select_one(".field-name-field-act-label .field-item")
         act_title = act.select_one("h2.act-header a")
@@ -120,22 +141,19 @@ def scrape_episode(url):
         if is_prologue:
             act_number = 0
             number_text = "Prologue"
+            word = "Prologue"
         else:
-            if is_prologue:
-                act_number = 0
-                number_text = "Prologue"
+            if label:
+                word = label.get_text(strip=True).replace("Act ", "").strip()
             else:
-                if label:
-                    word = label.get_text(strip=True).replace("Act ", "").strip()
-                else:
-                    word = act_title_text.replace("Act ", "").strip() or "0"
-            
-                try:
-                    act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
-                except Exception:
-                    act_number = 0
-            
-                number_text = f"Act {word}"
+                word = act_title_text.replace("Act ", "").strip() or "0"
+
+            try:
+                act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
+            except Exception:
+                act_number = 0
+
+            number_text = f"Act {word}"
 
         summary_elem = act.select_one(".field-name-body .field-item")
         raw = summary_elem.get_text(" ", strip=True) if summary_elem else ""
@@ -174,7 +192,11 @@ def scrape_episode(url):
 def update_published_dates(episodes):
     feed = feedparser.parse(OFFICIAL_RSS)
 
-    index = {e["episode_url"]: e for e in episodes if e.get("episode_url")}
+    index = {
+        str(e["number"]).strip(): e
+        for e in episodes
+        if e.get("number")
+    }
 
     for item in feed.entries:
         url = item.link
@@ -187,7 +209,8 @@ def update_published_dates(episodes):
         except Exception:
             continue
 
-        ep = index.get(url)
+        ep = next((e for e in episodes if e.get("episode_url") == url), None)
+
         if ep:
             ep.setdefault("published_dates", [])
             pub_str = format_rfc(dt)
@@ -207,11 +230,15 @@ def main():
     except FileNotFoundError:
         episodes = []
 
-    # 🔥 HARD CLEAN DUPES ON LOAD
+    # dedupe by episode number
     episodes = dedupe_episodes(episodes)
 
-    # FAST LOOKUP INDEX
-    episode_index = {e["episode_url"]: e for e in episodes if e.get("episode_url")}
+    # index by number (NOT URL)
+    episode_index = {
+        str(e["number"]).strip(): e
+        for e in episodes
+        if e.get("number")
+    }
 
     feed = feedparser.parse(OFFICIAL_RSS)
 
@@ -225,10 +252,11 @@ def main():
         url = entry.link
 
         ep_data = scrape_episode(url)
-        if not ep_data:
+        if not ep_data or not ep_data.get("number"):
             continue
 
-        existing = episode_index.get(url)
+        key = str(ep_data["number"]).strip()
+        existing = episode_index.get(key)
 
         if existing:
             old = {k: existing.get(k) for k in ARCHIVE_KEYS}
@@ -240,18 +268,32 @@ def main():
                     "data": old
                 })
 
-            existing.update(ep_data)
+            # safe merge (no overwrite of identity fields)
+            for k, v in ep_data.items():
+                if k != "episode_url":
+                    existing[k] = v
 
         else:
             episodes.append(ep_data)
-            episode_index[url] = ep_data
+            episode_index[key] = ep_data
 
     update_published_dates(episodes)
 
-    # sort
-    episodes.sort(key=lambda e: e["original_air_date"])
+    # -------------------------
+    # FINAL SORT (ASC EPISODE NUMBER)
+    # -------------------------
+    def safe_episode_number(ep):
+        try:
+            return int(str(ep.get("number", "0")).strip())
+        except Exception:
+            return 0
 
+    episodes.sort(key=safe_episode_number)
+
+    # normalize
     for ep in episodes:
+        ep["number"] = str(ep.get("number", "")).strip()
+
         ep["published_dates"] = sorted(
             set(ep.get("published_dates", []))
         )
