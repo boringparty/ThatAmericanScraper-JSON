@@ -23,19 +23,29 @@ def fix_xml(content):
     )
 
 # -------------------------
-# DATE PARSER (ROBUST)
+# DATE PARSER (FIXED)
 # -------------------------
 def parse_date(text):
     if not text:
         return None
 
+    # RFC822 (standard RSS)
     try:
         dt = parsedate_to_datetime(text)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt.astimezone(timezone.utc)
-    except Exception:
-        return None
+        if dt:
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt.astimezone(timezone.utc)
+    except:
+        pass
+
+    # ISO 8601 fallback
+    try:
+        return datetime.fromisoformat(text.replace("Z", "+00:00")).astimezone(timezone.utc)
+    except:
+        pass
+
+    return None
 
 def is_old(dt):
     if not dt:
@@ -43,7 +53,7 @@ def is_old(dt):
     return datetime.now(timezone.utc) - dt >= TEN_YEARS
 
 # -------------------------
-# EPISODE ID
+# EPISODE EXTRACTION
 # -------------------------
 def extract_episode_number(item):
     title_elem = item.find("title")
@@ -100,19 +110,17 @@ def main():
     items = root.findall(".//item")
 
     used = load_used()
-
     candidates = []
 
+    # -------------------------
+    # BUILD CANDIDATES
+    # -------------------------
     for item in items:
         pub = item.find("pubDate")
-        title = item.find("title")
-
         if not pub or not pub.text:
             continue
 
         dt = parse_date(pub.text)
-
-        # DEBUG SAFETY (prevents silent total failure)
         if dt is None:
             continue
 
@@ -120,7 +128,6 @@ def main():
             continue
 
         ep = extract_episode_number(item)
-
         if ep and ep in used:
             continue
 
@@ -130,6 +137,7 @@ def main():
     if not candidates:
         print("Resetting used list...")
         used = []
+
         for item in items:
             pub = item.find("pubDate")
             if not pub or not pub.text:
@@ -156,11 +164,15 @@ def main():
         print(f"Selected episode: {episode_num}")
 
     # -------------------------
-    # Extract XML item
+    # SAFE GUID EXTRACTION
     # -------------------------
-    guid_text = chosen_item.find("guid").text or ""
-    item_start = content.find(guid_text)
+    guid_elem = chosen_item.find("guid")
+    guid_text = guid_elem.text.strip() if guid_elem is not None and guid_elem.text else None
 
+    if not guid_text:
+        raise Exception("Missing GUID")
+
+    item_start = content.find(guid_text)
     if item_start == -1:
         raise Exception("Could not locate item in raw XML")
 
@@ -194,21 +206,19 @@ def main():
     )
 
     # -------------------------
-    # GUID FIX
+    # GUID UPDATE
     # -------------------------
-    guid_elem = chosen_item.find("guid")
-    if guid_elem is not None and guid_elem.text:
-        original_guid = guid_elem.text.strip()
-        new_guid = f"{original_guid}-oldies"
+    original_guid = guid_text
+    new_guid = f"{original_guid}-oldies"
 
-        original_item_xml = re.sub(
-            r'<guid(?:\s+isPermaLink="[^"]*")?>(.*?)</guid>',
-            f'<guid isPermaLink="false">{new_guid}</guid>',
-            original_item_xml
-        )
+    original_item_xml = re.sub(
+        r'<guid(?:\s+isPermaLink="[^"]*")?>(.*?)</guid>',
+        f'<guid isPermaLink="false">{new_guid}</guid>',
+        original_item_xml
+    )
 
     # -------------------------
-    # REDDIT LINKS IN DESCRIPTION
+    # REDDIT LINKS (MARKDOWN)
     # -------------------------
     enclosure = chosen_item.find("enclosure")
 
