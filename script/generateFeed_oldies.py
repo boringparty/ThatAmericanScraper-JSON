@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import re
+from datetime import datetime, timezone
 
 INPUT_FILE = os.path.join("feed", "feed.xml")
 OUTPUT_FILE = os.path.join("feed", "oldies.xml")
@@ -8,7 +9,7 @@ OUTPUT_FILE = os.path.join("feed", "oldies.xml")
 # -------------------------
 # CONFIG
 # -------------------------
-OLD_EPISODE_CUTOFF = 10_000  # optional safety default (not used unless you want it)
+YEARS_OLD = 10
 
 
 # -------------------------
@@ -19,36 +20,33 @@ def get_episode_number(item: str):
     return int(m.group(1)) if m else None
 
 
-def update_title(title: str):
-    # remove repeat marker
-    title = title.replace(" - Repeat", "")
+def get_pub_year(item: str):
+    m = re.search(r"<itunes:season>(\d+)</itunes:season>", item)
+    return int(m.group(1)) if m else None
 
-    # avoid double prefixing
+
+def is_older_than_10_years(item: str):
+    year = get_pub_year(item)
+    if not year:
+        return False
+    current_year = datetime.now(timezone.utc).year
+    return (current_year - year) >= YEARS_OLD
+
+
+def update_title(title: str):
+    title = title.replace(" - Repeat", "")
     if "[Oldies]" in title:
         return title
-
     return "[Oldies] " + title
 
 
 def process_item(item: str):
-    ep_num = get_episode_number(item)
-
-    if ep_num is None:
-        return item
-
-    # OPTIONAL RULE (customize this)
-    # only mark older episodes
-    # if ep_num > 600: return item
-
-    # update title only
-    item = re.sub(
+    return re.sub(
         r"(<title><!\[CDATA\[)(.*?)(\]\]></title>)",
         lambda m: m.group(1) + update_title(m.group(2)) + m.group(3),
         item,
         flags=re.DOTALL
     )
-
-    return item
 
 
 # -------------------------
@@ -58,17 +56,41 @@ def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         rss = f.read()
 
-    # split items (no XML parsing)
-    parts = re.split(r"(<item>.*?</item>)", rss, flags=re.DOTALL)
+    # extract items
+    items = re.findall(r"<item>.*?</item>", rss, flags=re.DOTALL)
 
-    new_parts = []
-    for part in parts:
-        if part.startswith("<item>"):
-            new_parts.append(process_item(part))
-        else:
-            new_parts.append(part)
+    # filter old episodes
+    old_items = [i for i in items if is_older_than_10_years(i)]
 
-    output = "".join(new_parts)
+    if not old_items:
+        print("No old episodes found.")
+        return
+
+    # pick ONE episode (latest among old ones by episode number)
+    def ep_num(x):
+        n = get_episode_number(x)
+        return n if n is not None else -1
+
+    target = max(old_items, key=ep_num)
+
+    # modify only that one
+    target = process_item(target)
+
+    # build minimal RSS
+    output = """<?xml version="1.0" ?>
+<rss version="2.0">
+<channel>
+<title>Oldies Feed</title>
+<link>https://www.thisamericanlife.org</link>
+<description>Single weekly old episode</description>
+"""
+
+    output += target
+
+    output += """
+</channel>
+</rss>
+"""
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(output)
