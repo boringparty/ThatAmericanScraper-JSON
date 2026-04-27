@@ -185,36 +185,11 @@ def main():
     original_item_xml = content[item_start:item_end]
 
     # -------------------------
-    # EXTRACT ORIGINAL YEAR (needed for title and itunes:season)
-    # -------------------------
-    original_year = None
-    pub_elem = chosen_item.find("pubDate")
-    if pub_elem is not None and pub_elem.text:
-        original_date = parse_date(pub_elem.text)
-        if original_date:
-            original_year = str(original_date.year)
-
-    # -------------------------
     # TITLE
     # -------------------------
     title_elem = chosen_item.find("title")
     if title_elem is not None and title_elem.text:
-        original_title = title_elem.text.strip()
-        
-        # Extract episode number from title if it exists (format: "123: Title")
-        ep_prefix = ""
-        if ":" in original_title:
-            potential_ep = original_title.split(":")[0].strip().replace("#", "")
-            if potential_ep.isdigit():
-                ep_prefix = f"#{potential_ep} "
-                # Remove the episode number from the original title
-                original_title = ":".join(original_title.split(":")[1:]).strip()
-        
-        # Clean up the title
-        clean_original = original_title.replace(' - Repeat', '')
-        
-        # Build new title: #ep title (year)
-        new_title = f"[Oldies] {ep_prefix}{clean_original} ({original_year})"
+        new_title = clean_title(title_elem.text)
 
         original_item_xml = re.sub(
             r"<title><!\[CDATA\[.*?\]\]></title>",
@@ -247,29 +222,7 @@ def main():
     print(f"GUID: {guid_text} -> {new_guid}")
 
     # -------------------------
-    # ITUNES:SEASON (ORIGINAL YEAR)
-    # -------------------------
-    if original_year:
-        # Check if season tag already exists
-        if re.search(r"<itunes:season>.*?</itunes:season>", original_item_xml):
-            original_item_xml = re.sub(
-                r"<itunes:season>.*?</itunes:season>",
-                f"<itunes:season>{original_year}</itunes:season>",
-                original_item_xml
-            )
-        else:
-            # Insert after guid tag
-            original_item_xml = re.sub(
-                r"(</guid>)",
-                f"\\1\n    <itunes:season>{original_year}</itunes:season>",
-                original_item_xml
-            )
-        
-        print(f"Set itunes:season to {original_year}")
-
-
-    # -------------------------
-    # ENCLOSURE → DOWNLOAD LINK (INSIDE ITEM, CORRECT SCOPE)
+    # ENCLOSURE → REDDIT MARKDOWN (INSIDE ITEM, CORRECT SCOPE)
     # -------------------------
     enclosure = chosen_item.find("enclosure")
 
@@ -320,3 +273,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
