@@ -4,31 +4,5 @@
 <title>This American Life - Oldies Feed</title>
 <link>https://www.thisamericanlife.org</link>
 <description>Single weekly old episode</description>
-<item>
-      <title><![CDATA[[Oldies] 606: Just What I Wanted]]></title>
-      <link>https://www.thisamericanlife.org/606/just-what-i-wanted?2016</link>
-      <guid>0606-20161223</guid>
-      <itunes:season>2016</itunes:season>
-      <itunes:episode>606</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>clean</itunes:explicit>
-      <description><![CDATA[<a href="https://www.thisamericanlife.org/606/just-what-i-wanted">https://www.thisamericanlife.org/606/just-what-i-wanted</a><br>
-<br>
-Stories from people who want something desperately—for Christmas or otherwise—and then have their wishes fulfilled. Or do they?<br>
-<br>
-Prologue<br>
-Ira talks to Luke Huisenga, a Marine sniper who became a fan of Gilmore Girls while on deployment in Iraq. (11 minutes) by Ira Glass<br>
-<br>
-Act One<br>
-A fictional story written and read by Maile Meloy about a family that encounters two peculiar strangers in the snow on Christmas Day. Maile is the author of " Both Ways Is The Only Way I Want It. " (26 minutes) by Maile Meloy<br>
-<br>
-Act Two<br>
-After this year’s election, Republicans in North Carolina went out looking for cases of voter fraud - all over the state. It was hard to find, hard to prove—until they stumbled across what could have been the best present ever: a seemingly clear-cut case of Democrats out to rig the election. Producer Zoe Chace went to Bladen County, N.C. to investigate. (18 minutes) by Zoe Chace<br>
-<br>
-Originally Aired: 2016-12-23]]></description>
-      <pubDate>Fri, 23 Dec 2016 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/606/Z7grfSN8Njmv0xKsXiJxMfIPhfazs4JZxqw7G8ARfts/606.mp3" type="audio/mpeg"/>
-      <itunes:duration>00:55:00</itunes:duration>
-    </item>
 </channel>
 </rss>
