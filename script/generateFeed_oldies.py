@@ -1,99 +1,131 @@
 #!/usr/bin/env python3
+import feedparser
+import random
+import json
 import os
-import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
-INPUT_FILE = os.path.join("feed", "feed.xml")
-OUTPUT_FILE = os.path.join("feed", "oldies.xml")
+INPUT_FEED = "https://thisamericanlife.org/podcast/rss.xml"
+OUTPUT_FILE = "feed/oldies.xml"
+STATE_FILE = "feed/oldies_used.json"
 
-# -------------------------
-# CONFIG
-# -------------------------
-YEARS_OLD = 10
+TEN_YEARS = timedelta(days=365 * 10)
 
 
 # -------------------------
-# HELPERS
+# DATE HELPERS
 # -------------------------
-def get_episode_number(item: str):
-    m = re.search(r"<itunes:episode>(\d+)</itunes:episode>", item)
-    return int(m.group(1)) if m else None
+def parse_date(entry):
+    if hasattr(entry, "published_parsed") and entry.published_parsed:
+        return datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+    return None
 
 
-def get_pub_year(item: str):
-    m = re.search(r"<itunes:season>(\d+)</itunes:season>", item)
-    return int(m.group(1)) if m else None
-
-
-def is_older_than_10_years(item: str):
-    year = get_pub_year(item)
-    if not year:
+def is_old(pub_date):
+    if not pub_date:
         return False
-    current_year = datetime.now(timezone.utc).year
-    return (current_year - year) >= YEARS_OLD
+    return datetime.now(timezone.utc) - pub_date >= TEN_YEARS
 
 
-def update_title(title: str):
+# -------------------------
+# STATE HANDLING
+# -------------------------
+def load_used():
+    if not os.path.exists(STATE_FILE):
+        return set()
+
+    with open(STATE_FILE, "r", encoding="utf-8") as f:
+        return set(json.load(f))
+
+
+def save_used(used):
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(list(used), f, indent=2)
+
+
+# -------------------------
+# TITLE CLEANUP
+# -------------------------
+def clean_title(title: str):
     title = title.replace(" - Repeat", "")
-    if "[Oldies]" in title:
-        return title
-    return "[Oldies] " + title
+    return f"[Oldies] {title}" if "[Oldies]" not in title else title
 
 
-def process_item(item: str):
-    return re.sub(
-        r"(<title><!\[CDATA\[)(.*?)(\]\]></title>)",
-        lambda m: m.group(1) + update_title(m.group(2)) + m.group(3),
-        item,
-        flags=re.DOTALL
-    )
+# -------------------------
+# RSS ITEM BUILDER
+# -------------------------
+def build_item(entry):
+    title = clean_title(entry.title)
+    link = entry.link
+    guid = getattr(entry, "id", link)
+    pub_date = entry.published if hasattr(entry, "published") else ""
+
+    return f"""    <item>
+      <title><![CDATA[{title}]]></title>
+      <link>{link}</link>
+      <guid>{guid}</guid>
+      <description><![CDATA[{getattr(entry, "summary", "")}]]></description>
+      <pubDate>{pub_date}</pubDate>
+    </item>"""
 
 
 # -------------------------
 # MAIN
 # -------------------------
 def main():
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        rss = f.read()
+    feed = feedparser.parse(INPUT_FEED)
 
-    # extract items
-    items = re.findall(r"<item>.*?</item>", rss, flags=re.DOTALL)
+    used = load_used()
 
-    # filter old episodes
-    old_items = [i for i in items if is_older_than_10_years(i)]
+    # build candidate pool
+    candidates = []
 
-    if not old_items:
-        print("No old episodes found.")
-        return
+    for entry in feed.entries:
+        pub_date = parse_date(entry)
+        if not is_old(pub_date):
+            continue
 
-    # pick ONE episode (latest among old ones by episode number)
-    def ep_num(x):
-        n = get_episode_number(x)
-        return n if n is not None else -1
+        uid = entry.link  # stable identifier
+        if uid in used:
+            continue
 
-    target = max(old_items, key=ep_num)
+        candidates.append(entry)
 
-    # modify only that one
-    target = process_item(target)
+    # reset if exhausted
+    if not candidates:
+        used = set()
+        candidates = [
+            e for e in feed.entries
+            if is_old(parse_date(e))
+        ]
 
-    # build minimal RSS
-    output = """<?xml version="1.0" ?>
+    if not candidates:
+        raise Exception("No valid old episodes found")
+
+    chosen = random.choice(candidates)
+
+    # update state
+    used.add(chosen.link)
+    save_used(used)
+
+    # write RSS
+    item_xml = build_item(chosen)
+
+    rss = f"""<?xml version="1.0"?>
 <rss version="2.0">
-<channel>
-<title>This American Life - Oldies Feed</title>
-<link>https://www.thisamericanlife.org</link>
-<description>Single weekly old episode</description>
-"""
+  <channel>
+    <title>Oldies TAL Feed</title>
+    <link>https://www.thisamericanlife.org</link>
+    <description>Random episode 10+ years old</description>
 
-    output += target
+{item_xml}
 
-    output += """
-</channel>
+  </channel>
 </rss>
 """
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(output)
+        f.write(rss)
 
 
 if __name__ == "__main__":
