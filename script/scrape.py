@@ -21,11 +21,6 @@ OUTPUT_FILE = os.path.join(
 
 DEFAULT_NUM_EPISODES = 1
 
-ACT_WORDS = {
-    "Prologue": 0, "One": 1, "Two": 2, "Three": 3, "Four": 4,
-    "Five": 5, "Six": 6, "Seven": 7, "Eight": 8, "Nine": 9, "Ten": 10
-}
-
 ARCHIVE_KEYS = ("title", "synopsis", "acts", "explicit", "image")
 
 
@@ -49,34 +44,7 @@ def format_rfc(dt):
 
 
 # -------------------------
-# CLEANUP (DEDUP BY EPISODE NUMBER)
-# -------------------------
-def dedupe_episodes(episodes):
-    cleaned = {}
-
-    for ep in episodes:
-        num = ep.get("number")
-
-        if not num:
-            continue
-
-        key = str(num).strip()
-
-        existing = cleaned.get(key)
-
-        if not existing:
-            cleaned[key] = ep
-            continue
-
-        # keep richer version
-        if len(ep.get("acts", [])) >= len(existing.get("acts", [])):
-            cleaned[key] = ep
-
-    return list(cleaned.values())
-
-
-# -------------------------
-# SCRAPER
+# SCRAPE
 # -------------------------
 def fetch_episode_page(url):
     try:
@@ -98,6 +66,8 @@ def scrape_episode(url):
 
     number_elem = soup.select_one(".field-name-field-episode-number .field-item")
     number = number_elem.get_text(strip=True) if number_elem else None
+    if not number:
+        return None
 
     air_elem = soup.select_one(".field-name-field-radio-air-date .date-display-single")
     air_raw = air_elem.get_text(strip=True) if air_elem else ""
@@ -123,11 +93,7 @@ def scrape_episode(url):
     img = soup.select_one("figure.tal-episode-image img")
     image_url = img["src"] if img else None
 
-    # -------------------------
-    # ACTS
-    # -------------------------
     acts = []
-
     for act in soup.select("article.node-act"):
         label = act.select_one(".field-name-field-act-label .field-item")
         act_title = act.select_one("h2.act-header a")
@@ -143,16 +109,11 @@ def scrape_episode(url):
             number_text = "Prologue"
             word = "Prologue"
         else:
-            if label:
-                word = label.get_text(strip=True).replace("Act ", "").strip()
-            else:
-                word = act_title_text.replace("Act ", "").strip() or "0"
-
+            word = label.get_text(strip=True).replace("Act ", "").strip() if label else "0"
             try:
-                act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
+                act_number = int(word) if word.isdigit() else 0
             except Exception:
                 act_number = 0
-
             number_text = f"Act {word}"
 
         summary_elem = act.select_one(".field-name-body .field-item")
@@ -171,8 +132,8 @@ def scrape_episode(url):
         })
 
     return {
+        "number": str(number).strip(),
         "title": title,
-        "number": number,
         "original_air_date": original_air_date,
         "episode_url": url,
         "explicit": explicit,
@@ -189,14 +150,8 @@ def scrape_episode(url):
 # -------------------------
 # RSS SYNC
 # -------------------------
-def update_published_dates(episodes):
+def update_published_dates(indexed):
     feed = feedparser.parse(OFFICIAL_RSS)
-
-    index = {
-        str(e["number"]).strip(): e
-        for e in episodes
-        if e.get("number")
-    }
 
     for item in feed.entries:
         url = item.link
@@ -209,13 +164,15 @@ def update_published_dates(episodes):
         except Exception:
             continue
 
-        ep = next((e for e in episodes if e.get("episode_url") == url), None)
+        ep = next((e for e in indexed.values() if e.get("episode_url") == url), None)
+        if not ep:
+            continue
 
-        if ep:
-            ep.setdefault("published_dates", [])
-            pub_str = format_rfc(dt)
-            if pub_str not in ep["published_dates"]:
-                ep["published_dates"].append(pub_str)
+        ep.setdefault("published_dates", [])
+        pub_str = format_rfc(dt)
+
+        if pub_str not in ep["published_dates"]:
+            ep["published_dates"].append(pub_str)
 
 
 # -------------------------
@@ -226,19 +183,12 @@ def main():
 
     try:
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-            episodes = json.load(f)
+            data = json.load(f)
     except FileNotFoundError:
-        episodes = []
+        data = {}
 
-    # dedupe by episode number
-    episodes = dedupe_episodes(episodes)
-
-    # index by number (NOT URL)
-    episode_index = {
-        str(e["number"]).strip(): e
-        for e in episodes
-        if e.get("number")
-    }
+    # ALWAYS DICT NOW
+    episodes = data if isinstance(data, dict) else {}
 
     feed = feedparser.parse(OFFICIAL_RSS)
 
@@ -249,55 +199,35 @@ def main():
     )
 
     for entry in entries:
-        url = entry.link
-
-        ep_data = scrape_episode(url)
-        if not ep_data or not ep_data.get("number"):
+        ep = scrape_episode(entry.link)
+        if not ep:
             continue
 
-        key = str(ep_data["number"]).strip()
-        existing = episode_index.get(key)
+        key = ep["number"]
+        existing = episodes.get(key)
 
         if existing:
-            old = {k: existing.get(k) for k in ARCHIVE_KEYS}
-            new = {k: ep_data.get(k) for k in ARCHIVE_KEYS}
+            # simple revision tracking
+            old_keys = {k: existing.get(k) for k in ARCHIVE_KEYS}
+            new_keys = {k: ep.get(k) for k in ARCHIVE_KEYS}
 
-            if old != new:
+            if old_keys != new_keys:
                 existing.setdefault("revisions", []).append({
                     "timestamp": format_datetime(datetime.now(timezone.utc)),
-                    "data": old
+                    "data": old_keys
                 })
 
-            # safe merge (no overwrite of identity fields)
-            for k, v in ep_data.items():
-                if k != "episode_url":
-                    existing[k] = v
-
+            episodes[key] = {**existing, **ep}
         else:
-            episodes.append(ep_data)
-            episode_index[key] = ep_data
+            episodes[key] = ep
 
     update_published_dates(episodes)
 
-    # -------------------------
-    # FINAL SORT (ASC EPISODE NUMBER)
-    # -------------------------
-    def safe_episode_number(ep):
-        try:
-            return int(str(ep.get("number", "0")).strip())
-        except Exception:
-            return 0
+    # keep published_dates clean
+    for ep in episodes.values():
+        ep["published_dates"] = sorted(set(ep.get("published_dates", [])))
 
-    episodes.sort(key=safe_episode_number)
-
-    # normalize
-    for ep in episodes:
-        ep["number"] = str(ep.get("number", "")).strip()
-
-        ep["published_dates"] = sorted(
-            set(ep.get("published_dates", []))
-        )
-
+    # write dict (NOT list)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)
 
