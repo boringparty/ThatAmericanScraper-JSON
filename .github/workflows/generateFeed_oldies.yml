@@ -1,52 +1,34 @@
-name: Oldies RSS Generator
-
-permissions:
-  contents: write
+name: Generate Oldies Feed
 
 on:
   schedule:
-    - cron: '0 14 * * 3'  
-  workflow_dispatch:
+    # Every Wednesday at 6:00 AM UTC
+    - cron: '0 6 * * 3'
+  workflow_dispatch: # Allow manual triggering
 
 jobs:
-  oldies:
+  generate-feed:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-
+        
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-
-      - name: Install dependencies
+          python-version: '3.11'
+      
+      - name: Generate oldies feed
         run: |
-          pip install feedparser python-dateutil
-
-      - name: Generate Oldies Feed
-        run: python script/generateFeed_oldies.py
-
-      # 🔍 Debug (optional but very helpful)
-      - name: Show diff
+          python script/generateFeed_oldies.py
+      
+      - name: Commit and push changes
         run: |
-          echo "Checking changes..."
-          git status
-          git diff -- feed/oldies.xml || true
-
-      - name: Commit RSS feed
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add feed/oldies.xml
-
-          # IMPORTANT: check actual file diff, not staged-only diff
-          if git diff --quiet HEAD -- feed/oldies.xml; then
-            echo "No real changes detected — skipping commit"
-            exit 0
-          fi
-
-          git commit -m "Update Oldies RSS feed"
-          
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add feed/oldies.xml used_oldies.json
+          git diff --staged --quiet || git commit -m "Update oldies feed - $(date +'%Y-%m-%d')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
