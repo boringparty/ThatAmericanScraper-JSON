@@ -19,8 +19,6 @@ OUTPUT_FILE = os.path.join(
     "data.json"
 )
 
-DEFAULT_NUM_EPISODES = 1
-
 ARCHIVE_KEYS = ("title", "synopsis", "acts", "explicit", "image")
 
 
@@ -44,7 +42,7 @@ def format_rfc(dt):
 
 
 # -------------------------
-# SCRAPE
+# FETCH PAGE
 # -------------------------
 def fetch_episode_page(url):
     try:
@@ -56,6 +54,9 @@ def fetch_episode_page(url):
         return None
 
 
+# -------------------------
+# SCRAPE EPISODE
+# -------------------------
 def scrape_episode(url):
     soup = fetch_episode_page(url)
     if not soup:
@@ -107,7 +108,6 @@ def scrape_episode(url):
         if is_prologue:
             act_number = 0
             number_text = "Prologue"
-            word = "Prologue"
         else:
             word = label.get_text(strip=True).replace("Act ", "").strip() if label else "0"
             try:
@@ -148,86 +148,50 @@ def scrape_episode(url):
 
 
 # -------------------------
-# RSS SYNC
-# -------------------------
-def update_published_dates(indexed):
-    feed = feedparser.parse(OFFICIAL_RSS)
-
-    for item in feed.entries:
-        url = item.link
-        pub = item.get("published") or item.get("pubDate")
-        if not pub:
-            continue
-
-        try:
-            dt = parse_any_date_str(pub)
-        except Exception:
-            continue
-
-        ep = next((e for e in indexed.values() if e.get("episode_url") == url), None)
-        if not ep:
-            continue
-
-        ep.setdefault("published_dates", [])
-        pub_str = format_rfc(dt)
-
-        if pub_str not in ep["published_dates"]:
-            ep["published_dates"].append(pub_str)
-
-
-# -------------------------
 # MAIN
 # -------------------------
 def main():
-    scrape_mode = os.environ.get("SCRAPE_MODE", "latest").lower()
-
     try:
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
+            episodes = json.load(f)
     except FileNotFoundError:
-        data = {}
+        episodes = {}
 
-    # ALWAYS DICT NOW
-    episodes = data if isinstance(data, dict) else {}
+    # always dict keyed by episode number
+    if not isinstance(episodes, dict):
+        episodes = {}
 
     feed = feedparser.parse(OFFICIAL_RSS)
 
-    entries = (
-        feed.entries if scrape_mode == "all"
-        else feed.entries[:int(scrape_mode)] if scrape_mode.isdigit()
-        else feed.entries[:DEFAULT_NUM_EPISODES]
-    )
+    latest_entry = feed.entries[0]
+    ep = scrape_episode(latest_entry.link)
 
-    for entry in entries:
-        ep = scrape_episode(entry.link)
-        if not ep:
-            continue
+    if not ep:
+        return
 
-        key = ep["number"]
-        existing = episodes.get(key)
+    key = ep["number"]
 
-        if existing:
-            # simple revision tracking
-            old_keys = {k: existing.get(k) for k in ARCHIVE_KEYS}
-            new_keys = {k: ep.get(k) for k in ARCHIVE_KEYS}
+    existing = episodes.get(key)
 
-            if old_keys != new_keys:
-                existing.setdefault("revisions", []).append({
-                    "timestamp": format_datetime(datetime.now(timezone.utc)),
-                    "data": old_keys
-                })
+    if existing:
+        old_keys = {k: existing.get(k) for k in ARCHIVE_KEYS}
+        new_keys = {k: ep.get(k) for k in ARCHIVE_KEYS}
 
-            episodes[key] = {**existing, **ep}
-        else:
-            episodes[key] = ep
+        if old_keys != new_keys:
+            existing.setdefault("revisions", []).append({
+                "timestamp": format_datetime(datetime.now(timezone.utc)),
+                "data": old_keys
+            })
 
-    update_published_dates(episodes)
+        episodes[key] = {**existing, **ep}
 
-    # keep published_dates clean
-    for ep in episodes.values():
-        ep["published_dates"] = sorted(set(ep.get("published_dates", [])))
+    else:
+        episodes[key] = ep
 
-    # write dict (NOT list)
+    # normalize
+    for e in episodes.values():
+        e["published_dates"] = sorted(set(e.get("published_dates", [])))
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)
 
