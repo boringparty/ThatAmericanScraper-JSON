@@ -9,7 +9,7 @@ import os
 
 INPUT_FILE = "feed/feed.xml"
 OUTPUT_FILE = "feed/oldies.xml"
-USED_FILE = "used_oldies.json"
+USED_FILE = "data/used_oldies.json"
 TEN_YEARS = timedelta(days=365 * 10)
 
 # -------------------------
