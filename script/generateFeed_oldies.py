@@ -230,7 +230,7 @@ def main():
         url = enclosure.attrib.get("url")
 
         if url:
-            download_line = f"[download]({url})"
+            download_line = f"<br>[download]({url})"
 
             if re.search(r"(<description>)(.*?)(</description>)", original_item_xml, re.DOTALL):
                 original_item_xml = re.sub(
