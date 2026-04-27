@@ -26,8 +26,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      # For manual runs → use user input
-      # For cron runs → force "all"
       MODE: ${{ github.event.inputs.mode || 'all' }}
 
     steps:
@@ -58,9 +56,16 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update TAL episodes data"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update TAL episodes data"
+          git push
 
       # ----------------
       # RSS FEED
@@ -74,9 +79,16 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add feed.xml
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update TAL RSS feed"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
+          git add feed/
+
+          if git diff --cached --quiet; then
+            echo "No RSS changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update TAL RSS feed"
+          git push
 
       # ----------------
       # MARKDOWN TABLE
@@ -90,19 +102,36 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add episodes.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update TAL markdown table"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
 
+          if git diff --cached --quiet; then
+            echo "No markdown changes to commit"
+            exit 0
+          fi
 
+          git commit -m "Update TAL markdown table"
+          git push
+
+      # ----------------
+      # LOG CHECK
+      # ----------------
       - name: Log scraper check
         run: |
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M")
+
           if ! git diff --quiet HEAD~1 HEAD -- data.json; then
             echo "$TIMESTAMP - Episode Posted" >> check.log
           else
             echo "$TIMESTAMP - Nothing New" >> check.log
           fi
+
           git add check.log
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update check.log"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
+          if git diff --cached --quiet; then
+            echo "No log changes"
+            exit 0
+          fi
+
+          git commit -m "Update check.log"
+          git push
