@@ -1,8 +1,38 @@
-<?xml version="1.0" ?>
-<rss version="2.0">
-<channel>
-<title>This American Life - Oldies Feed</title>
-<link>https://www.thisamericanlife.org</link>
-<description>Single weekly old episode... hopefully</description>
-</channel>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Oldies TAL Feed</title>
+    <link>https://www.thisamericanlife.org</link>
+    <description>Random episode 10+ years old, updated weekly</description>
+<item xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd">
+      <title>[Oldies] 93: Valentine’s Day ’98</title>
+      <link>https://www.thisamericanlife.org/93/valentines-day-98?1998</link>
+      <guid>0093-19980213</guid>
+      <ns0:season>1998</ns0:season>
+      <ns0:episode>93</ns0:episode>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>clean</ns0:explicit>
+      <description>&lt;a href="https://www.thisamericanlife.org/93/valentines-day-98"&gt;https://www.thisamericanlife.org/93/valentines-day-98&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+Stories about couples that all take place decades after that moment their eyes first meet.&lt;br&gt;
+&lt;br&gt;
+Prologue&lt;br&gt;
+Richard Klein of Cornell University explains that the way we view love really began with love poems in the 13th century — an illusion. (7 minutes) by Ira Glass&lt;br&gt;
+&lt;br&gt;
+Act One&lt;br&gt;
+Richard Bausch reads his story Letter to the Lady of the House . (25 minutes) by Richard Bausch&lt;br&gt;
+&lt;br&gt;
+Act Two&lt;br&gt;
+Linda Howard and Richard Bloom, in Boca Raton Florida, had been married years when she started flirting with another man. (7 minutes) by Stephanie Howard&lt;br&gt;
+&lt;br&gt;
+Act Three&lt;br&gt;
+Poet Donald Hall reads about his wife Jane Kenyon, who contracted leukemia, went through treatment, and died. His book is also called Without: Poems . (18 minutes) by Donald Hall&lt;br&gt;
+&lt;br&gt;
+Originally Aired: 1998-02-13</description>
+      <pubDate>Fri, 13 Feb 1998 00:00:00 +0000</pubDate>
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/93/p1LGI7GwdnuggRzTINbYKLccPez91-mapuIBl7wvKQ8/93.mp3" type="audio/mpeg" />
+      <ns0:duration>00:57:00</ns0:duration>
+    </item>
+    
+  </channel>
 </rss>
