@@ -2,6 +2,7 @@
 import xml.etree.ElementTree as ET
 import random
 import json
+import re
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 import os
@@ -10,6 +11,43 @@ INPUT_FILE = "feed/feed.xml"
 OUTPUT_FILE = "feed/oldies.xml"
 USED_FILE = "used_oldies.json"
 TEN_YEARS = timedelta(days=365 * 10)
+
+# -------------------------
+# XML CLEANUP
+# -------------------------
+def fix_xml(content):
+    """Fix common XML issues in RSS feeds"""
+    # Replace unescaped ampersands (but not already-escaped ones)
+    content = re.sub(r'&(?!(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)', '&amp;', content)
+    return content
+
+def parse_feed_safely(filepath):
+    """Parse XML feed with error recovery"""
+    try:
+        # First try normal parsing
+        return ET.parse(filepath)
+    except ET.ParseError as e:
+        print(f"XML parse error: {e}")
+        print("Attempting to fix XML...")
+        
+        # Read and fix the content
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        fixed_content = fix_xml(content)
+        
+        # Try parsing the fixed content
+        try:
+            return ET.ElementTree(ET.fromstring(fixed_content))
+        except ET.ParseError as e2:
+            print(f"Still failed after fix attempt: {e2}")
+            # Show the problematic line
+            lines = fixed_content.split('\n')
+            if hasattr(e2, 'position'):
+                line_num = e2.position[0]
+                if 0 < line_num <= len(lines):
+                    print(f"Line {line_num}: {lines[line_num-1][:200]}")
+            raise
 
 # -------------------------
 # PARSE DATE
@@ -101,7 +139,7 @@ def clean_title(title):
 # MAIN
 # -------------------------
 def main():
-    tree = ET.parse(INPUT_FILE)
+    tree = parse_feed_safely(INPUT_FILE)
     root = tree.getroot()
     items = root.findall(".//item")
     
