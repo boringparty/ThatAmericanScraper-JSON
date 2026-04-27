@@ -26,7 +26,7 @@ jobs:
           pip install feedparser python-dateutil
 
       - name: Generate Oldies Feed
-        run: python scripts/generateFeed_oldies.py
+        run: python script/generateFeed_oldies.py
 
       - name: Commit Oldies Feed
         run: |
