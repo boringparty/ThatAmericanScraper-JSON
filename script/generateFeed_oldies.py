@@ -197,7 +197,7 @@ def main():
         print(f"GUID: {original_guid} -> {new_guid}")
 
     # --- Output ---
-    output_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+    output_xml = f"""<feed xmlns='http://www.w3.org/2005/Atom' xmlns:itunes='http://www.itunes.com/dtds/podcast-1.0.dtd' xml:lang='en-US'>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Oldies TAL Feed</title>
