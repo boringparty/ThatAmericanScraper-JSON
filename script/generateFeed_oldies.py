@@ -230,7 +230,9 @@ def main():
         url = enclosure.attrib.get("url")
 
         if url:
-            download_line = f"<br><br>[download]({url})"
+            download_line = f"
+            
+            [download]({url})"
 
             match = re.search(
                 r"(<description><!\[CDATA\[)(.*?)(\]\]></description>)",
