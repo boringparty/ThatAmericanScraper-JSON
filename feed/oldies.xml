@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Oldies TAL Feed</title>
     <link>https://www.thisamericanlife.org</link>
     <description>Random episode 10+ years old, updated weekly</description>
     <item>
-      <title><![CDATA[[Oldies] 436: The Psychopath Test]]></title>
-      <link>https://www.thisamericanlife.org/436/the-psychopath-test?2011</link>
-      <guid isPermaLink="false">0436-20110527oldies</guid>
-      <itunes:season>2011</itunes:season>
-      <itunes:episode>436</itunes:episode>
+      <title><![CDATA[[Oldies] 227: Why We Fight]]></title>
+      <link>https://www.thisamericanlife.org/227/why-we-fight?2002</link>
+      <guid isPermaLink="false">0227-20021220-oldies</guid>
+      <itunes:season>2002</itunes:season>
+      <itunes:episode>227</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-      <description><![CDATA[<a href="https://www.thisamericanlife.org/436/the-psychopath-test">https://www.thisamericanlife.org/436/the-psychopath-test</a><br>
+      <itunes:explicit>clean</itunes:explicit>
+      <description><![CDATA[<a href="https://www.thisamericanlife.org/227/why-we-fight">https://www.thisamericanlife.org/227/why-we-fight</a><br>
 <br>
-We heard about a test that could determine if someone was a psychopath. So, naturally, our staff decided to take it.<br>
+Stories about why we should go to war versus stories of why we shouldn't.<br>
 <br>
 Prologue<br>
-Ira explains that when the radio staff decided to take a test that reveals who is a psychopath, very quickly everyone came to believe that the highest score would go to either Robyn, Jane, or him. (6 minutes) by Ira Glass<br>
+Host Ira Glass tells the story of a report by the U.S. intelligence community back in October 2002 that declared that the likelihood of Saddam Hussein using weapons of massive destruction was very low for the "foreseeable future"...unless the U.S. were to launch a military attack on Iraq. In other words, the war to stop him from using weapons of mass destruction would probably cause the thing it was designed to prevent. Ira talks with Senator Bob Graham, the ranking Democrat on the Senate Intelligence Committee, who asked the intelligence community to do this risk assessment, and who was surprised it didn't have more effect on the public debate over the war. Before he and Ira get off the phone, the Senator asks Ira to please pose a few questions about the intelligence report to the Administration for him. (7 minutes) by Ira Glass<br>
 <br>
 Act One<br>
-Alix Spiegel tells the story of Robert Dixon, who's in a maximum security prison in Vacaville California and is unlikely to ever get parole because of his score on the psychopath test. The test also is called "the checklist" or, more formally, the PCL-R, which stands for "Psychopathy Check List—Revised." Alix tells the story of its creation and reports that the man who created the test, Bob Hare, is concerned at how it's being used today in the criminal justice system. A version of this story aired on NPR's All Things Considered . (28 minutes) by Alix Spiegel<br>
+Ira speaks with Gordon Jondroe of the newly-created Department of Homeland Security, trying to get answers to Senator Graham's questions. It doesn't go so well. (5 minutes) by Ira Glass<br>
 <br>
 Act Two<br>
-Jon Ronson investigates whether corporate leaders can, in fact, be psychopaths by visiting a former Sunbeam CEO named Al Dunlap. This is an excerpt from Ronson's book, The Psychopath Test . (15 minutes) by Jon Ronson<br>
+For an Iraqi perspective on the war, we hear from Iraqis who've just crossed over the border into Jordan. It's the only open border with Iraq and 150,000 Iraqis live in Amman. Reporter Adam Davidson talks with a soldier who'll probably fight in the war against the United States, a man who claims he was one of Saddam Hussein's bodyguards and knows locations of hidden chemical weapons in Iraq. (18 minutes) by Adam Davidson<br>
 <br>
 Act Three<br>
-Ira and the radio show staff get their results on the psychopath test from Dr. David Bernstein, of Forensic Consultants, LLC. , who administered the test to them. (6 minutes) by Ira Glass<br>
+It's possible that the most compelling arguments against the war with Iraq, and the most compelling arguments for the war with Iraq, are arguments you've never heard. Ira talks with journalist Nicholas Lemann from The New Yorker magazine about two ways of seeing the war:  The so-called Hawks' view, and the so-called Realists' view. His article about all this is called "The War on What?" Two of the Realists, Stephen Van Evera from M.I.T. and Stephen Walt of Harvard, lay out their surprising case against the war. Arguing a very persuasive case against them is Kenneth Pollack, of the Saban Center for Middle East Policy at the Brookings Institution, who was a Persian Gulf military analyst for seven years at the CIA (including during the Persian Gulf War) and after that for the National Security Council under President Clinton. He wrote a book called The Threatening Storm: the Case for Invading Iraq. (19 minutes) by Ira Glass<br>
 <br>
-Originally Aired: 2011-05-27]]></description>
-      <pubDate>Mon, 27 Apr 2026 00:30:00 PDT</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/436/skm6CBw0vYaZsn465bfSaNuBe9xSgsLZ5jKP0auvXGE/436.mp3" type="audio/mpeg"/>
-      <itunes:duration>00:55:00</itunes:duration>
+Act Four<br>
+While we all may have nagging fears about the war against terror or the war against Iraq, we all have a lot of other things on our minds. We hear 19 eighth-graders' letters to the President, as collected by their teacher, Britt Honeycutt, in rural North Carolina. They come from a website where people post letters to the President for the world to see. Hudson is the author of a book of short stories called Dear Mr. President . (7 minutes) by Gabe Hudson<br>
+<br>
+Originally Aired: 2002-12-20]]></description>
+      <pubDate>Mon, 27 Apr 2026 07:43:48 +0000</pubDate>
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/227/7LuGb4ouYhrhHnbwdRdjtFNUFvUPF4UWUyuc14k0vZ0/227.mp3" type="audio/mpeg"/>
+      <itunes:duration>00:56:00</itunes:duration>
     </item>
   </channel>
 </rss>
