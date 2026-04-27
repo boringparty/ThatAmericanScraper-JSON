@@ -1,35 +1,34 @@
-<feed xmlns='http://www.w3.org/2005/Atom' xmlns:itunes='http://www.itunes.com/dtds/podcast-1.0.dtd' xml:lang='en-US'>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Oldies TAL Feed</title>
     <link>https://www.thisamericanlife.org</link>
     <description>Random episode 10+ years old, updated weekly</description>
     <item>
-      <title><![CDATA[[Oldies] 499: Taking Names]]></title>
-      <link>https://www.thisamericanlife.org/499/taking-names?2013</link>
-      <guid isPermaLink="false">0499-20130628-oldies</guid>
-      <itunes:season>2013</itunes:season>
-      <itunes:episode>499</itunes:episode>
+      <title><![CDATA[[Oldies] 124: Welcome to America]]></title>
+      <link>https://www.thisamericanlife.org/124/welcome-to-america?1999</link>
+      <guid isPermaLink="false">0124-19990319-oldies</guid>
+      <itunes:season>1999</itunes:season>
+      <itunes:episode>124</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>clean</itunes:explicit>
-      <description><![CDATA[<a href="https://www.thisamericanlife.org/499/taking-names">https://www.thisamericanlife.org/499/taking-names</a><br>
+      <description><![CDATA[<a href="https://www.thisamericanlife.org/124/welcome-to-america">https://www.thisamericanlife.org/124/welcome-to-america</a><br>
 <br>
-The truly incredible story of a guy named Kirk Johnson who started a list of hundreds of Iraqis who needed to get out of their country. They were getting death threats, and he was their only hope. Only 26 and living in his aunt's basement, he had no idea what to do. How Kirk kind of succeeded spectacularly and failed spectacularly at the same time.<br>
+Stories of people moving to this country: what they see and hear about America that those of us who were born here don't necessarily see.<br>
 <br>
 Prologue<br>
-Ira talks with Producer Nancy Updike about when she first met Kirk Johnson in 2007. At the time 
-he was mulling a crazy plan that involved Iraqi refugees, the Coast Guard and a boat. (5 minutes) by Nancy Updike<br>
+Ira goes to the courtroom of Abraham Lincoln Marovitz, who, at 93, presides over the ceremony to make people citizens. In this setting, it's hard to talk about America as it is. Instead, people talk about the America we wish we lived in. (4 minutes) by Ira Glass<br>
 <br>
 Act One<br>
-Kirk sleepwalks through an open window and into a completely different life. He explains how he starts compiling a list of Iraqis who’d worked with the U.S. government after the invasion, whose lives were now in danger because of that. Carrying around that list gets some very strange reactions from government officials. Kirk is founder and executive director of The List Project to Resettle Iraqi Allies . His memoir To Be a Friend Is Fatal comes out in September. (23 minutes) by Nancy Updike<br>
+Because of a shortage of math and science teachers, New York City decided to import instructors from Austria. Then the Austrians started to see things about this country that few Americans ever get to see. What they know that you don't know about life in America. David Rakoff reports. (31 minutes) by David Rakoff<br>
 <br>
 Act Two<br>
-To get a sense of what may be broken about our process for bringing these Iraqis into the US, the ones who worked with US forces and who believe their lives are now in danger because of that, Kirk Johnson tells Nancy Updike about one guy. Almost a year of his emails were forwarded to Kirk, who printed them out and started to realize that he was looking at a dead man’s attempt to immigrate to the U.S. (29 minutes) by Nancy Updike<br>
+This is a story of a father and son—told by the son, Juan Zaldivar, who was born in Cuba. Juan has spent the past four years shooting a movie about his father, to try to reassure him that he did the right thing to leave Cuba with his family in the 1980s and come to America. His father, so far, is not reassured. (20 minutes) by Juan Zaldivar<br>
 <br>
-Originally Aired: 2013-06-28]]></description>
-      <pubDate>Mon, 27 Apr 2026 07:53:07 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/499/IOUBcQGz5IE_HYaMAfq8aocAZcnsWS9fLnnKJcrXKG8/499.mp3" type="audio/mpeg"/>
-      <itunes:duration>00:57:00</itunes:duration>
+Originally Aired: 1999-03-19]]></description>
+      <pubDate>Mon, 27 Apr 2026 08:15:53 +0000</pubDate>
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/124/avqtZOfGcQ85m1uT0DelsORL1psfEtNlmStYNbEaUiQ/124.mp3" type="audio/mpeg"/>
+      <itunes:duration>00:55:00</itunes:duration>
     </item>
   </channel>
 </rss>
