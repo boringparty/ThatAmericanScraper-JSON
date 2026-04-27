@@ -19,21 +19,16 @@ OUTPUT_FILE = os.path.join(
     "data.json"
 )
 
-ARCHIVE_KEYS = ("title", "synopsis", "acts", "explicit", "image")
+DEFAULT_NUM_EPISODES = 1
 
 
 # -------------------------
 # DATE PARSING
 # -------------------------
 def parse_any_date_str(s: str):
-    try:
-        dt = parser.parse(s)
-    except Exception:
-        dt = datetime.strptime(s, "%Y-%m-%d")
-
+    dt = parser.parse(s)
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=timezone.utc)
-
     return dt.astimezone(timezone.utc)
 
 
@@ -42,9 +37,21 @@ def format_rfc(dt):
 
 
 # -------------------------
-# FETCH PAGE
+# SAFE UPSERT INDEX
 # -------------------------
-def fetch_episode_page(url):
+def build_index(episodes):
+    return {str(e.get("number")): e for e in episodes if isinstance(e, dict)}
+
+
+def upsert(index, ep_data):
+    key = str(ep_data.get("number"))
+    index[key] = ep_data
+
+
+# -------------------------
+# SCRAPER
+# -------------------------
+def fetch(url):
     try:
         r = requests.get(url, headers=HEADERS)
         r.raise_for_status()
@@ -54,11 +61,8 @@ def fetch_episode_page(url):
         return None
 
 
-# -------------------------
-# SCRAPE EPISODE
-# -------------------------
 def scrape_episode(url):
-    soup = fetch_episode_page(url)
+    soup = fetch(url)
     if not soup:
         return None
 
@@ -74,7 +78,7 @@ def scrape_episode(url):
     air_raw = air_elem.get_text(strip=True) if air_elem else ""
 
     try:
-        original_air_date = format_datetime(parse_any_date_str(air_raw))
+        original_air_date = format_rfc(parse_any_date_str(air_raw))
     except Exception:
         original_air_date = air_raw
 
@@ -99,20 +103,19 @@ def scrape_episode(url):
         label = act.select_one(".field-name-field-act-label .field-item")
         act_title = act.select_one("h2.act-header a")
 
+        act_title_text = act_title.get_text(strip=True) if act_title else ""
+
         if not label and not act_title:
             continue
 
-        act_title_text = act_title.get_text(strip=True) if act_title else ""
-        is_prologue = "prologue" in act_title_text.lower()
-
-        if is_prologue:
+        if "prologue" in act_title_text.lower():
             act_number = 0
             number_text = "Prologue"
         else:
             word = label.get_text(strip=True).replace("Act ", "").strip() if label else "0"
             try:
                 act_number = int(word) if word.isdigit() else 0
-            except Exception:
+            except:
                 act_number = 0
             number_text = f"Act {word}"
 
@@ -132,8 +135,8 @@ def scrape_episode(url):
         })
 
     return {
-        "number": str(number).strip(),
         "title": title,
+        "number": number,
         "original_air_date": original_air_date,
         "episode_url": url,
         "explicit": explicit,
@@ -148,49 +151,72 @@ def scrape_episode(url):
 
 
 # -------------------------
+# RSS SYNC
+# -------------------------
+def update_published_dates(episodes, index):
+    feed = feedparser.parse(OFFICIAL_RSS)
+
+    for item in feed.entries:
+        url = item.link
+        pub = item.get("published") or item.get("pubDate")
+        if not pub:
+            continue
+
+        try:
+            dt = parse_any_date_str(pub)
+        except:
+            continue
+
+        ep = index.get(str(url.split("/")[-1]))
+        if ep:
+            ep.setdefault("published_dates", [])
+            pub_str = format_rfc(dt)
+            if pub_str not in ep["published_dates"]:
+                ep["published_dates"].append(pub_str)
+
+
+# -------------------------
 # MAIN
 # -------------------------
 def main():
+    scrape_mode = os.environ.get("SCRAPE_MODE", "latest").lower()
+
     try:
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
             episodes = json.load(f)
     except FileNotFoundError:
-        episodes = {}
+        episodes = []
 
-    # always dict keyed by episode number
-    if not isinstance(episodes, dict):
-        episodes = {}
+    # 🔒 ALWAYS normalize
+    episodes = [e for e in episodes if isinstance(e, dict)]
+
+    index = build_index(episodes)
 
     feed = feedparser.parse(OFFICIAL_RSS)
 
-    latest_entry = feed.entries[0]
-    ep = scrape_episode(latest_entry.link)
+    entries = (
+        feed.entries if scrape_mode == "all"
+        else feed.entries[:int(scrape_mode)] if scrape_mode.isdigit()
+        else feed.entries[:1]
+    )
 
-    if not ep:
-        return
+    for entry in entries:
+        ep_data = scrape_episode(entry.link)
+        if not ep_data:
+            continue
 
-    key = ep["number"]
+        upsert(index, ep_data)
 
-    existing = episodes.get(key)
+    episodes = list(index.values())
 
-    if existing:
-        old_keys = {k: existing.get(k) for k in ARCHIVE_KEYS}
-        new_keys = {k: ep.get(k) for k in ARCHIVE_KEYS}
+    update_published_dates(episodes, index)
 
-        if old_keys != new_keys:
-            existing.setdefault("revisions", []).append({
-                "timestamp": format_datetime(datetime.now(timezone.utc)),
-                "data": old_keys
-            })
+    # FINAL SORT (THIS FIXES EVERYTHING)
+    episodes.sort(key=lambda e: int(e.get("number", 0)))
 
-        episodes[key] = {**existing, **ep}
-
-    else:
-        episodes[key] = ep
-
-    # normalize
-    for e in episodes.values():
-        e["published_dates"] = sorted(set(e.get("published_dates", [])))
+    # clean published dates
+    for ep in episodes:
+        ep["published_dates"] = sorted(set(ep.get("published_dates", [])))
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)
