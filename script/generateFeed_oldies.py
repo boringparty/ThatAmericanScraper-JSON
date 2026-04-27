@@ -246,7 +246,7 @@ def main():
             else:
                 original_item_xml = re.sub(
                     r"</description>",
-                    f"<a href="{download_line}"><br><br>Download</a></description>",
+                    f"""<a href="{download_line}"><br><br>Download</a></description>""",
                     original_item_xml
                 )
 
