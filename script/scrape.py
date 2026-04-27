@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 import os
+import json
+import re
 import requests
 from bs4 import BeautifulSoup
 import feedparser
-import json
-import re
 import time
 from datetime import timezone, timedelta, datetime
-from email.utils import format_datetime, parsedate_to_datetime
+from email.utils import format_datetime
 from dateutil import parser
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -24,24 +24,43 @@ ACT_WORDS = {
 ARCHIVE_KEYS = ("title", "synopsis", "acts", "explicit", "image")
 
 
+# -------------------------
+# DATE PARSING
+# -------------------------
 def parse_any_date_str(s: str):
     try:
-        dt = parsedate_to_datetime(s)
-    except Exception:
         dt = parser.parse(s)
+    except Exception:
+        dt = datetime.strptime(s, "%Y-%m-%d")
+
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=timezone.utc)
-    else:
-        dt = dt.astimezone(timezone.utc)
-    return dt
+    return dt.astimezone(timezone.utc)
 
 
-def to_week_sunday(dt):
-    days_ahead = 6 - dt.weekday()
-    sunday = dt + timedelta(days=days_ahead)
-    return sunday.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=timezone.utc)
+def format_rfc(dt):
+    return format_datetime(dt)
 
 
+# -------------------------
+# CLEANUP (THIS FIXES DUPES IN EXISTING JSON)
+# -------------------------
+def dedupe_episodes(episodes):
+    cleaned = {}
+    for ep in episodes:
+        url = ep.get("episode_url")
+        if not url:
+            continue
+
+        # keep latest version (overwrite older duplicates)
+        cleaned[url] = ep
+
+    return list(cleaned.values())
+
+
+# -------------------------
+# SCRAPER
+# -------------------------
 def fetch_episode_page(url):
     try:
         r = requests.get(url, headers=HEADERS)
@@ -52,25 +71,24 @@ def fetch_episode_page(url):
         return None
 
 
-def snapshot(ep):
-    return {k: ep.get(k) for k in ARCHIVE_KEYS}
-
-
 def scrape_episode(url):
     soup = fetch_episode_page(url)
     if not soup:
         return None
 
-    title = soup.select_one("h1").get_text(strip=True) if soup.select_one("h1") else ""
+    title = soup.select_one("h1")
+    title = title.get_text(strip=True) if title else ""
+
     number_elem = soup.select_one(".field-name-field-episode-number .field-item")
     number = number_elem.get_text(strip=True) if number_elem else ""
 
-    original_air_elem = soup.select_one(".field-name-field-radio-air-date .date-display-single")
-    original_air_date_raw = original_air_elem.get_text(strip=True) if original_air_elem else ""
+    air_elem = soup.select_one(".field-name-field-radio-air-date .date-display-single")
+    air_raw = air_elem.get_text(strip=True) if air_elem else ""
+
     try:
-        original_air_date = format_datetime(parse_any_date_str(original_air_date_raw))
+        original_air_date = format_datetime(parse_any_date_str(air_raw))
     except Exception:
-        original_air_date = original_air_date_raw
+        original_air_date = air_raw
 
     synopsis_elem = soup.select_one(".field-name-body .field-item")
     synopsis = synopsis_elem.get_text(strip=True) if synopsis_elem else ""
@@ -82,52 +100,44 @@ def scrape_episode(url):
 
     clean_elem = soup.select_one(".field-name-field-notes a[href*='/clean/']")
     download_clean = clean_elem["href"] if clean_elem else None
+
     explicit = bool(download_clean)
 
-    img_elem = soup.select_one("figure.tal-episode-image img")
-    image_url = img_elem["src"] if img_elem else None
-    credit_elem = soup.select_one("figure.tal-episode-image .credit a")
-    image_credit = credit_elem.get_text(strip=True) if credit_elem else None
+    img = soup.select_one("figure.tal-episode-image img")
+    image_url = img["src"] if img else None
 
     acts = []
     for act in soup.select("article.node-act"):
-        label_elem = act.select_one(".field-name-field-act-label .field-item")
-        act_title_elem = act.select_one("h2.act-header a")
-        act_title = act_title_elem.get_text(strip=True) if act_title_elem else ""
-        is_prologue = "prologue" in act_title.lower()
+        label = act.select_one(".field-name-field-act-label .field-item")
+        act_title = act.select_one("h2.act-header a")
 
-        if not label_elem and not is_prologue:
+        if not label and not act_title:
             continue
+
+        act_title_text = act_title.get_text(strip=True) if act_title else ""
+        is_prologue = "prologue" in act_title_text.lower()
 
         if is_prologue:
             act_number = 0
             number_text = "Prologue"
         else:
-            word = label_elem.get_text(strip=True).replace("Act ", "").replace("Part ", "").strip()
+            word = label.get_text(strip=True).replace("Act ", "").strip()
             act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
             number_text = f"Act {word}"
 
-        act_summary_elem = act.select_one(".field-name-body .field-item")
-        raw = act_summary_elem.get_text(" ", strip=True) if act_summary_elem else ""
+        summary_elem = act.select_one(".field-name-body .field-item")
+        raw = summary_elem.get_text(" ", strip=True) if summary_elem else ""
+
         duration_match = re.search(r"\((\d+)\s*minutes?\)", raw)
         duration = int(duration_match.group(1)) if duration_match else None
         summary = re.sub(r"\s*\(\d+\s*minutes?\)", "", raw).strip()
 
-        contributors = [
-            a.get_text(strip=True)
-            for div in act.select("div.field-name-field-contributor")
-            for a in div.select("a")
-        ]
-
-        full_title = act_title if is_prologue else f"{number_text}: {act_title}"
-
         acts.append({
             "number": act_number,
             "number_text": number_text,
-            "title": full_title,
+            "title": act_title_text,
             "summary": summary,
-            "duration": duration,
-            "contributors": contributors
+            "duration": duration
         })
 
     return {
@@ -139,32 +149,43 @@ def scrape_episode(url):
         "synopsis": synopsis,
         "download": download,
         "download_clean": download_clean,
-        "image": {"url": image_url, "credit": image_credit},
+        "image": {"url": image_url},
         "acts": acts,
         "published_dates": [],
         "revisions": []
     }
 
 
+# -------------------------
+# RSS SYNC
+# -------------------------
 def update_published_dates(episodes):
     feed = feedparser.parse(OFFICIAL_RSS)
+
+    index = {e["episode_url"]: e for e in episodes if e.get("episode_url")}
+
     for item in feed.entries:
         url = item.link
-        pub_date = item.get("published") or item.get("pubDate")
-        if not pub_date:
+        pub = item.get("published") or item.get("pubDate")
+        if not pub:
             continue
 
         try:
-            dt = parse_any_date_str(pub_date)
+            dt = parse_any_date_str(pub)
         except Exception:
             continue
 
-        pub_str = format_datetime(to_week_sunday(dt))
-        ep = next((e for e in episodes if e["episode_url"] == url), None)
-        if ep and pub_str not in ep["published_dates"]:
-            ep["published_dates"].append(pub_str)
+        ep = index.get(url)
+        if ep:
+            ep.setdefault("published_dates", [])
+            pub_str = format_rfc(dt)
+            if pub_str not in ep["published_dates"]:
+                ep["published_dates"].append(pub_str)
 
 
+# -------------------------
+# MAIN
+# -------------------------
 def main():
     scrape_mode = os.environ.get("SCRAPE_MODE", "latest").lower()
 
@@ -174,7 +195,14 @@ def main():
     except FileNotFoundError:
         episodes = []
 
+    # 🔥 HARD CLEAN DUPES ON LOAD
+    episodes = dedupe_episodes(episodes)
+
+    # FAST LOOKUP INDEX
+    episode_index = {e["episode_url"]: e for e in episodes if e.get("episode_url")}
+
     feed = feedparser.parse(OFFICIAL_RSS)
+
     entries = (
         feed.entries if scrape_mode == "all"
         else feed.entries[:int(scrape_mode)] if scrape_mode.isdigit()
@@ -183,14 +211,16 @@ def main():
 
     for entry in entries:
         url = entry.link
+
         ep_data = scrape_episode(url)
         if not ep_data:
             continue
 
-        existing = next((e for e in episodes if e["episode_url"] == url), None)
+        existing = episode_index.get(url)
+
         if existing:
-            old = snapshot(existing)
-            new = snapshot(ep_data)
+            old = {k: existing.get(k) for k in ARCHIVE_KEYS}
+            new = {k: ep_data.get(k) for k in ARCHIVE_KEYS}
 
             if old != new:
                 existing.setdefault("revisions", []).append({
@@ -198,17 +228,21 @@ def main():
                     "data": old
                 })
 
-            for k, v in ep_data.items():
-                if k not in ("published_dates", "revisions"):
-                    existing[k] = v
+            existing.update(ep_data)
+
         else:
             episodes.append(ep_data)
+            episode_index[url] = ep_data
 
     update_published_dates(episodes)
 
-    episodes.sort(key=lambda e: parse_any_date_str(e["original_air_date"]))
+    # sort
+    episodes.sort(key=lambda e: e["original_air_date"])
+
     for ep in episodes:
-        ep["published_dates"] = sorted(set(ep["published_dates"]), key=parse_any_date_str)
+        ep["published_dates"] = sorted(
+            set(ep.get("published_dates", []))
+        )
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)
