@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add feed/oldies.xml used_oldies.json
+          git add feed/oldies.xml data/used_oldies.json
           git diff --staged --quiet || git commit -m "Update oldies feed - $(date +'%Y-%m-%d')"
           git push
         env:
