@@ -1,131 +1,98 @@
 #!/usr/bin/env python3
-import feedparser
+import xml.etree.ElementTree as ET
 import random
-import json
-import os
 from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
+import os
 
-INPUT_FEED = "feed/feed.xml"
+INPUT_FILE = "feed/feed.xml"
 OUTPUT_FILE = "feed/oldies.xml"
-STATE_FILE = "feed/oldies_used.json"
 
 TEN_YEARS = timedelta(days=365 * 10)
 
 
 # -------------------------
-# DATE HELPERS
+# PARSE DATE
 # -------------------------
-def parse_date(entry):
-    if hasattr(entry, "published_parsed") and entry.published_parsed:
-        return datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-    return None
+def parse_date(text):
+    try:
+        dt = parsedate_to_datetime(text)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except Exception:
+        return None
 
 
-def is_old(pub_date):
-    if not pub_date:
+def is_old(dt):
+    if not dt:
         return False
-    return datetime.now(timezone.utc) - pub_date >= TEN_YEARS
-
-
-# -------------------------
-# STATE HANDLING
-# -------------------------
-def load_used():
-    if not os.path.exists(STATE_FILE):
-        return set()
-
-    with open(STATE_FILE, "r", encoding="utf-8") as f:
-        return set(json.load(f))
-
-
-def save_used(used):
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(list(used), f, indent=2)
+    return datetime.now(timezone.utc) - dt >= TEN_YEARS
 
 
 # -------------------------
 # TITLE CLEANUP
 # -------------------------
-def clean_title(title: str):
+def clean_title(title):
     title = title.replace(" - Repeat", "")
-    return f"[Oldies] {title}" if "[Oldies]" not in title else title
-
-
-# -------------------------
-# RSS ITEM BUILDER
-# -------------------------
-def build_item(entry):
-    title = clean_title(entry.title)
-    link = entry.link
-    guid = getattr(entry, "id", link)
-    pub_date = entry.published if hasattr(entry, "published") else ""
-
-    return f"""    <item>
-      <title><![CDATA[{title}]]></title>
-      <link>{link}</link>
-      <guid>{guid}</guid>
-      <description><![CDATA[{getattr(entry, "summary", "")}]]></description>
-      <pubDate>{pub_date}</pubDate>
-    </item>"""
+    return f"[Oldies] {title}"
 
 
 # -------------------------
 # MAIN
 # -------------------------
 def main():
-    feed = feedparser.parse(INPUT_FEED)
+    tree = ET.parse(INPUT_FILE)
+    root = tree.getroot()
 
-    used = load_used()
+    items = root.findall(".//item")
 
-    # build candidate pool
     candidates = []
 
-    for entry in feed.entries:
-        pub_date = parse_date(entry)
-        if not is_old(pub_date):
+    for item in items:
+        pub = item.find("pubDate")
+        title = item.find("title")
+
+        if pub is None or title is None:
             continue
 
-        uid = entry.link  # stable identifier
-        if uid in used:
+        dt = parse_date(pub.text)
+        if not is_old(dt):
             continue
 
-        candidates.append(entry)
-
-    # reset if exhausted
-    if not candidates:
-        used = set()
-        candidates = [
-            e for e in feed.entries
-            if is_old(parse_date(e))
-        ]
+        candidates.append(item)
 
     if not candidates:
-        raise Exception("No valid old episodes found")
+        raise Exception("No 10+ year old episodes found")
 
     chosen = random.choice(candidates)
 
-    # update state
-    used.add(chosen.link)
-    save_used(used)
+    # clone item safely
+    item_xml = ET.tostring(chosen, encoding="unicode")
 
-    # write RSS
-    item_xml = build_item(chosen)
+    # fix title
+    item_xml = item_xml.replace("<title><![CDATA[", "<title><![CDATA[")
 
-    rss = f"""<?xml version="1.0"?>
+    # safer title patching
+    title_elem = chosen.find("title")
+    if title_elem is not None and title_elem.text:
+        title_elem.text = clean_title(title_elem.text)
+
+    output_xml = f"""<?xml version="1.0"?>
 <rss version="2.0">
   <channel>
     <title>Oldies TAL Feed</title>
     <link>https://www.thisamericanlife.org</link>
     <description>Random episode 10+ years old</description>
 
-{item_xml}
+{ET.tostring(chosen, encoding="unicode")}
 
   </channel>
 </rss>
 """
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(rss)
+        f.write(output_xml)
 
 
 if __name__ == "__main__":
