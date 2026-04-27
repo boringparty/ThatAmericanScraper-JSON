@@ -22,7 +22,7 @@ def fix_xml(content):
     )
 
 # -------------------------
-# ROBUST DATE PARSER (THIS IS THE FIX)
+# DATE PARSER
 # -------------------------
 def parse_date(text):
     if not text:
@@ -30,17 +30,17 @@ def parse_date(text):
 
     text = text.strip()
 
-    # RFC822 / RSS standard
+    # RFC822 / RSS
     for fmt in [
-        "%a, %d %b %Y %H:%M:%S %z",   # Mon, 27 Apr 2026 08:15:53 +0000
-        "%a, %d %b %Y %H:%M:%S GMT",  # Mon, 27 Apr 2026 08:15:53 GMT
+        "%a, %d %b %Y %H:%M:%S %z",
+        "%a, %d %b %Y %H:%M:%S GMT",
     ]:
         try:
             return datetime.strptime(text, fmt).astimezone(timezone.utc)
         except:
             pass
 
-    # ISO 8601 fallback
+    # ISO fallback
     try:
         return datetime.fromisoformat(text.replace("Z", "+00:00")).astimezone(timezone.utc)
     except:
@@ -157,7 +157,7 @@ def main():
             candidates.append((item, ep))
 
     if not candidates:
-        raise Exception("No valid episodes found (date parsing issue)")
+        raise Exception("No valid episodes found")
 
     chosen_item, episode_num = random.choice(candidates)
 
@@ -198,7 +198,7 @@ def main():
         )
 
     # -------------------------
-    # PUBDATE UPDATE
+    # PUBDATE
     # -------------------------
     new_pubdate = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
 
@@ -209,7 +209,7 @@ def main():
     )
 
     # -------------------------
-    # GUID UPDATE
+    # GUID
     # -------------------------
     new_guid = f"{guid_text}-oldies"
 
@@ -221,33 +221,36 @@ def main():
 
     print(f"GUID: {guid_text} -> {new_guid}")
 
-# -------------------------
-# ENCLOSURE → REDDIT MARKDOWN (FIXED CDATA SAFE)
-# -------------------------
-enclosure = chosen_item.find("enclosure")
+    # -------------------------
+    # ENCLOSURE → REDDIT MARKDOWN (INSIDE ITEM, CORRECT SCOPE)
+    # -------------------------
+    enclosure = chosen_item.find("enclosure")
 
-if enclosure is not None:
-    url = enclosure.attrib.get("url")
+    if enclosure is not None:
+        url = enclosure.attrib.get("url")
 
-    if url:
-        download_line = f"\n\n[download]({url})"
+        if url:
+            download_line = f"\n\n[download]({url})"
 
-        match = re.search(r"(<description><!\[CDATA\[)(.*?)(\]\]></description>)", original_item_xml, re.DOTALL)
-
-        if match:
-            original_item_xml = original_item_xml.replace(
-                match.group(0),
-                f"{match.group(1)}{match.group(2)}{download_line}{match.group(3)}"
-            )
-        else:
-            # fallback (non-CDATA feeds)
-            original_item_xml = re.sub(
-                r"</description>",
-                f"{download_line}</description>",
-                original_item_xml
+            match = re.search(
+                r"(<description><!\[CDATA\[)(.*?)(\]\]></description>)",
+                original_item_xml,
+                re.DOTALL
             )
 
-        print(f"Added download link: {url}")
+            if match:
+                original_item_xml = original_item_xml.replace(
+                    match.group(0),
+                    f"{match.group(1)}{match.group(2)}{download_line}{match.group(3)}"
+                )
+            else:
+                original_item_xml = re.sub(
+                    r"</description>",
+                    f"{download_line}</description>",
+                    original_item_xml
+                )
+
+            print(f"Added download link: {url}")
 
     # -------------------------
     # OUTPUT
