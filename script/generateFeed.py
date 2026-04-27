@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 
 INPUT_FILE = os.path.join(
     os.path.dirname(os.path.dirname(__file__)),
-    "data.json"
+    "data/data.json"
 )
 
 OUTPUT_FILE_ALL = "feed/all.xml"
