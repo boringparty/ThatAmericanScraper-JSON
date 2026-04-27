@@ -183,32 +183,16 @@ def main():
     item_end = content.find("</item>", item_start) + len("</item>")
 
     original_item_xml = content[item_start:item_end]
+
     # -------------------------
-    # ITUNES:SEASON (ORIGINAL YEAR)
+    # EXTRACT ORIGINAL YEAR (needed for title and itunes:season)
     # -------------------------
+    original_year = None
     pub_elem = chosen_item.find("pubDate")
     if pub_elem is not None and pub_elem.text:
         original_date = parse_date(pub_elem.text)
         if original_date:
             original_year = str(original_date.year)
-            
-            # Check if season tag already exists
-            if re.search(r"<itunes:season>.*?</itunes:season>", original_item_xml):
-                original_item_xml = re.sub(
-                    r"<itunes:season>.*?</itunes:season>",
-                    f"<itunes:season>{original_year}</itunes:season>",
-                    original_item_xml
-                )
-            else:
-                # Insert after guid tag
-                original_item_xml = re.sub(
-                    r"(</guid>)",
-                    f"\\1\n    <itunes:season>{original_year}</itunes:season>",
-                    original_item_xml
-                )
-            
-            print(f"Set itunes:season to {original_year}")
-
 
     # -------------------------
     # TITLE
@@ -265,28 +249,24 @@ def main():
     # -------------------------
     # ITUNES:SEASON (ORIGINAL YEAR)
     # -------------------------
-    pub_elem = chosen_item.find("pubDate")
-    if pub_elem is not None and pub_elem.text:
-        original_date = parse_date(pub_elem.text)
-        if original_date:
-            original_year = str(original_date.year)
-            
-            # Check if season tag already exists
-            if re.search(r"<itunes:season>.*?</itunes:season>", original_item_xml):
-                original_item_xml = re.sub(
-                    r"<itunes:season>.*?</itunes:season>",
-                    f"<itunes:season>{original_year}</itunes:season>",
-                    original_item_xml
-                )
-            else:
-                # Insert after guid tag
-                original_item_xml = re.sub(
-                    r"(</guid>)",
-                    f"\\1\n    <itunes:season>{original_year}</itunes:season>",
-                    original_item_xml
-                )
-            
-            print(f"Set itunes:season to {original_year}")
+    if original_year:
+        # Check if season tag already exists
+        if re.search(r"<itunes:season>.*?</itunes:season>", original_item_xml):
+            original_item_xml = re.sub(
+                r"<itunes:season>.*?</itunes:season>",
+                f"<itunes:season>{original_year}</itunes:season>",
+                original_item_xml
+            )
+        else:
+            # Insert after guid tag
+            original_item_xml = re.sub(
+                r"(</guid>)",
+                f"\\1\n    <itunes:season>{original_year}</itunes:season>",
+                original_item_xml
+            )
+        
+        print(f"Set itunes:season to {original_year}")
+
 
     # -------------------------
     # ENCLOSURE → DOWNLOAD LINK (INSIDE ITEM, CORRECT SCOPE)
