@@ -1,5 +1,8 @@
 name: Generate Oldies Feed
 
+permissions:
+  contents: write
+
 on:
   schedule:
     # Every Wednesday at 6:00 AM UTC
