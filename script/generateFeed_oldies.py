@@ -228,6 +228,16 @@ def main():
         )
         print(f"Title: {original_title} -> {new_title}")
     
+    # Update pubDate to today so it appears as a new episode
+    today = datetime.now(timezone.utc)
+    new_pubdate = today.strftime("%a, %d %b %Y %H:%M:%S %z")
+    original_item_xml = re.sub(
+        r'<pubDate>.*?</pubDate>',
+        f'<pubDate>{new_pubdate}</pubDate>',
+        original_item_xml
+    )
+    print(f"Updated pubDate to: {new_pubdate}")
+    
     # Generate output XML
     output_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
