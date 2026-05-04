@@ -103,7 +103,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add episodes.md
+          git add data/episodes.md
 
           if git diff --cached --quiet; then
             echo "No markdown changes to commit"
