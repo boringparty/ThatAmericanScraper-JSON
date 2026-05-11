@@ -19938,19 +19938,19 @@
     "original_air_date": "Fri, 06 Oct 2006 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/318/with-great-power",
     "explicit": false,
-    "synopsis": "A family wishes for years that they could do something to stop their neighbor's shocking behavior. Suddenly they get the power to decisively change things forever...and they have to decide whether they will. This, and other stories of everyday people who get saddled with great power—and the great sense of responsibility that goes with it.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/318/5qxFM2EQ8IsMSfGMDT9O1-vDsg8z2n7mGua20I4Z5T0/318.mp3",
+    "synopsis": "People who end up with far more power than they bargained for, and everything that comes with it.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/cc05f2e3-ca9b-4f21-a33c-608eef0fcafb/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=cc05f2e3-ca9b-4f21-a33c-608eef0fcafb&nocache",
     "download_clean": null,
     "image": {
-      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/318.jpg?itok=220rVxyL",
-      "credit": "Jason"
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-459239571.jpg?itok=GsybXjbh",
+      "credit": null
     },
     "acts": [
       {
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Ira tells the story of two friends of his who were like superheroes. They had this incredible power to save someone. And with that great power came great responsibility. His friends are with Mission USA , working with gang kids in Chicago's prisons.",
+        "summary": "Ira tells the story of two friends who had this incredible power to save someone. And with that great power came great responsibility. Jane and Glen are with Mission USA , working with gang kids in Chicago's prisons.",
         "duration": 4,
         "contributors": [
           "Ira Glass"
@@ -19960,7 +19960,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Objects In Side View Mirror Are Truer Than They Appear",
-        "summary": "Alex Kotlowitz reports on a woman with the power to change two people's lives...and at the height of her power, she doesn't even know she has it. Alex is the author of Never a City So Real and other books.",
+        "summary": "Alex Kotlowitz reports on a woman with the power to change two people's lives — and at the height of her power, she doesn't even know she has it. Alex is the author of Never a City So Real and other books.",
         "duration": 25,
         "contributors": [
           "Alex Kotlowitz"
@@ -19970,7 +19970,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: Unwelcome Wagon",
-        "summary": "Host Ira Glass interviews the mother and daughter in a family who wished for years they could do something to stop their neighbor from all kinds of shocking behavior. Suddenly they get the power to decisively change things forever...and they have to decide whether they will.",
+        "summary": "Ira Glass talks with a mother and daughter who spent years watching their neighbor do things they found shocking and felt powerless to stop. Then, suddenly, they get the power to decisively change things permanently. And they have to decide if they will.",
         "duration": 14,
         "contributors": [
           "Ira Glass"
@@ -19980,7 +19980,7 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: Waiting For Joe",
-        "summary": "When you're powerless, you think a lot about the powerful figures above you. Especially when their actions just make no sense. Or when they don't seem to be living up to their responsibilites. Shalom Auslander tells the story of the one authority figure who's like this more than any other. This story is from his collection Beware of God .",
+        "summary": "When you're powerless, you spend a lot of time thinking about the people above you — what they want, why they do what they do, whether they'll ever come through. Shalom Auslander has a story about that relationship. This story is from Shalom's collection, Beware of God .",
         "duration": 11,
         "contributors": [
           "Shalom Auslander"
@@ -19988,7 +19988,64 @@
       }
     ],
     "published_dates": [
-      "Fri, 06 Oct 2006 00:00:00 +0000"
+      "Fri, 06 Oct 2006 00:00:00 +0000",
+      "Sun, 10 May 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 11 May 2026 01:39:52 +0000",
+        "data": {
+          "title": "With Great Power",
+          "synopsis": "A family wishes for years that they could do something to stop their neighbor's shocking behavior. Suddenly they get the power to decisively change things forever...and they have to decide whether they will. This, and other stories of everyday people who get saddled with great power—and the great sense of responsibility that goes with it.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Ira tells the story of two friends of his who were like superheroes. They had this incredible power to save someone. And with that great power came great responsibility. His friends are with Mission USA , working with gang kids in Chicago's prisons.",
+              "duration": 4,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Objects In Side View Mirror Are Truer Than They Appear",
+              "summary": "Alex Kotlowitz reports on a woman with the power to change two people's lives...and at the height of her power, she doesn't even know she has it. Alex is the author of Never a City So Real and other books.",
+              "duration": 25,
+              "contributors": [
+                "Alex Kotlowitz"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Unwelcome Wagon",
+              "summary": "Host Ira Glass interviews the mother and daughter in a family who wished for years they could do something to stop their neighbor from all kinds of shocking behavior. Suddenly they get the power to decisively change things forever...and they have to decide whether they will.",
+              "duration": 14,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Waiting For Joe",
+              "summary": "When you're powerless, you think a lot about the powerful figures above you. Especially when their actions just make no sense. Or when they don't seem to be living up to their responsibilites. Shalom Auslander tells the story of the one authority figure who's like this more than any other. This story is from his collection Beware of God .",
+              "duration": 11,
+              "contributors": [
+                "Shalom Auslander"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/318.jpg?itok=220rVxyL",
+            "credit": "Jason"
+          }
+        }
+      }
     ]
   },
   {
@@ -53727,7 +53784,7 @@
     "episode_url": "https://www.thisamericanlife.org/886/blackout",
     "explicit": false,
     "synopsis": "Since the war began in Iran, we've heard very little from people inside the country — and there's a reason for that. The entire country has been under an internet blackout. We worked with reporters Roxana Saberi and Fatemeh Jamalpour to get voice memos out of the country. Even though it was dangerous and difficult, people wanted to be heard.",
-    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/40ac9d61-48fa-49cd-8a8b-c80a95885223/audio/128/default.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/40ac9d61-48fa-49cd-8a8b-c80a95885223/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=40ac9d61-48fa-49cd-8a8b-c80a95885223&nocache",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-886-howispentmyblackout-kellymalka.jpg?itok=MoXVrsOw",
@@ -53741,7 +53798,8 @@
         "summary": "Shirin's parents suddenly disappear into the blackout.",
         "duration": 5,
         "contributors": [
-          "Chana Joffe-Walt"
+          "Chana Joffe-Walt",
+          "Valerie Kipnis"
         ]
       },
       {
@@ -53777,7 +53835,7 @@
       {
         "number": 4,
         "number_text": "Act Four",
-        "title": "Act Four: What Now",
+        "title": "Act Four: Now What",
         "summary": "What happened inside Iran the night President Trump threatened that \"a whole civilization could die.\" And a clue about where the internet blackout is headed.",
         "duration": 19,
         "contributors": []
@@ -53786,6 +53844,69 @@
     "published_dates": [
       "Sun, 03 May 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Mon, 11 May 2026 01:39:53 +0000",
+        "data": {
+          "title": "Blackout",
+          "synopsis": "Since the war began in Iran, we've heard very little from people inside the country — and there's a reason for that. The entire country has been under an internet blackout. We worked with reporters Roxana Saberi and Fatemeh Jamalpour to get voice memos out of the country. Even though it was dangerous and difficult, people wanted to be heard.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Shirin's parents suddenly disappear into the blackout.",
+              "duration": 5,
+              "contributors": [
+                "Chana Joffe-Walt"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Both/And",
+              "summary": "It’s a war and a blackout. People want to talk about both. You can read Roxana and Fatemeh's full reporting at The New York Times .",
+              "duration": 17,
+              "contributors": [
+                "Chana Joffe-Walt",
+                "Diane Wu",
+                "Nancy Updike",
+                "Fatemeh Jamalpour",
+                "Roxana Saberi"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: The Blackout Before This One",
+              "summary": "What happened before America and Israel went to war with Iran.",
+              "duration": 9,
+              "contributors": []
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Neighbors, Friends and Lovers",
+              "summary": "Iranians have many opinions about the war, and about each other.",
+              "duration": 12,
+              "contributors": []
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: What Now",
+              "summary": "What happened inside Iran the night President Trump threatened that \"a whole civilization could die.\" And a clue about where the internet blackout is headed.",
+              "duration": 19,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-886-howispentmyblackout-kellymalka.jpg?itok=MoXVrsOw",
+            "credit": null
+          }
+        }
+      }
+    ]
   }
 ]
