@@ -41214,8 +41214,8 @@
     "episode_url": "https://www.thisamericanlife.org/676/heres-looking-at-you-kid",
     "explicit": true,
     "synopsis": "Adults telling kids who they are, and kids wondering — are they right?",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/676/mlnjqys6Rxubdx9g8m_DwLz7NTWR4xsokLepGgj1p-s/676.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/676.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/0de0c859-d1f8-4279-b9f8-48dd3aafaf77/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=0de0c859-d1f8-4279-b9f8-48dd3aafaf77&nocache",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/676.mp3",
     "image": {
       "url": null,
       "credit": null
@@ -41253,7 +41253,8 @@
       }
     ],
     "published_dates": [
-      "Fri, 31 May 2019 00:00:00 +0000"
+      "Fri, 31 May 2019 00:00:00 +0000",
+      "Sun, 24 May 2026 00:00:00 +0000"
     ]
   },
   {
@@ -53546,7 +53547,9 @@
         "title": "Prologue",
         "summary": "Ira talks about why four conversations reveal how his relationship with his parents changed.",
         "duration": 4,
-        "contributors": []
+        "contributors": [
+          "Ira Glass"
+        ]
       },
       {
         "number": 1,
@@ -53627,6 +53630,60 @@
               "number": 0,
               "number_text": "Act Interview Four",
               "title": "Act Interview Four: Interview Four",
+              "summary": "An interview with Ira’s mom that, to this day, makes Ira’s skin crawl.",
+              "duration": 13,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-883-callyourparents-ira.jpg?itok=MjzjmALm",
+            "credit": null
+          }
+        }
+      },
+      {
+        "timestamp": "Mon, 25 May 2026 01:46:47 +0000",
+        "data": {
+          "title": "Call Your Parents",
+          "synopsis": "In the early days of the radio show, Ira did a series of interviews with his parents that completely changed his relationship with them. This week, he returns to those interviews.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Ira talks about why four conversations reveal how his relationship with his parents changed.",
+              "duration": 4,
+              "contributors": []
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Interview One",
+              "summary": "Ira’s mom, Shirley, is invited to lead a discussion about how to get along with your adult children. Her adult children question her expertise.",
+              "duration": 9,
+              "contributors": []
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Interview Two",
+              "summary": "Ira asks his parents for advice on how he should build the radio show. His parents don’t hold back.",
+              "duration": 9,
+              "contributors": []
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Interview Three",
+              "summary": "Ira talks with his dad, Barry, about Barry’s own brief and doomed career in radio.",
+              "duration": 21,
+              "contributors": []
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: Interview Four",
               "summary": "An interview with Ira’s mom that, to this day, makes Ira’s skin crawl.",
               "duration": 13,
               "contributors": []
