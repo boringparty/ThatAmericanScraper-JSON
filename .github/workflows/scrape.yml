@@ -1,4 +1,4 @@
-name: TAL Scraper + RSS
+name: That American Archive - Main Scrape
 
 permissions:
   contents: write
