@@ -14,9 +14,10 @@ from xml.sax.saxutils import escape
 INPUT_FILE = "data/data.json"
 OUTPUT_FILE = "feed/new.xml"
 
-FEED_TITLE = "This American Life - Only New"
+FEED_TITLE = "That American Archive - Only New"
 FEED_LINK = "https://www.thisamericanlife.org"
 FEED_DESCRIPTION = "Only new episodes!"
+FEED_IMAGE = "https://i.imgur.com/JifU3O4.png"
 
 # -------------------------
 # XML HELPERS
@@ -193,21 +194,11 @@ def main():
         raise Exception("No valid episodes found")
 
     latest_date = episode_date(episodes[0])
-    latest_image = episodes[0].get("image") or {}
-    latest_image_url = latest_image.get("url") or ""
 
     items_xml = "\n".join(build_item(episode) for episode in episodes)
 
-    image_xml = ""
-
-    if latest_image_url:
-        image_xml = f"""
-    <itunes:image href="{xml_escape(latest_image_url)}" />
-    <image>
-      <url>{xml_escape(latest_image_url)}</url>
-      <title>{cdata(FEED_TITLE)}</title>
-      <link>{xml_escape(FEED_LINK)}</link>
-    </image>"""
+    image_xml = f"""
+    <itunes:image href="{xml_escape(FEED_IMAGE)}" />"""
 
     output_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
