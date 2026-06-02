@@ -12,4 +12,5 @@ To Do
 
 * compare acts to mark updated episodes vs repeats
 
-<img src="img/normal.png" width="200"> <img src="img/all.png" width="200"> <img src="img/clean.png" width="200"> <img src="img/new.png" width="200"> <img src="img/oldies.png" width="200">
+<img src="img/normal.png" width="200"> <img src="img/all.png" width="200"> <img src="img/clean.png" width="200">
+<img src="img/new.png" width="200"> <img src="img/oldies.png" width="200">
