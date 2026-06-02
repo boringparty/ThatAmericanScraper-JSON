@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>Oldies TAL Feed</title>
+    <title>That American Life - Oldies</title>
     <link>https://www.thisamericanlife.org</link>
     <description>Random episode 10+ years old, updated weekly</description>
+    <itunes:image href="https://i.imgur.com/gY9hQ1V.png"/>
     <item>
-      <title><![CDATA[[Oldies] 250: The Annoying Gap Between Theory...and Practice]]></title>
-      <link>https://www.thisamericanlife.org/250/the-annoying-gap-between-theoryand-practice?2003</link>
-      <guid isPermaLink="false">0250-20031107-oldies</guid>
-      <itunes:season>2003</itunes:season>
-      <itunes:episode>250</itunes:episode>
+      <title><![CDATA[[Oldies] 490: Trends With Benefits]]></title>
+      <link>https://www.thisamericanlife.org/490/trends-with-benefits?2013</link>
+      <guid isPermaLink="false">0490-20130322-oldies</guid>
+      <itunes:season>2013</itunes:season>
+      <itunes:episode>490</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>clean</itunes:explicit>
-      <description><![CDATA[<a href="https://www.thisamericanlife.org/250/the-annoying-gap-between-theoryand-practice">https://www.thisamericanlife.org/250/the-annoying-gap-between-theoryand-practice</a><br>
+      <description><![CDATA[<a href="https://www.thisamericanlife.org/490/trends-with-benefits">https://www.thisamericanlife.org/490/trends-with-benefits</a><br>
 <br>
-Why is it always harder than you think it'll be? We explore several case examples of the annoying gap between theory and practice.<br>
+The number of Americans receiving federal disability payments has nearly doubled over the last 15 years. There are towns and counties around the nation where almost 1/4 of adults are on disability.Planet Money's Chana Joffe-Walt spent 6 months exploring the disability program, and emerges with a story of the U.S. economy quite different than the one we've been hearing.<br>
 <br>
 Prologue<br>
-Host Ira Glass talks to two people about their real-life stories of theory and practice. Subject 1: Michael. Theory: A couple years of boxing lessons will prepare you for a street fight with a real-world harasser. Practice: You slap harasser like little girl, cause him no pain, run away. Subject 2: Heather. Theory: if you have to go to the bathroom really bad and you pee on the school bus, no one will notice the pee, and if they do, they can't trace it to you. Practice: Spend the rest of elementary school known as peezilla. (5 minutes) by Ira Glass<br>
+Ira Glass talks with Planet Money reporter, Chana Joffe-Walt, about Hale County, Alabama — a place where one fourth of working age adults are on disability. That means the government has determined that due to a health issue, 25 percent of the adults in Hale County are unable to work, qualifying them for monthly payments and health care coverage. Chana explains that people in Hale County have a lot of theories as to why their disability numbers are so high: freeloaders, cheaters, hard partiers, obesity. But none of those seem quite right. The rise in disability isn't just happening in Hale County but in pockets all over the country. 14 million people are now receiving disability payments. And it's a number that is growing. We devote the whole show today to figuring out why these numbers are ballooning and what it says about our economy. (7 minutes) by Chana Joffe-Walt<br>
 <br>
 Act One<br>
-Reporter Jack Hitt explains the alarming difference between theory and practice when it comes to computerized voting machines—specifically, those made by a company called Diebold. (16 minutes) by Jack Hitt<br>
+Chana Joffe-Walt spent six months reporting on the rise in people on disability. She spends time in Hale County, Alabama, talking to the only general practitioner in town, the main person who okays so many of the county's residents for disability. In addition to giving each patient a medical exam, the doctor also asks this question: what grade did you finish? Chana explains why that one question is so central to the whole story. (22 minutes) by Chana Joffe-Walt<br>
 <br>
 Act Two<br>
-Alex Blumberg spends three days with Michigan state representative Steve Tobocman. He ran for office because he thought that would be the best way to change things for his neighborhood in Detroit. Can you change things from the inside without changing on the inside yourself? (26 minutes) by Alex Blumberg<br>
+Chana Joffe-Walt continues her story about the phenomenal rise in disability payments over the last 30 years, since President Bill Clinton signed legislation pledging to "end welfare as we know it." Turns out, two private sector groups have really contributed to the growing disability roles. One is a group of people you'd probably expect, the other is a shock. And Chana looks at one of the fastest growing populations on disability: kids. (26 minutes) by Chana Joffe-Walt<br>
 <br>
-Act Three<br>
-What happens if you're poor, and do everything right, all your budgeting, all your choices...are you actually any better off? Actor Liza Colón-Zayas reads a passage from Adrian Nicole LeBlanc's book Random Family . (7 minutes) by Liza Colonzeas, Adrian Nicole LeBlanc<br>
-<br>
-Originally Aired: 2003-11-07<br><br><a href="https://www.thisamericanlife.org/sites/default/files/audio/250/cznXGJe0L9I17XR3IcNvwQPQl_gNmBele5HRULy25QQ/250.mp3">Download</a>]]></description>
-      <pubDate>Wed, 27 May 2026 07:19:47 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/250/cznXGJe0L9I17XR3IcNvwQPQl_gNmBele5HRULy25QQ/250.mp3" type="audio/mpeg"/>
-      <itunes:duration>00:54:00</itunes:duration>
+Originally Aired: 2013-03-22<br><br><a href="https://www.thisamericanlife.org/sites/default/files/audio/490/3-sAiDm5LIubu_mTdBQpZSyRGLwZaLV8MBIZ-edxDAE/490.mp3">Download</a>]]></description>
+      <pubDate>Tue, 02 Jun 2026 09:01:50 +0000</pubDate>
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/490/3-sAiDm5LIubu_mTdBQpZSyRGLwZaLV8MBIZ-edxDAE/490.mp3" type="audio/mpeg"/>
+      <itunes:duration>00:55:00</itunes:duration>
     </item>
   </channel>
 </rss>
