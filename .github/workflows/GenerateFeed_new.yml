@@ -1,0 +1,37 @@
+name: Generate New Episodes Feed
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    # Every day at 6:15 AM UTC
+    - cron: '15 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate new episodes feed
+        run: |
+          python script/generateFeed_new.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add feed/new.xml
+          git diff --staged --quiet || git commit -m "Update new episodes feed - $(date +'%Y-%m-%d')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
