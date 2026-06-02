@@ -14,9 +14,9 @@ from xml.sax.saxutils import escape
 INPUT_FILE = "data/data.json"
 OUTPUT_FILE = "feed/new.xml"
 
-FEED_TITLE = "New TAL Feed"
+FEED_TITLE = "This American Life - Only New"
 FEED_LINK = "https://www.thisamericanlife.org"
-FEED_DESCRIPTION = "All episodes, newest first"
+FEED_DESCRIPTION = "Only new episodes!"
 
 # -------------------------
 # XML HELPERS
