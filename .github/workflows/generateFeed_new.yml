@@ -1,4 +1,4 @@
-name: Generate New Episodes Feed
+name: That American Archive - Generate New Feed
 
 permissions:
   contents: write
