@@ -10,6 +10,7 @@ INPUT_FILE = "feed/feed.xml"
 OUTPUT_FILE = "feed/oldies.xml"
 USED_FILE = "data/used_oldies.json"
 TEN_YEARS = timedelta(days=365 * 10)
+FEED_IMAGE = "https://i.imgur.com/gY9hQ1V.png"
 
 # -------------------------
 # XML CLEANUP
@@ -258,9 +259,10 @@ def main():
     output_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>Oldies TAL Feed</title>
+    <title>That American Life - Oldies</title>
     <link>https://www.thisamericanlife.org</link>
     <description>Random episode 10+ years old, updated weekly</description>
+    <itunes:image href="{FEED_IMAGE}"/>
     {original_item_xml}
   </channel>
 </rss>
