@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title><![CDATA[New TAL Feed]]></title>
+    <title><![CDATA[That American Archive - Only New]]></title>
     <link>https://www.thisamericanlife.org</link>
-    <description><![CDATA[All episodes, newest first]]></description>
+    <description><![CDATA[Only new episodes!]]></description>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
     <generator>generateFeed_new.py</generator>
     <itunes:author>This American Life</itunes:author>
-    <itunes:summary><![CDATA[All episodes, newest first]]></itunes:summary>
+    <itunes:summary><![CDATA[Only new episodes!]]></itunes:summary>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-887-mysecretweapon.jpg?itok=QS8x-yBj" />
-    <image>
-      <url>https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-887-mysecretweapon.jpg?itok=QS8x-yBj</url>
-      <title><![CDATA[New TAL Feed]]></title>
-      <link>https://www.thisamericanlife.org</link>
-    </image>
+    <itunes:image href="https://i.imgur.com/JifU3O4.png" />
     <item>
       <title><![CDATA[887: Two Is One, One Is None!]]></title>
       <link>https://www.thisamericanlife.org/887/two-is-one-one-is-none</link>
