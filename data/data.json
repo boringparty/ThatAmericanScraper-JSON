@@ -22162,7 +22162,7 @@
     "episode_url": "https://www.thisamericanlife.org/354/mistakes-were-made",
     "explicit": false,
     "synopsis": "It’s the late 1960s, and a California TV repairman named Bob sees an opportunity to help people cheat death with the new science of cryonics. But freezing dead people isn’t easy. And apologizing for the mistakes you make along the way? Even harder.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/354/YO4F76SyWiq1kS5OOCHl6fbcyUiR7wghRa9W8JFgawo/354.mp3",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ae221404-f59a-4019-94df-50b841823cdb/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=ae221404-f59a-4019-94df-50b841823cdb&nocache",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/cryonics-mistakes_were_made-show_image.jpg?itok=Lq4jQ0w2",
@@ -22193,8 +22193,8 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: You’re Willing To Sacrifice Our Love",
-        "summary": "There's a famous William Carlos Williams poem called \"This is Just to Say.\" It's about, among other things, causing a loved one inconvenience and offering a non-apologizing apology. It's only three lines long, you've probably read it...the one about eating the plums in the icebox. Producer Sean Cole explains that this is possibly the most spoofed poem around. We asked some of our regular contributors to get into the act. Sarah Vowell, David Rakoff, Starlee Kine, Jonathan Goldstein, Shalom Auslander and Heather O'Neill all came up with their own variations of Williams's classic lines.",
-        "duration": null,
+        "summary": "There's a famous William Carlos Williams poem called \"This is Just to Say.\" It's about, among other things, causing a loved one inconvenience and offering a non-apologizing apology. Producer Sean Cole explains that this is possibly the most spoofed poem around. We asked some of our regular contributors to get into the act. Sarah Vowell, David Rakoff, Starlee Kine, Jonathan Goldstein, Shalom Auslander, and Heather O'Neill all came up with their own variations of Williams's classic lines.",
+        "duration": 7,
         "contributors": [
           "Shalom Auslander",
           "Sean Cole",
@@ -22206,7 +22206,59 @@
       }
     ],
     "published_dates": [
-      "Fri, 18 Apr 2008 00:00:00 +0000"
+      "Fri, 18 Apr 2008 00:00:00 +0000",
+      "Sun, 14 Jun 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 15 Jun 2026 01:53:42 +0000",
+        "data": {
+          "title": "Mistakes Were Made",
+          "synopsis": "It’s the late 1960s, and a California TV repairman named Bob sees an opportunity to help people cheat death with the new science of cryonics. But freezing dead people isn’t easy. And apologizing for the mistakes you make along the way? Even harder.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Host Ira Glass talks about the way most political apologies go, and chats with a man named Derek Jones about similar sorts of apologies among preteen girls and King David, in the Old Testament.",
+              "duration": 7,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: You’re As Cold As Ice",
+              "summary": "In the late 1960s, a California TV repairman named Bob Nelson joined a group of enthusiasts who believed they could cheat death with a new technology called cryonics. But freezing dead people so scientists can reanimate them in the future is a lot harder than it sounds. Harder still was admitting to the family members of people Bob had frozen that he'd screwed up. Sam Shaw reports.",
+              "duration": 42,
+              "contributors": [
+                "Sam Shaw"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: You’re Willing To Sacrifice Our Love",
+              "summary": "There's a famous William Carlos Williams poem called \"This is Just to Say.\" It's about, among other things, causing a loved one inconvenience and offering a non-apologizing apology. It's only three lines long, you've probably read it...the one about eating the plums in the icebox. Producer Sean Cole explains that this is possibly the most spoofed poem around. We asked some of our regular contributors to get into the act. Sarah Vowell, David Rakoff, Starlee Kine, Jonathan Goldstein, Shalom Auslander and Heather O'Neill all came up with their own variations of Williams's classic lines.",
+              "duration": null,
+              "contributors": [
+                "Shalom Auslander",
+                "Sean Cole",
+                "Jonathan Goldstein",
+                "Starlee Kine",
+                "David Rakoff",
+                "Sarah Vowell"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/cryonics-mistakes_were_made-show_image.jpg?itok=Lq4jQ0w2",
+            "credit": null
+          }
+        }
+      }
     ]
   },
   {
@@ -54112,7 +54164,9 @@
         "title": "Prologue",
         "summary": "When a mysterious, ripped-open package arrives on Pablo's doorstep, he takes it as a sign.",
         "duration": 4,
-        "contributors": []
+        "contributors": [
+          "Ike Sriskandarajah"
+        ]
       },
       {
         "number": 1,
@@ -54128,7 +54182,9 @@
         "title": "Act Two: Cerberus",
         "summary": "In Greek mythology, there's Hades, where everyone goes when they die. You have to cross the river Styx to get there, and there’s a gate with this three-headed dog. He’s guarding the entrance and he’s supposed to make sure only actual dead people enter. This story is about a real person in America who stood at those very gates. Which is not the easiest job it turns out, at least not right now.",
         "duration": 24,
-        "contributors": []
+        "contributors": [
+          "Nadia Reiman"
+        ]
       },
       {
         "number": 3,
@@ -54136,12 +54192,62 @@
         "title": "Act Three: Zeus",
         "summary": "A mortal gets the assignment of a lifetime — to go interview an actual god who is living on earth, traveling under the name of Lionel Messi. This story was adapted from the podcast The Away End , hosted by Daniel Alarcón and John Green.",
         "duration": 11,
-        "contributors": []
+        "contributors": [
+          "Daniel Alarcón",
+          "Emmanuel Dzotsi"
+        ]
       }
     ],
     "published_dates": [
       "Sun, 07 Jun 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Mon, 15 Jun 2026 01:53:43 +0000",
+        "data": {
+          "title": "Not Today, Hades!",
+          "synopsis": "Regular people trapped inside Greek myths.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "When a mysterious, ripped-open package arrives on Pablo's doorstep, he takes it as a sign.",
+              "duration": 4,
+              "contributors": []
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Icarus",
+              "summary": "Pablo flies closer to the sun.",
+              "duration": 14,
+              "contributors": []
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Cerberus",
+              "summary": "In Greek mythology, there's Hades, where everyone goes when they die. You have to cross the river Styx to get there, and there’s a gate with this three-headed dog. He’s guarding the entrance and he’s supposed to make sure only actual dead people enter. This story is about a real person in America who stood at those very gates. Which is not the easiest job it turns out, at least not right now.",
+              "duration": 24,
+              "contributors": []
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Zeus",
+              "summary": "A mortal gets the assignment of a lifetime — to go interview an actual god who is living on earth, traveling under the name of Lionel Messi. This story was adapted from the podcast The Away End , hosted by Daniel Alarcón and John Green.",
+              "duration": 11,
+              "contributors": []
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-888-_pablomanriquez.jpg?itok=98pabPdM",
+            "credit": null
+          }
+        }
+      }
+    ]
   }
 ]
