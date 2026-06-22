@@ -5,12 +5,25 @@
     <link>https://www.thisamericanlife.org</link>
     <description><![CDATA[Only new episodes!]]></description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate>
     <generator>generateFeed_new.py</generator>
     <itunes:author>This American Life</itunes:author>
     <itunes:summary><![CDATA[Only new episodes!]]></itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://i.imgur.com/JifU3O4.png" />
+    <item>
+      <title><![CDATA[889: There’s Something About Hail Mary]]></title>
+      <link>https://www.thisamericanlife.org/889/theres-something-about-hail-mary</link>
+      <guid isPermaLink="false">https://www.thisamericanlife.org/889/theres-something-about-hail-mary</guid>
+      <description><![CDATA[We spend an hour in the last two minutes of the fourth quarter, behind and desperate, with people trying any damn thing they can think of.]]></description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/916a35c5-69f5-47e6-aaf4-e803336ec197/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&amp;awEpisodeId=916a35c5-69f5-47e6-aaf4-e803336ec197&amp;nocache" length="0" type="audio/mpeg" />
+      <itunes:title><![CDATA[889: There’s Something About Hail Mary]]></itunes:title>
+      <itunes:summary><![CDATA[We spend an hour in the last two minutes of the fourth quarter, behind and desperate, with people trying any damn thing they can think of.]]></itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episode>889</itunes:episode>
+      <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-889-hailmary-pingzhu.jpg?itok=zvIMkVg_" />
+    </item>
     <item>
       <title><![CDATA[888: Not Today, Hades!]]></title>
       <link>https://www.thisamericanlife.org/888/not-today-hades</link>
