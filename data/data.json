@@ -7794,8 +7794,8 @@
     "original_air_date": "Fri, 30 Apr 1999 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/128/four-corners",
     "explicit": false,
-    "synopsis": "There's a tourist monument called Four Corners, where Arizona, Colorado, Utah and New Mexico meet. In this episode, we try to tell the story of life in America through portraits of life on four different corners, in four different states across the nation.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/128/M9wLKbW5-NLd3aysWyyg5izz5GaO9S9goPlfjX4VZTM/128.mp3",
+    "synopsis": "We try to tell the story of life in America through portraits of life on four different corners, in four different states across the nation.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/75f6e2c6-dc9e-465c-ab85-3182c331e056/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=75f6e2c6-dc9e-465c-ab85-3182c331e056&nocache",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/128.jpg?itok=wudbMHwM",
@@ -7806,7 +7806,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Host Ira Glass talks about the Four Corners tourist monument where Arizona, Colorado, Utah and New Mexico meet. He proposes creating our own little monument to America: a four corners show depicting life on four street corners across this great nation.",
+        "summary": "Host Ira Glass talks about the Four Corners tourist monument where Arizona, Colorado, Utah and New Mexico meet.",
         "duration": 2,
         "contributors": [
           "Ira Glass"
@@ -7816,7 +7816,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: History",
-        "summary": "Sarah Vowell has a theory that you can tell the entire history of the United States by standing on one street corner—specifically at Michigan Avenue and Wacker Drive in Chicago—and describing all the events that happened within eyeshot of the corner. She covers three centuries of history, from Louis Joliet to Keanu Reeves. Correction: In this story Sarah Vowell references The Jungle and mistakenly cites the author as Sinclair Lewis. The correct author is Upton Sinclair.",
+        "summary": "Sarah Vowell has a theory that you can tell the entire history of the United States by standing on one street corner—specifically at Michigan Avenue and Wacker Drive in Chicago—and describing all the events that happened within eyeshot of the corner. She covers three centuries of history, from Louis Joliet to Keanu Reeves. Correction: In this story, Sarah Vowell referenced The Jungle and mistakenly cited the author as Sinclair Lewis. The correct author is Upton Sinclair.",
         "duration": 21,
         "contributors": [
           "Sarah Vowell"
@@ -7854,7 +7854,74 @@
       }
     ],
     "published_dates": [
-      "Fri, 30 Apr 1999 00:00:00 +0000"
+      "Fri, 30 Apr 1999 00:00:00 +0000",
+      "Sun, 28 Jun 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 29 Jun 2026 01:48:30 +0000",
+        "data": {
+          "title": "Four Corners",
+          "synopsis": "There's a tourist monument called Four Corners, where Arizona, Colorado, Utah and New Mexico meet. In this episode, we try to tell the story of life in America through portraits of life on four different corners, in four different states across the nation.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Host Ira Glass talks about the Four Corners tourist monument where Arizona, Colorado, Utah and New Mexico meet. He proposes creating our own little monument to America: a four corners show depicting life on four street corners across this great nation.",
+              "duration": 2,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: History",
+              "summary": "Sarah Vowell has a theory that you can tell the entire history of the United States by standing on one street corner—specifically at Michigan Avenue and Wacker Drive in Chicago—and describing all the events that happened within eyeshot of the corner. She covers three centuries of history, from Louis Joliet to Keanu Reeves. Correction: In this story Sarah Vowell references The Jungle and mistakenly cites the author as Sinclair Lewis. The correct author is Upton Sinclair.",
+              "duration": 21,
+              "contributors": [
+                "Sarah Vowell"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Love",
+              "summary": "Scott Richer and Julie Riggs of Louisville, Kentucky, were supposed to have their first kiss at the corner where South Fourth Street meets the alley behind the West End Baptist Church. But it went wrong.",
+              "duration": 7,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Neighbors",
+              "summary": "Writer Mike Paterniti tells a story of dogs and a community of dogwalkers that formed on the grounds of an old cemetery at the corner of Vaughn and Clifford in Portland, Maine.",
+              "duration": 14,
+              "contributors": [
+                "Mike Paterniti"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: How To Become An American",
+              "summary": "Writer Achy Obejas reads a piece of short fiction from her book, We Came All the Way from Cuba So You Could Dress Like This?",
+              "duration": 11,
+              "contributors": [
+                "Achy Obejas"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/128.jpg?itok=wudbMHwM",
+            "credit": "Amanda Scheliga"
+          }
+        }
+      }
     ]
   },
   {
