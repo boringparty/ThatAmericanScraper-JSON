@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+from urllib.parse import urlsplit
 
 INPUT_FILE = "data/data.json"
 
@@ -11,16 +12,31 @@ def clean_audio_url(url):
 
     url = str(url).strip()
 
-    # Remove tracking parameters
-    url = url.split("?")[0]
+    # Remove query string and fragment
+    parts = urlsplit(url)
+    url = f"{parts.scheme}://{parts.netloc}{parts.path}"
 
-    # Unwrap Podtrac/Vpixl redirect
-    if "/s/" in url:
-        url = url.split("/s/", 1)[1]
+    # Remove common redirect wrappers
+    wrappers = (
+        "/s/",           # prefix.up.audio/s/
+        "/redirect.mp/", # dts.podtrac.com/redirect.mp/
+        "/e/",           # pdst.fm/e/
+    )
 
-    # Ensure scheme
-    if not url.startswith("http"):
-        url = "https://" + url
+    changed = True
+    while changed:
+        changed = False
+        for wrapper in wrappers:
+            if wrapper in url:
+                url = url.split(wrapper, 1)[1]
+                if not url.startswith("http"):
+                    url = "https://" + url
+                changed = True
+                break
+
+    # Remove any duplicated scheme
+    url = url.replace("https://https://", "https://")
+    url = url.replace("http://http://", "http://")
 
     return url
 
@@ -33,7 +49,6 @@ def main():
 
     for episode in episodes:
         for key in ("download", "download_clean"):
-
             if not episode.get(key):
                 continue
 
@@ -41,6 +56,9 @@ def main():
             new = clean_audio_url(old)
 
             if old != new:
+                print(f"{key}:")
+                print(f"  OLD: {old}")
+                print(f"  NEW: {new}\n")
                 episode[key] = new
                 changed += 1
 
@@ -50,7 +68,7 @@ def main():
                 episodes,
                 f,
                 indent=2,
-                ensure_ascii=False
+                ensure_ascii=False,
             )
 
     print(f"Updated {changed} URLs")
