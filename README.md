@@ -16,3 +16,6 @@ To Do
 * episode artwork?
 
 <img src="img/normal.png" width="150"> <img src="img/all.png" width="150"> <img src="img/clean.png" width="150"> <img src="img/new.png" width="150"> <img src="img/oldies.png" width="150">
+
+
+[![main](img/normal.png)](https://tal.x02.workers.dev/feed.xml)
