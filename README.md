@@ -15,7 +15,14 @@ To Do
 * check for scrubbed URLs
 * episode artwork?
 
-<img src="img/normal.png" width="150"> <img src="img/all.png" width="150"> <img src="img/clean.png" width="150"> <img src="img/new.png" width="150"> <img src="img/oldies.png" width="150">
+---
 
+## Feeds
 
-[![main](img/normal.png)](https://tal.x02.workers.dev/feed.xml)
+All feeds can also be seen at https://tal.x02.workers.dev
+
+<a href="https://tal.x02.workers.dev/feed.xml"><img src="img/normal.png" width="150"></a>
+<a href="https://tal.x02.workers.dev/all.xml"><img src="img/all.png" width="150"></a>
+<a href="https://tal.x02.workers.dev/clean.xml"><img src="img/clean.png" width="150"></a>
+<a href="https://tal.x02.workers.dev/new.xml"><img src="img/new.png" width="150"></a>
+<a href="https://tal.x02.workers.dev/oldies.xml"><img src="img/oldies.png" width="150"></a>
