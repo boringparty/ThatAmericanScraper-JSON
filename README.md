@@ -7,9 +7,12 @@ I wanted an easily searchable dataset where I could find every segment from a sp
 
 The oldies.xml is for a mid-week thread. Nobody interacts with the post, but some folks might still find it useful.
 
+All feeds are accessible via `https://tal.x02.workers.dev/{feed}.xml`
+
 To Do
 ====
 
-* compare acts to mark updated episodes vs repeats
+* check for scrubbed URLs
+* episode artwork?
 
 <img src="img/normal.png" width="150"> <img src="img/all.png" width="150"> <img src="img/clean.png" width="150"> <img src="img/new.png" width="150"> <img src="img/oldies.png" width="150">
