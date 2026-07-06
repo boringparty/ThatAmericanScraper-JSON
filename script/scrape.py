@@ -42,6 +42,24 @@ def to_week_sunday(dt):
     return sunday.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=timezone.utc)
 
 
+
+
+def clean_audio_url(url):
+    if not url:
+        return None
+
+    url = str(url).strip()
+    url = url.split("?", 1)[0]
+
+    if "/s/" in url:
+        url = url.split("/s/", 1)[1]
+
+    if not url.startswith("http"):
+        url = "https://" + url
+
+    return url
+
+
 def fetch_episode_page(url):
     try:
         r = requests.get(url, headers=HEADERS)
@@ -76,12 +94,12 @@ def scrape_episode(url):
     synopsis = synopsis_elem.get_text(strip=True) if synopsis_elem else ""
 
     download_elem = soup.select_one("li.download a")
-    download = download_elem["href"] if download_elem else None
+    download = clean_audio_url(download_elem["href"]) if download_elem else None
     if not download:
         return None
 
     clean_elem = soup.select_one(".field-name-field-notes a[href*='/clean/']")
-    download_clean = clean_elem["href"] if clean_elem else None
+    download_clean = clean_audio_url(clean_elem["href"]) if clean_elem else None
     explicit = bool(download_clean)
 
     img_elem = soup.select_one("figure.tal-episode-image img")
