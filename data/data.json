@@ -54368,5 +54368,88 @@
       "Sun, 21 Jun 2026 00:00:00 +0000"
     ],
     "revisions": []
+  },
+  {
+    "title": "Maximal Americanness",
+    "number": "890",
+    "original_air_date": "Fri, 03 Jul 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/890/maximal-americanness",
+    "explicit": true,
+    "synopsis": "On this country's 250th birthday, we bring you stories about the most American people, places, objects, and social norms that make this country what it is.",
+    "download": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/5066d1f0-f8af-484d-a5a6-aea3a4966cf8/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=5066d1f0-f8af-484d-a5a6-aea3a4966cf8&nocache",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/890.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-890-themostamerican-timpeacock.jpg?itok=VOzGoFTW",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Ira talks to Pablo Torre about Major League Baseball’s new challenge system, and how it’s been optimized for maximum drama.",
+        "duration": 10,
+        "contributors": [
+          "Ira Glass"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: A Most American Question",
+        "summary": "Writer Jiayang Fan wrestles with a very common question she has never quite understood.",
+        "duration": 5,
+        "contributors": [
+          "Jiayang Fan",
+          "Diane Wu"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: City on a Hill of Sand",
+        "summary": "People come from all over the country to walk down one of Michigan’s tallest sand dunes, and then promptly turn around and trudge back up. Aviva DeKornfeld talks to Americans spending their limited vacation time on this punishing activity.",
+        "duration": 8,
+        "contributors": [
+          "Aviva DeKornfeld",
+          "Molly Marcello"
+        ]
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Cooked Island",
+        "summary": "Emanuele Berry talks to Ira about Season 13 of the reality TV show, Survivor, known to fans as the “race war” season.",
+        "duration": 8,
+        "contributors": [
+          "Emanuele Berry"
+        ]
+      },
+      {
+        "number": 4,
+        "number_text": "Act Four",
+        "title": "Act Four: The Most American Schoolbook",
+        "summary": "Years before his famous dictionary, Noah Webster wrote a book that took on a life of its own and served an unexpected purpose. A version of this story originally aired on the new 99 Percent Invisible and BBC series, A History of the United States in 100 Objects .",
+        "duration": 8,
+        "contributors": [
+          "Roman Mars",
+          "Emmanuel Dzotsi"
+        ]
+      },
+      {
+        "number": 5,
+        "number_text": "Act Five",
+        "title": "Act Five: Jose Can You See?",
+        "summary": "Emmanuel Dzotsi investigates a musical phenomenon very particular to the United States: singers embellishing the end of the national anthem.",
+        "duration": 9,
+        "contributors": [
+          "Emmanuel Dzotsi"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 05 Jul 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
