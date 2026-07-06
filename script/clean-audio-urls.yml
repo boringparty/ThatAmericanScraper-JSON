@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
 
 import json
-import shutil
-import re
-from datetime import datetime
 
-
-INPUT = "data/data.json"
-BACKUP = f"data/data_backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+INPUT_FILE = "data/data.json"
 
 
 def clean_audio_url(url):
@@ -19,11 +14,11 @@ def clean_audio_url(url):
     # Remove tracking parameters
     url = url.split("?")[0]
 
-    # Unwrap redirect URLs
+    # Unwrap Podtrac/Vpixl redirect
     if "/s/" in url:
         url = url.split("/s/", 1)[1]
 
-    # Ensure https
+    # Ensure scheme
     if not url.startswith("http"):
         url = "https://" + url
 
@@ -31,39 +26,34 @@ def clean_audio_url(url):
 
 
 def main():
-
-    print(f"Creating backup: {BACKUP}")
-    shutil.copy2(INPUT, BACKUP)
-
-    with open(INPUT, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+        episodes = json.load(f)
 
     changed = 0
 
-    for episode in data:
+    for episode in episodes:
+        for key in ("download", "download_clean"):
 
-        for field in ["download", "download_clean"]:
-
-            if field not in episode or not episode[field]:
+            if not episode.get(key):
                 continue
 
-            old = episode[field]
+            old = episode[key]
             new = clean_audio_url(old)
 
             if old != new:
-                episode[field] = new
+                episode[key] = new
                 changed += 1
 
-                print("\nChanged:")
-                print("OLD:", old)
-                print("NEW:", new)
+    if changed:
+        with open(INPUT_FILE, "w", encoding="utf-8") as f:
+            json.dump(
+                episodes,
+                f,
+                indent=2,
+                ensure_ascii=False
+            )
 
-    with open(INPUT, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-    print()
     print(f"Updated {changed} URLs")
-    print(f"Backup saved as {BACKUP}")
 
 
 if __name__ == "__main__":
