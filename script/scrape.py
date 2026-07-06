@@ -49,13 +49,19 @@ def clean_audio_url(url):
         return None
 
     url = str(url).strip()
+
+    # Remove query parameters
     url = url.split("?", 1)[0]
 
-    if "/s/" in url:
-        url = url.split("/s/", 1)[1]
+    # Extract the canonical Simplecast URL if present
+    match = re.search(
+        r"(https?://)?([a-z0-9.-]+\.simplecastaudio\.com/.*)",
+        url,
+        re.IGNORECASE,
+    )
 
-    if not url.startswith("http"):
-        url = "https://" + url
+    if match:
+        url = "https://" + match.group(2)
 
     return url
 
