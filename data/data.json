@@ -54451,5 +54451,75 @@
       "Sun, 05 Jul 2026 00:00:00 +0000"
     ],
     "revisions": []
+  },
+  {
+    "title": "The Test Case",
+    "number": "891",
+    "original_air_date": "Fri, 10 Jul 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/891/the-test-case",
+    "explicit": true,
+    "synopsis": "Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth.  This week we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real.  Zoe Chace reports.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/54b46113-a17b-4f3e-ac3f-d525e0106fab/audio/128/default.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/891.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-891-thetestcase-katherinelam-16x9.jpeg?itok=s3Pa965t",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Host Ira Glass tells the story of what happened at the Prairieland Detention Center in Alvarado, Texas. The government claims this was an attack by an Antifa cell. The defense says it was a protest gone awry. This argument goes to court in a first of its kind trial.",
+        "duration": 7,
+        "contributors": [
+          "Ira Glass"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act 1",
+        "title": "Act 1: Act 1",
+        "summary": "Reporter Zoe Chace walks us through one of the worst days for the defense: all these guns.",
+        "duration": 5,
+        "contributors": [
+          "Zoe Chace"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act 2",
+        "title": "Act 2: Act 2",
+        "summary": "Zoe takes us through the testimony of the government’s Antifa expert. The defense team is optimistic that things are going well for them.",
+        "duration": 8,
+        "contributors": [
+          "Zoe Chace"
+        ]
+      },
+      {
+        "number": 3,
+        "number_text": "Act 3",
+        "title": "Act 3: Act 3",
+        "summary": "Zoe goes to jail to talk with one of the cooperating witnesses for the prosecution, a former church lady named Lynette Sharp. She has a lot to say about all the events of her life that led to taking a plea deal and testifying against her friends.",
+        "duration": 24,
+        "contributors": [
+          "Zoe Chace"
+        ]
+      },
+      {
+        "number": 4,
+        "number_text": "Act 4",
+        "title": "Act 4: Act 4",
+        "summary": "The verdicts come in.",
+        "duration": 12,
+        "contributors": [
+          "Zoe Chace"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 12 Jul 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
