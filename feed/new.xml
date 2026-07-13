@@ -5,12 +5,25 @@
     <link>https://www.thisamericanlife.org</link>
     <description><![CDATA[Only new episodes!]]></description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +0000</lastBuildDate>
     <generator>generateFeed_new.py</generator>
     <itunes:author>This American Life</itunes:author>
     <itunes:summary><![CDATA[Only new episodes!]]></itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://i.imgur.com/JifU3O4.png" />
+    <item>
+      <title><![CDATA[891: The Test Case]]></title>
+      <link>https://www.thisamericanlife.org/891/the-test-case</link>
+      <guid isPermaLink="false">https://www.thisamericanlife.org/891/the-test-case</guid>
+      <description><![CDATA[Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth. This week we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real. Zoe Chace reports.]]></description>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/54b46113-a17b-4f3e-ac3f-d525e0106fab/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <itunes:title><![CDATA[891: The Test Case]]></itunes:title>
+      <itunes:summary><![CDATA[Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth. This week we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real. Zoe Chace reports.]]></itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episode>891</itunes:episode>
+      <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-891-thetestcase-katherinelam-16x9.jpeg?itok=s3Pa965t" />
+    </item>
     <item>
       <title><![CDATA[890: Maximal Americanness]]></title>
       <link>https://www.thisamericanlife.org/890/maximal-americanness</link>
