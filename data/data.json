@@ -7816,7 +7816,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: History",
-        "summary": "Sarah Vowell has a theory that you can tell the entire history of the United States by standing on one street corner—specifically at Michigan Avenue and Wacker Drive in Chicago—and describing all the events that happened within eyeshot of the corner. She covers three centuries of history, from Louis Joliet to Keanu Reeves. Correction: In this story, Sarah Vowell referenced The Jungle and mistakenly cited the author as Sinclair Lewis. The correct author is Upton Sinclair.",
+        "summary": "Sarah Vowell has a theory that you can tell the entire history of the United States by standing on one street corner—specifically at Michigan Avenue and Wacker Drive in Chicago—and describing all the events that happened within eyeshot of the corner. She covers three centuries of history, from Louis Joliet to Keanu Reeves. Correction: In this story, Sarah Vowell referenced The Jungle and mistakenly cited the author as Sinclair Lewis. The correct author is Upton Sinclair.",
         "duration": 21,
         "contributors": [
           "Sarah Vowell"
@@ -7879,6 +7879,70 @@
               "number_text": "Act One",
               "title": "Act One: History",
               "summary": "Sarah Vowell has a theory that you can tell the entire history of the United States by standing on one street corner—specifically at Michigan Avenue and Wacker Drive in Chicago—and describing all the events that happened within eyeshot of the corner. She covers three centuries of history, from Louis Joliet to Keanu Reeves. Correction: In this story Sarah Vowell references The Jungle and mistakenly cites the author as Sinclair Lewis. The correct author is Upton Sinclair.",
+              "duration": 21,
+              "contributors": [
+                "Sarah Vowell"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Love",
+              "summary": "Scott Richer and Julie Riggs of Louisville, Kentucky, were supposed to have their first kiss at the corner where South Fourth Street meets the alley behind the West End Baptist Church. But it went wrong.",
+              "duration": 7,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Neighbors",
+              "summary": "Writer Mike Paterniti tells a story of dogs and a community of dogwalkers that formed on the grounds of an old cemetery at the corner of Vaughn and Clifford in Portland, Maine.",
+              "duration": 14,
+              "contributors": [
+                "Mike Paterniti"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: How To Become An American",
+              "summary": "Writer Achy Obejas reads a piece of short fiction from her book, We Came All the Way from Cuba So You Could Dress Like This?",
+              "duration": 11,
+              "contributors": [
+                "Achy Obejas"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/128.jpg?itok=wudbMHwM",
+            "credit": "Amanda Scheliga"
+          }
+        }
+      },
+      {
+        "timestamp": "Sun, 19 Jul 2026 09:08:24 +0000",
+        "data": {
+          "title": "Four Corners",
+          "synopsis": "We try to tell the story of life in America through portraits of life on four different corners, in four different states across the nation.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Host Ira Glass talks about the Four Corners tourist monument where Arizona, Colorado, Utah and New Mexico meet.",
+              "duration": 2,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: History",
+              "summary": "Sarah Vowell has a theory that you can tell the entire history of the United States by standing on one street corner—specifically at Michigan Avenue and Wacker Drive in Chicago—and describing all the events that happened within eyeshot of the corner. She covers three centuries of history, from Louis Joliet to Keanu Reeves. Correction: In this story, Sarah Vowell referenced The Jungle and mistakenly cited the author as Sinclair Lewis. The correct author is Upton Sinclair.",
               "duration": 21,
               "contributors": [
                 "Sarah Vowell"
@@ -53383,7 +53447,7 @@
     "original_air_date": "Fri, 09 Jan 2026 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/878/new-lore-drop",
     "explicit": true,
-    "synopsis": "People discovering information about their own lives that they did not know, and suddenly everything looks very different.",
+    "synopsis": "People discovering information about their own lives that they did not know, and suddenly everything looks very different.",
     "download": "https://www.thisamericanlife.org/sites/default/files/audio/878/3NU38Ipgbenj5iPmrLJKNdV4I7-Lwl6OIGApcaFs7Pg/878.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/878.mp3",
     "image": {
@@ -53405,7 +53469,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Save the Drama for your Grandmama",
-        "summary": "Sometimes, a lore drop comes when you least expect it.  That happened to Jake Cornell and his grandmother. Producer Aviva DeKornfeld talked to Jake about it. Jake told a version of this story onstage. Find more of his work at @jakewcornell on Instagram.",
+        "summary": "Sometimes, a lore drop comes when you least expect it.  That happened to Jake Cornell and his grandmother. Producer Aviva DeKornfeld talked to Jake about it. Jake told a version of this story onstage. Find more of his work at @jakewcornell on Instagram.",
         "duration": 14,
         "contributors": [
           "Aviva DeKornfeld"
@@ -53425,7 +53489,52 @@
     "published_dates": [
       "Sun, 11 Jan 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Sun, 19 Jul 2026 09:08:39 +0000",
+        "data": {
+          "title": "New Lore Drop",
+          "synopsis": "People discovering information about their own lives that they did not know, and suddenly everything looks very different.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "When Pete turned 18, his dad took him on a drive to reveal a family secret he was finally old enough to know. You can hear more about Peter’s family on The Documentary Podcast .",
+              "duration": 11,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Save the Drama for your Grandmama",
+              "summary": "Sometimes, a lore drop comes when you least expect it.  That happened to Jake Cornell and his grandmother. Producer Aviva DeKornfeld talked to Jake about it. Jake told a version of this story onstage. Find more of his work at @jakewcornell on Instagram.",
+              "duration": 14,
+              "contributors": [
+                "Aviva DeKornfeld"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Bully Pulpit",
+              "summary": "Ben Austen had a kind of new lore drop happen to him recently. But it was not the clarifying kind of lore drop, where everything suddenly makes sense — it was kind of the opposite. Ben is the author of Correction: Parole, Prison, and the Possibility of Change .",
+              "duration": 29,
+              "contributors": [
+                "David Kestenbaum"
+              ]
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-newloredrop-tomium_0.jpg?itok=qhJzZCSe",
+            "credit": null
+          }
+        }
+      }
+    ]
   },
   {
     "title": "A Christian and a Muslim Walk Into a Bar",
@@ -53988,7 +54097,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Guest Host Emanuele Berry talks to Nichole Hill about the Black movie characters Nichole was curious about as a child.",
+        "summary": "Guest Host Emanuele Berry talks to Nichole Hill about the Black movie characters Nichole was curious about as a child.",
         "duration": 7,
         "contributors": [
           "Emanuele Berry"
@@ -54019,7 +54128,53 @@
     "published_dates": [
       "Sun, 12 Apr 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Sun, 19 Jul 2026 09:08:34 +0000",
+        "data": {
+          "title": "Bless This Mess",
+          "synopsis": "At a time when the U.S. government is trying to make American history tidier, we try to learn from the mess. Including the untold, messy story of Paul and Essie Robeson.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Guest Host Emanuele Berry talks to Nichole Hill about the Black movie characters Nichole was curious about as a child.",
+              "duration": 7,
+              "contributors": [
+                "Emanuele Berry"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: The Was-It Couple",
+              "summary": "A giant of the Harlem Renaissance, Paul Robeson was the most famous American of his day. Until he wasn’t. Nichole Hill tells the messy, complicated story of Paul and his wife, Essie Robeson. This story comes from Nichole’s podcast, Our Ancestors Were Messy .",
+              "duration": 38,
+              "contributors": [
+                "Nichole Hill",
+                "Emmanuel Dzotsi"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Sincerely, Absolutely Not",
+              "summary": "In 1865, a formerly enslaved man named Jourdan Anderson received a letter from his former enslaver, asking Jourdan to return to the plantation and work. Actor Laurence Fishburne reads Jourdan’s response. This letter was performed in New York City at an event for Letters Live , which stages live readings of famous and remarkable letters in front of a live audience.",
+              "duration": null,
+              "contributors": [
+                "Emmanuel Dzotsi"
+              ]
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-885-getty-514697264_0.jpg?itok=IaKmYs-J",
+            "credit": null
+          }
+        }
+      }
+    ]
   },
   {
     "title": "Blackout",
@@ -54154,7 +54309,7 @@
     ]
   },
   {
-    "title": "Two Is One, One Is None!",
+    "title": "Two Is One, One Is None!",
     "number": "887",
     "original_air_date": "Fri, 15 May 2026 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/887/two-is-one-one-is-none",
@@ -54198,7 +54353,7 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: Beast Friends Furr-ever",
-        "summary": "A short story from Rachel Khong: Two people have a very consequential choice to make, given to them by God. This story was read for us by actor Melissa Tang. You can read the full version of this story, “D-Day,” in Rachel’s new book of short stories, My Dear You , and hear her read it in the audiobook version.",
+        "summary": "A short story from Rachel Khong: Two people have a very consequential choice to make, given to them by God. This story was read for us by actor Melissa Tang. You can read the full version of this story, “D-Day,” in Rachel’s new book of short stories, My Dear You , and hear her read it in the audiobook version.",
         "duration": 15,
         "contributors": [
           "Rachel Khong",
@@ -54209,7 +54364,60 @@
     "published_dates": [
       "Sun, 17 May 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Sun, 19 Jul 2026 09:08:29 +0000",
+        "data": {
+          "title": "Two Is One, One Is None!",
+          "synopsis": "One family faces the Trump administration’s ban on trans people serving in the military, and responds with a surprising secret weapon.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Geirid and Chrissy are extreme planners. But about a year ago, they were confronted with a situation that even they had no idea how to plan for.",
+              "duration": 4,
+              "contributors": [
+                "Laura Starecheski",
+                "Miki Meek"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Freak in the Spreadsheets",
+              "summary": "Geirid and Chrissy make an “in case of emergency, break glass” spreadsheet and get some big news.",
+              "duration": 14,
+              "contributors": []
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: When the Bureaucratic Shark Bites",
+              "summary": "Geirid and Chrissy have less than a month to make a life-changing decision. The government gives them two options, and they try to find a third.",
+              "duration": 21,
+              "contributors": []
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Beast Friends Furr-ever",
+              "summary": "A short story from Rachel Khong: Two people have a very consequential choice to make, given to them by God. This story was read for us by actor Melissa Tang. You can read the full version of this story, “D-Day,” in Rachel’s new book of short stories, My Dear You , and hear her read it in the audiobook version.",
+              "duration": 15,
+              "contributors": [
+                "Rachel Khong",
+                "Diane Wu"
+              ]
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-887-mysecretweapon.jpg?itok=QS8x-yBj",
+            "credit": null
+          }
+        }
+      }
+    ]
   },
   {
     "title": "Not Today, Hades!",
@@ -54217,7 +54425,7 @@
     "original_air_date": "Fri, 05 Jun 2026 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/888/not-today-hades",
     "explicit": true,
-    "synopsis": "Regular people trapped inside Greek myths.",
+    "synopsis": "Regular people trapped inside Greek myths.",
     "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/6d1871f0-e401-4324-9548-2a68d0cc764e/audio/128/default.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/888.mp3",
     "image": {
@@ -54314,11 +54522,64 @@
             "credit": null
           }
         }
+      },
+      {
+        "timestamp": "Sun, 19 Jul 2026 09:08:27 +0000",
+        "data": {
+          "title": "Not Today, Hades!",
+          "synopsis": "Regular people trapped inside Greek myths.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "When a mysterious, ripped-open package arrives on Pablo's doorstep, he takes it as a sign.",
+              "duration": 4,
+              "contributors": [
+                "Ike Sriskandarajah"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Icarus",
+              "summary": "Pablo flies closer to the sun.",
+              "duration": 14,
+              "contributors": []
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Cerberus",
+              "summary": "In Greek mythology, there's Hades, where everyone goes when they die. You have to cross the river Styx to get there, and there’s a gate with this three-headed dog. He’s guarding the entrance and he’s supposed to make sure only actual dead people enter. This story is about a real person in America who stood at those very gates. Which is not the easiest job it turns out, at least not right now.",
+              "duration": 24,
+              "contributors": [
+                "Nadia Reiman"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Zeus",
+              "summary": "A mortal gets the assignment of a lifetime — to go interview an actual god who is living on earth, traveling under the name of Lionel Messi. This story was adapted from the podcast The Away End , hosted by Daniel Alarcón and John Green.",
+              "duration": 11,
+              "contributors": [
+                "Daniel Alarcón",
+                "Emmanuel Dzotsi"
+              ]
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-888-_pablomanriquez.jpg?itok=98pabPdM",
+            "credit": null
+          }
+        }
       }
     ]
   },
   {
-    "title": "There’s Something About Hail Mary",
+    "title": "There’s Something About Hail Mary",
     "number": "889",
     "original_air_date": "Fri, 19 Jun 2026 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/889/theres-something-about-hail-mary",
@@ -54367,7 +54628,54 @@
     "published_dates": [
       "Sun, 21 Jun 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Sun, 19 Jul 2026 09:08:26 +0000",
+        "data": {
+          "title": "There’s Something About Hail Mary",
+          "synopsis": "We spend an hour in the last two minutes of the fourth quarter, behind and desperate, with people trying any damn thing they can think of.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Five years after Ora first started experiencing mysterious and debilitating health problems, she decides to try a treatment that she knows very well might kill her. Host Ira Glass talks to her about the experience.",
+              "duration": 9,
+              "contributors": [
+                "Ira Glass",
+                "Aviva DeKornfeld"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: 12 Weeks Notice",
+              "summary": "Two lawyers have just three months to stop their client's execution. In Texas, where this story takes place, these kinds of appeals to get people off death row fail 94% of the time. This story was excerpted from The Last 12 Weeks , the newest podcast from Serial Productions and The New York Times. It was reported by Maurice Chammah and produced by Alvin Melathe.",
+              "duration": 38,
+              "contributors": [
+                "Maurice Chammah",
+                "Alvin Melathe"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Bottle Episode",
+              "summary": "At the Otay Mesa Detention Center in San Diego, migrants figured out an ingenious way to communicate with the activists gathered outside of the detention center’s walls. Read the original story by Aisha Wallace-Palomares at L.A. Taco .",
+              "duration": 13,
+              "contributors": [
+                "Miki Meek"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-889-hailmary-pingzhu.jpg?itok=zvIMkVg_",
+            "credit": null
+          }
+        }
+      }
+    ]
   },
   {
     "title": "Maximal Americanness",
@@ -54458,7 +54766,7 @@
     "original_air_date": "Fri, 10 Jul 2026 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/891/the-test-case",
     "explicit": true,
-    "synopsis": "Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth.  This week we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real.  Zoe Chace reports.",
+    "synopsis": "Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth. This week, we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real. Zoe Chace reports.",
     "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/54b46113-a17b-4f3e-ac3f-d525e0106fab/audio/128/default.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/891.mp3",
     "image": {
@@ -54470,7 +54778,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Host Ira Glass tells the story of what happened at the Prairieland Detention Center in Alvarado, Texas. The government claims this was an attack by an Antifa cell. The defense says it was a protest gone awry. This argument goes to court in a first of its kind trial.",
+        "summary": "Host Ira Glass tells the story of what happened at the Prairieland Detention Center in Alvarado, Texas. The government claims this was an attack by an Antifa cell. The defense says it was a protest gone awry. This argument goes to court in a first-of-its-kind trial.",
         "duration": 7,
         "contributors": [
           "Ira Glass"
@@ -54478,8 +54786,8 @@
       },
       {
         "number": 1,
-        "number_text": "Act 1",
-        "title": "Act 1: Act 1",
+        "number_text": "Act One",
+        "title": "Act One: Act One",
         "summary": "Reporter Zoe Chace walks us through one of the worst days for the defense: all these guns.",
         "duration": 5,
         "contributors": [
@@ -54488,38 +54796,97 @@
       },
       {
         "number": 2,
-        "number_text": "Act 2",
-        "title": "Act 2: Act 2",
+        "number_text": "Act Two",
+        "title": "Act Two: Act Two",
         "summary": "Zoe takes us through the testimony of the government’s Antifa expert. The defense team is optimistic that things are going well for them.",
         "duration": 8,
-        "contributors": [
-          "Zoe Chace"
-        ]
+        "contributors": []
       },
       {
         "number": 3,
-        "number_text": "Act 3",
-        "title": "Act 3: Act 3",
-        "summary": "Zoe goes to jail to talk with one of the cooperating witnesses for the prosecution, a former church lady named Lynette Sharp. She has a lot to say about all the events of her life that led to taking a plea deal and testifying against her friends.",
+        "number_text": "Act Three",
+        "title": "Act Three: Act Three",
+        "summary": "Zoe goes to jail to talk with one of the cooperating witnesses for the prosecution, a former church lady named Lynette Sharp. She has a lot to say about the events in her life that led her to accept a plea deal and testify against her friends.",
         "duration": 24,
-        "contributors": [
-          "Zoe Chace"
-        ]
+        "contributors": []
       },
       {
         "number": 4,
-        "number_text": "Act 4",
-        "title": "Act 4: Act 4",
+        "number_text": "Act Four",
+        "title": "Act Four: Act Four",
         "summary": "The verdicts come in.",
         "duration": 12,
-        "contributors": [
-          "Zoe Chace"
-        ]
+        "contributors": []
       }
     ],
     "published_dates": [
       "Sun, 12 Jul 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Sun, 19 Jul 2026 09:08:21 +0000",
+        "data": {
+          "title": "The Test Case",
+          "synopsis": "Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth.  This week we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real.  Zoe Chace reports.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Host Ira Glass tells the story of what happened at the Prairieland Detention Center in Alvarado, Texas. The government claims this was an attack by an Antifa cell. The defense says it was a protest gone awry. This argument goes to court in a first of its kind trial.",
+              "duration": 7,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act 1",
+              "title": "Act 1: Act 1",
+              "summary": "Reporter Zoe Chace walks us through one of the worst days for the defense: all these guns.",
+              "duration": 5,
+              "contributors": [
+                "Zoe Chace"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act 2",
+              "title": "Act 2: Act 2",
+              "summary": "Zoe takes us through the testimony of the government’s Antifa expert. The defense team is optimistic that things are going well for them.",
+              "duration": 8,
+              "contributors": [
+                "Zoe Chace"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act 3",
+              "title": "Act 3: Act 3",
+              "summary": "Zoe goes to jail to talk with one of the cooperating witnesses for the prosecution, a former church lady named Lynette Sharp. She has a lot to say about all the events of her life that led to taking a plea deal and testifying against her friends.",
+              "duration": 24,
+              "contributors": [
+                "Zoe Chace"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act 4",
+              "title": "Act 4: Act 4",
+              "summary": "The verdicts come in.",
+              "duration": 12,
+              "contributors": [
+                "Zoe Chace"
+              ]
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-891-thetestcase-katherinelam-16x9.jpeg?itok=s3Pa965t",
+            "credit": null
+          }
+        }
+      }
+    ]
   }
 ]
