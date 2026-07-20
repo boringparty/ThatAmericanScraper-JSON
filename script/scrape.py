@@ -10,6 +10,8 @@ from datetime import timezone, timedelta, datetime
 from email.utils import format_datetime, parsedate_to_datetime
 from dateutil import parser
 
+from audio_url import clean_audio_url
+
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 OFFICIAL_RSS = "https://thisamericanlife.org/podcast/rss.xml"
 DELAY = 1
@@ -42,28 +44,6 @@ def to_week_sunday(dt):
     return sunday.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=timezone.utc)
 
 
-
-
-def clean_audio_url(url):
-    if not url:
-        return None
-
-    url = str(url).strip()
-
-    # Remove query parameters
-    url = url.split("?", 1)[0]
-
-    # Extract the canonical Simplecast URL if present
-    match = re.search(
-        r"(https?://)?([a-z0-9.-]+\.simplecastaudio\.com/.*)",
-        url,
-        re.IGNORECASE,
-    )
-
-    if match:
-        url = "https://" + match.group(2)
-
-    return url
 
 
 def fetch_episode_page(url):
