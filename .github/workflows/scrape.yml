@@ -63,9 +63,12 @@ jobs:
           git add data/data.json
 
           if git diff --cached --quiet; then
+            echo "DATA_CHANGED=false" >> $GITHUB_ENV
             echo "No data changes to commit"
             exit 0
           fi
+
+          echo "DATA_CHANGED=true" >> $GITHUB_ENV
 
           git commit -m "Update TAL episodes data"
           git push
@@ -123,7 +126,7 @@ jobs:
         run: |
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M")
 
-          if ! git diff --quiet HEAD~1 HEAD -- data/data.json; then
+          if [ "$DATA_CHANGED" = "true" ]; then
             echo "$TIMESTAMP - Episode Posted" >> data/check.log
           else
             echo "$TIMESTAMP - Nothing New" >> data/check.log
