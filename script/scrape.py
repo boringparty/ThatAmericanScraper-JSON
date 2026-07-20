@@ -190,8 +190,6 @@ def update_published_dates(episodes):
 
 
 def main():
-    scrape_mode = os.environ.get("SCRAPE_MODE", "latest").lower()
-
     try:
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
             episodes = json.load(f)
@@ -199,11 +197,7 @@ def main():
         episodes = []
 
     feed = feedparser.parse(OFFICIAL_RSS)
-    entries = (
-        feed.entries if scrape_mode == "all"
-        else feed.entries[:int(scrape_mode)] if scrape_mode.isdigit()
-        else feed.entries[:DEFAULT_NUM_EPISODES]
-    )
+    entries = feed.entries[:DEFAULT_NUM_EPISODES]
 
     for entry in entries:
         url = entry.link
