@@ -51,7 +51,11 @@ jobs:
       - name: Run Scraper
         if: env.MODE == 'all' || env.MODE == 'scrape'
         env:
-          SCRAPE_MODE: ${{ env.MODE }}
+          # Only check the most recent feed entry. MODE controls which
+          # pipeline steps run; it should never control how many episodes
+          # scrape.py fetches (that was the old bug: 'all' meant "run every
+          # step" but also meant "re-fetch every episode in the feed").
+          SCRAPE_MODE: '1'
         run: python script/scrape.py
 
       - name: Commit scraped data
