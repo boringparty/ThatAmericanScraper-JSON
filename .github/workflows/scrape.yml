@@ -20,7 +20,7 @@ on:
   schedule:
     # Sunday 12:00 AM – 4:59 PM PDT
     - cron: '*/30 7-23 * * 0'
-  
+
     # Sunday 5:00 PM – 11:30 PM PDT
     - cron: '*/30 0-6 * * 1'
 
@@ -123,6 +123,7 @@ jobs:
       # LOG CHECK
       # ----------------
       - name: Log scraper check
+        if: env.MODE == 'all' || env.MODE == 'scrape'
         run: |
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M")
 
