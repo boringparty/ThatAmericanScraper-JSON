@@ -1,44 +1,10 @@
 #!/usr/bin/env python3
 
 import json
-from urllib.parse import urlsplit
+
+from audio_url import clean_audio_url
 
 INPUT_FILE = "data/data.json"
-
-
-def clean_audio_url(url):
-    if not url:
-        return url
-
-    url = str(url).strip()
-
-    # Remove query string and fragment
-    parts = urlsplit(url)
-    url = f"{parts.scheme}://{parts.netloc}{parts.path}"
-
-    # Remove common redirect wrappers
-    wrappers = (
-        "/s/",           # prefix.up.audio/s/
-        "/redirect.mp/", # dts.podtrac.com/redirect.mp/
-        "/e/",           # pdst.fm/e/
-    )
-
-    changed = True
-    while changed:
-        changed = False
-        for wrapper in wrappers:
-            if wrapper in url:
-                url = url.split(wrapper, 1)[1]
-                if not url.startswith("http"):
-                    url = "https://" + url
-                changed = True
-                break
-
-    # Remove any duplicated scheme
-    url = url.replace("https://https://", "https://")
-    url = url.replace("http://http://", "http://")
-
-    return url
 
 
 def main():
