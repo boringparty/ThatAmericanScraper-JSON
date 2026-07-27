@@ -5,21 +5,34 @@
     <link>https://www.thisamericanlife.org</link>
     <description><![CDATA[Only new episodes!]]></description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 00:00:00 +0000</lastBuildDate>
     <generator>generateFeed_new.py</generator>
     <itunes:author>This American Life</itunes:author>
     <itunes:summary><![CDATA[Only new episodes!]]></itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://i.imgur.com/JifU3O4.png" />
     <item>
+      <title><![CDATA[893: Testosterone]]></title>
+      <link>https://www.thisamericanlife.org/893/testosterone</link>
+      <guid isPermaLink="false">https://www.thisamericanlife.org/893/testosterone</guid>
+      <description><![CDATA[Defense Secretary Pete Hegseth has ordered everyone over 30 in the military to have their testosterone tested. That inspired us to rerun this classic episode where everyone atThis American Lifetested their testosterone and compared results. It did not lead to workplace harmony.]]></description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/2e938939-638b-4300-8602-68b010d9b98f/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <itunes:title><![CDATA[893: Testosterone]]></itunes:title>
+      <itunes:summary><![CDATA[Defense Secretary Pete Hegseth has ordered everyone over 30 in the military to have their testosterone tested. That inspired us to rerun this classic episode where everyone atThis American Lifetested their testosterone and compared results. It did not lead to workplace harmony.]]></itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episode>893</itunes:episode>
+      <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-838386570-bw.jpg?itok=gI1SEDu2" />
+    </item>
+    <item>
       <title><![CDATA[892: Trapped on a Bus]]></title>
       <link>https://www.thisamericanlife.org/892/trapped-on-a-bus</link>
       <guid isPermaLink="false">https://www.thisamericanlife.org/892/trapped-on-a-bus</guid>
-      <description><![CDATA[People on journeys they did not intend! Or agree to!]]></description>
+      <description><![CDATA[People on journeys they did not intend — or agree to.]]></description>
       <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
       <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/8e5b0ae5-8cc7-4178-a41a-46b344dc784e/audio/128/default.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[892: Trapped on a Bus]]></itunes:title>
-      <itunes:summary><![CDATA[People on journeys they did not intend! Or agree to!]]></itunes:summary>
+      <itunes:summary><![CDATA[People on journeys they did not intend — or agree to.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episode>892</itunes:episode>
       <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/Reuters-RC2L9KABE4CY-CUBA-CRISIS-POWER.jpg?itok=p05ydmOz" />
