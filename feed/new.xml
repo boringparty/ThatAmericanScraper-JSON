@@ -5,12 +5,25 @@
     <link>https://www.thisamericanlife.org</link>
     <description><![CDATA[Only new episodes!]]></description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0000</lastBuildDate>
     <generator>generateFeed_new.py</generator>
     <itunes:author>This American Life</itunes:author>
     <itunes:summary><![CDATA[Only new episodes!]]></itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://i.imgur.com/JifU3O4.png" />
+    <item>
+      <title><![CDATA[894: I Couldn't Help but Notice]]></title>
+      <link>https://www.thisamericanlife.org/894/i-couldnt-help-but-notice</link>
+      <guid isPermaLink="false">https://www.thisamericanlife.org/894/i-couldnt-help-but-notice</guid>
+      <description><![CDATA[People dealing with new, glaring, massive changes happening right where they live.]]></description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/0e3cd2c7-87b9-4122-a3fd-38d95bfda0e9/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <itunes:title><![CDATA[894: I Couldn't Help but Notice]]></itunes:title>
+      <itunes:summary><![CDATA[People dealing with new, glaring, massive changes happening right where they live.]]></itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episode>894</itunes:episode>
+      <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/TAL-894-ICouldntHelpButNotice-ValeroDoval.jpg?itok=WJCDnjX_" />
+    </item>
     <item>
       <title><![CDATA[893: Testosterone]]></title>
       <link>https://www.thisamericanlife.org/893/testosterone</link>
