@@ -12996,13 +12996,13 @@
     ]
   },
   {
-    "title": "Somewhere in the Arabian Sea",
+    "title": "Somewhere in the Arabian Sea",
     "number": "206",
     "original_air_date": "Fri, 01 Mar 2002 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/206/somewhere-in-the-arabian-sea",
     "explicit": false,
-    "synopsis": "Life aboard the USS John C. Stennis, an aircraft carrier that was stationed in the Arabian Sea and supported bombing missions over Afghanistan. Only a few dozen people on board actually fly jets. It takes the rest of the crew — over 5,000 people — to keep them in the air.This American Lifeproducers visited the Stennis in 2002, about six weeks into its deployment. The hour is devoted to this one story.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/206/vEnQyx8eK5ZhMfpgOYoCcasvEzZQYzuZjkj9zqT0Xa4/206.mp3",
+    "synopsis": "The aircraft carrier USS Abraham Lincoln has been in the news over an extra-long deployment that's taking a toll on its crew. Back in 2002, we explored life aboard another aircraft carrier, the USS John C. Stennis, stationed in the Arabian Sea and supporting bombing missions over Afghanistan. Only a few dozen people on board actually fly jets. The rest of the crew — over 5,000 people — keeps them in the air.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/dcc04146-548e-4a57-826b-d653088ec4e2/audio/128/default.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/206.jpg?itok=Zd-43LHv",
@@ -13025,7 +13025,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Act One",
-        "summary": "Wendy Dorr and Ira Glass talk with various sailors aboard the Stennis, including Jessica Phillips, who just came on board six days earlier. People off duty play video games, work out, or practice in one of the ship's many garage bands.",
+        "summary": "Aboard the USS Stennis, Ira Glass and Wendy Dorr talk with sailors about life on board. Off duty, people play video games, work out, or practice in one of the ship's many garage bands. Ira and Wendy also talk with sailors about how rumors travel on the ship — conversations that get back to the top brass, who give the producers heat for chasing salacious stories. Ira interviews the captain, James McDonell, and learns the ship is facing a fresh water shortage.",
         "duration": null,
         "contributors": []
       },
@@ -13033,53 +13033,98 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: Act Two",
-        "summary": "Ira and Wendy talk with sailors named Summer, Melissa and Jason about how rumors spread aboard the Stennis. The top brass learn of these conversations, and give the producers heat for trying to find salacious stories. A public affairs officer steers Ira to interview a sailor named Kevin. It turns out Kevin chose the Navy over jail time.",
-        "duration": null,
-        "contributors": []
-      },
-      {
-        "number": 3,
-        "number_text": "Act Three",
-        "title": "Act Three: Act Three",
-        "summary": "Ira interviews the captain of the Stennis, James McDonell. The ship's executive officer Jeff Milller announces that the ship has a fresh water shortage.",
-        "duration": null,
-        "contributors": []
-      },
-      {
-        "number": 4,
-        "number_text": "Act Four",
-        "title": "Act Four: Act Four",
-        "summary": "Wendy and Ira interview members of a squadron called the World Famous Screwbirds. As the pilots head to their planes for a mission, they explain how difficult it is to land a plane on an aircraft carrier. Alex Blumberg interviews members the Blue Diamond Squadron, who talk about difficult landings, what Afghanistan looks like from the air, and what it feels like to drop bombs.",
-        "duration": null,
-        "contributors": []
-      },
-      {
-        "number": 5,
-        "number_text": "Act Five",
-        "title": "Act Five: Act Five",
-        "summary": "Wendy talks with sailors Cynthia and David, who are waiting for the 8PM movie to start. Wendy and Alex interview sailors in the mess hall. Officers talk about overseeing the enlisted men. In the officers' mess hall, the food reminds Alex Blumberg of US military superiority.",
-        "duration": null,
-        "contributors": []
-      },
-      {
-        "number": 6,
-        "number_text": "Act Six",
-        "title": "Act Six: Act Six",
-        "summary": "Alex and Ira, bunking together, record what they think is a loud accident.",
-        "duration": null,
-        "contributors": []
-      },
-      {
-        "number": 7,
-        "number_text": "Act Seven",
-        "title": "Act Seven: Act Seven",
-        "summary": "Chief Barbara Mendoza takes Ira, Alex and Wendy to the very back of the ship, the fantail, one of her favorite places on the Stennis. She wonders how many ships are on the floor of the Arabian Sea.",
+        "summary": "As pilots head to their planes for a mission, they explain how hard it is to land on an aircraft carrier. Wendy talks with sailors Cynthia and David, waiting for the 8PM movie to start, and she and Alex talk with sailors in the mess hall.",
         "duration": null,
         "contributors": []
       }
     ],
     "published_dates": [
-      "Fri, 01 Mar 2002 00:00:00 +0000"
+      "Fri, 01 Mar 2002 00:00:00 +0000",
+      "Sun, 30 Aug 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 24 Aug 2026 01:07:09 +0000",
+        "data": {
+          "title": "Somewhere in the Arabian Sea",
+          "synopsis": "Life aboard the USS John C. Stennis, an aircraft carrier that was stationed in the Arabian Sea and supported bombing missions over Afghanistan. Only a few dozen people on board actually fly jets. It takes the rest of the crew — over 5,000 people — to keep them in the air.This American Lifeproducers visited the Stennis in 2002, about six weeks into its deployment. The hour is devoted to this one story.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Alex Blumberg talks with sailor Prevon Scott, who stocks vending machines on the Stennis.",
+              "duration": null,
+              "contributors": [
+                "Alex Blumberg",
+                "Wendy Dorr",
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Act One",
+              "summary": "Wendy Dorr and Ira Glass talk with various sailors aboard the Stennis, including Jessica Phillips, who just came on board six days earlier. People off duty play video games, work out, or practice in one of the ship's many garage bands.",
+              "duration": null,
+              "contributors": []
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Act Two",
+              "summary": "Ira and Wendy talk with sailors named Summer, Melissa and Jason about how rumors spread aboard the Stennis. The top brass learn of these conversations, and give the producers heat for trying to find salacious stories. A public affairs officer steers Ira to interview a sailor named Kevin. It turns out Kevin chose the Navy over jail time.",
+              "duration": null,
+              "contributors": []
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Act Three",
+              "summary": "Ira interviews the captain of the Stennis, James McDonell. The ship's executive officer Jeff Milller announces that the ship has a fresh water shortage.",
+              "duration": null,
+              "contributors": []
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: Act Four",
+              "summary": "Wendy and Ira interview members of a squadron called the World Famous Screwbirds. As the pilots head to their planes for a mission, they explain how difficult it is to land a plane on an aircraft carrier. Alex Blumberg interviews members the Blue Diamond Squadron, who talk about difficult landings, what Afghanistan looks like from the air, and what it feels like to drop bombs.",
+              "duration": null,
+              "contributors": []
+            },
+            {
+              "number": 5,
+              "number_text": "Act Five",
+              "title": "Act Five: Act Five",
+              "summary": "Wendy talks with sailors Cynthia and David, who are waiting for the 8PM movie to start. Wendy and Alex interview sailors in the mess hall. Officers talk about overseeing the enlisted men. In the officers' mess hall, the food reminds Alex Blumberg of US military superiority.",
+              "duration": null,
+              "contributors": []
+            },
+            {
+              "number": 6,
+              "number_text": "Act Six",
+              "title": "Act Six: Act Six",
+              "summary": "Alex and Ira, bunking together, record what they think is a loud accident.",
+              "duration": null,
+              "contributors": []
+            },
+            {
+              "number": 7,
+              "number_text": "Act Seven",
+              "title": "Act Seven: Act Seven",
+              "summary": "Chief Barbara Mendoza takes Ira, Alex and Wendy to the very back of the ship, the fantail, one of her favorite places on the Stennis. She wonders how many ships are on the floor of the Arabian Sea.",
+              "duration": null,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/206.jpg?itok=Zd-43LHv",
+            "credit": "DVIDSHUB"
+          }
+        }
+      }
     ]
   },
   {
