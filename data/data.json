@@ -13001,7 +13001,7 @@
     "original_air_date": "Fri, 01 Mar 2002 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/206/somewhere-in-the-arabian-sea",
     "explicit": false,
-    "synopsis": "The aircraft carrier USS Abraham Lincoln has been in the news over an extra-long deployment that's taking a toll on its crew. Back in 2002, we explored life aboard another aircraft carrier, the USS John C. Stennis, stationed in the Arabian Sea and supporting bombing missions over Afghanistan. Only a few dozen people on board actually fly jets. The rest of the crew — over 5,000 people — keeps them in the air.",
+    "synopsis": "The aircraft carrier USS Abraham Lincoln has been in the news thanks to an extra-long deployment that's taken a toll on its crew. What's life on an aircraft carrier at war really like? Back in 2002, we spent a few days on the USS John C. Stennis, which was sending bombing missions into Afghanistan.",
     "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/dcc04146-548e-4a57-826b-d653088ec4e2/audio/128/default.mp3",
     "download_clean": null,
     "image": {
@@ -13013,7 +13013,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Alex Blumberg talks with sailor Prevon Scott, who stocks vending machines on the Stennis.",
+        "summary": "Alex Blumberg talks with sailor Crevon Scott, who stocks vending machines on the Stennis.",
         "duration": null,
         "contributors": [
           "Alex Blumberg",
@@ -13114,6 +13114,48 @@
               "number_text": "Act Seven",
               "title": "Act Seven: Act Seven",
               "summary": "Chief Barbara Mendoza takes Ira, Alex and Wendy to the very back of the ship, the fantail, one of her favorite places on the Stennis. She wonders how many ships are on the floor of the Arabian Sea.",
+              "duration": null,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/206.jpg?itok=Zd-43LHv",
+            "credit": "DVIDSHUB"
+          }
+        }
+      },
+      {
+        "timestamp": "Sun, 30 Aug 2026 12:42:02 +0000",
+        "data": {
+          "title": "Somewhere in the Arabian Sea",
+          "synopsis": "The aircraft carrier USS Abraham Lincoln has been in the news over an extra-long deployment that's taking a toll on its crew. Back in 2002, we explored life aboard another aircraft carrier, the USS John C. Stennis, stationed in the Arabian Sea and supporting bombing missions over Afghanistan. Only a few dozen people on board actually fly jets. The rest of the crew — over 5,000 people — keeps them in the air.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Alex Blumberg talks with sailor Prevon Scott, who stocks vending machines on the Stennis.",
+              "duration": null,
+              "contributors": [
+                "Alex Blumberg",
+                "Wendy Dorr",
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Act One",
+              "summary": "Aboard the USS Stennis, Ira Glass and Wendy Dorr talk with sailors about life on board. Off duty, people play video games, work out, or practice in one of the ship's many garage bands. Ira and Wendy also talk with sailors about how rumors travel on the ship — conversations that get back to the top brass, who give the producers heat for chasing salacious stories. Ira interviews the captain, James McDonell, and learns the ship is facing a fresh water shortage.",
+              "duration": null,
+              "contributors": []
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Act Two",
+              "summary": "As pilots head to their planes for a mission, they explain how hard it is to land on an aircraft carrier. Wendy talks with sailors Cynthia and David, waiting for the 8PM movie to start, and she and Alex talk with sailors in the mess hall.",
               "duration": null,
               "contributors": []
             }
