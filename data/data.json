@@ -55464,5 +55464,57 @@
         }
       }
     ]
+  },
+  {
+    "title": "I Know What You Need",
+    "number": "896",
+    "original_air_date": "Fri, 28 Aug 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/896/i-know-what-you-need",
+    "explicit": true,
+    "synopsis": "Moments when it seems obvious what to do for someone else, so of course you jump in and try to help — and what happens after that.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/caceec36-6b90-47bf-82f3-0913de8f51ee/audio/128/default.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/896.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-896-ricardotomas.jpg?itok=qcIK6LJw",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Devon Taylor tells host Ira Glass about a time she confronted people who stole $100 from her.",
+        "duration": 12,
+        "contributors": []
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Friends and Family Plan",
+        "summary": "We get to an age when we find ourselves taking care of our parents, whether they want us to or not. Writer Kristen Roupenian wrote this piece of fiction based on something real that happened to a family she knows. Her book Cat Person and Other Stories is available now.",
+        "duration": 20,
+        "contributors": []
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Escape Claudes",
+        "summary": "Two chatbots, stuck in a loop, each trying to help the other. Will they ever break free?",
+        "duration": 20,
+        "contributors": []
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Not Throwing Away My Shot",
+        "summary": "In Utah, some communities have been fighting measles outbreaks for 14 months. These are some of the longest-running outbreaks in the country. But one of our producers, Miki Meek, heard about how school nurses in a town called Vernal helped end its outbreak in just six weeks. Miki finds out how they did it.",
+        "duration": 9,
+        "contributors": []
+      }
+    ],
+    "published_dates": [
+      "Sun, 06 Sep 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
