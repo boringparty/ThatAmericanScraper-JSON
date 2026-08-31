@@ -5,12 +5,25 @@
     <link>https://www.thisamericanlife.org</link>
     <description><![CDATA[Only new episodes!]]></description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 00:00:00 +0000</lastBuildDate>
     <generator>generateFeed_new.py</generator>
     <itunes:author>This American Life</itunes:author>
     <itunes:summary><![CDATA[Only new episodes!]]></itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://i.imgur.com/JifU3O4.png" />
+    <item>
+      <title><![CDATA[896: I Know What You Need]]></title>
+      <link>https://www.thisamericanlife.org/896/i-know-what-you-need</link>
+      <guid isPermaLink="false">https://www.thisamericanlife.org/896/i-know-what-you-need</guid>
+      <description><![CDATA[Moments when it seems obvious what to do for someone else, so of course you jump in and try to help — and what happens after that.]]></description>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/caceec36-6b90-47bf-82f3-0913de8f51ee/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <itunes:title><![CDATA[896: I Know What You Need]]></itunes:title>
+      <itunes:summary><![CDATA[Moments when it seems obvious what to do for someone else, so of course you jump in and try to help — and what happens after that.]]></itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episode>896</itunes:episode>
+      <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-896-ricardotomas.jpg?itok=qcIK6LJw" />
+    </item>
     <item>
       <title><![CDATA[895: Label Maker!]]></title>
       <link>https://www.thisamericanlife.org/895/label-maker</link>
@@ -8923,11 +8936,11 @@
       <title><![CDATA[206: Somewhere in the Arabian Sea]]></title>
       <link>https://www.thisamericanlife.org/206/somewhere-in-the-arabian-sea</link>
       <guid isPermaLink="false">https://www.thisamericanlife.org/206/somewhere-in-the-arabian-sea</guid>
-      <description><![CDATA[The aircraft carrier USS Abraham Lincoln has been in the news over an extra-long deployment that's taking a toll on its crew. Back in 2002, we explored life aboard another aircraft carrier, the USS John C. Stennis, stationed in the Arabian Sea and supporting bombing missions over Afghanistan. Only a few dozen people on board actually fly jets. The rest of the crew — over 5,000 people — keeps them in the air.]]></description>
+      <description><![CDATA[The aircraft carrier USS Abraham Lincoln has been in the news thanks to an extra-long deployment that's taken a toll on its crew. What's life on an aircraft carrier at war really like? Back in 2002, we spent a few days on the USS John C. Stennis, which was sending bombing missions into Afghanistan.]]></description>
       <pubDate>Fri, 01 Mar 2002 00:00:00 +0000</pubDate>
       <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/dcc04146-548e-4a57-826b-d653088ec4e2/audio/128/default.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[206: Somewhere in the Arabian Sea]]></itunes:title>
-      <itunes:summary><![CDATA[The aircraft carrier USS Abraham Lincoln has been in the news over an extra-long deployment that's taking a toll on its crew. Back in 2002, we explored life aboard another aircraft carrier, the USS John C. Stennis, stationed in the Arabian Sea and supporting bombing missions over Afghanistan. Only a few dozen people on board actually fly jets. The rest of the crew — over 5,000 people — keeps them in the air.]]></itunes:summary>
+      <itunes:summary><![CDATA[The aircraft carrier USS Abraham Lincoln has been in the news thanks to an extra-long deployment that's taken a toll on its crew. What's life on an aircraft carrier at war really like? Back in 2002, we spent a few days on the USS John C. Stennis, which was sending bombing missions into Afghanistan.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episode>206</itunes:episode>
       <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/206.jpg?itok=Zd-43LHv" />
