@@ -28497,12 +28497,12 @@
     "number": "449",
     "original_air_date": "Fri, 28 Oct 2011 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/449/middle-school",
-    "explicit": false,
-    "synopsis": "This week, at the suggestion of a 14-year-old listener, we bring you stories from the awkward, confusing, hormonally charged world of middle school. Including a teacher who transforms peer pressure into a force for good, and reports from the frontlines of the middle school dance.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/449/D-SWIRBBFiPhlwbctXbNKtPwhBZGZwGwr2PGIfxRUNQ/449.mp3",
-    "download_clean": null,
+    "explicit": true,
+    "synopsis": "As the new school year begins, we have stories today from all over the country about people lurching their way through their middle school years – the years when you're figuring out so, so much. We go to school dances and classrooms, and down to the Mexican border.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/a631bda2-b83f-4e2c-99c5-8344e637a322/audio/128/default.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/449.mp3",
     "image": {
-      "url": "https://www.thisamericanlife.org/sites/default/files/styles/square/public/episodes/images/449.jpg?itok=dTVxHAmm",
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/iStock-115093587.jpg?itok=YK6k8LHe",
       "credit": null
     },
     "acts": [
@@ -28510,8 +28510,8 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Host Ira Glass interviews a 14-year old named Annie, who emailed us asking if we would do a show about middle school. She explains why exactly the middle school years can be so daunting. (4 1/2 minutes)",
-        "duration": null,
+        "summary": "Host Ira Glass interviews a 14-year-old named Annie, who emailed us asking if we would do a show about middle school. She explains why exactly the middle school years can be so daunting.",
+        "duration": 4,
         "contributors": [
           "Ira Glass"
         ]
@@ -28520,8 +28520,8 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Life in the Middle Ages",
-        "summary": "In an effort to understand the physical and emotional changes middle school kids experience, Ira speaks with reporter Linda Perlstein , who wrote a book called Not Much Just Chillin' about a year she spent following five middle schoolers. Then we hear from producer Alex Blumberg, who was a middle school teacher in Chicago for four years before getting into radio. Alex's takeaway? We shouldn't even try teaching kids at this age. Marion Strok, principal of a successful Chicago school, disagrees. (6 1/2 minutes)",
-        "duration": null,
+        "summary": "In an effort to understand the physical and emotional changes middle school kids experience, Ira speaks with reporter Linda Perlstein , who wrote a book called Not Much Just Chillin' about a year she spent following five middle schoolers. Then we hear from producer Alex Blumberg, who was a middle school teacher in Chicago for four years before getting into radio. Alex's takeaway? We shouldn't even try teaching kids at this age. Marion Strok, principal of a successful Chicago school, disagrees.",
+        "duration": 6,
         "contributors": [
           "Ira Glass"
         ]
@@ -28530,8 +28530,8 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: Stutter Step",
-        "summary": "We sent several correspondents straight to the epicenters of middle school awkwardness: School dances. Producers Lisa Pollak and Brian Reed, plus reporters Eric Mennel, Rob Wildeboer and Claire Holman spoke with kids across the country during the nervous moments leading up to the dances. And Lisa even ventured inside, to the dance itself.\n(9 1/2 minutes)",
-        "duration": null,
+        "summary": "We sent correspondents straight to the epicenters of middle school awkwardness: school dances. We spoke with kids across the country during the nervous moments leading up to the dances, and even ventured inside, to the dance itself. Featuring producers Lisa Pollak and Brian Reed, plus reporters Eric Mennel, Rob Wildeboer, and Claire Holman.",
+        "duration": 9,
         "contributors": [
           "Ira Glass",
           "Lisa Pollak"
@@ -28541,8 +28541,8 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: Mimis in the Middle",
-        "summary": "When Domingo Martinez was growing up in a Mexican-American family in Texas, Domingo's two middle school aged sisters found a unique way of coping with feelings of inferiority. This story comes from Martinez's memoir The Boy Kings of Texas . (11 1/2 minutes)",
-        "duration": null,
+        "summary": "When Domingo Martinez was growing up in a Mexican-American family in Texas, Domingo's two middle school-aged sisters found a unique way of coping with feelings of inferiority. This story comes from Martinez's memoir The Boy Kings of Texas .",
+        "duration": 11,
         "contributors": [
           "Domingo Martinez"
         ]
@@ -28551,8 +28551,8 @@
         "number": 4,
         "number_text": "Act Four",
         "title": "Act Four: Anchor Babies",
-        "summary": "We realized that there are already reporters on the ground, embedded inside middle schools: The kids who report the daily announcements, sometimes on video with full newscast sets. Producer Jonathan Menjivar wondered what would happen if instead of announcing sports scores and the daily cafeteria menu, the kids reported what's really on their minds. Students at Parkville Middle School outside Baltimore, and their journalism teacher Ms. Davis, agreed to try out this experiment. (7 1/2 minutes)",
-        "duration": null,
+        "summary": "We realized that there are already reporters on the ground, embedded inside middle schools: the kids who report the daily announcements. Producer Jonathan Menjivar wondered what would happen if instead of announcing sports scores and the daily cafeteria menu, the kids reported what's really on their minds. Students at Parkville Middle School outside Baltimore, along with their journalism teacher Ms. Davis, agreed to try out this experiment.",
+        "duration": 7,
         "contributors": [
           "Jonathan Menjivar"
         ]
@@ -28571,13 +28571,99 @@
         "number": 6,
         "number_text": "Act Six",
         "title": "Act Six: Grande with Sugar",
-        "summary": "Ira speaks with Shannon Grande, a teacher at Rise Academy in Newark, about a seventh grader who had all sorts of problems with behavior and hygiene and schoolwork. In order to help turn him around, Grande had to harness the power of peer pressure for good. This story came from Elizabeth Green, author of the book Building a Better Teacher .",
+        "summary": "Ira speaks with Shannon Grande, a teacher at Rise Academy in Newark, about a seventh grader who had all sorts of problems with behavior, hygiene, and schoolwork. To help turn him around, Grande had to harness the power of peer pressure for good. This story came from Elizabeth Green, author of the book Building a Better Teacher .",
         "duration": 7,
         "contributors": []
       }
     ],
     "published_dates": [
-      "Fri, 28 Oct 2011 00:00:00 +0000"
+      "Fri, 28 Oct 2011 00:00:00 +0000",
+      "Sun, 13 Sep 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 07 Sep 2026 00:13:52 +0000",
+        "data": {
+          "title": "Middle School",
+          "synopsis": "This week, at the suggestion of a 14-year-old listener, we bring you stories from the awkward, confusing, hormonally charged world of middle school. Including a teacher who transforms peer pressure into a force for good, and reports from the frontlines of the middle school dance.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Host Ira Glass interviews a 14-year old named Annie, who emailed us asking if we would do a show about middle school. She explains why exactly the middle school years can be so daunting. (4 1/2 minutes)",
+              "duration": null,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Life in the Middle Ages",
+              "summary": "In an effort to understand the physical and emotional changes middle school kids experience, Ira speaks with reporter Linda Perlstein , who wrote a book called Not Much Just Chillin' about a year she spent following five middle schoolers. Then we hear from producer Alex Blumberg, who was a middle school teacher in Chicago for four years before getting into radio. Alex's takeaway? We shouldn't even try teaching kids at this age. Marion Strok, principal of a successful Chicago school, disagrees. (6 1/2 minutes)",
+              "duration": null,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Stutter Step",
+              "summary": "We sent several correspondents straight to the epicenters of middle school awkwardness: School dances. Producers Lisa Pollak and Brian Reed, plus reporters Eric Mennel, Rob Wildeboer and Claire Holman spoke with kids across the country during the nervous moments leading up to the dances. And Lisa even ventured inside, to the dance itself.\n(9 1/2 minutes)",
+              "duration": null,
+              "contributors": [
+                "Ira Glass",
+                "Lisa Pollak"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Mimis in the Middle",
+              "summary": "When Domingo Martinez was growing up in a Mexican-American family in Texas, Domingo's two middle school aged sisters found a unique way of coping with feelings of inferiority. This story comes from Martinez's memoir The Boy Kings of Texas . (11 1/2 minutes)",
+              "duration": null,
+              "contributors": [
+                "Domingo Martinez"
+              ]
+            },
+            {
+              "number": 4,
+              "number_text": "Act Four",
+              "title": "Act Four: Anchor Babies",
+              "summary": "We realized that there are already reporters on the ground, embedded inside middle schools: The kids who report the daily announcements, sometimes on video with full newscast sets. Producer Jonathan Menjivar wondered what would happen if instead of announcing sports scores and the daily cafeteria menu, the kids reported what's really on their minds. Students at Parkville Middle School outside Baltimore, and their journalism teacher Ms. Davis, agreed to try out this experiment. (7 1/2 minutes)",
+              "duration": null,
+              "contributors": [
+                "Jonathan Menjivar"
+              ]
+            },
+            {
+              "number": 5,
+              "number_text": "Act Five",
+              "title": "Act Five: Blue Kid on the Block",
+              "summary": "Producer Sarah Koenig reports on a kid we'll call Leo, whose family moved away from Rochester, NY, leaving behind all of Leo's friends and\nstranding him in a new — and in his opinion, much worse — middle school.",
+              "duration": 10,
+              "contributors": [
+                "Sarah Koenig"
+              ]
+            },
+            {
+              "number": 6,
+              "number_text": "Act Six",
+              "title": "Act Six: Grande with Sugar",
+              "summary": "Ira speaks with Shannon Grande, a teacher at Rise Academy in Newark, about a seventh grader who had all sorts of problems with behavior and hygiene and schoolwork. In order to help turn him around, Grande had to harness the power of peer pressure for good. This story came from Elizabeth Green, author of the book Building a Better Teacher .",
+              "duration": 7,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/square/public/episodes/images/449.jpg?itok=dTVxHAmm",
+            "credit": null
+          }
+        }
+      }
     ]
   },
   {
