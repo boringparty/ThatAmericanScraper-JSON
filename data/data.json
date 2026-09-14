@@ -40104,14 +40104,14 @@
     ]
   },
   {
-    "title": "The Secret of My Death",
+    "title": "The Secret of My Death",
     "number": "646",
     "original_air_date": "Fri, 18 May 2018 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/646/the-secret-of-my-death",
     "explicit": true,
-    "synopsis": "Cryptic messages on a cell phone and a teeter totter at a construction site: these are clues people found, trying to make sense of a death.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/646/prbsjYoLGjhPiyq9t-a2LHuLEuRmSb1LghhJQo0N-60/646.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/646.mp3",
+    "synopsis": "Cryptic messages on a cell phone and a teeter-totter at a construction site: these are clues people found, trying to make sense of a death.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/431ed1d9-35aa-4f85-9ee5-f7e060ce6083/audio/128/default.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/646.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/lettertodealer_4x3_2.jpg?itok=o21THZSp",
       "credit": null
@@ -40121,7 +40121,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Host Ira Glass talks to a guy about a crazy experiment he devised when he was a kid. It almost killed him.",
+        "summary": "Host Ira Glass talks to a guy about a crazy experiment he devised when he was a kid. It almost killed him.",
         "duration": 5,
         "contributors": []
       },
@@ -40129,8 +40129,8 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Dear Dealer",
-        "summary": "We begin with a woman whose sister has died. She has questions. Her name is Nadia Bowers , and she wrote this to someone she thinks might be of help. (17 1/2 minutes) You can read a shorter print version of Nadia Bowers's story on time.com .",
-        "duration": null,
+        "summary": "We begin with a woman whose sister has died. She has questions. Her name is Nadia Bowers , and she wrote this to someone she thinks might be of help. You can read a shorter print version of Nadia Bowers's story on time.com .",
+        "duration": 17,
         "contributors": [
           "Nadia Bowers"
         ]
@@ -40139,7 +40139,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: Commento Mori",
-        "summary": "There’s a problem with having a Facebook account after you’re dead that you’ve never, ever, ever thought about. Producer Stephanie Foo tells this story, about Dave Maher .",
+        "summary": "There’s a problem with having a Facebook account after you’re dead that you’ve never, ever, ever thought about. Producer Stephanie Foo tells this story, about Dave Maher .",
         "duration": 14,
         "contributors": [
           "Stephanie Foo"
@@ -40149,7 +40149,7 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: Funeral for a Stranger",
-        "summary": "A guy goes to a funeral for someone he doesn’t know at all, and has to piece together everything about him. Producer Dana Chivvis reports.",
+        "summary": "A guy goes to a funeral for someone he doesn’t know at all, and has to piece together everything about him. Producer Dana Chivvis reports.",
         "duration": 16,
         "contributors": [
           "Dana Chivvis"
@@ -40157,7 +40157,62 @@
       }
     ],
     "published_dates": [
-      "Fri, 18 May 2018 00:00:00 +0000"
+      "Fri, 18 May 2018 00:00:00 +0000",
+      "Sun, 20 Sep 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 14 Sep 2026 03:19:20 +0000",
+        "data": {
+          "title": "The Secret of My Death",
+          "synopsis": "Cryptic messages on a cell phone and a teeter totter at a construction site: these are clues people found, trying to make sense of a death.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Host Ira Glass talks to a guy about a crazy experiment he devised when he was a kid. It almost killed him.",
+              "duration": 5,
+              "contributors": []
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Dear Dealer",
+              "summary": "We begin with a woman whose sister has died. She has questions. Her name is Nadia Bowers , and she wrote this to someone she thinks might be of help. (17 1/2 minutes) You can read a shorter print version of Nadia Bowers's story on time.com .",
+              "duration": null,
+              "contributors": [
+                "Nadia Bowers"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Commento Mori",
+              "summary": "There’s a problem with having a Facebook account after you’re dead that you’ve never, ever, ever thought about. Producer Stephanie Foo tells this story, about Dave Maher .",
+              "duration": 14,
+              "contributors": [
+                "Stephanie Foo"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Funeral for a Stranger",
+              "summary": "A guy goes to a funeral for someone he doesn’t know at all, and has to piece together everything about him. Producer Dana Chivvis reports.",
+              "duration": 16,
+              "contributors": [
+                "Dana Chivvis"
+              ]
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/lettertodealer_4x3_2.jpg?itok=o21THZSp",
+            "credit": null
+          }
+        }
+      }
     ]
   },
   {
