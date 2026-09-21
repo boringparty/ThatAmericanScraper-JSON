@@ -55740,5 +55740,57 @@
       "Sun, 06 Sep 2026 00:00:00 +0000"
     ],
     "revisions": []
+  },
+  {
+    "title": "Intergenerational Space Travel",
+    "number": "897",
+    "original_air_date": "Fri, 18 Sep 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/897/intergenerational-space-travel",
+    "explicit": true,
+    "synopsis": "People braving the true final frontier — the gap between people born at slightly different times.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/05f5064e-96a9-467e-952d-a6c1fe5a06c3/audio/128/default.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/897.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-897-intergenerationaltravel-valero.jpg?itok=bBKV-zIn",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Last fall, some NPR podcasts started getting mysterious comments on Spotify. They made no sense to the staff reading them – until someone from a younger generation cracked the code. Sam Yellowhorse Kesler tipped us off to this story.",
+        "duration": 11,
+        "contributors": []
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: The Wedding Zinger",
+        "summary": "When Courtney Maum was eighteen, her mother married a guy she despised. At their wedding, Courtney read a poem she wrote – a pretty dark poem! – which made her mother furious. More than 30 years later, they finally talk about it. Courtney Maum’s latest novel is Alan Opts Out .",
+        "duration": 27,
+        "contributors": []
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Cinema Veri-teen",
+        "summary": "When Ike Sriskandarajah was a teenager in Madison, Wisconsin, he thought he had the greatest job. He worked at the movie theater, wore a cummerbund, and snuck friends in through the back door! It was magical. That was more than 20 years ago. Is it still as great as he remembers? Ike goes back to find out.",
+        "duration": 8,
+        "contributors": []
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Mama Can You Hair Me",
+        "summary": "Every morning, Myra Flynn finds herself in a standoff with her daughter over her hair. Recently, to understand why these hair sessions are so fraught, Myra started recording them. What she heard sent her on a quest to get answers from her own mother.",
+        "duration": 11,
+        "contributors": []
+      }
+    ],
+    "published_dates": [
+      "Sun, 27 Sep 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
