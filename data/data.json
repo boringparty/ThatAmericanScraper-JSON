@@ -55792,5 +55792,73 @@
       "Sun, 27 Sep 2026 00:00:00 +0000"
     ],
     "revisions": []
+  },
+  {
+    "title": "An Argument",
+    "number": "898",
+    "original_air_date": "Fri, 25 Sep 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/898/an-argument",
+    "explicit": false,
+    "synopsis": "Nikole Hannah-Jones made an argument 10 years ago in The New York Times Magazine that became famous. She wrote about choosing a public school for her daughter, Najya, in one of the most racially and economically segregated school systems in the country: New York City. Nikole chose a regular public school, one that most wealthy and middle-class parents wouldn’t consider, and she challenged other parents to do the same.She revisits that argument, and that choice, in a series of conversations with producer Chana Joffe-Walt and with her daughter, Najya, who’s now 16 and has her own very different views.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/4b2969e2-cdd0-4f56-b8f1-faf5a32bc925/audio/128/default.mp3",
+    "download_clean": null,
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-898-theargument.jpg?itok=hMEE_Ehw",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "Chana talks with Nikole about what they both remember from being young parents just starting to think about schools for their children.",
+        "duration": 9,
+        "contributors": []
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Nikole’s Choice",
+        "summary": "Nikole talks with Chana about Najya’s elementary school and the problems her family navigated there.",
+        "duration": 15,
+        "contributors": []
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Najya",
+        "summary": "Chana talks with Najya about her memories of elementary and middle school and how she felt about her mom’s choices.",
+        "duration": 9,
+        "contributors": []
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: Najya’s Choice",
+        "summary": "Nikole and Najya talk about what changed when Najya pushed back against her mom’s choices for elementary and middle school and got to choose her own high school.",
+        "duration": 10,
+        "contributors": []
+      },
+      {
+        "number": 4,
+        "number_text": "Act Four",
+        "title": "Act Four: Nikole and Najya",
+        "summary": "Nikole and Najya talk with each other about the different choices they made and the questions they still have for each other.",
+        "duration": 9,
+        "contributors": []
+      },
+      {
+        "number": 5,
+        "number_text": "Act Five",
+        "title": "Act Five: The Evidence",
+        "summary": "Nikole fact-checks her memory against her old emails with Najya’s elementary school and has a painful revelation.",
+        "duration": 7,
+        "contributors": []
+      }
+    ],
+    "published_dates": [
+      "Sun, 27 Sep 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
