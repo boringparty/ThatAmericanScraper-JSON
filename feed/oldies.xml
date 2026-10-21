@@ -6,36 +6,30 @@
     <description>Random episode 10+ years old, updated weekly</description>
     <itunes:image href="https://i.imgur.com/gY9hQ1V.png"/>
     <item>
-      <title><![CDATA[[Oldies] 138: The Real Thing]]></title>
-      <link>https://www.thisamericanlife.org/138/the-real-thing?1999</link>
-      <guid isPermaLink="false">0138-19990827-oldies</guid>
-      <itunes:season>1999</itunes:season>
-      <itunes:episode>138</itunes:episode>
+      <title><![CDATA[[Oldies] 595: Deep End of the Pool]]></title>
+      <link>https://www.thisamericanlife.org/595/deep-end-of-the-pool?2016</link>
+      <guid isPermaLink="false">0595-20160826-oldies</guid>
+      <itunes:season>2016</itunes:season>
+      <itunes:episode>595</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>clean</itunes:explicit>
-      <description><![CDATA[<a href="https://www.thisamericanlife.org/138/the-real-thing">https://www.thisamericanlife.org/138/the-real-thing</a><br>
+      <itunes:explicit>yes</itunes:explicit>
+      <description><![CDATA[<a href="https://www.thisamericanlife.org/595/deep-end-of-the-pool">https://www.thisamericanlife.org/595/deep-end-of-the-pool</a><br>
 <br>
-Stories of people drawn to some idea, some picture, some "thing" that they just want to be. How some people imitate this "thing" innocently, some less innocently, and how easy it is to slip from one to the other.<br>
+What do you do when you're thrown into a situation you’re not prepared for? And while you’re flailing around—what happens to the people who depend on you? This week we present stories of people who find themselves in over their heads, including an attorney who knows little about criminal law assigned to defend a young man facing twenty years in prison.<br>
 <br>
 Prologue<br>
-The story of Jug Burkett, a businessman in Dallas and a Vietnam vet, who years ago routinely started checking the bona fides of anyone in the news who claimed to have served in the Vietnam war. He says he's found hundreds of fakers, and he says that one of the tricky things about the fakers is that they often seem more like The Real Thing than real vets do. (5 minutes) by Ira Glass<br>
+Host Ira Glass talks to Aaryn Zhou. When she was nine, her father threw her into the deep end of pool to teach her to swim. In this classic sink-or-swim scenario, she sank. (6 1/2 minutes) by Ira Glass<br>
 <br>
 Act One<br>
-The story of someone trying and trying to get close to The Real Thing, and why it was so difficult. Kelly McEvers was a newspaper writer here in Chicago and started to get interested in stories she was hearing about girl gang members. So she got an assignment and tried to get to know them. She found herself changing the way she dressed, changing the way she talked, changing herself to become more like a real gang girl. (13 minutes)<br>
+A lawyer with almost no experience in criminal law is assigned to a criminal case with a sentence of 20 years to life. This happened because, in Louisiana, like in a few states, public defenders’ offices are so short-staffed that courts are ordering private attorneys to take pro bono clients. Reporter David Zax tells the story. (29 minutes) by David Zax<br>
 <br>
 Act Two<br>
-Professor Glenn Loury from Boston University and John Simpkins on basketball, hockey, and what makes a real black person. (10 minutes) by Ira Glass<br>
+Sometimes an entire government has to dive into the deep end of the pool and do something it’s never done before. One of our producers Karen Duffin has the story of the US government doing just that… in a high stakes sink or swim situation. Against a foe seeking global domination. Karen wrote a blog post elaborating on this story. (19 minutes) by Karen Duffin<br>
 <br>
-Act Three<br>
-What does it mean to talk like a real Southerner—and why a multimillion industry can't seem to figure it out. Southern expatriate Mark Schone dissects Southern accents as they're portrayed in movies and TV shows. (15 minutes) by Mark Schone<br>
-<br>
-Act Four<br>
-There's The Real Thing when it comes to your idea of what job you want, what house you want, what person you want to fall in love with. And until you find The Real Thing you seek, life is the same story over and over again: It's the story of not getting The Real Thing yet again. Los Angeles writer and performer Sandra Tsing Loh tells what happened to her when she found the perfect man via a computer dating service. (12 minutes)<br>
-<br>
-Originally Aired: 1999-08-27<br><br><a href="https://www.thisamericanlife.org/sites/default/files/audio/138/L024Qu1xA0Lue6ceKvqn2qWM0YsVzD74s7INFfJ_1vQ/138.mp3">Download</a>]]></description>
-      <pubDate>Wed, 14 Oct 2026 10:48:09 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/138/L024Qu1xA0Lue6ceKvqn2qWM0YsVzD74s7INFfJ_1vQ/138.mp3" type="audio/mpeg"/>
-      <itunes:duration>00:55:00</itunes:duration>
+Originally Aired: 2016-08-26<br><br><a href="https://www.thisamericanlife.org/sites/default/files/audio/595/jno0jMft9BupQ8SNDmp7b_AAmXwUqxJFziWd11cqwbk/595.mp3">Download</a>]]></description>
+      <pubDate>Wed, 21 Oct 2026 10:47:06 +0000</pubDate>
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/595/jno0jMft9BupQ8SNDmp7b_AAmXwUqxJFziWd11cqwbk/595.mp3" type="audio/mpeg"/>
+      <itunes:duration>00:48:00</itunes:duration>
     </item>
   </channel>
 </rss>
