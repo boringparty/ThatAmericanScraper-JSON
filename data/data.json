@@ -32028,8 +32028,8 @@
     "original_air_date": "Fri, 04 Oct 2013 00:00:00 +0000",
     "episode_url": "https://www.thisamericanlife.org/506/secret-identity",
     "explicit": false,
-    "synopsis": "A bank robber on an undercover mission. A teenage girl with the powers of a tiger. A vigilante seeking vengeance in Ciudad Juarez. All have secret identities. But not all of them chose those identities for themselves.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/506/jucB3OF5OgPo0uQ9Elp5AfpiOxvC2iK049ePoibogc4/506.mp3",
+    "synopsis": "A bank robber on an undercover mission. A teenage girl with the powers of a tiger. A vigilante seeking vengeance in Ciudad Juárez. All have secret identities — but not all of them chose those identities for themselves.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ce020dd9-145e-43e5-af3c-f6224ae352cb/audio/128/default.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/navey-baker-tiger.jpg?itok=L1cJeJlL",
@@ -32040,7 +32040,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Ira attempts to solve perhaps the most unsolvable mystery at the Trees of Mystery , in California: Exactly who is the voice of Paul Bunyan?",
+        "summary": "Ira attempts to solve perhaps the most unsolvable mystery at the Trees of Mystery in California: Who is the voice of Paul Bunyan?",
         "duration": 7,
         "contributors": [
           "Ira Glass"
@@ -32050,7 +32050,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: You Can't Handle The Truth",
-        "summary": "If you ever think about assuming a secret identity, you may want to take a little time to consider the possible consequences. Jon Ronson tells the tale of a bank robber who absolutely does not take that advice. Jon Ronson's most recent book is Frank . It's also a movie . You can read Tom Schoenberg's epic tale about Herson Torres and the attempted bank robberies in Bloomberg Businessweek .",
+        "summary": "If you ever think about assuming a secret identity, you may want to take a little time to consider the possible consequences. Jon Ronson tells the tale of a bank robber who absolutely does not take that advice.",
         "duration": 22,
         "contributors": [
           "Jon Ronson"
@@ -32060,7 +32060,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: Tiger, Tiger, Burning Bright",
-        "summary": "Elna Baker has a story about her teenage cousin, Navey Baker, who manages to have a secret identity while being a public figure at the same time: She's the school mascot — a tiger — at her high school.",
+        "summary": "Elna Baker shares a story about her teenage cousin, Navey Baker, who maintains a secret identity while being a public figure: she's the school mascot, a tiger, at her high school.",
         "duration": 11,
         "contributors": [
           "Elna Baker"
@@ -32070,13 +32070,68 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: The Blonde Avenger",
-        "summary": "While we were putting together this week's show, we heard about a real life avenger with a secret identity in Ciudad Juarez, Mexico. Writer Yuri Herrera lived on the border for several years and spent a lot of time in Juarez. He went back there to see the what effect this secret avenger has had on the city. Yuri Herrera's books are available in Spanish . His latest is “ A Silent Fury: The El Bordo Mine Fire .” We commissioned this artwork of Diana the Hunter on the bus to go with his story from this artist named Alice Leora Briggs , who does incredible drawings of scenes from Juarez.",
+        "summary": "While we were putting together this week's show, we heard about a real-life Avenger with a secret identity in Ciudad Juarez, Mexico. Writer Yuri Herrera lived on the border for several years and spent a lot of time in Juarez. He went back there to see what effect this secret Avenger has had on the city. Yuri Herrera's books are available in Spanish . His latest is Season of the Swamp . We commissioned this artwork of Diana the Hunter to accompany this story from artist Alice Leora Briggs, who creates incredible drawings of scenes from Juarez.",
         "duration": 13,
         "contributors": []
       }
     ],
     "published_dates": [
-      "Fri, 04 Oct 2013 00:00:00 +0000"
+      "Fri, 04 Oct 2013 00:00:00 +0000",
+      "Sun, 01 Nov 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 26 Oct 2026 00:10:58 +0000",
+        "data": {
+          "title": "Secret Identity",
+          "synopsis": "A bank robber on an undercover mission. A teenage girl with the powers of a tiger. A vigilante seeking vengeance in Ciudad Juarez. All have secret identities. But not all of them chose those identities for themselves.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Ira attempts to solve perhaps the most unsolvable mystery at the Trees of Mystery , in California: Exactly who is the voice of Paul Bunyan?",
+              "duration": 7,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: You Can't Handle The Truth",
+              "summary": "If you ever think about assuming a secret identity, you may want to take a little time to consider the possible consequences. Jon Ronson tells the tale of a bank robber who absolutely does not take that advice. Jon Ronson's most recent book is Frank . It's also a movie . You can read Tom Schoenberg's epic tale about Herson Torres and the attempted bank robberies in Bloomberg Businessweek .",
+              "duration": 22,
+              "contributors": [
+                "Jon Ronson"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: Tiger, Tiger, Burning Bright",
+              "summary": "Elna Baker has a story about her teenage cousin, Navey Baker, who manages to have a secret identity while being a public figure at the same time: She's the school mascot — a tiger — at her high school.",
+              "duration": 11,
+              "contributors": [
+                "Elna Baker"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: The Blonde Avenger",
+              "summary": "While we were putting together this week's show, we heard about a real life avenger with a secret identity in Ciudad Juarez, Mexico. Writer Yuri Herrera lived on the border for several years and spent a lot of time in Juarez. He went back there to see the what effect this secret avenger has had on the city. Yuri Herrera's books are available in Spanish . His latest is “ A Silent Fury: The El Bordo Mine Fire .” We commissioned this artwork of Diana the Hunter on the bus to go with his story from this artist named Alice Leora Briggs , who does incredible drawings of scenes from Juarez.",
+              "duration": 13,
+              "contributors": []
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/navey-baker-tiger.jpg?itok=L1cJeJlL",
+            "credit": "Hulu"
+          }
+        }
+      }
     ]
   },
   {
