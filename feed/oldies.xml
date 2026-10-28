@@ -6,30 +6,33 @@
     <description>Random episode 10+ years old, updated weekly</description>
     <itunes:image href="https://i.imgur.com/gY9hQ1V.png"/>
     <item>
-      <title><![CDATA[[Oldies] 595: Deep End of the Pool]]></title>
-      <link>https://www.thisamericanlife.org/595/deep-end-of-the-pool?2016</link>
-      <guid isPermaLink="false">0595-20160826-oldies</guid>
+      <title><![CDATA[[Oldies] 585: In Defense of Ignorance]]></title>
+      <link>https://www.thisamericanlife.org/585/in-defense-of-ignorance?2016</link>
+      <guid isPermaLink="false">0585-20160422-oldies</guid>
       <itunes:season>2016</itunes:season>
-      <itunes:episode>595</itunes:episode>
+      <itunes:episode>585</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>yes</itunes:explicit>
-      <description><![CDATA[<a href="https://www.thisamericanlife.org/595/deep-end-of-the-pool">https://www.thisamericanlife.org/595/deep-end-of-the-pool</a><br>
+      <itunes:explicit>clean</itunes:explicit>
+      <description><![CDATA[<a href="https://www.thisamericanlife.org/585/in-defense-of-ignorance">https://www.thisamericanlife.org/585/in-defense-of-ignorance</a><br>
 <br>
-What do you do when you're thrown into a situation you’re not prepared for? And while you’re flailing around—what happens to the people who depend on you? This week we present stories of people who find themselves in over their heads, including an attorney who knows little about criminal law assigned to defend a young man facing twenty years in prison.<br>
+Exactly how incompetent you are. What your ex’s best friend really thinks of you. The approximate time that you will die. Some things in life are better not to know about. And sometimes there can be a benefit to not knowing. In this episode — examples of ignorance truly being bliss, or even being an asset.<br>
 <br>
 Prologue<br>
-Host Ira Glass talks to Aaryn Zhou. When she was nine, her father threw her into the deep end of pool to teach her to swim. In this classic sink-or-swim scenario, she sank. (6 1/2 minutes) by Ira Glass<br>
+Ira relays advice from a staffer’s family on what to do if you’re thinking about something you don’t want to think about. (2 minutes) by Ira Glass<br>
 <br>
 Act One<br>
-A lawyer with almost no experience in criminal law is assigned to a criminal case with a sentence of 20 years to life. This happened because, in Louisiana, like in a few states, public defenders’ offices are so short-staffed that courts are ordering private attorneys to take pro bono clients. Reporter David Zax tells the story. (29 minutes) by David Zax<br>
+Lulu Wang tells the story of an elaborate attempt to keep someone ignorant — her grandmother — and how her family pulled it off. Lulu Wang's movie The Farewell is based on this story. (27 minutes) by Lulu Wang<br>
 <br>
 Act Two<br>
-Sometimes an entire government has to dive into the deep end of the pool and do something it’s never done before. One of our producers Karen Duffin has the story of the US government doing just that… in a high stakes sink or swim situation. Against a foe seeking global domination. Karen wrote a blog post elaborating on this story. (19 minutes) by Karen Duffin<br>
+Producer Sean Cole tells the story of a psychological experiment that proved ignorance is, in fact, bliss. (10 minutes) by Sean Cole<br>
 <br>
-Originally Aired: 2016-08-26<br><br><a href="https://www.thisamericanlife.org/sites/default/files/audio/595/jno0jMft9BupQ8SNDmp7b_AAmXwUqxJFziWd11cqwbk/595.mp3">Download</a>]]></description>
-      <pubDate>Wed, 21 Oct 2026 10:47:06 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/595/jno0jMft9BupQ8SNDmp7b_AAmXwUqxJFziWd11cqwbk/595.mp3" type="audio/mpeg"/>
-      <itunes:duration>00:48:00</itunes:duration>
+Act Three<br>
+Producer Stephanie Foo describes a subset of the population who will never enjoy the benefits of ignorance — because they’re destined never to experience it in the first place. (17 minutes) by Stephanie Foo<br>
+<br>
+Originally Aired: 2016-04-22<br><br><a href="https://www.thisamericanlife.org/sites/default/files/audio/585/dAINQCc9F8e31e5jUR7rFei3EwflK2eKy6wUUT7WX20/585.mp3">Download</a>]]></description>
+      <pubDate>Wed, 28 Oct 2026 11:47:25 +0000</pubDate>
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/585/dAINQCc9F8e31e5jUR7rFei3EwflK2eKy6wUUT7WX20/585.mp3" type="audio/mpeg"/>
+      <itunes:duration>00:56:00</itunes:duration>
     </item>
   </channel>
 </rss>
