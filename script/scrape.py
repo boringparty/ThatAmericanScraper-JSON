@@ -24,6 +24,7 @@ ACT_WORDS = {
 }
 
 ARCHIVE_KEYS = ("title", "synopsis", "acts", "explicit", "image")
+AUDIO_URL_KEYS = ("download", "download_clean")
 
 
 def parse_any_date_str(s: str):
@@ -42,8 +43,6 @@ def to_week_sunday(dt):
     days_ahead = 6 - dt.weekday()
     sunday = dt + timedelta(days=days_ahead)
     return sunday.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=timezone.utc)
-
-
 
 
 def fetch_episode_page(url):
@@ -68,9 +67,9 @@ def scrape_episode(url):
     title = soup.select_one("h1").get_text(strip=True) if soup.select_one("h1") else ""
     number_elem = soup.select_one(".field-name-field-episode-number .field-item")
     number = number_elem.get_text(strip=True) if number_elem else ""
-
     original_air_elem = soup.select_one(".field-name-field-radio-air-date .date-display-single")
     original_air_date_raw = original_air_elem.get_text(strip=True) if original_air_elem else ""
+
     try:
         original_air_date = format_datetime(parse_any_date_str(original_air_date_raw))
     except Exception:
@@ -150,8 +149,25 @@ def scrape_episode(url):
     }
 
 
+def update_audio_url_history(existing, ep_data):
+    history = existing.setdefault("audio_url_history", [])
+    timestamp = format_datetime(datetime.now(timezone.utc))
+
+    for field in AUDIO_URL_KEYS:
+        old_url = existing.get(field)
+        new_url = ep_data.get(field)
+
+        if old_url and old_url != new_url:
+            history.append({
+                "type": field,
+                "url": old_url,
+                "observed_at": timestamp
+            })
+
+
 def update_published_dates(episodes):
     feed = feedparser.parse(OFFICIAL_RSS)
+
     for item in feed.entries:
         url = item.link
         pub_date = item.get("published") or item.get("pubDate")
@@ -165,6 +181,7 @@ def update_published_dates(episodes):
 
         pub_str = format_datetime(to_week_sunday(dt))
         ep = next((e for e in episodes if e["episode_url"] == url), None)
+
         if ep and pub_str not in ep["published_dates"]:
             ep["published_dates"].append(pub_str)
 
@@ -186,6 +203,7 @@ def main():
             continue
 
         existing = next((e for e in episodes if e["episode_url"] == url), None)
+
         if existing:
             old = snapshot(existing)
             new = snapshot(ep_data)
@@ -196,6 +214,8 @@ def main():
                     "data": old
                 })
 
+            update_audio_url_history(existing, ep_data)
+
             for k, v in ep_data.items():
                 if k not in ("published_dates", "revisions"):
                     existing[k] = v
@@ -203,8 +223,8 @@ def main():
             episodes.append(ep_data)
 
     update_published_dates(episodes)
-
     episodes.sort(key=lambda e: parse_any_date_str(e["original_air_date"]))
+
     for ep in episodes:
         ep["published_dates"] = sorted(set(ep["published_dates"]), key=parse_any_date_str)
 
