@@ -4490,7 +4490,7 @@
     "episode_url": "https://www.thisamericanlife.org/kindness-of-strangers",
     "explicit": false,
     "synopsis": "An episode from our show's early days: Stories about what happens when strangers are kind — and when they're not.",
-    "download": "https://traffic.megaphone.fm/NPR6510887866.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/75.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/backup-75.jpg?itok=TKUSvXXu",
@@ -4615,6 +4615,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR6510887866.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:22:15 +0000"
       }
     ]
   },
@@ -5126,7 +5133,7 @@
     "episode_url": "https://www.thisamericanlife.org/84/harold-1997",
     "explicit": false,
     "synopsis": "The story of Harold Washington, the greatest politician you've probably never heard of, and the white backlash that was set off when he became Chicago's first Black mayor.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/84/34IqYKwmTddi_rMn78cUq23pSG97YDFQ0oe03qyUTFg/84.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/84.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/portrait/public/episodes/images/84.jpg?itok=Ak8LeWZe",
@@ -5164,6 +5171,13 @@
     ],
     "published_dates": [
       "Fri, 21 Nov 1997 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/84/34IqYKwmTddi_rMn78cUq23pSG97YDFQ0oe03qyUTFg/84.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:22:31 +0000"
+      }
     ]
   },
   {
@@ -7795,7 +7809,7 @@
     "episode_url": "https://www.thisamericanlife.org/128/four-corners",
     "explicit": false,
     "synopsis": "We try to tell the story of life in America through portraits of life on four different corners, in four different states across the nation.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/75f6e2c6-dc9e-465c-ab85-3182c331e056/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/128/M9wLKbW5-NLd3aysWyyg5izz5GaO9S9goPlfjX4VZTM/128.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/128.jpg?itok=wudbMHwM",
@@ -7985,6 +7999,13 @@
             "credit": "Amanda Scheliga"
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/75f6e2c6-dc9e-465c-ab85-3182c331e056/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:23:49 +0000"
       }
     ]
   },
@@ -8489,7 +8510,7 @@
     "episode_url": "https://www.thisamericanlife.org/137/the-book-that-changed-your-life",
     "explicit": true,
     "synopsis": "We want to believe our lives can be changed by the ideas contained in a book.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/e55b1946-2658-4592-9afe-1c2a3033a31c/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/137.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/137.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-943347186.jpg?itok=PtJG9qZs",
@@ -8617,6 +8638,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/e55b1946-2658-4592-9afe-1c2a3033a31c/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:24:05 +0000"
       }
     ]
   },
@@ -13002,7 +13030,7 @@
     "episode_url": "https://www.thisamericanlife.org/206/somewhere-in-the-arabian-sea",
     "explicit": false,
     "synopsis": "The aircraft carrier USS Abraham Lincoln has been in the news thanks to an extra-long deployment that's taken a toll on its crew. What's life on an aircraft carrier at war really like? Back in 2002, we spent a few days on the USS John C. Stennis, which was sending bombing missions into Afghanistan.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/dcc04146-548e-4a57-826b-d653088ec4e2/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/206-extended-1787409038.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/206.jpg?itok=Zd-43LHv",
@@ -13167,6 +13195,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/dcc04146-548e-4a57-826b-d653088ec4e2/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:26:04 +0000"
+      }
     ]
   },
   {
@@ -13233,7 +13268,7 @@
     "episode_url": "https://www.thisamericanlife.org/208/office-politics",
     "explicit": false,
     "synopsis": "Stories of high drama from America's workplaces — surprising, emotional places full of the greed, jealousy, and ambition of real politics.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/c7d80db6-5f30-4da1-a529-3aa8e8ebc9f1/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/208/jKsoxnTcGPnVjwPmgStxzOeoXtdvbmKq3L7ncsaJm54/208.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/gettyimages-735897581.jpg?itok=GhW9XA7F",
@@ -13393,6 +13428,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/c7d80db6-5f30-4da1-a529-3aa8e8ebc9f1/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:26:08 +0000"
       }
     ]
   },
@@ -13560,7 +13602,7 @@
     "episode_url": "https://www.thisamericanlife.org/212/the-other-man",
     "explicit": false,
     "synopsis": "What happens when a new guy comes on the scene and changes the way everyone relates to each other?",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/73616441-f54b-4b3b-86f4-52cd97e58f7a/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/212.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-2204513042.jpg?itok=yGBB6HA-",
@@ -13670,6 +13712,13 @@
             "credit": "Taylor Dahlin"
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/73616441-f54b-4b3b-86f4-52cd97e58f7a/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:26:15 +0000"
       }
     ]
   },
@@ -14086,7 +14135,7 @@
     "episode_url": "https://www.thisamericanlife.org/220/testosterone",
     "explicit": false,
     "synopsis": "Stories of people getting more testosterone and coming to regret it. And of people losing it and coming to appreciate life without it. The pros and cons of the hormone of desire. And we get our testosterone measured, as a staff.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/220/Khtix35j6Ptd4W7Bm98nL5pmaRi8XutKr2VnH4Anq1w/220.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/220.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-838386570-bw.jpg?itok=gI1SEDu2",
@@ -14148,6 +14197,13 @@
     ],
     "published_dates": [
       "Fri, 30 Aug 2002 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/220/Khtix35j6Ptd4W7Bm98nL5pmaRi8XutKr2VnH4Anq1w/220.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:26:29 +0000"
+      }
     ]
   },
   {
@@ -14905,7 +14961,7 @@
     "episode_url": "https://www.thisamericanlife.org/233/starting-from-scratch",
     "explicit": false,
     "synopsis": "People starting over—sometimes because they want to, other times because they have to.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/233-extended-1758783668.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/233/74KJsGe1I9A2XMrm6oe7TcfzsI14RYbJMNWc4sqD9Ag/233.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/233.jpg?itok=dKkfVUPI",
@@ -14955,6 +15011,13 @@
     ],
     "published_dates": [
       "Fri, 07 Mar 2003 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/233-extended-1758783668.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:26:52 +0000"
+      }
     ]
   },
   {
@@ -16326,7 +16389,7 @@
     "episode_url": "https://www.thisamericanlife.org/255/our-holiday-gift-giving-guide",
     "explicit": false,
     "synopsis": "The vexing difficulty of finding the perfect gift.",
-    "download": "https://traffic.megaphone.fm/NPR2389843838.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/255/-Fj6DistkW17E-YwkjERs_rltLrkZsflWJ5VtIdomuk/255.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/255.jpg?itok=s7mtZWoV",
@@ -16424,6 +16487,13 @@
             "credit": "Craig D"
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR2389843838.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:27:31 +0000"
       }
     ]
   },
@@ -18289,7 +18359,7 @@
     "episode_url": "https://www.thisamericanlife.org/286/mind-games",
     "explicit": false,
     "synopsis": "Stories of people who try simple mind games on others, and then find themselves way in over their heads.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/286-extended-1758933057.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/286/Chgh_17U7wh52q00ptQtE6TtGyr5LPkbdVX07GfTYPQ/286.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/portrait/public/episodes/images/588-tal-mindgames-gettyimages-827714194-2.jpg?itok=nzPQJM-R",
@@ -18337,6 +18407,13 @@
     ],
     "published_dates": [
       "Fri, 08 Apr 2005 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/286-extended-1758933057.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:28:26 +0000"
+      }
     ]
   },
   {
@@ -20225,7 +20302,7 @@
     "episode_url": "https://www.thisamericanlife.org/318/with-great-power",
     "explicit": false,
     "synopsis": "People who end up with far more power than they bargained for, and everything that comes with it.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/cc05f2e3-ca9b-4f21-a33c-608eef0fcafb/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/318.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-459239571.jpg?itok=GsybXjbh",
@@ -20331,6 +20408,13 @@
             "credit": "Jason"
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/cc05f2e3-ca9b-4f21-a33c-608eef0fcafb/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:29:22 +0000"
       }
     ]
   },
@@ -22380,7 +22464,7 @@
     "episode_url": "https://www.thisamericanlife.org/354/mistakes-were-made",
     "explicit": false,
     "synopsis": "It’s the late 1960s, and a California TV repairman named Bob sees an opportunity to help people cheat death with the new science of cryonics. But freezing dead people isn’t easy. And apologizing for the mistakes you make along the way? Even harder.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ae221404-f59a-4019-94df-50b841823cdb/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/354.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/cryonics-mistakes_were_made-show_image.jpg?itok=Lq4jQ0w2",
@@ -22476,6 +22560,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ae221404-f59a-4019-94df-50b841823cdb/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:30:23 +0000"
       }
     ]
   },
@@ -22880,7 +22971,7 @@
     "episode_url": "https://www.thisamericanlife.org/362/got-you-pegged",
     "explicit": false,
     "synopsis": "Shalom Auslander goes on vacation with his family, and suspects the beloved, chatty old man in the room next door is an imposter—and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/362/TQAsU2mT5NUOBEw3uvYitepZJ54vnh0-5N0BSVLvHP8/362.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/362.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/362.jpg?itok=sJIDirf7",
@@ -22941,6 +23032,13 @@
     ],
     "published_dates": [
       "Fri, 22 Aug 2008 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/362/TQAsU2mT5NUOBEw3uvYitepZJ54vnh0-5N0BSVLvHP8/362.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:30:37 +0000"
+      }
     ]
   },
   {
@@ -24889,7 +24987,7 @@
     "episode_url": "https://www.thisamericanlife.org/393/infidelity",
     "explicit": false,
     "synopsis": "Stories of cheating, cheaters, and the cheated.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/88122e0e-0b8d-421b-ac4f-e3bbb8f6533b/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/393.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/393.jpg?itok=swFEp66r",
@@ -25017,6 +25115,13 @@
             "credit": "Michael Forster Rothbart"
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/88122e0e-0b8d-421b-ac4f-e3bbb8f6533b/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:31:30 +0000"
       }
     ]
   },
@@ -26312,7 +26417,7 @@
     "episode_url": "https://www.thisamericanlife.org/414/right-to-remain-silent",
     "explicit": false,
     "synopsis": "Stories about people who have the right to remain silent, but choose not to exercise that right—including police officer Adrian Schoolcraft, who secretly recorded his supervisors telling officers to manipulate crime statistics and make illegal arrests. The Village Voice series that broke Schoolcraft's story, written by Graham Rayman, ishere.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/414/9LnhmPDfZBX3RoRoN9l0MBDjE9o17h1V-NuG-T_l79U/414.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/414/o5EqBihplGOlN5OrMqUy2OLsDnxkcoyQu-S29-RnJh8/414.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/414.jpg?itok=XaDTd5Dt",
@@ -26352,6 +26457,13 @@
     ],
     "published_dates": [
       "Fri, 10 Sep 2010 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/414/9LnhmPDfZBX3RoRoN9l0MBDjE9o17h1V-NuG-T_l79U/414.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:06 +0000"
+      }
     ]
   },
   {
@@ -26361,7 +26473,7 @@
     "episode_url": "https://www.thisamericanlife.org/415/crybabies",
     "explicit": false,
     "synopsis": "Crybabies are annoying. They whine, they complain, sometimes they ruin it for the rest of us. But being a crybaby can be a\nreally effective tactic. We have stories of crybabies in sports, in politics, on Wall Street, on the streets of California, including a new story by David Sedaris.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/415/2QHTxsmA_X2UDMSOjCaQrCJLa1YHUpO9y3LJLX90zW4/415.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/415/oJ1mJdCiKLvWGM4o5hHUHVDCVXi6UPtRG5Hy-8crMt0/415.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/415.jpg?itok=mKo3BZvu",
@@ -26423,6 +26535,13 @@
     ],
     "published_dates": [
       "Fri, 24 Sep 2010 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/415/2QHTxsmA_X2UDMSOjCaQrCJLa1YHUpO9y3LJLX90zW4/415.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:08 +0000"
+      }
     ]
   },
   {
@@ -26432,7 +26551,7 @@
     "episode_url": "https://www.thisamericanlife.org/416/iraq-after-us",
     "explicit": false,
     "synopsis": "Operation Iraqi Freedom is over. And the next chapter of Iraq is being written now. But what actually happened there the last seven years? Producer Nancy Updike and reporter Larry Kaplow spent a month in Iraq talking to Iraqis and Americans about the war that tore the country apart, and what's happening as we try to put it back together.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/416/wZV_i4MQn9Sf3spcpgdr0GfQ4p7Txux8VIS9m4dhbHQ/416.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/416/J72bRi_XgKr4mD4fSc-42ntsywTzPUvLFKFv_M6OF3M/416.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/square/public/episodes/images/416.jpg?itok=NWfTpM_c",
@@ -26484,6 +26603,13 @@
     ],
     "published_dates": [
       "Fri, 15 Oct 2010 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/416/wZV_i4MQn9Sf3spcpgdr0GfQ4p7Txux8VIS9m4dhbHQ/416.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:09 +0000"
+      }
     ]
   },
   {
@@ -26493,7 +26619,7 @@
     "episode_url": "https://www.thisamericanlife.org/417/this-party-sucks",
     "explicit": false,
     "synopsis": "A show for this year's midterm elections. Two best friends in Michigan, both political novices, get tired of yelling at their TVs and take matters into their own hands. They form a Tea Party chapter to effect political change. But when push comes to shove and they have to choose a candidate, their ideologies, their principles and their friendship explode.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/417/Oo4HbGrKMjHK5Ob82Mj2lOPZYfgKiIAowDaZqBNeU1E/417.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/417/pTauTxEQ9tHa6V0rnH2BA6FnKXxDK2mkyf7Pl6pLWd0/417.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/square/public/episodes/images/417.jpg?itok=Th-j1AzY",
@@ -26533,6 +26659,13 @@
     ],
     "published_dates": [
       "Fri, 29 Oct 2010 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/417/Oo4HbGrKMjHK5Ob82Mj2lOPZYfgKiIAowDaZqBNeU1E/417.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:11 +0000"
+      }
     ]
   },
   {
@@ -26542,7 +26675,7 @@
     "episode_url": "https://www.thisamericanlife.org/418/toxie",
     "explicit": false,
     "synopsis": "In January 2010, reporters fromPlanet Moneybought a toxic asset—you know, the things that blew up wall street banks, sank the economy and brought the global financial system to a halt—one of those. And \"Toxie\" turned out to be an encyclopedia of the financial crisis.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/418/dOS9rLndcyLQCIrdQT5tKXGwxu8A-q1P6NH4jdQq2ic/418.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/418/k37XTy27mHfvN5OvxqfpT5kdpXBXl78cXpgqfq1Qg1c/418.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/418.png?itok=kQc552P-",
@@ -26623,6 +26756,13 @@
     ],
     "published_dates": [
       "Fri, 05 Nov 2010 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/418/dOS9rLndcyLQCIrdQT5tKXGwxu8A-q1P6NH4jdQq2ic/418.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:13 +0000"
+      }
     ]
   },
   {
@@ -26681,7 +26821,7 @@
     "episode_url": "https://www.thisamericanlife.org/420/neighborhood-watch",
     "explicit": false,
     "synopsis": "It’s amazing just how much drama can take place in the mini-universe of a neighborhood. This week we bring you stories of neighbors watching out for each other, for better and worse, including a story from CBC's WireTap.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/420/0Zatnkyla_UIjEspvusUsSDKkMBILwJE21DI3MiPLdo/420.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/420/XnFofh5k5R-B_87vwHWwK0Cb0pyRMty6GGx0RZ2-HPU/420.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/square/public/episodes/images/420.jpg?itok=gaFhwTcj",
@@ -26743,6 +26883,13 @@
     ],
     "published_dates": [
       "Fri, 19 Nov 2010 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/420/0Zatnkyla_UIjEspvusUsSDKkMBILwJE21DI3MiPLdo/420.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:16 +0000"
+      }
     ]
   },
   {
@@ -26752,7 +26899,7 @@
     "episode_url": "https://www.thisamericanlife.org/421/last-man-standing",
     "explicit": false,
     "synopsis": "Is it stubbornness? Tenacity? Survival of the fittest? This week, stories about people who feel compelled to keep going, especially when everyone else has given up.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/421/TcUKWH8U5d9zBG7SrnX4cMe63ghAFMa92nDTKb_xhDw/421.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/421/N_0ZuOOaDkOWuaasRAc3Klpn0AEmHFIdlp-aKjMNjAI/421.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/portrait/public/episodes/images/421.jpg?itok=PKutuAA6",
@@ -26792,6 +26939,13 @@
     ],
     "published_dates": [
       "Fri, 03 Dec 2010 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/421/TcUKWH8U5d9zBG7SrnX4cMe63ghAFMa92nDTKb_xhDw/421.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:18 +0000"
+      }
     ]
   },
   {
@@ -26891,7 +27045,7 @@
     "episode_url": "https://www.thisamericanlife.org/423/the-invention-of-money",
     "explicit": false,
     "synopsis": "Five reporters stumbled on what seems like a basic question: What is money? The unsettling answer they found: Money is fiction. Photo: Stone money on the island of Yap.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/423/B4VCrF8HFeG6fUzmApVPWClG0tRmqQTv1qRdnzNWj54/423.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/423/lMMop2SpyHNlgBT3HLhP-kggqFTwym4klrRzXtKi1WI/423.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/portrait/public/episodes/images/423.jpg?itok=lWZNVIgp",
@@ -26933,6 +27087,13 @@
     ],
     "published_dates": [
       "Fri, 07 Jan 2011 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/423/B4VCrF8HFeG6fUzmApVPWClG0tRmqQTv1qRdnzNWj54/423.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:22 +0000"
+      }
     ]
   },
   {
@@ -26942,7 +27103,7 @@
     "episode_url": "https://www.thisamericanlife.org/424/kid-politics",
     "explicit": false,
     "synopsis": "What if, say, the U.S.-led invasion of Grenada in 1983 had been decided, not by Ronald Reagan, but by a bunch of middle-schoolers? And what if every rule at your high school had been determined, not by teachers and administrators, but entirely by teenagers? This week, stories about whether, when it comes to governing, kids do any better than grown-ups.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/424/4eZij-Jaws3QAtCwHFQ87YpTnDxno0zLsRij3icHzj0/424.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/424/hOGcrsF8W_j49KXUAo8J_BewWKuvfZEwQwFM6mOq4Qs/424.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/424.jpg?itok=_OEEAbLs",
@@ -26992,6 +27153,13 @@
     ],
     "published_dates": [
       "Fri, 14 Jan 2011 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/424/4eZij-Jaws3QAtCwHFQ87YpTnDxno0zLsRij3icHzj0/424.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:24 +0000"
+      }
     ]
   },
   {
@@ -27001,7 +27169,7 @@
     "episode_url": "https://www.thisamericanlife.org/425/slow-to-react",
     "explicit": false,
     "synopsis": "This week we have stories where people's reactions move very slowly, including the story of a wedding 17 years in the making, and what it's like when you have a terminal illness that's supposed to kill you in a year or two, and it decides to take its time.Note:The story in Act One isn’t suitable for children, and we’d like to note a trigger warning to survivors of abuse.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/425/8zMquto2X_7a2rc5VTe_aJi-xkKf5EJvMBlmhidrsxo/425.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/425/MjEY9tZxiuMc-okIq2Mxr41xDk_7rSl3R8L3mqdrB4A/425.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/425.jpg?itok=8VJr0IPE",
@@ -27051,6 +27219,13 @@
     ],
     "published_dates": [
       "Fri, 21 Jan 2011 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/425/8zMquto2X_7a2rc5VTe_aJi-xkKf5EJvMBlmhidrsxo/425.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:25 +0000"
+      }
     ]
   },
   {
@@ -27303,7 +27478,7 @@
     "episode_url": "https://www.thisamericanlife.org/429/will-they-know-me-back-home",
     "explicit": false,
     "synopsis": "Stories of people who've grown so accustomed to wartime that the lives they've left behind no longer make sense. Including a US battalion going home on leave after 15 months of deployment, and an Iraqi translator's story of life after the gig is up.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/429/ifUtrYIVINhhU4OE8YYHT9ykKVtdwtaedWjTQrQqpt0/429.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/429/sBrjSX0n2Rn7yzZg9BLL07jhCDlZTp73uajb0fRev2E/429.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/square/public/episodes/images/429.jpg?itok=57sBwMnq",
@@ -27344,6 +27519,13 @@
     ],
     "published_dates": [
       "Fri, 11 Mar 2011 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/429/ifUtrYIVINhhU4OE8YYHT9ykKVtdwtaedWjTQrQqpt0/429.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:32 +0000"
+      }
     ]
   },
   {
@@ -27392,7 +27574,7 @@
     "episode_url": "https://www.thisamericanlife.org/431/see-no-evil",
     "explicit": false,
     "synopsis": "When things are awkward or uncomfortable or distressing, a lot of times it's easier to not think about it. This week we have stories of people pretending that everything is okay and ignoring the awful stuff that's staring them straight in the face. Including a story of deceit and intrigue involving commemorative spoons from the Kennedy Center.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/431/qxaVxrC4ETpdDQIfB5Ejkb_KgCK7A7ogJWKO7fvs0pk/431.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/431/p2yC2d-t79Mlgb51bMwiZBcJbVD3RytOAMjmkpb5Mzs/431.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/431.jpg?itok=COEo-wai",
@@ -27444,6 +27626,13 @@
     ],
     "published_dates": [
       "Fri, 01 Apr 2011 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/431/qxaVxrC4ETpdDQIfB5Ejkb_KgCK7A7ogJWKO7fvs0pk/431.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:35 +0000"
+      }
     ]
   },
   {
@@ -28137,7 +28326,7 @@
     "episode_url": "https://www.thisamericanlife.org/443/amusement-park",
     "explicit": false,
     "synopsis": "We head to some of the happiest places on earth: amusement parks! Ira Glass takes us behind the scenes at Worlds of Fun in Kansas City, where the young staff – coached by a funny, fun-loving boss just a little older than they are – truly seem to love their jobs.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/474e1929-1ad3-4904-9f3c-aea8a463fc9c/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/443/9-Ct8t_PSGkAMqTUhg3M4cDyfH1GjMTueaWsL9QzrV8/443.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-139717376_0.jpg?itok=WFDFlUei",
@@ -28245,6 +28434,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/474e1929-1ad3-4904-9f3c-aea8a463fc9c/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:32:56 +0000"
       }
     ]
   },
@@ -28566,7 +28762,7 @@
     "episode_url": "https://www.thisamericanlife.org/449/middle-school",
     "explicit": true,
     "synopsis": "As the new school year begins, we have stories from all over the country about people lurching their way through their middle school years – the years when you're figuring out so much. We go to school dances, classrooms, and down to the Mexican border.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/a631bda2-b83f-4e2c-99c5-8344e637a322/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/449-extended-1788612927.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/449.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/iStock-115093587.jpg?itok=YK6k8LHe",
@@ -28813,6 +29009,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/a631bda2-b83f-4e2c-99c5-8344e637a322/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:33:06 +0000"
       }
     ]
   },
@@ -29663,7 +29866,7 @@
     "episode_url": "https://www.thisamericanlife.org/blackjack",
     "explicit": false,
     "synopsis": "The casino game everyone thinks they can beat.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/78504e23-e47d-47e5-b2ad-cb230b97bd92/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/466/bNwbLqTcApfUoWu2fWPzs_AzXtGehSyF2bkes0Bni70/466.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/466.jpg?itok=i4IbU3ku",
@@ -29704,7 +29907,14 @@
     "published_dates": [
       "Sun, 26 Apr 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/78504e23-e47d-47e5-b2ad-cb230b97bd92/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:33:34 +0000"
+      }
+    ]
   },
   {
     "title": "Americans in China",
@@ -32509,8 +32719,8 @@
     "episode_url": "https://www.thisamericanlife.org/513/129-cars",
     "explicit": true,
     "synopsis": "We spend a month at aJeep dealership on Long Islandas they try to make their monthly sales goal: 129 cars. If they make it, they'll get a huge bonus from the manufacturer, possibly as high as $85,000 — enough to put them in the black for the month. If they don't make it, it'll be the second month in a row. So they pull out all the stops.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/513/G1JnPsC7z6nGEIoH42D4s0e_mrjJrZzop7CTKkEioQM/513.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/513.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/513_0.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/513.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/513.jpg?itok=zilMxzQE",
       "credit": "Jeff Minton"
@@ -32616,6 +32826,18 @@
     "published_dates": [
       "Fri, 13 Dec 2013 00:00:00 +0000",
       "Sun, 30 Nov 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/513/G1JnPsC7z6nGEIoH42D4s0e_mrjJrZzop7CTKkEioQM/513.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:34:54 +0000"
+      },
+      {
+        "type": "download_clean",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/513.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:34:54 +0000"
+      }
     ]
   },
   {
@@ -38004,7 +38226,7 @@
     "episode_url": "https://www.thisamericanlife.org/kid-logic",
     "explicit": false,
     "synopsis": "Kids using perfectly logical arguments and arriving at perfectly wrong conclusions.",
-    "download": "https://traffic.megaphone.fm/NPR5017278333.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/605.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/gettyimages-538210356.jpg?itok=97W6ePd_",
@@ -38063,7 +38285,14 @@
     "published_dates": [
       "Sun, 15 Feb 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR5017278333.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:37:32 +0000"
+      }
+    ]
   },
   {
     "title": "Just What I Wanted",
@@ -39315,7 +39544,7 @@
     "episode_url": "https://www.thisamericanlife.org/in-the-shadow-of-the-city",
     "explicit": false,
     "synopsis": "Stories that take place on the edge of civilization, just out of sight.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/48a9b350-faa4-4e06-8676-39388e5915f9/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/628.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/628.jpg?itok=1wuMgE4_",
@@ -39364,7 +39593,14 @@
     "published_dates": [
       "Sun, 15 Mar 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/48a9b350-faa4-4e06-8676-39388e5915f9/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:38:11 +0000"
+      }
+    ]
   },
   {
     "title": "Expect Delays",
@@ -40363,7 +40599,7 @@
     "episode_url": "https://www.thisamericanlife.org/646/the-secret-of-my-death",
     "explicit": true,
     "synopsis": "Cryptic messages on a cell phone and a teeter-totter at a construction site: these are clues people found, trying to make sense of a death.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/431ed1d9-35aa-4f85-9ee5-f7e060ce6083/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/646-extended-1789215776.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/646.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/lettertodealer_4x3_2.jpg?itok=o21THZSp",
@@ -40465,6 +40701,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/431ed1d9-35aa-4f85-9ee5-f7e060ce6083/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:38:41 +0000"
       }
     ]
   },
@@ -42087,7 +42330,7 @@
     "episode_url": "https://www.thisamericanlife.org/676/heres-looking-at-you-kid",
     "explicit": true,
     "synopsis": "Adults telling kids who they are, and kids wondering — are they right?",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/0de0c859-d1f8-4279-b9f8-48dd3aafaf77/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/676.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/676.mp3",
     "image": {
       "url": null,
@@ -42128,6 +42371,13 @@
     "published_dates": [
       "Fri, 31 May 2019 00:00:00 +0000",
       "Sun, 24 May 2026 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/0de0c859-d1f8-4279-b9f8-48dd3aafaf77/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:39:32 +0000"
+      }
     ]
   },
   {
@@ -49415,7 +49665,7 @@
     "episode_url": "https://www.thisamericanlife.org/801/must-be-rats-on-the-brain",
     "explicit": false,
     "synopsis": "The one animal we can’t seem to live without, even when we really, really want to.",
-    "download": "https://traffic.megaphone.fm/NPR7388469053.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/801/CE6igqsXaA7O_I3oBbBJot_UPCkSbARGWdwkLp5BWUA/801.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-801-rats-charliehamiltonjames_05257.jpg?itok=zCWX6cvW",
@@ -49479,6 +49729,13 @@
     "published_dates": [
       "Fri, 09 Jun 2023 00:00:00 +0000",
       "Sun, 28 Dec 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR7388469053.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:43:07 +0000"
+      }
     ]
   },
   {
@@ -51890,7 +52147,7 @@
     "episode_url": "https://www.thisamericanlife.org/844/this-is-the-case-of-henry-dee",
     "explicit": false,
     "synopsis": "Thirteen parole board members decide whether or not one man should be released from prison.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR6325401197.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/844/X55_q3XsjiVyGMvBYB-JHSvtZo7fQs3KnINMf3rGsxI/844.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-844-paroleshow-andreruddock.jpg?itok=ayq8mLfn",
@@ -51925,6 +52182,13 @@
     "published_dates": [
       "Fri, 18 Oct 2024 00:00:00 +0000",
       "Sun, 19 Oct 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://dcs-spotify.megaphone.fm/NPR6325401197.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:23 +0000"
+      }
     ]
   },
   {
@@ -52213,7 +52477,7 @@
     "episode_url": "https://www.thisamericanlife.org/850/my-sweater",
     "explicit": true,
     "synopsis": "The tiny thing that unravels your world.",
-    "download": "https://traffic.megaphone.fm/NPR5866161429.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/850.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/850_0.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-805-mysweater-16x9_0.jpg?itok=sX5eLTWD",
@@ -52267,6 +52531,13 @@
     "published_dates": [
       "Fri, 20 Dec 2024 00:00:00 +0000",
       "Sun, 04 Jan 2026 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR5866161429.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:33 +0000"
+      }
     ]
   },
   {
@@ -52276,7 +52547,7 @@
     "episode_url": "https://www.thisamericanlife.org/851/try-a-little-tenderness",
     "explicit": false,
     "synopsis": "In the new year, stories of people trying a radical approach to solving their problems.",
-    "download": "https://traffic.megaphone.fm/NPR8900595865.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/851/IJgReGTNzRi_o-skNRwZZee4vWzmx9SXXH3Rg5msDNs/851.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-851-drawing-16x9.jpg?itok=k-U18uSa",
@@ -52402,6 +52673,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR8900595865.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:35 +0000"
       }
     ]
   },
@@ -52862,7 +53140,7 @@
     "explicit": true,
     "synopsis": "A show about people who are suddenly confronted with who they are.",
     "download": "https://www.thisamericanlife.org/sites/default/files/audio/860/CjUHwrfsvptLm92QnWEGKnvugrL9lw82MZa54Z1Tk3o/860.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/860.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/860.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-860-suddenlyamirror-kellymalka.jpg?itok=XsmIrdvW",
       "credit": null
@@ -52919,6 +53197,13 @@
     ],
     "published_dates": [
       "Fri, 23 May 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download_clean",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/860.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:51 +0000"
+      }
     ]
   },
   {
@@ -52929,7 +53214,7 @@
     "explicit": true,
     "synopsis": "Conversations across a divide: People who are outside a war zone check in with family, friends, and strangers inside.",
     "download": "https://www.thisamericanlife.org/sites/default/files/audio/861/HLCiV5YzM6opChPsUXmXOwATsXT3UGBAEOQHTx7GD3I/861.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/861.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/861.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-861-groupchat-1e.jpg?itok=LOAUzyOk",
       "credit": null
@@ -52968,6 +53253,13 @@
     ],
     "published_dates": [
       "Fri, 30 May 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download_clean",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/861.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:53 +0000"
+      }
     ]
   },
   {
@@ -52977,7 +53269,7 @@
     "episode_url": "https://www.thisamericanlife.org/862/some-things-we-dont-do-anymore",
     "explicit": false,
     "synopsis": "On his first day in office, President Trump decided to freeze all U.S. foreign aid. Soon after, his administration effectively dissolved USAID—the federal agency that delivers billions in food, medicine, and other aid worldwide. Many of its programs have been canceled. Now, as USAID officially winds down, we try to assess its impact. What was good? What was not so good? We meet people around the world wrestling with these questions and trying to navigate this chaotic moment.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/862/7S3DAAmXKxlrwLydU4ktF23n-gISlUKO-sOG7xCSrSA/862.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/862.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-862-somethingswedontdoanymore-3_0.jpg?itok=rLVilG5S",
@@ -53028,6 +53320,13 @@
     ],
     "published_dates": [
       "Fri, 20 Jun 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/862/7S3DAAmXKxlrwLydU4ktF23n-gISlUKO-sOG7xCSrSA/862.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:54 +0000"
+      }
     ]
   },
   {
@@ -53037,8 +53336,8 @@
     "episode_url": "https://www.thisamericanlife.org/863/championship-window",
     "explicit": true,
     "synopsis": "People on a mission to achieve their goals before their window of opportunity closes.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR9271186174.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/863.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/863/N8g4YyH1S-b64qam6uB32QEC3GFon1VByeG_6MV2ruI/863.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/863.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/portrait/public/episodes/images/tal-863-championshipwindow.jpg?itok=uB1KRSLg",
       "credit": null
@@ -53088,6 +53387,18 @@
     ],
     "published_dates": [
       "Sun, 29 Jun 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://dcs-spotify.megaphone.fm/NPR9271186174.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:56 +0000"
+      },
+      {
+        "type": "download_clean",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/863.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:56 +0000"
+      }
     ]
   },
   {
@@ -53097,8 +53408,8 @@
     "episode_url": "https://www.thisamericanlife.org/864/chicago-hope",
     "explicit": true,
     "synopsis": "The story of the most commonly performed surgery, and what goes wrong with it – terribly wrong – 100,000 times a year in the United States. We’re excited to bring you the first episode ofThe Retrievals, Season 2, the new show from longtimeThis American Lifeproducer and editor Susan Burton. It’s from Serial Productions and The New York Times.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR3974539898.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/864.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/864/qRgcy5XJ9NUyXU4qj3gWBSugC3-ahEUmNL60cla3huY/864.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/864.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-864-retrievals.jpg?itok=-yhgyHuU",
       "credit": null
@@ -53149,6 +53460,18 @@
     ],
     "published_dates": [
       "Sun, 20 Jul 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://dcs-spotify.megaphone.fm/NPR3974539898.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:58 +0000"
+      },
+      {
+        "type": "download_clean",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/864.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:44:58 +0000"
+      }
     ]
   },
   {
@@ -53158,8 +53481,8 @@
     "episode_url": "https://www.thisamericanlife.org/865/the-other-territory",
     "explicit": true,
     "synopsis": "Since October 7th, while the world has focused its attention on Gaza, the Israeli government has tightened the screws on the three million Palestinians in the West Bank in all sorts of dramatic ways. We travel to the West Bank to see these changes in person.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR3210182538.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/865.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/865/bSolXbybpY0F9EifbdJktkX0sj-kz7P5fU6JQJg-eRo/865.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/865.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-865-theotherterritory-sakirkhader-mg1278411.jpg?itok=Z4JGH9Xy",
       "credit": null
@@ -53200,6 +53523,18 @@
     ],
     "published_dates": [
       "Sun, 24 Aug 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://dcs-spotify.megaphone.fm/NPR3210182538.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:00 +0000"
+      },
+      {
+        "type": "download_clean",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/865.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:00 +0000"
+      }
     ]
   },
   {
@@ -53259,8 +53594,8 @@
     "episode_url": "https://www.thisamericanlife.org/867/college-disorientation",
     "explicit": true,
     "synopsis": "Things are different on college campuses this year. We see inside the drama, with students and staff.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR2581159385.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/867.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/867/81XW2i076LFM-0yqP9zajvfOGaPDC_wnqrWaz8ApYPs/867.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/867.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-867-welcomeback.jpg?itok=Hc_vNnUJ",
       "credit": "Black Student Union at The University of Utah"
@@ -53303,6 +53638,18 @@
     ],
     "published_dates": [
       "Sun, 14 Sep 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://dcs-spotify.megaphone.fm/NPR2581159385.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:03 +0000"
+      },
+      {
+        "type": "download_clean",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/867.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:03 +0000"
+      }
     ]
   },
   {
@@ -53312,8 +53659,8 @@
     "episode_url": "https://www.thisamericanlife.org/868/the-hand-that-rocks-the-gavel",
     "explicit": true,
     "synopsis": "A group of immigration judges, who almost never speak to the press, describes the dismantling of our immigration court system from the inside.",
-    "download": "https://dcs-spotify.megaphone.fm/NPR4129523400.mp3",
-    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/868.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/868.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/868.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-868-nojudgement-janerosenberg.jpg?itok=L8p6Wsly",
       "credit": null
@@ -53353,6 +53700,18 @@
     ],
     "published_dates": [
       "Sun, 21 Sep 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://dcs-spotify.megaphone.fm/NPR4129523400.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:05 +0000"
+      },
+      {
+        "type": "download_clean",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/clean/868.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:05 +0000"
+      }
     ]
   },
   {
@@ -53362,7 +53721,7 @@
     "episode_url": "https://www.thisamericanlife.org/869/harold",
     "explicit": false,
     "synopsis": "When Zohran Mamdani won the primary race for New York mayor, the Democratic establishment's lukewarm response echoed the treatment of another charismatic, unconventional candidate decades earlier. This week, we bring you the story of Harold Washington, the greatest politician you've probably never heard of, and the backlash that ensued when he became Chicago's first Black mayor.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/869-extended-1759669822.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/869.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/84.jpg?itok=z7Gvb46w",
@@ -53398,6 +53757,13 @@
     ],
     "published_dates": [
       "Sun, 05 Oct 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/869-extended-1759669822.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:07 +0000"
+      }
     ]
   },
   {
@@ -53407,8 +53773,8 @@
     "episode_url": "https://www.thisamericanlife.org/870/my-other-self",
     "explicit": false,
     "synopsis": "What happens when people create alternate versions of themselves and release them into the wild?",
-    "download": "https://dcs-spotify.megaphone.fm/NPR9417124313.mp3",
-    "download_clean": null,
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/870.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/870.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-870-myotherself-1320321822.jpg?itok=8NgHf8kK",
       "credit": null
@@ -53448,6 +53814,13 @@
     ],
     "published_dates": [
       "Sun, 12 Oct 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://dcs-spotify.megaphone.fm/NPR9417124313.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:09 +0000"
+      }
     ]
   },
   {
@@ -53457,7 +53830,7 @@
     "episode_url": "https://www.thisamericanlife.org/871/the-thing-about-things",
     "explicit": false,
     "synopsis": "Three stories about the strange power inanimate objects can hold over us.",
-    "download": "https://traffic.megaphone.fm/NPR7025895016.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/871/BMY0giJw2WBsLDa6HKhhVj1iNmMHEkAw04fwv8nIJBs/871.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-871-things-822880932.jpg?itok=FuHBeL_8",
@@ -53544,6 +53917,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR7025895016.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:11 +0000"
+      }
     ]
   },
   {
@@ -53553,7 +53933,7 @@
     "episode_url": "https://www.thisamericanlife.org/872/winners",
     "explicit": false,
     "synopsis": "America loves winners—now more than ever. But how do you get to a win in 2025 America? We watch someone trying to score a win in a game whose rules are being made up as she plays.",
-    "download": "https://traffic.megaphone.fm/NPR6970061584.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/872/x1uOnOKvPSABxdNqu49kGp7JF5xMJHOPTDIXRdilBZg/872.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-872-winnersistock577312380.jpg?itok=-2xKUTEj",
@@ -53628,6 +54008,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR6970061584.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:13 +0000"
+      }
     ]
   },
   {
@@ -53637,7 +54024,7 @@
     "episode_url": "https://www.thisamericanlife.org/873/got-you-pegged",
     "explicit": true,
     "synopsis": "Shalom Auslander goes on vacation with his family, suspects the beloved, chatty old man in the room next door is an imposter, and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.",
-    "download": "https://traffic.megaphone.fm/NPR6792693909.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/873/qM5tZ9ccHTHZlMV0Ln0FBdnaih5OOprPvJbClJCxJLA/873.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/873.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/362.jpg?itok=sJIDirf7",
@@ -53763,6 +54150,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR6792693909.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:14 +0000"
+      }
     ]
   },
   {
@@ -53772,7 +54166,7 @@
     "episode_url": "https://www.thisamericanlife.org/874/under-one-roof",
     "explicit": false,
     "synopsis": "What’s great about living in a family is that everyone sees everything differently. Also, that’s what’s awful about living in a family. We go behind closed doors with two families.",
-    "download": "https://traffic.megaphone.fm/NPR1170536702.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/874.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/under-one-roof_16-9.jpg?itok=yfLQYpEy",
@@ -53801,6 +54195,13 @@
     ],
     "published_dates": [
       "Sun, 16 Nov 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://traffic.megaphone.fm/NPR1170536702.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:16 +0000"
+      }
     ]
   },
   {
@@ -53810,7 +54211,7 @@
     "episode_url": "https://www.thisamericanlife.org/875/i-hate-mysteries",
     "explicit": true,
     "synopsis": "What’s in the box? What’s in the $%&ing box?!?",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/3e89cc3d-be3a-449d-bc04-078dd5cecae3/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/875.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/875.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-875-foryoutofindout-peterryan.jpg?itok=nMofXZ1t",
@@ -53933,6 +54334,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/3e89cc3d-be3a-449d-bc04-078dd5cecae3/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:18 +0000"
+      }
     ]
   },
   {
@@ -53942,7 +54350,7 @@
     "episode_url": "https://www.thisamericanlife.org/876/bigger-than-me",
     "explicit": true,
     "synopsis": "When history comes knocking, you have to figure out what to do.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/6198d352-54a1-4176-9340-6cf6e6ce5ed6/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/876_0.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/876.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/funmilayo-ransome-kuti.jpg?itok=9xr4clyS",
@@ -53972,6 +54380,13 @@
     ],
     "published_dates": [
       "Sun, 07 Dec 2025 00:00:00 +0000"
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/6198d352-54a1-4176-9340-6cf6e6ce5ed6/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:20 +0000"
+      }
     ]
   },
   {
@@ -53981,7 +54396,7 @@
     "episode_url": "https://www.thisamericanlife.org/877/the-making-of",
     "explicit": true,
     "synopsis": "How one block in Portland, Oregon became a movie-set war zone that lots of people think is a real war zone.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/c6db5e9e-6c04-4f20-9e0e-5cca2c4e9366/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/877.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/877.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-877-portland-ajdungo.jpg?itok=BlbJSyaX",
@@ -54060,6 +54475,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/c6db5e9e-6c04-4f20-9e0e-5cca2c4e9366/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:21 +0000"
       }
     ]
   },
@@ -54165,7 +54587,7 @@
     "episode_url": "https://www.thisamericanlife.org/879/a-christian-and-a-muslim-walk-into-a-bar",
     "explicit": true,
     "synopsis": "When a joke could get you killed, should you say it anyway? A group of Syrian comedians test the limits of their newfound freedom, a year after the fall of the brutal Assad regime.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/a1001cfd-5dc2-4bcb-94dd-82c9868a0ad9/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/879.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/879.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-879-aubineymard.jpg?itok=MGJS5vmO",
@@ -54211,7 +54633,14 @@
     "published_dates": [
       "Sun, 18 Jan 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/a1001cfd-5dc2-4bcb-94dd-82c9868a0ad9/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:25 +0000"
+      }
+    ]
   },
   {
     "title": "What Is Your Emergency?",
@@ -54220,7 +54649,7 @@
     "episode_url": "https://www.thisamericanlife.org/880/what-is-your-emergency",
     "explicit": true,
     "synopsis": "911 calls unlike any we’ve heard before, and other stories about immigration agents sweeping through America.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/95430d03-97ac-48f4-a3c7-78a132861866/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/880.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/880.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-880-whatsyouremergency-adammaida.jpg?itok=EXKVsc6M",
@@ -54271,7 +54700,14 @@
     "published_dates": [
       "Sun, 01 Feb 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/95430d03-97ac-48f4-a3c7-78a132861866/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:26 +0000"
+      }
+    ]
   },
   {
     "title": "I Want What I Want",
@@ -54280,7 +54716,7 @@
     "episode_url": "https://www.thisamericanlife.org/i-want-what-i-want",
     "explicit": true,
     "synopsis": "People deciding to do things that most of us do NOT choose to do.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/99e1da2a-7997-46a8-ae1d-d99bf9360e55/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/881/V21beK3DC9a3zDLPXX0XYAWe9Os4EYIRsdHNfrf3qlw/881.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/881.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-881-iwantwhatiwant-gracialam.jpg?itok=_07OTZUD",
@@ -54392,6 +54828,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/99e1da2a-7997-46a8-ae1d-d99bf9360e55/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:28 +0000"
+      }
     ]
   },
   {
@@ -54401,7 +54844,7 @@
     "episode_url": "https://www.thisamericanlife.org/give-a-little-whistle",
     "explicit": false,
     "synopsis": "Two lawyers who work for ICE step forward and lift the curtain on what is really happening inside our immigration system right now.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ffd50122-2952-4a87-9e36-6ec8e5bf0596/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/882.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-882-ap-26054775420590.jpg?itok=5f4WPZ29",
@@ -54443,7 +54886,14 @@
     "published_dates": [
       "Sun, 08 Mar 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ffd50122-2952-4a87-9e36-6ec8e5bf0596/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:30 +0000"
+      }
+    ]
   },
   {
     "title": "Call Your Parents",
@@ -54452,7 +54902,7 @@
     "episode_url": "https://www.thisamericanlife.org/call-your-parents",
     "explicit": false,
     "synopsis": "In the early days of the radio show, Ira did a series of interviews with his parents that completely changed his relationship with them. This week, he returns to those interviews.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/19f3609b-60d2-4997-a0ae-66254464710f/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/883.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-883-callyourparents-ira.jpg?itok=MjzjmALm",
@@ -54614,6 +55064,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/19f3609b-60d2-4997-a0ae-66254464710f/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:32 +0000"
+      }
     ]
   },
   {
@@ -54623,7 +55080,7 @@
     "episode_url": "https://www.thisamericanlife.org/the-idiot",
     "explicit": true,
     "synopsis": "M. Gessen returns to our show with a true-crime story that takes place entirely within their own family. This story comes to us from the producers atSerial Productions—who invented the true-crime podcast more than a decade ago—and fromThe New York Times.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/4f1f01be-2003-42f0-8acd-02e96154a24c/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/884.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/884.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/883-theidiot-serial-johncurrin.png?itok=EWYtkDz5",
@@ -54699,6 +55156,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/4f1f01be-2003-42f0-8acd-02e96154a24c/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:34 +0000"
+      }
     ]
   },
   {
@@ -54708,7 +55172,7 @@
     "episode_url": "https://www.thisamericanlife.org/bless-this-mess",
     "explicit": true,
     "synopsis": "At a time when the U.S. government is trying to make American history tidier, we try to learn from the mess. Including the untold, messy story of Paul and Essie Robeson.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/f2a4a8d9-a9ad-47b4-8f83-5617fa8f2435/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/885/x657775Ycv5_4FmgkRX9l4hw3K8M7TUSUAxt-Ry4OHQ/885.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/885_0.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-885-getty-514697264_0.jpg?itok=IaKmYs-J",
@@ -54797,6 +55261,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/f2a4a8d9-a9ad-47b4-8f83-5617fa8f2435/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:35 +0000"
+      }
     ]
   },
   {
@@ -54806,7 +55277,7 @@
     "episode_url": "https://www.thisamericanlife.org/886/blackout",
     "explicit": false,
     "synopsis": "Since the war began in Iran, we've heard very little from people inside the country — and there's a reason for that. The entire country has been under an internet blackout. We worked with reporters Roxana Saberi and Fatemeh Jamalpour to get voice memos out of the country. Even though it was dangerous and difficult, people wanted to be heard.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/40ac9d61-48fa-49cd-8a8b-c80a95885223/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/886.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-886-howispentmyblackout-kellymalka.jpg?itok=MoXVrsOw",
@@ -54930,6 +55401,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/40ac9d61-48fa-49cd-8a8b-c80a95885223/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:37 +0000"
+      }
     ]
   },
   {
@@ -54939,7 +55417,7 @@
     "episode_url": "https://www.thisamericanlife.org/887/two-is-one-one-is-none",
     "explicit": true,
     "synopsis": "One family faces the Trump administration’s ban on trans people serving in the military, and responds with a surprising secret weapon.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/9b11b73f-1993-4511-a098-a1417fb6be13/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/887.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/887.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/large_portrait/public/episodes/images/tal-887-mysecretweapon.jpg?itok=QS8x-yBj",
@@ -55042,6 +55520,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/9b11b73f-1993-4511-a098-a1417fb6be13/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:39 +0000"
+      }
     ]
   },
   {
@@ -55051,7 +55536,7 @@
     "episode_url": "https://www.thisamericanlife.org/888/not-today-hades",
     "explicit": true,
     "synopsis": "Regular people trapped inside Greek myths.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/6d1871f0-e401-4324-9548-2a68d0cc764e/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/888.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/888.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/uncropped/public/episodes/images/tal-888-_pablomanriquez.jpg?itok=98pabPdM",
@@ -55202,6 +55687,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/6d1871f0-e401-4324-9548-2a68d0cc764e/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:41 +0000"
+      }
     ]
   },
   {
@@ -55211,8 +55703,8 @@
     "episode_url": "https://www.thisamericanlife.org/889/theres-something-about-hail-mary",
     "explicit": false,
     "synopsis": "We spend an hour in the last two minutes of the fourth quarter, behind and desperate, with people trying any damn thing they can think of.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/916a35c5-69f5-47e6-aaf4-e803336ec197/audio/128/default.mp3",
-    "download_clean": null,
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/889.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/889.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-889-hailmary-pingzhu.jpg?itok=zvIMkVg_",
       "credit": null
@@ -55302,6 +55794,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/916a35c5-69f5-47e6-aaf4-e803336ec197/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:42 +0000"
+      }
     ]
   },
   {
@@ -55311,7 +55810,7 @@
     "episode_url": "https://www.thisamericanlife.org/890/maximal-americanness",
     "explicit": true,
     "synopsis": "On this country's 250th birthday, we bring you stories about the most American people, places, objects, and social norms that make this country what it is.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/5066d1f0-f8af-484d-a5a6-aea3a4966cf8/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/890.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/890.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-890-themostamerican-timpeacock.jpg?itok=VOzGoFTW",
@@ -55386,7 +55885,14 @@
       "Sun, 05 Jul 2026 00:00:00 +0000",
       "Sun, 12 Jul 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/5066d1f0-f8af-484d-a5a6-aea3a4966cf8/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:44 +0000"
+      }
+    ]
   },
   {
     "title": "The Test Case",
@@ -55395,7 +55901,7 @@
     "episode_url": "https://www.thisamericanlife.org/891/the-test-case",
     "explicit": true,
     "synopsis": "Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth. This week, we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real. Zoe Chace reports.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/54b46113-a17b-4f3e-ac3f-d525e0106fab/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/891/YgDDDAbSQFeYPwFZngGfeJNlA-Smxf-PxIXv6PSlP7A/891.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/891.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-891-thetestcase-katherinelam-16x9.jpeg?itok=s3Pa965t",
@@ -55516,6 +56022,13 @@
           }
         }
       }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/54b46113-a17b-4f3e-ac3f-d525e0106fab/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:46 +0000"
+      }
     ]
   },
   {
@@ -55525,7 +56038,7 @@
     "episode_url": "https://www.thisamericanlife.org/892/trapped-on-a-bus",
     "explicit": true,
     "synopsis": "People on journeys they did not intend — or agree to.",
-    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/8e5b0ae5-8cc7-4178-a41a-46b344dc784e/audio/128/default.mp3",
+    "download": "https://www.thisamericanlife.org/sites/default/files/audio/892/UdzDQI_-cSy0lHIJEx9YCg0BYiKSfOQBA6xLQ_dRNhw/892.mp3",
     "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/892.mp3",
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/Reuters-RC2L9KABE4CY-CUBA-CRISIS-POWER.jpg?itok=p05ydmOz",
@@ -55653,6 +56166,13 @@
             "credit": null
           }
         }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/8e5b0ae5-8cc7-4178-a41a-46b344dc784e/audio/128/default.mp3",
+        "observed_at": "Thu, 29 Oct 2026 07:45:48 +0000"
       }
     ]
   },
