@@ -14,6 +14,7 @@ on:
         options:
           - all
           - scrape
+          - rescrape-urls
           - generate feed
           - generate markdown
 
@@ -49,17 +50,14 @@ jobs:
       # SCRAPER
       # ----------------
       - name: Run Scraper
-        if: env.MODE == 'all' || env.MODE == 'scrape'
+        if: env.MODE == 'all' || env.MODE == 'scrape' || env.MODE == 'rescrape-urls'
         env:
-          # Only check the most recent feed entry. MODE controls which
-          # pipeline steps run; it should never control how many episodes
-          # scrape.py fetches (that was the old bug: 'all' meant "run every
-          # step" but also meant "re-fetch every episode in the feed").
-          SCRAPE_MODE: '1'
+          # URL-only mode checks every existing episode but updates only audio URL fields.
+          SCRAPE_MODE: ${{ env.MODE == 'rescrape-urls' && 'urls' || '1' }}
         run: python script/scrape.py
 
       - name: Commit scraped data
-        if: env.MODE == 'all' || env.MODE == 'scrape'
+        if: env.MODE == 'all' || env.MODE == 'scrape' || env.MODE == 'rescrape-urls'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -74,7 +72,11 @@ jobs:
 
           echo "DATA_CHANGED=true" >> $GITHUB_ENV
 
-          git commit -m "Update TAL episodes data"
+          if [ "$MODE" = "rescrape-urls" ]; then
+            git commit -m "Refresh TAL audio URLs"
+          else
+            git commit -m "Update TAL episodes data"
+          fi
           git push
 
       # ----------------
