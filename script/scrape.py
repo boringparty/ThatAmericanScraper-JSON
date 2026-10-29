@@ -16,7 +16,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 OFFICIAL_RSS = "https://thisamericanlife.org/podcast/rss.xml"
 DELAY = 1
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data/data.json")
-DEFAULT_NUM_EPISODES = 1
+DEFAULT_NUM_EPISODES = int(os.getenv("NUM_EPISODES", "1"))
 
 ACT_WORDS = {
     "Prologue": 0, "One": 1, "Two": 2, "Three": 3, "Four": 4,
