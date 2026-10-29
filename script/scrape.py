@@ -22,7 +22,6 @@ ACT_WORDS = {
     "Prologue": 0, "One": 1, "Two": 2, "Three": 3, "Four": 4,
     "Five": 5, "Six": 6, "Seven": 7, "Eight": 8, "Nine": 9, "Ten": 10
 }
-
 ARCHIVE_KEYS = ("title", "synopsis", "acts", "explicit", "image")
 AUDIO_URL_KEYS = ("download", "download_clean")
 
@@ -63,13 +62,11 @@ def scrape_episode(url):
     soup = fetch_episode_page(url)
     if not soup:
         return None
-
     title = soup.select_one("h1").get_text(strip=True) if soup.select_one("h1") else ""
     number_elem = soup.select_one(".field-name-field-episode-number .field-item")
     number = number_elem.get_text(strip=True) if number_elem else ""
     original_air_elem = soup.select_one(".field-name-field-radio-air-date .date-display-single")
     original_air_date_raw = original_air_elem.get_text(strip=True) if original_air_elem else ""
-
     try:
         original_air_date = format_datetime(parse_any_date_str(original_air_date_raw))
     except Exception:
@@ -82,7 +79,6 @@ def scrape_episode(url):
     download = clean_audio_url(download_elem["href"]) if download_elem else None
     if not download:
         return None
-
     clean_elem = soup.select_one(".field-name-field-notes a[href*='/clean/']")
     download_clean = clean_audio_url(clean_elem["href"]) if clean_elem else None
     explicit = bool(download_clean)
@@ -91,7 +87,6 @@ def scrape_episode(url):
     image_url = img_elem["src"] if img_elem else None
     credit_elem = soup.select_one("figure.tal-episode-image .credit a")
     image_credit = credit_elem.get_text(strip=True) if credit_elem else None
-
     acts = []
     for act in soup.select("article.node-act"):
         label_elem = act.select_one(".field-name-field-act-label .field-item")
@@ -101,7 +96,6 @@ def scrape_episode(url):
 
         if not label_elem and not is_prologue:
             continue
-
         if is_prologue:
             act_number = 0
             number_text = "Prologue"
@@ -109,13 +103,11 @@ def scrape_episode(url):
             word = label_elem.get_text(strip=True).replace("Act ", "").replace("Part ", "").strip()
             act_number = ACT_WORDS.get(word, int(word) if word.isdigit() else 0)
             number_text = f"Act {word}"
-
         act_summary_elem = act.select_one(".field-name-body .field-item")
         raw = act_summary_elem.get_text(" ", strip=True) if act_summary_elem else ""
         duration_match = re.search(r"\((\d+)\s*minutes?\)", raw)
         duration = int(duration_match.group(1)) if duration_match else None
         summary = re.sub(r"\s*\(\d+\s*minutes?\)", "", raw).strip()
-
         contributors = [
             a.get_text(strip=True)
             for div in act.select("div.field-name-field-contributor")
@@ -132,7 +124,6 @@ def scrape_episode(url):
             "duration": duration,
             "contributors": contributors
         })
-
     return {
         "title": title,
         "number": number,
@@ -150,8 +141,8 @@ def scrape_episode(url):
 
 
 def update_audio_url_history(existing, ep_data):
-    history = existing.setdefault("audio_url_history", [])
     timestamp = format_datetime(datetime.now(timezone.utc))
+    history = list(existing.get("audio_url_history", []))
 
     for field in AUDIO_URL_KEYS:
         old_url = existing.get(field)
@@ -163,6 +154,40 @@ def update_audio_url_history(existing, ep_data):
                 "url": old_url,
                 "observed_at": timestamp
             })
+
+    if history != existing.get("audio_url_history", []):
+        existing["audio_url_history"] = history
+
+
+def rescrape_audio_urls(episodes):
+    checked = 0
+    changed = 0
+
+    for episode in episodes:
+        url = episode.get("episode_url")
+        if not url:
+            continue
+
+        ep_data = scrape_episode(url)
+        if not ep_data:
+            print(f"SKIP (could not retrieve audio URL): {url}")
+            continue
+
+        checked += 1
+        before = {field: episode.get(field) for field in AUDIO_URL_KEYS}
+
+        update_audio_url_history(episode, ep_data)
+        for field in AUDIO_URL_KEYS:
+            episode[field] = ep_data.get(field)
+
+        if before != {field: episode.get(field) for field in AUDIO_URL_KEYS}:
+            changed += 1
+            print(f"Updated audio URL: {url}")
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(episodes, f, ensure_ascii=False, indent=2)
+
+    print(f"URL-only rescrape complete. Checked: {checked}; episodes with URL changes: {changed}")
 
 
 def update_published_dates(episodes):
@@ -181,7 +206,6 @@ def update_published_dates(episodes):
 
         pub_str = format_datetime(to_week_sunday(dt))
         ep = next((e for e in episodes if e["episode_url"] == url), None)
-
         if ep and pub_str not in ep["published_dates"]:
             ep["published_dates"].append(pub_str)
 
@@ -193,6 +217,11 @@ def main():
     except FileNotFoundError:
         episodes = []
 
+    # URL-only mode touches only download, download_clean, and audio_url_history.
+    if os.getenv("SCRAPE_MODE", "1").lower() == "urls":
+        rescrape_audio_urls(episodes)
+        return
+
     feed = feedparser.parse(OFFICIAL_RSS)
     entries = feed.entries[:DEFAULT_NUM_EPISODES]
 
@@ -201,7 +230,6 @@ def main():
         ep_data = scrape_episode(url)
         if not ep_data:
             continue
-
         existing = next((e for e in episodes if e["episode_url"] == url), None)
 
         if existing:
@@ -215,7 +243,6 @@ def main():
                 })
 
             update_audio_url_history(existing, ep_data)
-
             for k, v in ep_data.items():
                 if k not in ("published_dates", "revisions"):
                     existing[k] = v
@@ -227,7 +254,6 @@ def main():
 
     for ep in episodes:
         ep["published_dates"] = sorted(set(ep["published_dates"]), key=parse_any_date_str)
-
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)
 
