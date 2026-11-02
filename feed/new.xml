@@ -5,12 +5,25 @@
     <link>https://www.thisamericanlife.org</link>
     <description><![CDATA[Only new episodes!]]></description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
     <generator>generateFeed_new.py</generator>
     <itunes:author>This American Life</itunes:author>
     <itunes:summary><![CDATA[Only new episodes!]]></itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://i.imgur.com/JifU3O4.png" />
+    <item>
+      <title><![CDATA[900: Talk Me Into It]]></title>
+      <link>https://www.thisamericanlife.org/900/talk-me-into-it</link>
+      <guid isPermaLink="false">https://www.thisamericanlife.org/900/talk-me-into-it</guid>
+      <description><![CDATA[It’s the midterms! This week’s show is about people changing their minds and not changing their minds — and the people trying to do the persuading.]]></description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/5a109dc6-3f88-4918-b8f5-4d181a8639fd/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <itunes:title><![CDATA[900: Talk Me Into It]]></itunes:title>
+      <itunes:summary><![CDATA[It’s the midterms! This week’s show is about people changing their minds and not changing their minds — and the people trying to do the persuading.]]></itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episode>900</itunes:episode>
+      <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-900-timpeacock.jpg?itok=1NGyL35U" />
+    </item>
     <item>
       <title><![CDATA[899: Reaching Out]]></title>
       <link>https://www.thisamericanlife.org/899/reaching-out</link>
@@ -108,7 +121,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/892/trapped-on-a-bus</guid>
       <description><![CDATA[People on journeys they did not intend — or agree to.]]></description>
       <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/8e5b0ae5-8cc7-4178-a41a-46b344dc784e/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/892/UdzDQI_-cSy0lHIJEx9YCg0BYiKSfOQBA6xLQ_dRNhw/892.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[892: Trapped on a Bus]]></itunes:title>
       <itunes:summary><![CDATA[People on journeys they did not intend — or agree to.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -121,7 +134,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/891/the-test-case</guid>
       <description><![CDATA[Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth. This week, we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real. Zoe Chace reports.]]></description>
       <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/54b46113-a17b-4f3e-ac3f-d525e0106fab/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/891/YgDDDAbSQFeYPwFZngGfeJNlA-Smxf-PxIXv6PSlP7A/891.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[891: The Test Case]]></itunes:title>
       <itunes:summary><![CDATA[Some people in this country think Antifa is a dangerous domestic terror organization. Some think that’s a complete myth. This week, we go to the federal trial where, for the first time, the government sets out to prove that Antifa is real. Zoe Chace reports.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -134,7 +147,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/890/maximal-americanness</guid>
       <description><![CDATA[On this country's 250th birthday, we bring you stories about the most American people, places, objects, and social norms that make this country what it is.]]></description>
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/5066d1f0-f8af-484d-a5a6-aea3a4966cf8/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/890.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[890: Maximal Americanness]]></itunes:title>
       <itunes:summary><![CDATA[On this country's 250th birthday, we bring you stories about the most American people, places, objects, and social norms that make this country what it is.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -147,7 +160,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/889/theres-something-about-hail-mary</guid>
       <description><![CDATA[We spend an hour in the last two minutes of the fourth quarter, behind and desperate, with people trying any damn thing they can think of.]]></description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/916a35c5-69f5-47e6-aaf4-e803336ec197/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/889.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[889: There’s Something About Hail Mary]]></itunes:title>
       <itunes:summary><![CDATA[We spend an hour in the last two minutes of the fourth quarter, behind and desperate, with people trying any damn thing they can think of.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -160,7 +173,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/888/not-today-hades</guid>
       <description><![CDATA[Regular people trapped inside Greek myths.]]></description>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/6d1871f0-e401-4324-9548-2a68d0cc764e/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/888.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[888: Not Today, Hades!]]></itunes:title>
       <itunes:summary><![CDATA[Regular people trapped inside Greek myths.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -173,7 +186,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/887/two-is-one-one-is-none</guid>
       <description><![CDATA[One family faces the Trump administration’s ban on trans people serving in the military, and responds with a surprising secret weapon.]]></description>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/9b11b73f-1993-4511-a098-a1417fb6be13/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/887.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[887: Two Is One, One Is None!]]></itunes:title>
       <itunes:summary><![CDATA[One family faces the Trump administration’s ban on trans people serving in the military, and responds with a surprising secret weapon.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -186,7 +199,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/886/blackout</guid>
       <description><![CDATA[Since the war began in Iran, we've heard very little from people inside the country — and there's a reason for that. The entire country has been under an internet blackout. We worked with reporters Roxana Saberi and Fatemeh Jamalpour to get voice memos out of the country. Even though it was dangerous and difficult, people wanted to be heard.]]></description>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/40ac9d61-48fa-49cd-8a8b-c80a95885223/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/886.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[886: Blackout]]></itunes:title>
       <itunes:summary><![CDATA[Since the war began in Iran, we've heard very little from people inside the country — and there's a reason for that. The entire country has been under an internet blackout. We worked with reporters Roxana Saberi and Fatemeh Jamalpour to get voice memos out of the country. Even though it was dangerous and difficult, people wanted to be heard.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -199,7 +212,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/bless-this-mess</guid>
       <description><![CDATA[At a time when the U.S. government is trying to make American history tidier, we try to learn from the mess. Including the untold, messy story of Paul and Essie Robeson.]]></description>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/f2a4a8d9-a9ad-47b4-8f83-5617fa8f2435/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/885/x657775Ycv5_4FmgkRX9l4hw3K8M7TUSUAxt-Ry4OHQ/885.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[885: Bless This Mess]]></itunes:title>
       <itunes:summary><![CDATA[At a time when the U.S. government is trying to make American history tidier, we try to learn from the mess. Including the untold, messy story of Paul and Essie Robeson.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -212,7 +225,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/the-idiot</guid>
       <description><![CDATA[M. Gessen returns to our show with a true-crime story that takes place entirely within their own family. This story comes to us from the producers atSerial Productions—who invented the true-crime podcast more than a decade ago—and fromThe New York Times.]]></description>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/4f1f01be-2003-42f0-8acd-02e96154a24c/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/884.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[884: The Idiot]]></itunes:title>
       <itunes:summary><![CDATA[M. Gessen returns to our show with a true-crime story that takes place entirely within their own family. This story comes to us from the producers atSerial Productions—who invented the true-crime podcast more than a decade ago—and fromThe New York Times.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -225,7 +238,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/call-your-parents</guid>
       <description><![CDATA[In the early days of the radio show, Ira did a series of interviews with his parents that completely changed his relationship with them. This week, he returns to those interviews.]]></description>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/19f3609b-60d2-4997-a0ae-66254464710f/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/883.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[883: Call Your Parents]]></itunes:title>
       <itunes:summary><![CDATA[In the early days of the radio show, Ira did a series of interviews with his parents that completely changed his relationship with them. This week, he returns to those interviews.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -238,7 +251,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/give-a-little-whistle</guid>
       <description><![CDATA[Two lawyers who work for ICE step forward and lift the curtain on what is really happening inside our immigration system right now.]]></description>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ffd50122-2952-4a87-9e36-6ec8e5bf0596/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/882.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[882: Give a Little Whistle]]></itunes:title>
       <itunes:summary><![CDATA[Two lawyers who work for ICE step forward and lift the curtain on what is really happening inside our immigration system right now.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -251,7 +264,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/i-want-what-i-want</guid>
       <description><![CDATA[People deciding to do things that most of us do NOT choose to do.]]></description>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/99e1da2a-7997-46a8-ae1d-d99bf9360e55/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/881/V21beK3DC9a3zDLPXX0XYAWe9Os4EYIRsdHNfrf3qlw/881.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[881: I Want What I Want]]></itunes:title>
       <itunes:summary><![CDATA[People deciding to do things that most of us do NOT choose to do.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -264,7 +277,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/880/what-is-your-emergency</guid>
       <description><![CDATA[911 calls unlike any we’ve heard before, and other stories about immigration agents sweeping through America.]]></description>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/95430d03-97ac-48f4-a3c7-78a132861866/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/880.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[880: What Is Your Emergency?]]></itunes:title>
       <itunes:summary><![CDATA[911 calls unlike any we’ve heard before, and other stories about immigration agents sweeping through America.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -277,7 +290,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/879/a-christian-and-a-muslim-walk-into-a-bar</guid>
       <description><![CDATA[When a joke could get you killed, should you say it anyway? A group of Syrian comedians test the limits of their newfound freedom, a year after the fall of the brutal Assad regime.]]></description>
       <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/a1001cfd-5dc2-4bcb-94dd-82c9868a0ad9/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/879.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[879: A Christian and a Muslim Walk Into a Bar]]></itunes:title>
       <itunes:summary><![CDATA[When a joke could get you killed, should you say it anyway? A group of Syrian comedians test the limits of their newfound freedom, a year after the fall of the brutal Assad regime.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -303,7 +316,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/877/the-making-of</guid>
       <description><![CDATA[How one block in Portland, Oregon became a movie-set war zone that lots of people think is a real war zone.]]></description>
       <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/c6db5e9e-6c04-4f20-9e0e-5cca2c4e9366/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/877.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[877: The Making Of]]></itunes:title>
       <itunes:summary><![CDATA[How one block in Portland, Oregon became a movie-set war zone that lots of people think is a real war zone.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -316,7 +329,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/876/bigger-than-me</guid>
       <description><![CDATA[When history comes knocking, you have to figure out what to do.]]></description>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/6198d352-54a1-4176-9340-6cf6e6ce5ed6/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/876_0.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[876: Bigger Than Me]]></itunes:title>
       <itunes:summary><![CDATA[When history comes knocking, you have to figure out what to do.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -329,7 +342,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/875/i-hate-mysteries</guid>
       <description><![CDATA[What’s in the box? What’s in the $%&ing box?!?]]></description>
       <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/3e89cc3d-be3a-449d-bc04-078dd5cecae3/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/875.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[875: I Hate Mysteries]]></itunes:title>
       <itunes:summary><![CDATA[What’s in the box? What’s in the $%&ing box?!?]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -342,7 +355,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/874/under-one-roof</guid>
       <description><![CDATA[What’s great about living in a family is that everyone sees everything differently. Also, that’s what’s awful about living in a family. We go behind closed doors with two families.]]></description>
       <pubDate>Fri, 14 Nov 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR1170536702.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/874.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[874: Under One Roof]]></itunes:title>
       <itunes:summary><![CDATA[What’s great about living in a family is that everyone sees everything differently. Also, that’s what’s awful about living in a family. We go behind closed doors with two families.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -355,7 +368,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/873/got-you-pegged</guid>
       <description><![CDATA[Shalom Auslander goes on vacation with his family, suspects the beloved, chatty old man in the room next door is an imposter, and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.]]></description>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR6792693909.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/873/qM5tZ9ccHTHZlMV0Ln0FBdnaih5OOprPvJbClJCxJLA/873.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[873: Got You Pegged]]></itunes:title>
       <itunes:summary><![CDATA[Shalom Auslander goes on vacation with his family, suspects the beloved, chatty old man in the room next door is an imposter, and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -368,7 +381,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/872/winners</guid>
       <description><![CDATA[America loves winners—now more than ever. But how do you get to a win in 2025 America? We watch someone trying to score a win in a game whose rules are being made up as she plays.]]></description>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR6970061584.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/872/x1uOnOKvPSABxdNqu49kGp7JF5xMJHOPTDIXRdilBZg/872.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[872: Winners]]></itunes:title>
       <itunes:summary><![CDATA[America loves winners—now more than ever. But how do you get to a win in 2025 America? We watch someone trying to score a win in a game whose rules are being made up as she plays.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -381,7 +394,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/871/the-thing-about-things</guid>
       <description><![CDATA[Three stories about the strange power inanimate objects can hold over us.]]></description>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR7025895016.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/871/BMY0giJw2WBsLDa6HKhhVj1iNmMHEkAw04fwv8nIJBs/871.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[871: The Thing About Things]]></itunes:title>
       <itunes:summary><![CDATA[Three stories about the strange power inanimate objects can hold over us.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -394,7 +407,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/870/my-other-self</guid>
       <description><![CDATA[What happens when people create alternate versions of themselves and release them into the wild?]]></description>
       <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://dcs-spotify.megaphone.fm/NPR9417124313.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/870.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[870: My Other Self]]></itunes:title>
       <itunes:summary><![CDATA[What happens when people create alternate versions of themselves and release them into the wild?]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -407,7 +420,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/869/harold</guid>
       <description><![CDATA[When Zohran Mamdani won the primary race for New York mayor, the Democratic establishment's lukewarm response echoed the treatment of another charismatic, unconventional candidate decades earlier. This week, we bring you the story of Harold Washington, the greatest politician you've probably never heard of, and the backlash that ensued when he became Chicago's first Black mayor.]]></description>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/869-extended-1759669822.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/869.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[869: Harold]]></itunes:title>
       <itunes:summary><![CDATA[When Zohran Mamdani won the primary race for New York mayor, the Democratic establishment's lukewarm response echoed the treatment of another charismatic, unconventional candidate decades earlier. This week, we bring you the story of Harold Washington, the greatest politician you've probably never heard of, and the backlash that ensued when he became Chicago's first Black mayor.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -420,7 +433,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/868/the-hand-that-rocks-the-gavel</guid>
       <description><![CDATA[A group of immigration judges, who almost never speak to the press, describes the dismantling of our immigration court system from the inside.]]></description>
       <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://dcs-spotify.megaphone.fm/NPR4129523400.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/868.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[868: The Hand That Rocks The Gavel]]></itunes:title>
       <itunes:summary><![CDATA[A group of immigration judges, who almost never speak to the press, describes the dismantling of our immigration court system from the inside.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -433,7 +446,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/867/college-disorientation</guid>
       <description><![CDATA[Things are different on college campuses this year. We see inside the drama, with students and staff.]]></description>
       <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://dcs-spotify.megaphone.fm/NPR2581159385.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/867/81XW2i076LFM-0yqP9zajvfOGaPDC_wnqrWaz8ApYPs/867.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[867: College Disorientation]]></itunes:title>
       <itunes:summary><![CDATA[Things are different on college campuses this year. We see inside the drama, with students and staff.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -459,7 +472,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/865/the-other-territory</guid>
       <description><![CDATA[Since October 7th, while the world has focused its attention on Gaza, the Israeli government has tightened the screws on the three million Palestinians in the West Bank in all sorts of dramatic ways. We travel to the West Bank to see these changes in person.]]></description>
       <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://dcs-spotify.megaphone.fm/NPR3210182538.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/865/bSolXbybpY0F9EifbdJktkX0sj-kz7P5fU6JQJg-eRo/865.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[865: The Other Territory]]></itunes:title>
       <itunes:summary><![CDATA[Since October 7th, while the world has focused its attention on Gaza, the Israeli government has tightened the screws on the three million Palestinians in the West Bank in all sorts of dramatic ways. We travel to the West Bank to see these changes in person.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -472,7 +485,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/864/chicago-hope</guid>
       <description><![CDATA[The story of the most commonly performed surgery, and what goes wrong with it – terribly wrong – 100,000 times a year in the United States. We’re excited to bring you the first episode ofThe Retrievals, Season 2, the new show from longtimeThis American Lifeproducer and editor Susan Burton. It’s from Serial Productions and The New York Times.]]></description>
       <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://dcs-spotify.megaphone.fm/NPR3974539898.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/864/qRgcy5XJ9NUyXU4qj3gWBSugC3-ahEUmNL60cla3huY/864.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[864: Chicago Hope]]></itunes:title>
       <itunes:summary><![CDATA[The story of the most commonly performed surgery, and what goes wrong with it – terribly wrong – 100,000 times a year in the United States. We’re excited to bring you the first episode ofThe Retrievals, Season 2, the new show from longtimeThis American Lifeproducer and editor Susan Burton. It’s from Serial Productions and The New York Times.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -485,7 +498,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/863/championship-window</guid>
       <description><![CDATA[People on a mission to achieve their goals before their window of opportunity closes.]]></description>
       <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://dcs-spotify.megaphone.fm/NPR9271186174.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/863/N8g4YyH1S-b64qam6uB32QEC3GFon1VByeG_6MV2ruI/863.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[863: Championship Window]]></itunes:title>
       <itunes:summary><![CDATA[People on a mission to achieve their goals before their window of opportunity closes.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -498,7 +511,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/862/some-things-we-dont-do-anymore</guid>
       <description><![CDATA[On his first day in office, President Trump decided to freeze all U.S. foreign aid. Soon after, his administration effectively dissolved USAID—the federal agency that delivers billions in food, medicine, and other aid worldwide. Many of its programs have been canceled. Now, as USAID officially winds down, we try to assess its impact. What was good? What was not so good? We meet people around the world wrestling with these questions and trying to navigate this chaotic moment.]]></description>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/862/7S3DAAmXKxlrwLydU4ktF23n-gISlUKO-sOG7xCSrSA/862.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/862.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[862: Some Things We Don't Do Anymore]]></itunes:title>
       <itunes:summary><![CDATA[On his first day in office, President Trump decided to freeze all U.S. foreign aid. Soon after, his administration effectively dissolved USAID—the federal agency that delivers billions in food, medicine, and other aid worldwide. Many of its programs have been canceled. Now, as USAID officially winds down, we try to assess its impact. What was good? What was not so good? We meet people around the world wrestling with these questions and trying to navigate this chaotic moment.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -641,7 +654,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/851/try-a-little-tenderness</guid>
       <description><![CDATA[In the new year, stories of people trying a radical approach to solving their problems.]]></description>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR8900595865.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/851/IJgReGTNzRi_o-skNRwZZee4vWzmx9SXXH3Rg5msDNs/851.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[851: Try a Little Tenderness]]></itunes:title>
       <itunes:summary><![CDATA[In the new year, stories of people trying a radical approach to solving their problems.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -654,7 +667,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/850/my-sweater</guid>
       <description><![CDATA[The tiny thing that unravels your world.]]></description>
       <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR5866161429.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/850.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[850: If You Want to Destroy My Sweater, Hold This Thread as I Walk Away]]></itunes:title>
       <itunes:summary><![CDATA[The tiny thing that unravels your world.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -732,7 +745,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/844/this-is-the-case-of-henry-dee</guid>
       <description><![CDATA[Thirteen parole board members decide whether or not one man should be released from prison.]]></description>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
-      <enclosure url="https://dcs-spotify.megaphone.fm/NPR6325401197.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/844/X55_q3XsjiVyGMvBYB-JHSvtZo7fQs3KnINMf3rGsxI/844.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[844: This Is the Case of Henry Dee]]></itunes:title>
       <itunes:summary><![CDATA[Thirteen parole board members decide whether or not one man should be released from prison.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -1291,7 +1304,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/801/must-be-rats-on-the-brain</guid>
       <description><![CDATA[The one animal we can’t seem to live without, even when we really, really want to.]]></description>
       <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR7388469053.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/801/CE6igqsXaA7O_I3oBbBJot_UPCkSbARGWdwkLp5BWUA/801.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[801: Must Be Rats on the Brain]]></itunes:title>
       <itunes:summary><![CDATA[The one animal we can’t seem to live without, even when we really, really want to.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -2910,7 +2923,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/676/heres-looking-at-you-kid</guid>
       <description><![CDATA[Adults telling kids who they are, and kids wondering — are they right?]]></description>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/0de0c859-d1f8-4279-b9f8-48dd3aafaf77/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/676.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[676: Here’s Looking at You, Kid]]></itunes:title>
       <itunes:summary><![CDATA[Adults telling kids who they are, and kids wondering — are they right?]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -3295,7 +3308,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/646/the-secret-of-my-death</guid>
       <description><![CDATA[Cryptic messages on a cell phone and a teeter-totter at a construction site: these are clues people found, trying to make sense of a death.]]></description>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/431ed1d9-35aa-4f85-9ee5-f7e060ce6083/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/646-extended-1789215776.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[646: The Secret of My Death]]></itunes:title>
       <itunes:summary><![CDATA[Cryptic messages on a cell phone and a teeter-totter at a construction site: these are clues people found, trying to make sense of a death.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -3527,7 +3540,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/in-the-shadow-of-the-city</guid>
       <description><![CDATA[Stories that take place on the edge of civilization, just out of sight.]]></description>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/48a9b350-faa4-4e06-8676-39388e5915f9/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/628.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[628: In the Shadow of the City]]></itunes:title>
       <itunes:summary><![CDATA[Stories that take place on the edge of civilization, just out of sight.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -3818,7 +3831,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/kid-logic</guid>
       <description><![CDATA[Kids using perfectly logical arguments and arriving at perfectly wrong conclusions.]]></description>
       <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR5017278333.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/605.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[605: Kid Logic]]></itunes:title>
       <itunes:summary><![CDATA[Kids using perfectly logical arguments and arriving at perfectly wrong conclusions.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -5001,7 +5014,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/513/129-cars</guid>
       <description><![CDATA[We spend a month at aJeep dealership on Long Islandas they try to make their monthly sales goal: 129 cars. If they make it, they'll get a huge bonus from the manufacturer, possibly as high as $85,000 — enough to put them in the black for the month. If they don't make it, it'll be the second month in a row. So they pull out all the stops.]]></description>
       <pubDate>Fri, 13 Dec 2013 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/513/G1JnPsC7z6nGEIoH42D4s0e_mrjJrZzop7CTKkEioQM/513.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/513_0.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[513: 129 Cars]]></itunes:title>
       <itunes:summary><![CDATA[We spend a month at aJeep dealership on Long Islandas they try to make their monthly sales goal: 129 cars. If they make it, they'll get a huge bonus from the manufacturer, possibly as high as $85,000 — enough to put them in the black for the month. If they don't make it, it'll be the second month in a row. So they pull out all the stops.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -5612,7 +5625,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/blackjack</guid>
       <description><![CDATA[The casino game everyone thinks they can beat.]]></description>
       <pubDate>Fri, 08 Jun 2012 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/78504e23-e47d-47e5-b2ad-cb230b97bd92/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/466/bNwbLqTcApfUoWu2fWPzs_AzXtGehSyF2bkes0Bni70/466.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[466: Blackjack]]></itunes:title>
       <itunes:summary><![CDATA[The casino game everyone thinks they can beat.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -5820,7 +5833,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/449/middle-school</guid>
       <description><![CDATA[As the new school year begins, we have stories from all over the country about people lurching their way through their middle school years – the years when you're figuring out so much. We go to school dances, classrooms, and down to the Mexican border.]]></description>
       <pubDate>Fri, 28 Oct 2011 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/a631bda2-b83f-4e2c-99c5-8344e637a322/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/449-extended-1788612927.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[449: Middle School]]></itunes:title>
       <itunes:summary><![CDATA[As the new school year begins, we have stories from all over the country about people lurching their way through their middle school years – the years when you're figuring out so much. We go to school dances, classrooms, and down to the Mexican border.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -5898,7 +5911,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/443/amusement-park</guid>
       <description><![CDATA[We head to some of the happiest places on earth: amusement parks! Ira Glass takes us behind the scenes at Worlds of Fun in Kansas City, where the young staff – coached by a funny, fun-loving boss just a little older than they are – truly seem to love their jobs.]]></description>
       <pubDate>Fri, 12 Aug 2011 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/474e1929-1ad3-4904-9f3c-aea8a463fc9c/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/443/9-Ct8t_PSGkAMqTUhg3M4cDyfH1GjMTueaWsL9QzrV8/443.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[443: Amusement Park]]></itunes:title>
       <itunes:summary><![CDATA[We head to some of the happiest places on earth: amusement parks! Ira Glass takes us behind the scenes at Worlds of Fun in Kansas City, where the young staff – coached by a funny, fun-loving boss just a little older than they are – truly seem to love their jobs.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6054,7 +6067,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/431/see-no-evil</guid>
       <description><![CDATA[When things are awkward or uncomfortable or distressing, a lot of times it's easier to not think about it. This week we have stories of people pretending that everything is okay and ignoring the awful stuff that's staring them straight in the face. Including a story of deceit and intrigue involving commemorative spoons from the Kennedy Center.]]></description>
       <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/431/qxaVxrC4ETpdDQIfB5Ejkb_KgCK7A7ogJWKO7fvs0pk/431.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/431/p2yC2d-t79Mlgb51bMwiZBcJbVD3RytOAMjmkpb5Mzs/431.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[431: See No Evil]]></itunes:title>
       <itunes:summary><![CDATA[When things are awkward or uncomfortable or distressing, a lot of times it's easier to not think about it. This week we have stories of people pretending that everything is okay and ignoring the awful stuff that's staring them straight in the face. Including a story of deceit and intrigue involving commemorative spoons from the Kennedy Center.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6080,7 +6093,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/429/will-they-know-me-back-home</guid>
       <description><![CDATA[Stories of people who've grown so accustomed to wartime that the lives they've left behind no longer make sense. Including a US battalion going home on leave after 15 months of deployment, and an Iraqi translator's story of life after the gig is up.]]></description>
       <pubDate>Fri, 11 Mar 2011 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/429/ifUtrYIVINhhU4OE8YYHT9ykKVtdwtaedWjTQrQqpt0/429.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/429/sBrjSX0n2Rn7yzZg9BLL07jhCDlZTp73uajb0fRev2E/429.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[429: Will They Know Me Back Home?]]></itunes:title>
       <itunes:summary><![CDATA[Stories of people who've grown so accustomed to wartime that the lives they've left behind no longer make sense. Including a US battalion going home on leave after 15 months of deployment, and an Iraqi translator's story of life after the gig is up.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6132,7 +6145,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/425/slow-to-react</guid>
       <description><![CDATA[This week we have stories where people's reactions move very slowly, including the story of a wedding 17 years in the making, and what it's like when you have a terminal illness that's supposed to kill you in a year or two, and it decides to take its time.Note:The story in Act One isn’t suitable for children, and we’d like to note a trigger warning to survivors of abuse.]]></description>
       <pubDate>Fri, 21 Jan 2011 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/425/8zMquto2X_7a2rc5VTe_aJi-xkKf5EJvMBlmhidrsxo/425.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/425/MjEY9tZxiuMc-okIq2Mxr41xDk_7rSl3R8L3mqdrB4A/425.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[425: Slow To React]]></itunes:title>
       <itunes:summary><![CDATA[This week we have stories where people's reactions move very slowly, including the story of a wedding 17 years in the making, and what it's like when you have a terminal illness that's supposed to kill you in a year or two, and it decides to take its time.Note:The story in Act One isn’t suitable for children, and we’d like to note a trigger warning to survivors of abuse.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6145,7 +6158,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/424/kid-politics</guid>
       <description><![CDATA[What if, say, the U.S.-led invasion of Grenada in 1983 had been decided, not by Ronald Reagan, but by a bunch of middle-schoolers? And what if every rule at your high school had been determined, not by teachers and administrators, but entirely by teenagers? This week, stories about whether, when it comes to governing, kids do any better than grown-ups.]]></description>
       <pubDate>Fri, 14 Jan 2011 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/424/4eZij-Jaws3QAtCwHFQ87YpTnDxno0zLsRij3icHzj0/424.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/424/hOGcrsF8W_j49KXUAo8J_BewWKuvfZEwQwFM6mOq4Qs/424.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[424: Kid Politics]]></itunes:title>
       <itunes:summary><![CDATA[What if, say, the U.S.-led invasion of Grenada in 1983 had been decided, not by Ronald Reagan, but by a bunch of middle-schoolers? And what if every rule at your high school had been determined, not by teachers and administrators, but entirely by teenagers? This week, stories about whether, when it comes to governing, kids do any better than grown-ups.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6158,7 +6171,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/423/the-invention-of-money</guid>
       <description><![CDATA[Five reporters stumbled on what seems like a basic question: What is money? The unsettling answer they found: Money is fiction. Photo: Stone money on the island of Yap.]]></description>
       <pubDate>Fri, 07 Jan 2011 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/423/B4VCrF8HFeG6fUzmApVPWClG0tRmqQTv1qRdnzNWj54/423.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/423/lMMop2SpyHNlgBT3HLhP-kggqFTwym4klrRzXtKi1WI/423.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[423: The Invention of Money]]></itunes:title>
       <itunes:summary><![CDATA[Five reporters stumbled on what seems like a basic question: What is money? The unsettling answer they found: Money is fiction. Photo: Stone money on the island of Yap.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6184,7 +6197,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/421/last-man-standing</guid>
       <description><![CDATA[Is it stubbornness? Tenacity? Survival of the fittest? This week, stories about people who feel compelled to keep going, especially when everyone else has given up.]]></description>
       <pubDate>Fri, 03 Dec 2010 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/421/TcUKWH8U5d9zBG7SrnX4cMe63ghAFMa92nDTKb_xhDw/421.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/421/N_0ZuOOaDkOWuaasRAc3Klpn0AEmHFIdlp-aKjMNjAI/421.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[421: Last Man Standing]]></itunes:title>
       <itunes:summary><![CDATA[Is it stubbornness? Tenacity? Survival of the fittest? This week, stories about people who feel compelled to keep going, especially when everyone else has given up.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6197,7 +6210,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/420/neighborhood-watch</guid>
       <description><![CDATA[It’s amazing just how much drama can take place in the mini-universe of a neighborhood. This week we bring you stories of neighbors watching out for each other, for better and worse, including a story from CBC's WireTap.]]></description>
       <pubDate>Fri, 19 Nov 2010 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/420/0Zatnkyla_UIjEspvusUsSDKkMBILwJE21DI3MiPLdo/420.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/420/XnFofh5k5R-B_87vwHWwK0Cb0pyRMty6GGx0RZ2-HPU/420.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[420: Neighborhood Watch]]></itunes:title>
       <itunes:summary><![CDATA[It’s amazing just how much drama can take place in the mini-universe of a neighborhood. This week we bring you stories of neighbors watching out for each other, for better and worse, including a story from CBC's WireTap.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6223,7 +6236,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/418/toxie</guid>
       <description><![CDATA[In January 2010, reporters fromPlanet Moneybought a toxic asset—you know, the things that blew up wall street banks, sank the economy and brought the global financial system to a halt—one of those. And "Toxie" turned out to be an encyclopedia of the financial crisis.]]></description>
       <pubDate>Fri, 05 Nov 2010 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/418/dOS9rLndcyLQCIrdQT5tKXGwxu8A-q1P6NH4jdQq2ic/418.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/418/k37XTy27mHfvN5OvxqfpT5kdpXBXl78cXpgqfq1Qg1c/418.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[418: Toxie]]></itunes:title>
       <itunes:summary><![CDATA[In January 2010, reporters fromPlanet Moneybought a toxic asset—you know, the things that blew up wall street banks, sank the economy and brought the global financial system to a halt—one of those. And "Toxie" turned out to be an encyclopedia of the financial crisis.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6236,7 +6249,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/417/this-party-sucks</guid>
       <description><![CDATA[A show for this year's midterm elections. Two best friends in Michigan, both political novices, get tired of yelling at their TVs and take matters into their own hands. They form a Tea Party chapter to effect political change. But when push comes to shove and they have to choose a candidate, their ideologies, their principles and their friendship explode.]]></description>
       <pubDate>Fri, 29 Oct 2010 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/417/Oo4HbGrKMjHK5Ob82Mj2lOPZYfgKiIAowDaZqBNeU1E/417.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/417/pTauTxEQ9tHa6V0rnH2BA6FnKXxDK2mkyf7Pl6pLWd0/417.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[417: This Party Sucks]]></itunes:title>
       <itunes:summary><![CDATA[A show for this year's midterm elections. Two best friends in Michigan, both political novices, get tired of yelling at their TVs and take matters into their own hands. They form a Tea Party chapter to effect political change. But when push comes to shove and they have to choose a candidate, their ideologies, their principles and their friendship explode.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6249,7 +6262,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/416/iraq-after-us</guid>
       <description><![CDATA[Operation Iraqi Freedom is over. And the next chapter of Iraq is being written now. But what actually happened there the last seven years? Producer Nancy Updike and reporter Larry Kaplow spent a month in Iraq talking to Iraqis and Americans about the war that tore the country apart, and what's happening as we try to put it back together.]]></description>
       <pubDate>Fri, 15 Oct 2010 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/416/wZV_i4MQn9Sf3spcpgdr0GfQ4p7Txux8VIS9m4dhbHQ/416.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/416/J72bRi_XgKr4mD4fSc-42ntsywTzPUvLFKFv_M6OF3M/416.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[416: Iraq After Us]]></itunes:title>
       <itunes:summary><![CDATA[Operation Iraqi Freedom is over. And the next chapter of Iraq is being written now. But what actually happened there the last seven years? Producer Nancy Updike and reporter Larry Kaplow spent a month in Iraq talking to Iraqis and Americans about the war that tore the country apart, and what's happening as we try to put it back together.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6262,7 +6275,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/415/crybabies</guid>
       <description><![CDATA[Crybabies are annoying. They whine, they complain, sometimes they ruin it for the rest of us. But being a crybaby can be a really effective tactic. We have stories of crybabies in sports, in politics, on Wall Street, on the streets of California, including a new story by David Sedaris.]]></description>
       <pubDate>Fri, 24 Sep 2010 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/415/2QHTxsmA_X2UDMSOjCaQrCJLa1YHUpO9y3LJLX90zW4/415.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/415/oJ1mJdCiKLvWGM4o5hHUHVDCVXi6UPtRG5Hy-8crMt0/415.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[415: Crybabies]]></itunes:title>
       <itunes:summary><![CDATA[Crybabies are annoying. They whine, they complain, sometimes they ruin it for the rest of us. But being a crybaby can be a really effective tactic. We have stories of crybabies in sports, in politics, on Wall Street, on the streets of California, including a new story by David Sedaris.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6275,7 +6288,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/414/right-to-remain-silent</guid>
       <description><![CDATA[Stories about people who have the right to remain silent, but choose not to exercise that right—including police officer Adrian Schoolcraft, who secretly recorded his supervisors telling officers to manipulate crime statistics and make illegal arrests. The Village Voice series that broke Schoolcraft's story, written by Graham Rayman, ishere.]]></description>
       <pubDate>Fri, 10 Sep 2010 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/414/9LnhmPDfZBX3RoRoN9l0MBDjE9o17h1V-NuG-T_l79U/414.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/414/o5EqBihplGOlN5OrMqUy2OLsDnxkcoyQu-S29-RnJh8/414.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[414: Right to Remain Silent]]></itunes:title>
       <itunes:summary><![CDATA[Stories about people who have the right to remain silent, but choose not to exercise that right—including police officer Adrian Schoolcraft, who secretly recorded his supervisors telling officers to manipulate crime statistics and make illegal arrests. The Village Voice series that broke Schoolcraft's story, written by Graham Rayman, ishere.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6548,7 +6561,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/393/infidelity</guid>
       <description><![CDATA[Stories of cheating, cheaters, and the cheated.]]></description>
       <pubDate>Fri, 30 Oct 2009 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/88122e0e-0b8d-421b-ac4f-e3bbb8f6533b/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/393.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[393: Infidelity]]></itunes:title>
       <itunes:summary><![CDATA[Stories of cheating, cheaters, and the cheated.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -6951,7 +6964,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/362/got-you-pegged</guid>
       <description><![CDATA[Shalom Auslander goes on vacation with his family, and suspects the beloved, chatty old man in the room next door is an imposter—and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.]]></description>
       <pubDate>Fri, 22 Aug 2008 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/362/TQAsU2mT5NUOBEw3uvYitepZJ54vnh0-5N0BSVLvHP8/362.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/362.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[362: Got You Pegged (2008)]]></itunes:title>
       <itunes:summary><![CDATA[Shalom Auslander goes on vacation with his family, and suspects the beloved, chatty old man in the room next door is an imposter—and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -7055,7 +7068,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/354/mistakes-were-made</guid>
       <description><![CDATA[It’s the late 1960s, and a California TV repairman named Bob sees an opportunity to help people cheat death with the new science of cryonics. But freezing dead people isn’t easy. And apologizing for the mistakes you make along the way? Even harder.]]></description>
       <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ae221404-f59a-4019-94df-50b841823cdb/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/354.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[354: Mistakes Were Made]]></itunes:title>
       <itunes:summary><![CDATA[It’s the late 1960s, and a California TV repairman named Bob sees an opportunity to help people cheat death with the new science of cryonics. But freezing dead people isn’t easy. And apologizing for the mistakes you make along the way? Even harder.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -7523,7 +7536,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/318/with-great-power</guid>
       <description><![CDATA[People who end up with far more power than they bargained for, and everything that comes with it.]]></description>
       <pubDate>Fri, 06 Oct 2006 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/cc05f2e3-ca9b-4f21-a33c-608eef0fcafb/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/318.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[318: With Great Power]]></itunes:title>
       <itunes:summary><![CDATA[People who end up with far more power than they bargained for, and everything that comes with it.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -7937,7 +7950,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/286/mind-games</guid>
       <description><![CDATA[Stories of people who try simple mind games on others, and then find themselves way in over their heads.]]></description>
       <pubDate>Fri, 08 Apr 2005 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/286-extended-1758933057.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/286/Chgh_17U7wh52q00ptQtE6TtGyr5LPkbdVX07GfTYPQ/286.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[286: Mind Games]]></itunes:title>
       <itunes:summary><![CDATA[Stories of people who try simple mind games on others, and then find themselves way in over their heads.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -8340,7 +8353,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/255/our-holiday-gift-giving-guide</guid>
       <description><![CDATA[The vexing difficulty of finding the perfect gift.]]></description>
       <pubDate>Fri, 19 Dec 2003 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR2389843838.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/255/-Fj6DistkW17E-YwkjERs_rltLrkZsflWJ5VtIdomuk/255.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[255: Our Holiday Gift-Giving Guide]]></itunes:title>
       <itunes:summary><![CDATA[The vexing difficulty of finding the perfect gift.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -8626,7 +8639,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/233/starting-from-scratch</guid>
       <description><![CDATA[People starting over—sometimes because they want to, other times because they have to.]]></description>
       <pubDate>Fri, 07 Mar 2003 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/233-extended-1758783668.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/233/74KJsGe1I9A2XMrm6oe7TcfzsI14RYbJMNWc4sqD9Ag/233.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[233: Starting From Scratch]]></itunes:title>
       <itunes:summary><![CDATA[People starting over—sometimes because they want to, other times because they have to.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -8795,7 +8808,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/220/testosterone</guid>
       <description><![CDATA[Stories of people getting more testosterone and coming to regret it. And of people losing it and coming to appreciate life without it. The pros and cons of the hormone of desire. And we get our testosterone measured, as a staff.]]></description>
       <pubDate>Fri, 30 Aug 2002 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/220/Khtix35j6Ptd4W7Bm98nL5pmaRi8XutKr2VnH4Anq1w/220.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/220.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[220: Testosterone]]></itunes:title>
       <itunes:summary><![CDATA[Stories of people getting more testosterone and coming to regret it. And of people losing it and coming to appreciate life without it. The pros and cons of the hormone of desire. And we get our testosterone measured, as a staff.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -8899,7 +8912,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/212/the-other-man</guid>
       <description><![CDATA[What happens when a new guy comes on the scene and changes the way everyone relates to each other?]]></description>
       <pubDate>Fri, 10 May 2002 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/73616441-f54b-4b3b-86f4-52cd97e58f7a/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/212.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[212: The Other Man]]></itunes:title>
       <itunes:summary><![CDATA[What happens when a new guy comes on the scene and changes the way everyone relates to each other?]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -8951,7 +8964,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/208/office-politics</guid>
       <description><![CDATA[Stories of high drama from America's workplaces — surprising, emotional places full of the greed, jealousy, and ambition of real politics.]]></description>
       <pubDate>Fri, 15 Mar 2002 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/c7d80db6-5f30-4da1-a529-3aa8e8ebc9f1/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/208/jKsoxnTcGPnVjwPmgStxzOeoXtdvbmKq3L7ncsaJm54/208.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[208: Office Politics]]></itunes:title>
       <itunes:summary><![CDATA[Stories of high drama from America's workplaces — surprising, emotional places full of the greed, jealousy, and ambition of real politics.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -8977,7 +8990,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/206/somewhere-in-the-arabian-sea</guid>
       <description><![CDATA[The aircraft carrier USS Abraham Lincoln has been in the news thanks to an extra-long deployment that's taken a toll on its crew. What's life on an aircraft carrier at war really like? Back in 2002, we spent a few days on the USS John C. Stennis, which was sending bombing missions into Afghanistan.]]></description>
       <pubDate>Fri, 01 Mar 2002 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/dcc04146-548e-4a57-826b-d653088ec4e2/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/extended/206-extended-1787409038.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[206: Somewhere in the Arabian Sea]]></itunes:title>
       <itunes:summary><![CDATA[The aircraft carrier USS Abraham Lincoln has been in the news thanks to an extra-long deployment that's taken a toll on its crew. What's life on an aircraft carrier at war really like? Back in 2002, we spent a few days on the USS John C. Stennis, which was sending bombing missions into Afghanistan.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -9873,7 +9886,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/137/the-book-that-changed-your-life</guid>
       <description><![CDATA[We want to believe our lives can be changed by the ideas contained in a book.]]></description>
       <pubDate>Fri, 20 Aug 1999 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/e55b1946-2658-4592-9afe-1c2a3033a31c/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/137.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[137: The Book That Changed Your Life]]></itunes:title>
       <itunes:summary><![CDATA[We want to believe our lives can be changed by the ideas contained in a book.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -9990,7 +10003,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/128/four-corners</guid>
       <description><![CDATA[We try to tell the story of life in America through portraits of life on four different corners, in four different states across the nation.]]></description>
       <pubDate>Fri, 30 Apr 1999 00:00:00 +0000</pubDate>
-      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/75f6e2c6-dc9e-465c-ab85-3182c331e056/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/128/M9wLKbW5-NLd3aysWyyg5izz5GaO9S9goPlfjX4VZTM/128.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[128: Four Corners]]></itunes:title>
       <itunes:summary><![CDATA[We try to tell the story of life in America through portraits of life on four different corners, in four different states across the nation.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -10562,7 +10575,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/84/harold-1997</guid>
       <description><![CDATA[The story of Harold Washington, the greatest politician you've probably never heard of, and the white backlash that was set off when he became Chicago's first Black mayor.]]></description>
       <pubDate>Fri, 21 Nov 1997 00:00:00 +0000</pubDate>
-      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/84/34IqYKwmTddi_rMn78cUq23pSG97YDFQ0oe03qyUTFg/84.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/84.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[84: Harold (1997)]]></itunes:title>
       <itunes:summary><![CDATA[The story of Harold Washington, the greatest politician you've probably never heard of, and the white backlash that was set off when he became Chicago's first Black mayor.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
@@ -10679,7 +10692,7 @@
       <guid isPermaLink="false">https://www.thisamericanlife.org/kindness-of-strangers</guid>
       <description><![CDATA[An episode from our show's early days: Stories about what happens when strangers are kind — and when they're not.]]></description>
       <pubDate>Fri, 12 Sep 1997 00:00:00 +0000</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/NPR6510887866.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/archive/75.mp3" length="0" type="audio/mpeg" />
       <itunes:title><![CDATA[75: Kindness of Strangers]]></itunes:title>
       <itunes:summary><![CDATA[An episode from our show's early days: Stories about what happens when strangers are kind — and when they're not.]]></itunes:summary>
       <itunes:explicit>false</itunes:explicit>
