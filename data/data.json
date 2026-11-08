@@ -56782,7 +56782,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Where’s the Party?",
-        "summary": "In Montana's Senate race this year, Democrats have been caught up in a messy cloak-and-dagger fight, with longtime big-name Democrats not endorsing their own nominee. So many people have been trying to persuade one candidate, Alani Bankhead, to do something that she’s refused to do. Heather Tal Murphy reports.",
+        "summary": "In Montana's Senate race this year, Democrats have been caught up in a messy cloak-and-dagger fight, with longtime big-name Democrats not endorsing their own nominee. So many people have been trying to persuade one candidate, Alani Bankhead, to do something she’s refused to do. Heather Tal Murphy reports.",
         "duration": 27,
         "contributors": [
           "Heather Tal Murphy",
@@ -56813,6 +56813,60 @@
     "published_dates": [
       "Sun, 08 Nov 2026 00:00:00 +0000"
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "timestamp": "Sun, 08 Nov 2026 14:10:55 +0000",
+        "data": {
+          "title": "Talk Me Into It",
+          "synopsis": "It’s the midterms! This week’s show is about people changing their minds and not changing their minds — and the people trying to do the persuading.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "In Detroit, Rose Johnson tries to convince other Black voters to vote for Abdul El-Sayed. Her friend isn’t having it.",
+              "duration": 7,
+              "contributors": []
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Where’s the Party?",
+              "summary": "In Montana's Senate race this year, Democrats have been caught up in a messy cloak-and-dagger fight, with longtime big-name Democrats not endorsing their own nominee. So many people have been trying to persuade one candidate, Alani Bankhead, to do something that she’s refused to do. Heather Tal Murphy reports.",
+              "duration": 27,
+              "contributors": [
+                "Heather Tal Murphy",
+                "Miki Meek"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: The Ben Franklin Close",
+              "summary": "While working as a car salesman, longtime All Things Considered host Noah Adams learned about a technique to supposedly close a deal. Ira remembers hearing the story decades ago and was thinking about it after Noah’s recent death.",
+              "duration": 9,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: Polls Schmolls",
+              "summary": "Sam Negron has been working for years to bring Hispanic voters into the Republican Party. He was a part of the push two years ago that helped Trump win more of the Hispanic vote than any Republican. This year, every national poll predicts Republicans losing ground with those voters. But Sam says he is still seeing the exact opposite when he talks to people. He invited producer Ike Sriskandarajah to come to Allentown to see the red wave he is predicting.",
+              "duration": 11,
+              "contributors": [
+                "Ike Sriskandarajah"
+              ]
+            }
+          ],
+          "explicit": true,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-900-timpeacock.jpg?itok=1NGyL35U",
+            "credit": null
+          }
+        }
+      }
+    ]
   }
 ]
