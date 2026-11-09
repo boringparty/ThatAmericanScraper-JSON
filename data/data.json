@@ -56868,5 +56868,67 @@
         }
       }
     ]
+  },
+  {
+    "title": "Is Your Blue My Blue?",
+    "number": "901",
+    "original_air_date": "Fri, 06 Nov 2026 00:00:00 +0000",
+    "episode_url": "https://www.thisamericanlife.org/901/is-your-blue-my-blue",
+    "explicit": true,
+    "synopsis": "The doomed project of trying to translate what’s in your head into someone else’s head.",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/495d4996-9361-47bf-89f5-3fb3e6ce33b7/audio/128/default.mp3",
+    "download_clean": "https://www.thisamericanlife.org/sites/default/files/audio/upload/schedule/clean/901.mp3",
+    "image": {
+      "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-900-yourbluemyblue-peteryan.jpg?itok=coom1D_y",
+      "credit": null
+    },
+    "acts": [
+      {
+        "number": 0,
+        "number_text": "Prologue",
+        "title": "Prologue",
+        "summary": "A while back, Ira woke up with double vision and learned that he had cataracts. After his cataract surgery, he realized the color blue looked very different to him. Now he always wonders: does everyone see the same blue as I do, or is their blue different?",
+        "duration": 3,
+        "contributors": [
+          "Ira Glass"
+        ]
+      },
+      {
+        "number": 1,
+        "number_text": "Act One",
+        "title": "Act One: Even Though You Know You Shouldn’t",
+        "summary": "Shaun Bengson has known since he was a kid that he’d very likely lose his hearing as he got older and develop tinnitus. And even after it started, he didn’t do the sensible things that would slow its progression. Shaun and his wife, Abigail, discuss their decisions — and non-decisions — with Ira. And Shaun plays a simulation of what the world now sounds like to him. Listen to more music from The Bengsons and find tickets to their off-Broadway show at bengsons.com .",
+        "duration": 27,
+        "contributors": [
+          "Ira Glass"
+        ]
+      },
+      {
+        "number": 2,
+        "number_text": "Act Two",
+        "title": "Act Two: Everybody Hurts",
+        "summary": "Cluster headaches are sometimes called the most painful medical condition. Researchers who study them wanted to know if that was actually true. They asked cluster patients to compare their headaches to other famously painful conditions. Producer Ike Sriskandarajah, who gets these headaches, was excited to read the findings. But should he tell his pregnant wife? Clusterbusters has lots of advice for people who get these headaches. Results from the International Cluster Headache Questionnaire: Cluster headache is one of the most intensely painful human conditions . Tom Zeller Jr. is the author of The Headache. Ashley S. Hattle is the author of A Haunting Between Worlds.",
+        "duration": 14,
+        "contributors": [
+          "Ike Sriskandarajah"
+        ]
+      },
+      {
+        "number": 3,
+        "number_text": "Act Three",
+        "title": "Act Three: I’m Blue Da Ba Dee My Mom Died",
+        "summary": "Molly’s mom died suddenly last fall, and it flipped the axis of her world. But one day, a friend told her about a special object that really helped him cope with his own father’s death. Molly decides to track this object down. Chelsea Granger is the author of the zine So Many Ways to Draw a Ghost .",
+        "duration": 8,
+        "contributors": [
+          "Molly Marcello",
+          "Phia Bennin",
+          "Diane Wu"
+        ]
+      }
+    ],
+    "published_dates": [
+      "Sun, 15 Nov 2026 00:00:00 +0000"
+    ],
+    "revisions": []
   }
 ]
