@@ -5,12 +5,25 @@
     <link>https://www.thisamericanlife.org</link>
     <description><![CDATA[Only new episodes!]]></description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
     <generator>generateFeed_new.py</generator>
     <itunes:author>This American Life</itunes:author>
     <itunes:summary><![CDATA[Only new episodes!]]></itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://i.imgur.com/JifU3O4.png" />
+    <item>
+      <title><![CDATA[901: Is Your Blue My Blue?]]></title>
+      <link>https://www.thisamericanlife.org/901/is-your-blue-my-blue</link>
+      <guid isPermaLink="false">https://www.thisamericanlife.org/901/is-your-blue-my-blue</guid>
+      <description><![CDATA[The doomed project of trying to translate what’s in your head into someone else’s head.]]></description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/495d4996-9361-47bf-89f5-3fb3e6ce33b7/audio/128/default.mp3" length="0" type="audio/mpeg" />
+      <itunes:title><![CDATA[901: Is Your Blue My Blue?]]></itunes:title>
+      <itunes:summary><![CDATA[The doomed project of trying to translate what’s in your head into someone else’s head.]]></itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episode>901</itunes:episode>
+      <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/tal-900-yourbluemyblue-peteryan.jpg?itok=coom1D_y" />
+    </item>
     <item>
       <title><![CDATA[900: Talk Me Into It]]></title>
       <link>https://www.thisamericanlife.org/900/talk-me-into-it</link>
