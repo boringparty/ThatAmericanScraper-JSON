@@ -27943,7 +27943,7 @@
     "episode_url": "https://www.thisamericanlife.org/436/the-psychopath-test",
     "explicit": false,
     "synopsis": "We heard about a test that could determine if someone was a psychopath. So, naturally, our staff decided to take it.",
-    "download": "https://www.thisamericanlife.org/sites/default/files/audio/436/skm6CBw0vYaZsn465bfSaNuBe9xSgsLZ5jKP0auvXGE/436.mp3",
+    "download": "https://npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/cb3d614d-f743-413d-977f-ff4e8a6b95ca/audio/128/default.mp3",
     "download_clean": null,
     "image": {
       "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-613769026-landscape.jpg?itok=khwNIr3t",
@@ -27954,7 +27954,7 @@
         "number": 0,
         "number_text": "Prologue",
         "title": "Prologue",
-        "summary": "Ira explains that when the radio staff decided to take a test that reveals who is a psychopath, very quickly everyone came to believe that the highest score would go to either Robyn, Jane, or him.",
+        "summary": "When the staff of the show decided to take a psychopathy test, everyone agreed that the highest score would go to one of three people: Robyn, Jane, or Ira.",
         "duration": 6,
         "contributors": [
           "Ira Glass"
@@ -27964,7 +27964,7 @@
         "number": 1,
         "number_text": "Act One",
         "title": "Act One: Underachievement Test",
-        "summary": "Alix Spiegel tells the story of Robert Dixon, who's in a maximum security prison in Vacaville California and is unlikely to ever get parole because of his score on the psychopath test. The test also is called \"the checklist\" or, more formally, the PCL-R, which stands for \"Psychopathy Check List—Revised.\" Alix tells the story of its creation and reports that the man who created the test, Bob Hare, is concerned at how it's being used today in the criminal justice system. A version of this story aired on NPR's All Things Considered .",
+        "summary": "Alix Spiegel tells the story of Robert Dixon, an inmate at a maximum-security prison in Vacaville, California. He’s unlikely ever to be paroled because of his score on a psychopathy test. Alix traces how the test was created and learns that its creator, Bob Hare, is troubled by how it’s used in the criminal justice system today. A version of this story aired on NPR's All Things Considered .",
         "duration": 28,
         "contributors": [
           "Alix Spiegel"
@@ -27974,7 +27974,7 @@
         "number": 2,
         "number_text": "Act Two",
         "title": "Act Two: King of the Forest",
-        "summary": "Jon Ronson investigates whether corporate leaders can, in fact, be psychopaths by visiting a former Sunbeam CEO named Al Dunlap. This is an excerpt from Ronson's book, The Psychopath Test .",
+        "summary": "Jon Ronson looks into whether psychopaths are more common in the corporate world. To find out, he visits Al Dunlap, the former CEO of Sunbeam, who was known for cutting thousands of jobs. This is an excerpt from Ronson's book, The Psychopath Test .",
         "duration": 15,
         "contributors": [
           "Jon Ronson"
@@ -27984,7 +27984,7 @@
         "number": 3,
         "number_text": "Act Three",
         "title": "Act Three: The Results Are In",
-        "summary": "Ira and the radio show staff get their results on the psychopath test from Dr. David Bernstein, of Forensic Consultants, LLC. , who administered the test to them.",
+        "summary": "Ira and the staff get their psychopath test results from Dr. David Bernstein, a forensic psychologist with Forensic Consultants , who gave them the test.",
         "duration": 6,
         "contributors": [
           "Ira Glass"
@@ -27992,7 +27992,71 @@
       }
     ],
     "published_dates": [
-      "Fri, 27 May 2011 00:00:00 +0000"
+      "Fri, 27 May 2011 00:00:00 +0000",
+      "Sun, 29 Nov 2026 00:00:00 +0000"
+    ],
+    "revisions": [
+      {
+        "timestamp": "Mon, 23 Nov 2026 01:54:51 +0000",
+        "data": {
+          "title": "The Psychopath Test",
+          "synopsis": "We heard about a test that could determine if someone was a psychopath. So, naturally, our staff decided to take it.",
+          "acts": [
+            {
+              "number": 0,
+              "number_text": "Prologue",
+              "title": "Prologue",
+              "summary": "Ira explains that when the radio staff decided to take a test that reveals who is a psychopath, very quickly everyone came to believe that the highest score would go to either Robyn, Jane, or him.",
+              "duration": 6,
+              "contributors": [
+                "Ira Glass"
+              ]
+            },
+            {
+              "number": 1,
+              "number_text": "Act One",
+              "title": "Act One: Underachievement Test",
+              "summary": "Alix Spiegel tells the story of Robert Dixon, who's in a maximum security prison in Vacaville California and is unlikely to ever get parole because of his score on the psychopath test. The test also is called \"the checklist\" or, more formally, the PCL-R, which stands for \"Psychopathy Check List—Revised.\" Alix tells the story of its creation and reports that the man who created the test, Bob Hare, is concerned at how it's being used today in the criminal justice system. A version of this story aired on NPR's All Things Considered .",
+              "duration": 28,
+              "contributors": [
+                "Alix Spiegel"
+              ]
+            },
+            {
+              "number": 2,
+              "number_text": "Act Two",
+              "title": "Act Two: King of the Forest",
+              "summary": "Jon Ronson investigates whether corporate leaders can, in fact, be psychopaths by visiting a former Sunbeam CEO named Al Dunlap. This is an excerpt from Ronson's book, The Psychopath Test .",
+              "duration": 15,
+              "contributors": [
+                "Jon Ronson"
+              ]
+            },
+            {
+              "number": 3,
+              "number_text": "Act Three",
+              "title": "Act Three: The Results Are In",
+              "summary": "Ira and the radio show staff get their results on the psychopath test from Dr. David Bernstein, of Forensic Consultants, LLC. , who administered the test to them.",
+              "duration": 6,
+              "contributors": [
+                "Ira Glass"
+              ]
+            }
+          ],
+          "explicit": false,
+          "image": {
+            "url": "https://www.thisamericanlife.org/sites/default/files/styles/landscape/public/episodes/images/istock-613769026-landscape.jpg?itok=khwNIr3t",
+            "credit": null
+          }
+        }
+      }
+    ],
+    "audio_url_history": [
+      {
+        "type": "download",
+        "url": "https://www.thisamericanlife.org/sites/default/files/audio/436/skm6CBw0vYaZsn465bfSaNuBe9xSgsLZ5jKP0auvXGE/436.mp3",
+        "observed_at": "Mon, 23 Nov 2026 01:54:51 +0000"
+      }
     ]
   },
   {
